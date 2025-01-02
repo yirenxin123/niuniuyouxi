@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "Cmd_Bullfight",
+    "Bullfight_NotifyKickOutPacket",
+    "apply",
+    "cmd",
+    "SBF_NOTIFY_KICKOUT_CMD_ID",
+    "tableid",
+    "seatuid",
+    "seatid",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "status",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAKA;;;;;;;;;;;AAWA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;AACA,IAAIC,gBAAgBD,QAAQ,eAAR,CAApB;;AAEA,SAASE,6BAAT,GAAyC;AACrCH,cAAYI,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EADqC,CACP;;AAE9B,OAAKC,GAAL,GAAWH,cAAcI,yBAAzB;AACA,OAAKC,OAAL,GAAe,CAAf;AACA,OAAKC,OAAL,GAAe,CAAf;AACA,OAAKC,MAAL,GAAc,CAAC,CAAf;AACA;AACA,OAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,SAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,SAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,SAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,SAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,SAAKR,OAAL,GAAeI,IAAIJ,OAAnB;AACA,SAAKC,OAAL,GAAeG,IAAIH,OAAnB;AACA,SAAKC,MAAL,GAAcE,IAAIF,MAAlB;AACA,SAAKO,MAAL,GAAcL,IAAIK,MAAlB;AACH,GAVD;AAWH;;AAEDC,OAAOC,OAAP,GAAkBf,6BAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/11.\r\n */\r\n\r\n\r\n/*\r\n* type SBF_NOTIFY_KICKOUT_T struct {\r\n JsonHead\r\n RespHead\r\n TableId int32   `json:\"tableid\"`\r\n SeatUid uint32  `json:\"seatuid\"`\r\n SeatId  int     `json:\"seatid\"`\r\n }\r\n\r\n 触发场景： 1.  带入金币超时\r\n 2. 玩家携带金币不足*/\r\nvar MessageResp = require('MessageResp');\r\nvar Cmd_Bullfight = require('Cmd_Bullfight');\r\n\r\nfunction Bullfight_NotifyKickOutPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = Cmd_Bullfight.SBF_NOTIFY_KICKOUT_CMD_ID;\r\n    this.tableid = 0;\r\n    this.seatuid = 0;\r\n    this.seatid = -1;\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        this.tableid = msg.tableid;\r\n        this.seatuid = msg.seatuid;\r\n        this.seatid = msg.seatid;\r\n        this.status = msg.status;\r\n    };\r\n}\r\n\r\nmodule.exports =  Bullfight_NotifyKickOutPacket;"
+  ]
+}

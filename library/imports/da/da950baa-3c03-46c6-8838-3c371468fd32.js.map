@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "BasePop",
+    "require",
+    "ToastView",
+    "LoadingView",
+    "MessageFactory",
+    "GameSystem",
+    "cc",
+    "Class",
+    "extends",
+    "properties",
+    "ReferralCode",
+    "EditBox",
+    "onLoad",
+    "callBackBtn",
+    "event",
+    "CustomEventData",
+    "BtnName",
+    "target",
+    "getName",
+    "log",
+    "dismiss",
+    "string",
+    "show",
+    "data",
+    "referralid",
+    "Number",
+    "createMessageReq",
+    "US_REQ_BIND_REFERRAL_CMD_ID",
+    "send"
+  ],
+  "mappings": ";;AAAA,IAAIA,UAAUC,QAAQ,SAAR,CAAd;AACA,IAAIC,YAAYD,QAAQ,WAAR,CAAhB;AACA,IAAIE,cAAcF,QAAQ,aAAR,CAAlB;AACA,IAAIG,iBAAiBH,QAAQ,gBAAR,CAArB;AACA,IAAII,aAAaJ,QAAQ,YAAR,CAAjB;;AAEAK,GAAGC,KAAH,CAAS;AACLC,aAASR,OADJ;;AAGLS,gBAAY;AACR;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACAC,sBAAkBJ,GAAGK;AAXb,KAHP;;AAiBL;AACAC,YAAQ,kBAAY,CAEnB,CApBI;;AAsBL;AACA;;AAEA;;AAEAC,iBAAc,qBAAUC,KAAV,EAAgBC,eAAhB,EAAiC;AAC3C,YAAIC,UAAUF,MAAMG,MAAN,CAAaC,OAAb,EAAd;AACAZ,WAAGa,GAAH,CAAO,4CAA4CH,OAAnD;AACA,YAAGA,WAAW,UAAd,EACA;AACI,iBAAKI,OAAL;AACH,SAHD,MAIK,IAAGJ,WAAW,SAAd,EACL;AACIV,eAAGa,GAAH,CAAO,iDAAiD,KAAKT,YAAL,CAAkBW,MAA1E;AACA,gBAAG,KAAKX,YAAL,CAAkBW,MAAlB,IAA4B,EAA/B,EACA;AACInB,0BAAUoB,IAAV,CAAe,UAAf;AACA;AACH;;AAGD,gBAAIC,OAAO;AACPC,4BAAaC,OAAO,KAAKf,YAAL,CAAkBW,MAAzB;AADN,aAAX;;AAIAjB,2BAAesB,gBAAf,CAAgCC,2BAAhC,EAA6DC,IAA7D,CAAkEL,IAAlE;;AAEA,iBAAKH,OAAL;AACH;AACJ;AApDI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var BasePop = require('BasePop');\r\nvar ToastView = require('ToastView');\r\nvar LoadingView = require('LoadingView');\r\nvar MessageFactory = require('MessageFactory');\r\nvar GameSystem = require('GameSystem');\r\n\r\ncc.Class({\r\n    extends: BasePop,\r\n\r\n    properties: {\r\n        // foo: {\r\n        //    default: null,      // The default value will be used only when the component attaching\r\n        //                           to a node for the first time\r\n        //    url: cc.Texture2D,  // optional, default is typeof default\r\n        //    serializable: true, // optional, default is true\r\n        //    visible: true,      // optional, default is true\r\n        //    displayName: 'Foo', // optional\r\n        //    readonly: false,    // optional, default is false\r\n        // },\r\n        // ...\r\n        ReferralCode    : cc.EditBox,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n    \r\n    callBackBtn : function (event,CustomEventData) {\r\n        var BtnName = event.target.getName();\r\n        cc.log(\"ReferralCodeView.callBackBtn,BtnName = \" + BtnName);\r\n        if(BtnName == \"BtnClose\")\r\n        {\r\n            this.dismiss();\r\n        }\r\n        else if(BtnName == \"BtnSure\")\r\n        {\r\n            cc.log('ReferralCodeView.callBackBtn,ReferralCode = ' + this.ReferralCode.string);\r\n            if(this.ReferralCode.string == \"\")\r\n            {\r\n                ToastView.show('推荐码不能为空！');\r\n                return;\r\n            }\r\n\r\n\r\n            var data = {\r\n                referralid : Number(this.ReferralCode.string),\r\n            };\r\n\r\n            MessageFactory.createMessageReq(US_REQ_BIND_REFERRAL_CMD_ID).send(data);\r\n\r\n            this.dismiss();\r\n        }\r\n    }\r\n});\r\n"
+  ]
+}

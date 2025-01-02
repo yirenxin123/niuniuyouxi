@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Tips_on",
+    "texture": "41310e5f-2f4f-4103-8d0b-9af9f9d1c9e3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      103,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      103,
+      86
+    ]
+  }
+}

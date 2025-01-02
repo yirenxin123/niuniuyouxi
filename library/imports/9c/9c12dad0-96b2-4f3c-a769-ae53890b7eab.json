@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "SubFlag",
+    "texture": "9bb98f4e-d44b-404d-8d58-6d11f7fa121a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      48,
+      11
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      48,
+      11
+    ]
+  }
+}

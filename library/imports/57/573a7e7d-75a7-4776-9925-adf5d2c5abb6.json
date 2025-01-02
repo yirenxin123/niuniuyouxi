@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "PopBgSmall",
+    "texture": "2e088459-f08c-4e02-aa5c-1037e0c41aaf",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      947,
+      511
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      947,
+      511
+    ]
+  }
+}

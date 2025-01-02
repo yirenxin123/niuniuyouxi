@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Sure_on",
+    "texture": "a3a7d01b-a527-4cbd-8add-78731a1a5535",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      600,
+      117
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      600,
+      117
+    ]
+  }
+}

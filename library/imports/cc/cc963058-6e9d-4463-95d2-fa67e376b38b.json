@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "MessageCell",
+    "texture": "4f43b7b4-796c-4f4d-a72b-49729d0f2649",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      990,
+      387
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      990,
+      387
+    ]
+  }
+}

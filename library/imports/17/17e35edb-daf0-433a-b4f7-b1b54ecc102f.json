@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_CreateRoomDiamondOn",
+    "texture": "bafc91cd-3931-4ee2-b895-2e8bb1b1139e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      526,
+      137
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      526,
+      137
+    ]
+  }
+}

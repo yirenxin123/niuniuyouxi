@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MusicMgr",
+    "require",
+    "Audio_Common",
+    "GameSystem",
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "time",
+    "timeLabel",
+    "Label",
+    "onLoad",
+    "updateTimeLabel",
+    "label",
+    "string",
+    "Number",
+    "node",
+    "active",
+    "playEffect",
+    "AUDIO_TIME",
+    "setActive"
+  ],
+  "mappings": ";;AAAA,IAAIA,WAAWC,QAAQ,UAAR,CAAf;AACA,IAAIC,eAAeD,QAAQ,cAAR,CAAnB;AACA,IAAIE,aAAeF,QAAQ,YAAR,CAAnB;;AAEAG,GAAGC,KAAH,CAAS;;AAELC,aAASF,GAAGG,SAFP;;AAILC,gBAAY;AACRC,cAAO,CADC;AAERC,mBAAYN,GAAGO;AAFP,KAJP;;AASL;AACAC,YAAQ,kBAAY,CAEnB,CAZI;;AAcLC,qBAAkB,yBAAUC,KAAV,EAAiB;AAC/B,aAAKJ,SAAL,CAAeK,MAAf,GAAwBD,KAAxB;AACA,YAAGE,OAAOF,KAAP,KAAiB,CAAjB,IAAsB,KAAKG,IAAL,CAAUC,MAAnC,EACA;AACClB,qBAASmB,UAAT,CAAoBjB,aAAakB,UAAjC;AACA;AAEJ,KArBI;;AAuBLC,eAAY,mBAAUH,MAAV,EAAkB;AAC1B,aAAKD,IAAL,CAAUC,MAAV,GAAmBA,MAAnB;AACH;AAzBI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var MusicMgr = require('MusicMgr');\r\nvar Audio_Common = require('Audio_Common');\r\nvar GameSystem   = require('GameSystem');\r\n\r\ncc.Class({\r\n\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        time : 0,\r\n        timeLabel : cc.Label,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n\r\n    },\r\n\r\n    updateTimeLabel : function (label) {\r\n        this.timeLabel.string = label;\r\n        if(Number(label) <= 3 && this.node.active)\r\n        {\r\n        \tMusicMgr.playEffect(Audio_Common.AUDIO_TIME);\r\n        }\r\n\r\n    },\r\n\r\n    setActive : function (active) {\r\n        this.node.active = active;\r\n    },\r\n});\r\n"
+  ]
+}

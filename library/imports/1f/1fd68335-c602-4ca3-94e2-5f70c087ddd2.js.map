@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GamePlayer",
+    "GameSystem",
+    "EnterRoomReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_REQ_ENTER_GAME_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "JSON",
+    "stringify",
+    "data",
+    "seq",
+    "uid",
+    "gamesvcid",
+    "getInstance",
+    "tableid",
+    "GlobalEventManager",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA,IAAIE,aAAaF,QAAQ,YAAR,CAAjB;;AAEA,SAASG,kBAAT,GAA8B;AAC1BJ,eAAWK,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EAD0B,CACG;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,wBAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,WAAGC,GAAH,CAAO,6BAA4BC,KAAKC,SAAL,CAAeJ,GAAf,CAAnC;;AAEA,aAAKK,IAAL,GAAY;AACRT,iBAAK,KAAKA,GADF;AAERU,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA,GAHF;AAIRC,uBAAYf,WAAWgB,WAAX,GAAyBD,SAJ7B;AAKRE,qBAAUjB,WAAWgB,WAAX,GAAyBC;;AAL3B,SAAZ;AAQA;AACAC,2BAAmBF,WAAnB,GAAiCG,SAAjC,CAA2Cf,OAAOgB,mBAAlD,EAAuE,IAAvE;AACH,KAbD;AAcH;;AAEDC,OAAOC,OAAP,GAAkBrB,kBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/26.\r\n */\r\nvar MessageReq = require(\"MessageReq\");\r\nvar GamePlayer = require('GamePlayer');\r\nvar GameSystem = require('GameSystem')\r\n\r\nfunction EnterRoomReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_ENTER_GAME_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"EnterRoomReqPacket.send,\"+ JSON.stringify(msg));\r\n\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n            gamesvcid : GameSystem.getInstance().gamesvcid,\r\n            tableid : GameSystem.getInstance().tableid,\r\n\r\n        }\r\n        //cc.log(\"EnterRoomReqPacket,\" + JSON.stringify(this.data));\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  EnterRoomReqPacket;"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Label_off",
+    "texture": "96076254-e7a5-4602-9324-f671f58b62de",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      433,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      433,
+      86
+    ]
+  }
+}

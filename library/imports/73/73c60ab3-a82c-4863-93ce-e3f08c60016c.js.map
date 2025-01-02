@@ -1,0 +1,27 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "Message",
+    "require",
+    "MessageReq",
+    "apply",
+    "seq",
+    "SocketSeq",
+    "send",
+    "sendHead",
+    "data",
+    "cmd",
+    "qeq",
+    "uid",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,UAAUC,QAAQ,SAAR,CAAd;;AAEA,SAASC,UAAT,GACA;AACIF,YAAQG,KAAR,CAAc,IAAd,EAAmB,EAAnB,EADJ,CAC6B;;AAEzB,SAAKC,GAAL,GAAWC,WAAX;;AAEA,SAAKC,IAAL,GAAY,YACZ,CACC,CAFD;;AAIA,SAAKC,QAAL,GAAgB,YAAY;AACxB,aAAKC,IAAL,CAAUC,GAAV,GAAgB,KAAKA,GAArB;AACA,aAAKD,IAAL,CAAUE,GAAV,GAAgB,KAAKN,GAArB;AACA,aAAKI,IAAL,CAAUG,GAAV,GAAgB,KAAKA,GAArB;AAEH,KALD;AAMH;;AAGDC,OAAOC,OAAP,GAAiBX,UAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/22.\r\n */\r\n\r\nvar Message = require('Message');\r\n\r\nfunction MessageReq()\r\n{\r\n    Message.apply(this,[]);  //集成父类数据\r\n\r\n    this.seq = SocketSeq++;\r\n\r\n    this.send = function()\r\n    {\r\n    };\r\n\r\n    this.sendHead = function () {\r\n        this.data.cmd = this.cmd;\r\n        this.data.qeq = this.seq;\r\n        this.data.uid = this.uid;\r\n\r\n    };\r\n}\r\n\r\n\r\nmodule.exports = MessageReq;"
+  ]
+}

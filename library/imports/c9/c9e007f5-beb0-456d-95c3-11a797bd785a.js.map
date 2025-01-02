@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GetMsgListReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_REQ_MSG_LIST_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "param",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA;;;;;;;;;;;;;;;;AAgBA,SAASC,mBAAT,GAA+B;AAC3BF,eAAWG,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EAD2B,CACE;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,sBAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,WAAGC,GAAH,CAAO,yBAAP;;AAEA,aAAKC,IAAL,GAAY;AACRP,iBAAK,KAAKA,GADF;AAERQ,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA,GAHF;AAIRC,mBAAQN;AAJA,SAAZ;AAMAO,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2CZ,OAAOa,mBAAlD,EAAuE,IAAvE;AACH,KAVD;AAWH;;AAEDC,OAAOC,OAAP,GAAkBlB,mBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/4/13.\r\n */\r\nvar MessageReq = require(\"MessageReq\");\r\n/*\r\n* const (\r\n E_SYSTEM_MSG_T = 1\r\n E_CLUB_MSG_T   = 2\r\n E_MAIL_MSG_T   = 3\r\n )\r\n type US_REQ_MSG_LIST_T struct {\r\n JsonHead\r\n Param PARAM_REQ_MSG_LIST_T `json:\"param\"`\r\n }\r\n type PARAM_REQ_MSG_LIST_T struct {\r\n Type  int `json:\"type\"`\r\n Start int `json:\"start\"`\r\n Total int `json:\"total\"`\r\n }\r\n* */\r\nfunction GetMsgListReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_MSG_LIST_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"GetMsgNumReqPacket.send\");\r\n\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n            param : msg,\r\n        }\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  GetMsgListReqPacket;"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Charge_off",
+    "texture": "7eb4ef72-9365-41c2-9e6d-80725085a88d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      46,
+      52
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      46,
+      52
+    ]
+  }
+}

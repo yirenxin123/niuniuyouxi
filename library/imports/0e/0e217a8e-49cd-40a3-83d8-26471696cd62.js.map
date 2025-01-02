@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GamePlayer",
+    "GameSystem",
+    "ModifyClubInfoReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "CLUB_REQ_MODIFY_INFO_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "clubid",
+    "param",
+    "headurl",
+    "address",
+    "name",
+    "intro",
+    "level",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA;;;;;;;;;;;;;AAaA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA,IAAIE,aAAaF,QAAQ,YAAR,CAAjB;;AAEA,SAASG,uBAAT,GAAmC;AAC/BJ,eAAWK,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EAD+B,CACF;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,2BAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,WAAGC,GAAH,CAAO,8BAAP;;AAEA,aAAKC,IAAL,GAAY;AACRP,iBAAQ,KAAKA,GADL;AAERQ,iBAAQ,KAAKA,GAFL;AAGRC,iBAAQ,KAAKA,GAHL;AAIRC,oBAAQN,IAAIM,MAJJ;AAKRC,mBAAQ;AACJC,yBAAUR,IAAIQ,OADV;AAEJC,yBAAUT,IAAIS,OAFV;AAGJC,sBAAUV,IAAIU,IAHV;AAIJC,uBAAUX,IAAIW,KAJV;AAKJC,uBAAUZ,IAAIY;AALV;AALA,SAAZ;;AAcAC,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2ClB,OAAOmB,mBAAlD,EAAuE,IAAvE;AACH,KAlBD;AAmBH;;AAEDC,OAAOC,OAAP,GAAkBxB,uBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/4/8.\r\n */\r\n\r\n/*\r\n* type CLUB_REQ_MODIFY_INFO_T struct {\r\n ClubHead\r\n Param PARAM_REQ_MODIFY_INFO_T `json:\"param\"`\r\n }\r\n type PARAM_REQ_MODIFY_INFO_T struct {\r\n HeadUrl string `json:\"headurl\"`\r\n Address string `json:\"address\"`\r\n Intro   string `json:\"intro\"`\r\n Level   int    `json:\"level\"`\r\n Renew   int    `json:\"renew\"` //续费, 如果不续费就是0\r\n }\r\n* */\r\nvar MessageReq = require(\"MessageReq\");\r\nvar GamePlayer = require('GamePlayer');\r\nvar GameSystem = require('GameSystem')\r\n\r\nfunction ModifyClubInfoReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.CLUB_REQ_MODIFY_INFO_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"ModifyClubInfoReqPacket.send\");\r\n\r\n        this.data = {\r\n            cmd   : this.cmd,\r\n            seq   : this.seq,\r\n            uid   : this.uid,\r\n            clubid: msg.clubid,\r\n            param : {\r\n                headurl : msg.headurl,\r\n                address : msg.address,\r\n                name    : msg.name,\r\n                intro   : msg.intro,\r\n                level   : msg.level,\r\n            }\r\n        }\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  ModifyClubInfoReqPacket;"
+  ]
+}

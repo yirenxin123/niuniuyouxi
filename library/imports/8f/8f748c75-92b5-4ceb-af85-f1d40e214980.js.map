@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "CreateRoomRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_CREATE_TABLE_CMD_ID",
+    "privateid",
+    "gamesvcid",
+    "tableid",
+    "gamelevel",
+    "gameid",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "clubid",
+    "clublevel",
+    "privateids",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;AACA;;;;;;;;;;;;;;;AAeA,SAASC,oBAAT,GAAgC;AAC5BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD4B,CACE;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,2BAAlB;AACA,SAAKC,SAAL,GAAiB,CAAjB,CAJ4B,CAIA;AAC5B,SAAKC,SAAL,GAAiB,CAAjB,CAL4B,CAKA;AAC5B,SAAKC,OAAL,GAAe,CAAf,CAN4B,CAMA;AAC5B,SAAKC,SAAL,GAAiB,CAAjB;AACA,SAAKC,MAAL,GAAc,CAAd;AACA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;AAC5B;AACA;AACA;AACA,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ,aAAKR,MAAL,GAAcE,IAAIF,MAAlB;AACA,aAAKS,MAAL,GAAcP,IAAIO,MAAlB;AACA,aAAKC,SAAL,GAAiBR,IAAIQ,SAArB;AACA,aAAKd,SAAL,GAAiBM,IAAIS,UAArB;AACA,aAAKd,SAAL,GAAiBK,IAAIL,SAArB;AACA,aAAKC,OAAL,GAAeI,IAAIJ,OAAnB;AACA,aAAKC,SAAL,GAAiBG,IAAIH,SAArB;AACA,aAAKC,MAAL,GAAcE,IAAIF,MAAlB;AACA;AACH,KAnBD;AAoBH;;AAEDY,OAAOC,OAAP,GAAkBtB,oBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/23.\r\n */\r\n\r\nvar MessageResp = require(\"MessageResp\");\r\n/*\r\n*\r\n* type US_RESP_CREATE_TABLE_T struct {\r\n JsonHead\r\n RespHead\r\n ClubId     int    `json:\"clubid\"`           //如果是普通玩家，=0\r\n ClubLevel  int    `json:\"clublevel\"`  //俱乐部等级\r\n PrivateIds []int  `json:\"privateids\"` //如果ret_success, privateIds[0]是新生成的6位数值，\r\n //如果RET_FULL_PRIVATE_TABLE = -48 代表您创建的私人桌已经达到上线,\r\n //\tprivateids是所以创建过的6位数, 界面提示玩家已经创建了哪些私人桌\r\n GameId     uint16 `json:\"gameid\"`\r\n GameLevel  uint16 `json:\"gamelevel\"`\r\n GameSvcId  uint32 `json:\"gamesvcid\"` //游戏服务器ID\r\n TableId    int32  `json:\"tableid\"`   //游戏中某张桌子ID\r\n }*/\r\nfunction CreateRoomRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_CREATE_TABLE_CMD_ID;\r\n    this.privateid = 0;         //六位数的桌子ID(房间)\r\n    this.gamesvcid = 0;         //游戏服务器ID\r\n    this.tableid = 0;           //游戏中某张桌子ID\r\n    this.gamelevel = 1;\r\n    this.gameid = 0;\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n        //{\"cmd\":196616,\"seq\":4,\"uid\":11407,\"code\":0,\"desc\":\"执行成功\",\r\n        // \"clubid\":0,\"clublevel\":0,\"privateids\":[917473],\"gameid\":101,\r\n        // \"gamelevel\":2,\"gamesvcid\":7,\"tableid\":917473}\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        this.gameid = msg.gameid;\r\n        this.clubid = msg.clubid;\r\n        this.clublevel = msg.clublevel;\r\n        this.privateid = msg.privateids;\r\n        this.gamesvcid = msg.gamesvcid;\r\n        this.tableid = msg.tableid;\r\n        this.gamelevel = msg.gamelevel;\r\n        this.gameid = msg.gameid;\r\n        //GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  CreateRoomRespPacket;\r\n"
+  ]
+}

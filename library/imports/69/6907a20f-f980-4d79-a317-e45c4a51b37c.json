@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "LabelTime",
+    "texture": "13fcd8f1-0782-4490-abb1-df10aef0099a",
+    "atlas": "",
+    "rect": [
+      2,
+      7,
+      505,
+      66
+    ],
+    "offset": [
+      -0.5,
+      -1.5
+    ],
+    "originalSize": [
+      510,
+      77
+    ]
+  }
+}

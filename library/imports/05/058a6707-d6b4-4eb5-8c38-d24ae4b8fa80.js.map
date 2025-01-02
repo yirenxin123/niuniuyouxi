@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "UserName",
+    "Label",
+    "Uid",
+    "CarryCoin",
+    "ZhanGuo",
+    "WinScore",
+    "Head",
+    "Sprite",
+    "onLoad",
+    "setScoreInfo",
+    "msg",
+    "UpdateWXHeadIcon",
+    "headurl",
+    "string",
+    "uid",
+    "name",
+    "carrycoin",
+    "coin",
+    "wincoin",
+    "node",
+    "color",
+    "Color",
+    "GREEN"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,kBAAYL,GAAGM,KADP;AAERC,aAAYP,GAAGM,KAFP;AAGRE,mBAAYR,GAAGM,KAHP;AAIRG,iBAAYT,GAAGM,KAJP;AAKRI,kBAAYV,GAAGM,KALP;AAMRK,cAAOX,GAAGY;AANF,KAHP;;AAYL;AACAC,YAAQ,kBAAY,CAEnB,CAfI;;AAiBL;AACAC,kBAAe,sBAAUC,GAAV,EAAe;AAC1BC,yBAAiBD,IAAIE,OAArB,EAA6B,KAAKN,IAAlC;;AAEA,aAAKJ,GAAL,CAASW,MAAT,GAAwBH,IAAII,GAA5B;AACA,aAAKd,QAAL,CAAca,MAAd,GAAwBH,IAAIK,IAA5B;AACA,aAAKZ,SAAL,CAAeU,MAAf,GAAwB,OAAOH,IAAIM,SAAnC;;AAEA,YAAIC,OAAOP,IAAIM,SAAJ,GAAgBN,IAAIQ,OAA/B;AACA,aAAKd,OAAL,CAAaS,MAAb,GAAwB,OAAOI,IAA/B;;AAEA,YAAIP,IAAIQ,OAAJ,GAAc,CAAlB,EACA;AACI,iBAAKb,QAAL,CAAcQ,MAAd,GAAuB,MAAMH,IAAIQ,OAAjC;AACH,SAHD,MAIK,IAAIR,IAAIQ,OAAJ,IAAe,CAAnB,EAAsB;AACvB,iBAAKb,QAAL,CAAcQ,MAAd,GAA2BH,IAAIQ,OAA/B;AACA,iBAAKb,QAAL,CAAcc,IAAd,CAAmBC,KAAnB,GAA2B,IAAIzB,GAAG0B,KAAP,CAAa,GAAb,EAAkB,GAAlB,EAAuB,EAAvB,EAA2B,GAA3B,CAA3B;AACH,SAHI,MAKL;AACI,iBAAKhB,QAAL,CAAcQ,MAAd,GAA2BH,IAAIQ,OAA/B;AACA,iBAAKb,QAAL,CAAcc,IAAd,CAAmBC,KAAnB,GAA2BzB,GAAG0B,KAAH,CAASC,KAApC;AACH;AACJ;;AAzCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        UserName  : cc.Label,\r\n        Uid       : cc.Label,\r\n        CarryCoin : cc.Label,\r\n        ZhanGuo   : cc.Label,\r\n        WinScore  : cc.Label,\r\n        Head : cc.Sprite,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n\r\n    },\r\n\r\n    //\"uid\":11279,\"name\":\"游客11279\",\"headurl\":\" \",\"carrycoin\":4000,\"wincoin\":-954\r\n    setScoreInfo : function (msg) {\r\n        UpdateWXHeadIcon(msg.headurl,this.Head);\r\n\r\n        this.Uid.string       = msg.uid;\r\n        this.UserName.string  = msg.name;\r\n        this.CarryCoin.string = \"带入\" + msg.carrycoin;\r\n\r\n        var coin = msg.carrycoin + msg.wincoin;\r\n        this.ZhanGuo.string   = \"战果\" + coin;\r\n\r\n        if (msg.wincoin > 0)\r\n        {\r\n            this.WinScore.string = \"+\" + msg.wincoin;\r\n        }\r\n        else if (msg.wincoin == 0) {\r\n            this.WinScore.string     = msg.wincoin;\r\n            this.WinScore.node.color = new cc.Color(204, 160, 41, 255);\r\n        }\r\n        else\r\n        {\r\n            this.WinScore.string     = msg.wincoin;\r\n            this.WinScore.node.color = cc.Color.GREEN;\r\n        }\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n});\r\n"
+  ]
+}

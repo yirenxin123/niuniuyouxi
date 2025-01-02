@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "CreateClubRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_CREATE_CLUB_CMD_ID",
+    "onMessage",
+    "msg",
+    "cc",
+    "log",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "param",
+    "clubid",
+    "owneruid",
+    "endtime",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA;;;;;;;;;;;AAWA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA,SAASC,oBAAT,GAAgC;AAC5BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD4B,CACE;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,0BAAlB;AACA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;AAC5BC,WAAGC,GAAH,CAAO,iCAAP;AACA;AACA,aAAKC,GAAL,GAAWH,IAAIG,GAAf;AACA,aAAKC,GAAL,GAAWJ,IAAII,GAAf;AACA,aAAKC,IAAL,GAAYL,IAAIK,IAAhB;AACA,aAAKC,IAAL,GAAYN,IAAIM,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ,aAAKC,KAAL,GAAgBT,IAAIS,KAApB;AACA,aAAKC,MAAL,GAAgBV,IAAIS,KAAJ,CAAUC,MAA1B;AACA,aAAKC,QAAL,GAAgBX,IAAIS,KAAJ,CAAUE,QAA1B;AACA,aAAKC,OAAL,GAAgBZ,IAAIS,KAAJ,CAAUG,OAA1B;AACH,KAbD;AAcH;;AAEDC,OAAOC,OAAP,GAAkBpB,oBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/31.\r\n */\r\n/*\r\n* type US_RESP_CREATE_CLUB_T struct {\r\n JsonHead\r\n RespHead\r\n Param PARAM_RESP_CREATE_CLUB_T `json:\"param\"`\r\n }\r\n type PARAM_RESP_CREATE_CLUB_T struct {\r\n ClubId   int    `json:\"clubid\"`\r\n OwnerUid uint32 `json:\"owneruid\"`\r\n EndTime  int64  `json:\"endtime\"`\r\n }*/\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\nfunction CreateClubRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_CREATE_CLUB_CMD_ID;\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n        cc.log(\"CreateClubRespPacket.onMesssage\");\r\n        //{\"cmd\":6553608,\"seq\":0,\"uid\":10006,\"code\":0,\"desc\":\"执行成功\",\"carryuid\":10006,\"carrycoin\":100}\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        this.param    = msg.param;\r\n        this.clubid   = msg.param.clubid;\r\n        this.owneruid = msg.param.owneruid;\r\n        this.endtime  = msg.param.endtime;\r\n    };\r\n}\r\n\r\nmodule.exports =  CreateClubRespPacket;"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BtnNotice",
+    "texture": "8a686f02-e10c-467a-8f41-ea3b39e6cc47",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      122,
+      122
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      122,
+      123
+    ]
+  }
+}

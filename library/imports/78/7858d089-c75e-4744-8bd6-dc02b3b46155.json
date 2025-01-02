@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "CurSelectionBg",
+    "texture": "a7b4c4b4-32ce-45b5-87c1-91230453a30c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      204,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      204,
+      90
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "eb689b91-3d19-471f-a30d-1c287baf4d67",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "FontServiceOnlineLabel": {
+      "ver": "1.0.3",
+      "uuid": "9725cae5-c6b9-42cd-8367-cf91e15c9fe4",
+      "rawTextureUuid": "eb689b91-3d19-471f-a30d-1c287baf4d67",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 209,
+      "height": 54,
+      "rawWidth": 209,
+      "rawHeight": 54,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

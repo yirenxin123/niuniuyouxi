@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "NotifyOwnerOverPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_NOTFIY_OWNER_TABLEINFO_CMD_ID",
+    "gamesvcid",
+    "tableid",
+    "privateid",
+    "tablename",
+    "remaintime",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA;;;;;;;;;;;;;;;AAeA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA,SAASC,qBAAT,GAAiC;AAC7BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD6B,CACC;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,gCAAlB;AACA,SAAKC,SAAL,GAAiB,CAAjB;AACA,SAAKC,OAAL,GAAe,CAAf;AACA,SAAKC,SAAL,GAAiB,CAAjB;AACA,SAAKC,SAAL,GAAiB,EAAjB;AACA,SAAKC,UAAL,GAAkB,CAAlB;AACA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;;AAEJ,aAAKZ,SAAL,GAAiBM,IAAIN,SAArB;AACA,aAAKC,OAAL,GAAeK,IAAIL,OAAnB;AACA,aAAKC,SAAL,GAAiBI,IAAIJ,SAArB;AACA,aAAKC,SAAL,GAAiBG,IAAIH,SAArB;AACA,aAAKC,UAAL,GAAkBE,IAAIF,UAAtB;AACH,KAdD;AAeH;;AAEDS,OAAOC,OAAP,GAAkBnB,qBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/1.\r\n */\r\n\r\n/*\r\n* type MAIL_MSG_OWNER_OVER_TABLE_T struct {\r\n GameSvcId uint32 `json:\"gamesvcid\"`\r\n TableId   int32  `json:\"tableid\"`\r\n PrivateId int    `json:\"privateid\"`\r\n TableName string `jons:\"tablename\"`\r\n RemainTime int   `json:\"remaintime\"` //秒\r\n }\r\n\r\n //通知桌主，本桌游戏结束\r\n type US_NOTIFY_OWNER_OVER_TABLE_T struct {\r\n JsonHead\r\n Param MAIL_MSG_OWNER_OVER_TABLE_T `json:\"param\"`\r\n }\r\n* */\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\nfunction NotifyOwnerOverPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_NOTFIY_OWNER_TABLEINFO_CMD_ID;\r\n    this.gamesvcid = 0;\r\n    this.tableid = 0;\r\n    this.privateid = 0;\r\n    this.tablename = \"\";\r\n    this.remaintime = 0;\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n\r\n        this.gamesvcid = msg.gamesvcid;\r\n        this.tableid = msg.tableid;\r\n        this.privateid = msg.privateid;\r\n        this.tablename = msg.tablename;\r\n        this.remaintime = msg.remaintime;\r\n    };\r\n}\r\n\r\nmodule.exports =  NotifyOwnerOverPacket;"
+  ]
+}

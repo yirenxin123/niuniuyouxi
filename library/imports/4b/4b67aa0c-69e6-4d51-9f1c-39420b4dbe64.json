@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "FontCommit",
+    "texture": "768454ed-a279-4d34-9e93-b1ad19ce1503",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      93,
+      44
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      93,
+      44
+    ]
+  }
+}

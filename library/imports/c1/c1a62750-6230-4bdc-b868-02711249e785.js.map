@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "CreateTableCostRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_CREATE_COST_CMD_ID",
+    "list",
+    "onMessage",
+    "msg",
+    "cc",
+    "log",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;;;;;;;;;;;;;;AAiBA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA,SAASC,yBAAT,GAAqC;AACjCF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EADiC,CACH;;AAE9B,SAAKC,GAAL,GAAYC,OAAOC,0BAAnB;AACA,SAAKC,IAAL,GAAY,EAAZ;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;AAC5BC,WAAGC,GAAH,CAAO,qCAAP;AACA,aAAKC,GAAL,GAAYH,IAAIG,GAAhB;AACA,aAAKC,GAAL,GAAYJ,IAAII,GAAhB;AACA,aAAKC,IAAL,GAAYL,IAAIK,IAAhB;AACA,aAAKC,IAAL,GAAYN,IAAIM,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;;AAEJ,aAAKV,IAAL,GAAYE,IAAIF,IAAhB;AACH,KAVD;AAWH;;AAEDW,OAAOC,OAAP,GAAkBjB,yBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/*\r\n\r\n type US_RESP_CREATE_COST_T struct {\r\n     JsonHead\r\n     RespHead\r\n     List []PRIVATE_TABLE_COST_T `json:\"list\"`\r\n }\r\n\r\n type PRIVATE_TABLE_COST_T struct {\r\n     Type    int `json:\"type\"`    //1: live time 2: min ante\r\n     Value   int `json:\"value\"`   //second or ante\r\n     Diamond int `json:\"diamond\"` //消耗钻石\r\n     Gold    int `json:\"gold\"`    //消耗金币\r\n }\r\n\r\n*/\r\n\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\nfunction CreateTableCostRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd  = window.US_RESP_CREATE_COST_CMD_ID;\r\n    this.list = [];\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n        cc.log(\"CreateTableCostRespPacket.onMessage\");\r\n        this.seq  = msg.seq;\r\n        this.uid  = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n\r\n        this.list = msg.list;\r\n    };\r\n}\r\n\r\nmodule.exports =  CreateTableCostRespPacket;\r\n"
+  ]
+}

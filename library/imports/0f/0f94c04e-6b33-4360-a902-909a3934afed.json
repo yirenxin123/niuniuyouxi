@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_NotCallBanker_on",
+    "texture": "47080b08-10cf-443a-a91c-3d191f41d9a0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      164,
+      165
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      164,
+      165
+    ]
+  }
+}

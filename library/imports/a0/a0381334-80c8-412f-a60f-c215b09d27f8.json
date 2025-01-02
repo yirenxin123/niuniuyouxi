@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "PermissionBg",
+    "texture": "79202aa6-5f67-493c-8ff5-51282bb72d2a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1038,
+      389
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1038,
+      389
+    ],
+    "capInsets": [
+      24,
+      31,
+      17,
+      31
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_SuperCallBanker_on",
+    "texture": "7403d0ce-9e7b-4fc3-9485-08d37cbe2e96",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      164,
+      165
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      164,
+      165
+    ]
+  }
+}

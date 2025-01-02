@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_find_off",
+    "texture": "28f5b82b-daf9-4cdc-8d0a-2e3e697cd2b1",
+    "atlas": "",
+    "rect": [
+      10,
+      10,
+      79,
+      79
+    ],
+    "offset": [
+      -0.5,
+      0.5
+    ],
+    "originalSize": [
+      100,
+      100
+    ]
+  }
+}

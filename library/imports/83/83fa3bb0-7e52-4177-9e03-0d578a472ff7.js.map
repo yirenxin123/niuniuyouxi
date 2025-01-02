@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "GetMsgNumRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_NEW_MSG_NUM_CMD_ID",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "sysnum",
+    "param",
+    "clubnum",
+    "mailnum",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA;;;;;;;;;;;;;AAaA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA,SAASC,mBAAT,GAA+B;AAC3BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD2B,CACG;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,0BAAlB;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ,aAAKC,MAAL,GAAcP,IAAIQ,KAAJ,CAAUD,MAAxB;AACA,aAAKE,OAAL,GAAeT,IAAIQ,KAAJ,CAAUC,OAAzB;AACA,aAAKC,OAAL,GAAeV,IAAIQ,KAAJ,CAAUE,OAAzB;AACH,KAXD;AAYH;;AAEDC,OAAOC,OAAP,GAAkBlB,mBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/4/13.\r\n */\r\n\r\n/*\r\n* type US_RESP_NEW_MSG_NUM_T struct {\r\n JsonHead\r\n RespHead\r\n Param PARAM_NEW_MSG_NUM_T `json:\"param\"`\r\n }\r\n\r\n type PARAM_NEW_MSG_NUM_T struct {\r\n SysNum  int `json:\"sysnum\"`\r\n ClubNum int `json:\"clubnum\"`\r\n MailNum int `json:\"mailnum\"`\r\n }\r\n* */\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\nfunction GetMsgNumRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_NEW_MSG_NUM_CMD_ID;\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        this.sysnum = msg.param.sysnum;\r\n        this.clubnum = msg.param.clubnum;\r\n        this.mailnum = msg.param.mailnum;\r\n    };\r\n}\r\n\r\nmodule.exports =  GetMsgNumRespPacket;"
+  ]
+}

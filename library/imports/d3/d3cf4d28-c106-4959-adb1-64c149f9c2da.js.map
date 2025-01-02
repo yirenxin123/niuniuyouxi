@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "ClubUpgradeCostRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_CLUB_UPGRADE_COST_CMD_ID",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "list",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;AAEA,SAASC,yBAAT,GAAqC;AACjCF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EADiC,CACH;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,gCAAlB;;AAEA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;AAC5B,aAAKC,GAAL,GAAYD,IAAIC,GAAhB;AACA,aAAKC,GAAL,GAAYF,IAAIE,GAAhB;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,aAAKC,IAAL,GAAYL,IAAIK,IAAhB;AACH,KAND;AAOH;;AAEDC,OAAOC,OAAP,GAAiBb,yBAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by zhouxueshi on 2017/5/6.\r\n */\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\n// type US_RESP_CLUB_UPGRADE_COST_T struct {\r\n//     JsonHead\r\n//     RespHead\r\n//     List []CLUB_COST_T `json:\"list\"`\r\n// }\r\n//\r\n// type CLUB_COST_T struct {\r\n//     Level     int `json:\"level\"`\r\n//     LiveTime  int `json:\"livetime\"`\r\n//     Diamond   int `json:\"diamond\"`\r\n//     MaxPeople int `json:\"maxpeople\"`\r\n//     MaxTable  int `json:\"maxtable\"`\r\n// }\r\n\r\nfunction ClubUpgradeCostRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_CLUB_UPGRADE_COST_CMD_ID;\r\n\r\n    this.onMessage = function (msg) {\r\n        this.seq  = msg.seq;\r\n        this.uid  = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        this.list = msg.list;\r\n    };\r\n}\r\n\r\nmodule.exports = ClubUpgradeCostRespPacket;"
+  ]
+}

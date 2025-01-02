@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "Player",
+    "uid",
+    "name",
+    "headurl",
+    "sex",
+    "gold",
+    "diamond",
+    "coin",
+    "seatid",
+    "status",
+    "bowner",
+    "winGold",
+    "TotalCarry",
+    "TotalRound",
+    "TotalTable",
+    "fileId",
+    "calltype",
+    "bBanker",
+    "betcoinmul",
+    "bOpenCard",
+    "bulltype",
+    "cards",
+    "finalcoin",
+    "roomcard",
+    "setSeatId",
+    "cc",
+    "log",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,SAASA,MAAT,GAAkB;AACd,SAAKC,GAAL,GAAkB,CAAlB;AACA,SAAKC,IAAL,GAAkB,EAAlB;AACA,SAAKC,OAAL,GAAkB,EAAlB;AACA,SAAKC,GAAL,GAAkB,CAAlB;AACA,SAAKC,IAAL,GAAkB,CAAlB,CALc,CAKO;AACrB,SAAKC,OAAL,GAAkB,CAAlB,CANc,CAMO;AACrB,SAAKC,IAAL,GAAkB,CAAlB,CAPc,CAOO;AACrB,SAAKC,MAAL,GAAkB,CAAC,CAAnB,CARc,CAQO;AACrB,SAAKC,MAAL,GAAkB,CAAlB;AACA,SAAKC,MAAL,GAAkB,CAAlB;AACA,SAAKC,OAAL,GAAkB,CAAlB;AACA,SAAKC,UAAL,GAAkB,CAAlB;AACA,SAAKC,UAAL,GAAkB,CAAlB;AACA,SAAKC,UAAL,GAAkB,CAAlB;AACA,SAAKC,MAAL,GAAkB,EAAlB;AACA,SAAKC,QAAL,GAAkB,CAAlB,CAhBc,CAgBQ;AACtB,SAAKC,OAAL,GAAkB,CAAlB,CAjBc,CAiBQ;AACtB,SAAKC,UAAL,GAAkB,CAAlB,CAlBc,CAkBQ;AACtB,SAAKC,SAAL,GAAkB,CAAlB,CAnBc,CAmBQ;AACtB,SAAKC,QAAL,GAAkB,CAAlB;AACA,SAAKC,KAAL,GAAkB,EAAlB;AACA,SAAKC,SAAL,GAAkB,CAAlB;AACA,SAAKC,QAAL,GAAkB,CAAlB,CAvBc,CAuBO;AACxB;;AAEDvB,OAAOwB,SAAP,GAAmB,UAAUhB,MAAV,EAAkB;AACjCiB,OAAGC,GAAH,CAAO,+BAA+BlB,MAAtC;AACA,SAAKA,MAAL,GAAcA,MAAd;AACH,CAHD;;AAKAmB,OAAOC,OAAP,GAAiB5B,MAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/22.\r\n */\r\n\r\nfunction Player() {\r\n    this.uid        = 0;\r\n    this.name       = \"\";\r\n    this.headurl    = \"\";\r\n    this.sex        = 0;\r\n    this.gold       = 0; //身上金币\r\n    this.diamond    = 0; //身上钻石\r\n    this.coin       = 0; //携带金币\r\n    this.seatid     = -1;//没有坐下\r\n    this.status     = 0;\r\n    this.bowner     = 0;\r\n    this.winGold    = 0;\r\n    this.TotalCarry = 0;\r\n    this.TotalRound = 0;\r\n    this.TotalTable = 0;\r\n    this.fileId     = \"\";\r\n    this.calltype   = 0;  //叫庄类型\r\n    this.bBanker    = 0;  //是否是庄家\r\n    this.betcoinmul = 0;  //下注倍数\r\n    this.bOpenCard  = 0;  //是否看牌\r\n    this.bulltype   = 0;\r\n    this.cards      = [];\r\n    this.finalcoin  = 0;\r\n    this.roomcard   = 0; // 房卡数量\r\n}\r\n\r\nPlayer.setSeatId = function (seatid) {\r\n    cc.log(\"Palyer.setSeadId,seatid = \" + seatid);\r\n    this.seatid = seatid;\r\n}\r\n\r\nmodule.exports = Player;"
+  ]
+}

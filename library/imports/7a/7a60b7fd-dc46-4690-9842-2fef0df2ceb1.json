@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "PointOn",
+    "texture": "2d1e111b-2ce2-4e03-9448-6e2b905e42d0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      21,
+      21
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      22,
+      21
+    ]
+  }
+}

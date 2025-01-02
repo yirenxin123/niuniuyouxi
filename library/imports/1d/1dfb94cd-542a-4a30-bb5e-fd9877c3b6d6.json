@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "anim_youwi1",
+    "texture": "c8655846-c2d6-465e-bb67-f05ba8b8be38",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      554,
+      200
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      554,
+      200
+    ]
+  }
+}

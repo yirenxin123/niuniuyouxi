@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "SuperNotCallBankerFlag",
+    "texture": "6dea8b49-484a-4b47-ada7-b4fd72a51501",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      171,
+      48
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      171,
+      48
+    ]
+  }
+}

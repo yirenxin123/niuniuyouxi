@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "paomadeng",
+    "texture": "52dec6ff-68d9-42b6-85ed-e377406bfdbc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1080,
+      58
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1080,
+      58
+    ]
+  }
+}

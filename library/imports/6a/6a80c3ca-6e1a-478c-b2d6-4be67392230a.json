@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "SysMsg",
+    "texture": "ffa1f536-78f8-4deb-aa48-1d3f7872baab",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      158,
+      158
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      158,
+      158
+    ]
+  }
+}

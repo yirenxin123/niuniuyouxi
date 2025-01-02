@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Dismiss_off",
+    "texture": "a1bd943b-39a0-43ef-b8a9-4a451f5a3ddd",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      304,
+      84
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      304,
+      84
+    ]
+  }
+}

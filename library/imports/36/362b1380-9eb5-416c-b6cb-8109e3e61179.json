@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BtnFlag",
+    "texture": "becfd5bb-1d48-470c-af30-a9a909d8568c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      33,
+      59
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      33,
+      59
+    ]
+  }
+}

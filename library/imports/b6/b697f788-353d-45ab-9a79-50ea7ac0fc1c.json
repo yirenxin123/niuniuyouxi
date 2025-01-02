@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "PlayerItemBg",
+    "texture": "73d9928a-7a9e-4b58-a011-ff50277d123f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      263,
+      137
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      263,
+      137
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_HadBullfight_on",
+    "texture": "ed2c1e3a-85d7-4bd3-b373-912435d35ab9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      164,
+      165
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      164,
+      165
+    ]
+  }
+}

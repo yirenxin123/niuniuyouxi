@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "CallBankerFlag",
+    "texture": "b058da76-1a60-4d25-bd6e-1e962cb693c1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      92,
+      51
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      92,
+      51
+    ]
+  }
+}

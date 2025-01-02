@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GameSystem",
+    "CreateClubReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_REQ_CREATE_CLUB_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "param",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA;;;;;;;;;;;;;;AAcA,SAASE,mBAAT,GAA+B;AAC3BH,eAAWI,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EAD2B,CACE;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,yBAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,WAAGC,GAAH,CAAO,yBAAP;AACA,aAAKC,IAAL,GAAY;AACRP,iBAAK,KAAKA,GADF;AAERQ,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA,GAHF;AAIRC,mBAASN;AAJD,SAAZ;;AAOAO,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2CZ,OAAOa,mBAAlD,EAAuE,IAAvE;AACH,KAVD;AAWH;;AAEDC,OAAOC,OAAP,GAAkBlB,mBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/31.\r\n */\r\n\r\nvar MessageReq = require(\"MessageReq\");\r\nvar GameSystem = require('GameSystem');\r\n/*\r\n* type US_REQ_CREATE_CLUB_T struct {\r\n JsonHead\r\n Param PARAM_REQ_CREATE_CLUB_T `json:\"param\"`\r\n }\r\n type PARAM_REQ_CREATE_CLUB_T struct {\r\n Name    string `json:\"name\"`\r\n HeadUrl string `json:\"headurl\"`\r\n Address string `json:\"address\"`\r\n Level   int    `json:\"level\"`\r\n Intro   string `json:\"intro\"`\r\n }\r\n* */\r\n\r\nfunction CreateClubReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_CREATE_CLUB_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"CarryCoinReqPacket.send\");\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n            param : (msg),\r\n        };\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  CreateClubReqPacket;"
+  ]
+}

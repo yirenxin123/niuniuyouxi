@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "FontQuitLogin",
+    "texture": "996ff46a-b6e3-4b81-b4b0-805540110f36",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      187,
+      45
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      187,
+      45
+    ]
+  }
+}

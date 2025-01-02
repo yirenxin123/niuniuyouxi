@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "TelBg",
+    "texture": "e68325d6-c03a-4ef9-94a8-356f690ec4bc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      506,
+      82
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      506,
+      82
+    ]
+  }
+}

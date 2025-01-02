@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "UserDetailRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_USER_DETAIL_CMD_ID",
+    "gold",
+    "diamond",
+    "playcount",
+    "wincount",
+    "losecount",
+    "tablecount",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA,SAASC,oBAAT,GAAgC;AAC5BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD4B,CACE;;AAE9B,SAAKC,GAAL,GAAkBC,OAAOC,0BAAzB;AACA,SAAKC,IAAL,GAAkB,CAAlB;AACA,SAAKC,OAAL,GAAkB,CAAlB;AACA,SAAKC,SAAL,GAAkB,CAAlB;AACA,SAAKC,QAAL,GAAkB,CAAlB;AACA,SAAKC,SAAL,GAAkB,CAAlB;AACA,SAAKC,UAAL,GAAkB,CAAlB;;AAEA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;AAC5B,aAAKC,GAAL,GAAYD,IAAIC,GAAhB;AACA,aAAKC,GAAL,GAAYF,IAAIE,GAAhB;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;;AAEJ,aAAKb,IAAL,GAAkBO,IAAIP,IAAtB;AACA,aAAKC,OAAL,GAAkBM,IAAIN,OAAtB;AACA,aAAKC,SAAL,GAAkBK,IAAIL,SAAtB;AACA,aAAKC,QAAL,GAAkBI,IAAIJ,QAAtB;AACA,aAAKC,SAAL,GAAkBG,IAAIH,SAAtB;AACA,aAAKC,UAAL,GAAkBE,IAAIF,UAAtB;AACH,KAdD;AAeH;;AAEDS,OAAOC,OAAP,GAAiBpB,oBAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "var MessageResp = require(\"MessageResp\");\r\n\r\nfunction UserDetailRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd        = window.US_RESP_USER_DETAIL_CMD_ID;\r\n    this.gold       = 0;\r\n    this.diamond    = 0;\r\n    this.playcount  = 0;\r\n    this.wincount   = 0;\r\n    this.losecount  = 0;\r\n    this.tablecount = 0;\r\n\r\n    this.onMessage = function (msg) {\r\n        this.seq  = msg.seq;\r\n        this.uid  = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n\r\n        this.gold       = msg.gold;\r\n        this.diamond    = msg.diamond;\r\n        this.playcount  = msg.playcount;\r\n        this.wincount   = msg.wincount;\r\n        this.losecount  = msg.losecount;\r\n        this.tablecount = msg.tablecount;\r\n    };\r\n}\r\n\r\nmodule.exports = UserDetailRespPacket;\r\n"
+  ]
+}

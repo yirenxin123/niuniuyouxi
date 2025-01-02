@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "CommodityCellBg",
+    "texture": "65838298-dff4-4624-90e8-62467ea1fe34",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1079,
+      239
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1079,
+      239
+    ]
+  }
+}

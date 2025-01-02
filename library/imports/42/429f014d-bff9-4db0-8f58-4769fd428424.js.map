@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "BasePop",
+    "require",
+    "MusicMgr",
+    "Audio_Common",
+    "GameSystem",
+    "cc",
+    "Class",
+    "extends",
+    "properties",
+    "onLoad",
+    "node",
+    "on",
+    "Node",
+    "EventType",
+    "TOUCH_START",
+    "event",
+    "log",
+    "stopPropagation",
+    "bind",
+    "scaleTo",
+    "bg",
+    "callbackBtnClose",
+    "playEffect",
+    "AUDIO_BTN_CLICK",
+    "dismiss",
+    "checkEventsRule",
+    "customEventData"
+  ],
+  "mappings": ";;AAAA,IAAIA,UAAUC,QAAQ,SAAR,CAAd;AACA,IAAIC,WAAWD,QAAQ,UAAR,CAAf;AACA,IAAIE,eAAeF,QAAQ,cAAR,CAAnB;AACA,IAAIG,aAAaH,QAAQ,YAAR,CAAjB;;AAEAI,GAAGC,KAAH,CAAS;AACLC,aAASP,OADJ;;AAGLQ,gBAAY,EAHP;;AAOL;AACAC,YAAQ,kBAAY;AAChB,aAAKC,IAAL,CAAUC,EAAV,CAAaN,GAAGO,IAAH,CAAQC,SAAR,CAAkBC,WAA/B,EAA4C,UAASC,KAAT,EAAe;AACvDV,eAAGW,GAAH,CAAO,YAAP;AACAD,kBAAME,eAAN;AACH,SAH2C,CAG1CC,IAH0C,CAGrC,IAHqC,CAA5C;;AAKA,aAAKC,OAAL,CAAa,KAAKC,EAAlB;AACH,KAfI;;AAiBL;AACA;;AAEA;;AAEAC,sBAAmB,4BACnB;AACCnB,iBAASoB,UAAT,CAAoBnB,aAAaoB,eAAjC;AACGlB,WAAGW,GAAH,CAAO,6BAAP;AACA,aAAKQ,OAAL;AACH,KA3BI;;AA6BLC,qBAAkB,yBAASV,KAAT,EAAgBW,eAAhB,EAAgC;AAC9CrB,WAAGW,GAAH,CAAO,wCAAwCD,KAAxC,GAAgD,oBAAhD,GAAuEW,eAA9E;AACH;AA/BI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var BasePop = require('BasePop');\r\nvar MusicMgr = require('MusicMgr');\r\nvar Audio_Common = require('Audio_Common');\r\nvar GameSystem = require(\"GameSystem\");\r\n\r\ncc.Class({\r\n    extends: BasePop,\r\n\r\n    properties: {\r\n\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.node.on(cc.Node.EventType.TOUCH_START, function(event){\r\n            cc.log(\"stop event\");\r\n            event.stopPropagation();\r\n        }.bind(this));\r\n        \r\n        this.scaleTo(this.bg);\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n    \r\n    callbackBtnClose : function()\r\n    {\r\n    \tMusicMgr.playEffect(Audio_Common.AUDIO_BTN_CLICK);\r\n        cc.log(\"RuleView : callbackBtnClose\");\r\n        this.dismiss();\r\n    },\r\n    \r\n    checkEventsRule : function(event, customEventData){\r\n        cc.log('RuleView : checkEventsRule,event = ' + event + ',customEventData =' + customEventData);\r\n    },\r\n});\r\n"
+  ]
+}

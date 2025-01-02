@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BatteryBar",
+    "texture": "8317a7bb-038f-4948-872c-067d382dc812",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      45,
+      27
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      45,
+      27
+    ]
+  }
+}

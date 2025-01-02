@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GamePlayer",
+    "GameSystem",
+    "JoinClubReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "CLUB_REQ_JOIN_CLUB_CMD_ID",
+    "send",
+    "clubid",
+    "msg",
+    "cc",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "param",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA,IAAIE,aAAaF,QAAQ,YAAR,CAAjB;AACA;;;;;;;;;;;;AAYA,SAASG,iBAAT,GAA6B;AACzBJ,eAAWK,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EADyB,CACI;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,yBAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,MAAV,EAAiBC,GAAjB,EAAsB;AAC9BC,WAAGC,GAAH,CAAO,wBAAP;;AAEA,aAAKC,IAAL,GAAY;AACRR,iBAAK,KAAKA,GADF;AAERS,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA,GAHF;AAIRN,oBAASA,MAJD;AAKRO,mBAAQN;AALA,SAAZ;;AAQAO,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2Cb,OAAOc,mBAAlD,EAAuE,IAAvE;AACH,KAZD;AAaH;;AAEDC,OAAOC,OAAP,GAAkBnB,iBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/4/9.\r\n */\r\n\r\nvar MessageReq = require(\"MessageReq\");\r\nvar GamePlayer = require('GamePlayer');\r\nvar GameSystem = require('GameSystem')\r\n/*\r\n*\r\n* type CLUB_REQ_JOIN_CLUB_T struct {\r\n ClubHead\r\n Param PARAM_REQ_JOIN_T `json:\"param\"`\r\n }\r\n type PARAM_REQ_JOIN_T struct {\r\n Uid     uint32 `json:\"uid\"`\r\n Name    string `json:\"name\"`\r\n HeadUrl string `json:\"headurl\"`\r\n Sex     int    `json:\"sex\"`\r\n }*/\r\nfunction JoinClubReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.CLUB_REQ_JOIN_CLUB_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (clubid,msg) {\r\n        cc.log(\"JoinClubReqPacket.send\");\r\n\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n            clubid : clubid,\r\n            param : msg,\r\n        }\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  JoinClubReqPacket;"
+  ]
+}

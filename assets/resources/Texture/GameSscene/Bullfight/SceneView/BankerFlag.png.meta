@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "31081de6-06ce-485f-9a86-68fd6dceed89",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "BankerFlag": {
+      "ver": "1.0.3",
+      "uuid": "4c28208c-06cc-4b2d-91d0-f8e00290c4ec",
+      "rawTextureUuid": "31081de6-06ce-485f-9a86-68fd6dceed89",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 44,
+      "height": 47,
+      "rawWidth": 44,
+      "rawHeight": 47,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

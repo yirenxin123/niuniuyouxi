@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "BasePop",
+    "require",
+    "MessageFactory",
+    "MusicMgr",
+    "Audio_Common",
+    "GameSystem",
+    "cc",
+    "Class",
+    "extends",
+    "properties",
+    "EditBox",
+    "onLoad",
+    "_super",
+    "callBackBtn",
+    "event",
+    "CustomEventData",
+    "BtnName",
+    "target",
+    "getName",
+    "log",
+    "playEffect",
+    "AUDIO_BTN_CLICK",
+    "dismiss",
+    "data",
+    "key",
+    "string",
+    "createMessageReq",
+    "US_REQ_SEARCH_CLUB_CMD_ID",
+    "send"
+  ],
+  "mappings": ";;AAAA,IAAIA,UAAUC,QAAQ,SAAR,CAAd;AACA,IAAIC,iBAAiBD,QAAQ,gBAAR,CAArB;AACA,IAAIE,WAAWF,QAAQ,UAAR,CAAf;AACA,IAAIG,eAAeH,QAAQ,cAAR,CAAnB;AACA,IAAII,aAAaJ,QAAQ,YAAR,CAAjB;;AAEAK,GAAGC,KAAH,CAAS;AACLC,aAASR,OADJ;;AAGLS,gBAAY;AACRC,iBAAUJ,GAAGI;AADL,KAHP;;AAOL;AACAC,YAAQ,kBAAY;AAChB,aAAKC,MAAL;AACH,KAVI;;AAYL;AACA;;AAEA;;AAEAC,iBAAc,qBAAUC,KAAV,EAAgBC,eAAhB,EAAiC;;AAE3C,YAAIC,UAAUF,MAAMG,MAAN,CAAaC,OAAb,EAAd;AACAZ,WAAGa,GAAH,CAAO,0CAA0CH,OAAjD;AACAb,iBAASiB,UAAT,CAAoBhB,aAAaiB,eAAjC;AACA,YAAGL,WAAW,UAAd,EAA0B;AACtB,iBAAKM,OAAL;AACH,SAFD,MAGK,IAAGN,WAAW,SAAd,EACL;AACI,gBAAIO,OAAO;AACPC,qBAAM,KAAKd,OAAL,CAAae;AADZ,aAAX;AAGAvB,2BAAewB,gBAAf,CAAgCC,yBAAhC,EAA2DC,IAA3D,CAAgEL,IAAhE;AACA,iBAAKD,OAAL;AACH;AACJ;AAjCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var BasePop = require('BasePop');\r\nvar MessageFactory = require('MessageFactory');\r\nvar MusicMgr = require('MusicMgr');\r\nvar Audio_Common = require('Audio_Common');\r\nvar GameSystem = require(\"GameSystem\");\r\n\r\ncc.Class({\r\n    extends: BasePop,\r\n\r\n    properties: {\r\n        EditBox : cc.EditBox,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this._super();\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n    \r\n    callBackBtn : function (event,CustomEventData) {\r\n\r\n        var BtnName = event.target.getName();\r\n        cc.log('ClubCreateView.callBackBtn,BtnName = ' + BtnName);\r\n        MusicMgr.playEffect(Audio_Common.AUDIO_BTN_CLICK);\r\n        if(BtnName == \"BtnClose\") {\r\n            this.dismiss();\r\n        }\r\n        else if(BtnName == \"BtnFind\")\r\n        {\r\n            var data = {\r\n                key : this.EditBox.string,\r\n            };\r\n            MessageFactory.createMessageReq(US_REQ_SEARCH_CLUB_CMD_ID).send(data);\r\n            this.dismiss();\r\n        }\r\n    },\r\n});\r\n"
+  ]
+}

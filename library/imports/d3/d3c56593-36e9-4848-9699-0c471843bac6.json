@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "CarryGoldBg",
+    "texture": "de5f93ee-5a3b-4a86-a017-f83913ab281a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      995,
+      586
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      995,
+      586
+    ],
+    "capInsets": [
+      83,
+      86,
+      76,
+      66
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "UtilTool",
+    "require",
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "Head",
+    "Sprite",
+    "Name",
+    "Label",
+    "RoleSprite",
+    "RoleFrame",
+    "SpriteFrame",
+    "Time",
+    "BtnSet",
+    "Button",
+    "onLoad",
+    "info",
+    "setPersonInfo",
+    "log",
+    "name",
+    "headurl",
+    "role",
+    "lasttime",
+    "string",
+    "getFormatData",
+    "UpdateWXHeadIcon",
+    "window",
+    "ClubRole",
+    "E_CLUB_OWNER_ROLE",
+    "spriteFrame",
+    "E_CLUB_MANAGER_ROLE",
+    "node",
+    "active"
+  ],
+  "mappings": ";;AAAA,IAAIA,WAAWC,QAAQ,UAAR,CAAf;;AAEAC,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,cAAOL,GAAGM,MADF;AAERC,cAAOP,GAAGQ,KAFF;AAGRC,oBAAaT,GAAGM,MAHR;AAIRI,mBAAa,CAACV,GAAGW,WAAJ,CAJL;AAKRC,cAAOZ,GAAGQ,KALF;AAMRK,gBAASb,GAAGc;AANJ,KAHP;;AAYL;AACAC,YAAQ,kBAAY;AAChB,aAAKC,IAAL,GAAY,IAAZ;AACH,KAfI;;AAiBL;AACA;AACA;AACA;AACA;AACA;;AAEAC,mBAAgB,uBAAUD,IAAV,EAAgB;AAC5BhB,WAAGkB,GAAH,CAAO,sBAAP,EAA+BF,KAAKG,IAApC,EAA0C,WAA1C,EAAuDH,KAAKI,OAA5D,EAAqE,QAArE,EAA+EJ,KAAKK,IAApF,EAA0F,QAA1F,EAAoGL,KAAKM,QAAzG;AACA,aAAKN,IAAL,GAAYA,IAAZ;AACA,aAAKT,IAAL,CAAUgB,MAAV,GAAmBP,KAAKG,IAAxB;AACA,aAAKP,IAAL,CAAUW,MAAV,GAAmBzB,SAAS0B,aAAT,CAAuBR,KAAKM,QAA5B,CAAnB;AACAG,yBAAiBT,KAAKI,OAAtB,EAA+B,KAAKf,IAApC;;AAEA,YAAIW,KAAKK,IAAL,IAAaK,OAAOC,QAAP,CAAgBC,iBAAjC,EAAoD;AAChD,iBAAKnB,UAAL,CAAgBoB,WAAhB,GAA8B,KAAKnB,SAAL,CAAe,CAAf,CAA9B;AACH,SAFD,MAEO,IAAIM,KAAKK,IAAL,IAAaK,OAAOC,QAAP,CAAgBG,mBAAjC,EAAsD;AACzD,iBAAKrB,UAAL,CAAgBoB,WAAhB,GAA8B,KAAKnB,SAAL,CAAe,CAAf,CAA9B;AACH,SAFM,MAEA;AACHV,eAAGkB,GAAH,CAAO,4CAAP;AACA,iBAAKT,UAAL,CAAgBsB,IAAhB,CAAqBC,MAArB,GAA8B,KAA9B;AACH;AACJ;;AAvCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var UtilTool = require('UtilTool');\r\n\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        Head : cc.Sprite,\r\n        Name : cc.Label,\r\n        RoleSprite : cc.Sprite,\r\n        RoleFrame  : [cc.SpriteFrame],\r\n        Time : cc.Label,\r\n        BtnSet : cc.Button,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.info = null;\r\n    },\r\n    \r\n    // Uid      uint32 `json:\"uid\"`\r\n    // Name     string `json:\"name\"`\r\n    // HeadUrl  string `json:\"headurl\"`\r\n    // Sex      int    `json:\"sex\"`\r\n    // Role     uint8  `json:\"role\"`\r\n    // LastTime int64  `json:\"lasttime\"`\r\n\r\n    setPersonInfo : function (info) {\r\n        cc.log(\"ClubPersonCell name=\", info.name, \" headurl=\", info.headurl, \" role=\", info.role, \" time=\", info.lasttime);\r\n        this.info = info;\r\n        this.Name.string = info.name;\r\n        this.Time.string = UtilTool.getFormatData(info.lasttime);\r\n        UpdateWXHeadIcon(info.headurl, this.Head);\r\n\r\n        if (info.role == window.ClubRole.E_CLUB_OWNER_ROLE) {\r\n            this.RoleSprite.spriteFrame = this.RoleFrame[0];\r\n        } else if (info.role == window.ClubRole.E_CLUB_MANAGER_ROLE) {\r\n            this.RoleSprite.spriteFrame = this.RoleFrame[1];\r\n        } else {\r\n            cc.log(\"ClubPersonCell.setPersonInfo role = normal\");\r\n            this.RoleSprite.node.active = false;\r\n        }\r\n    },\r\n\r\n});\r\n"
+  ]
+}

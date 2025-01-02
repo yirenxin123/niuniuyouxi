@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "ScoreListRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_SCORE_LIST_CMD_ID",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "param",
+    "iscreate",
+    "list",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA;;;;;;;;;;;;;;;;;;;;;;;AAuBA,SAASC,mBAAT,GAA+B;AAC3BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD2B,CACG;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,yBAAlB;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ,aAAKC,KAAL,GAAaP,IAAIO,KAAjB;AACA;AACA,aAAKC,QAAL,GAAgB,KAAKD,KAAL,CAAWC,QAA3B;AACA,aAAKC,IAAL,GAAY,KAAKF,KAAL,CAAWE,IAAvB;AAEH,KAbD;AAcH;;AAEDC,OAAOC,OAAP,GAAkBjB,mBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/30.\r\n */\r\n\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\n/*\r\n * type US_RESP_SCORE_LIST_T struct {\r\n JsonHead\r\n RespHead\r\n Param PARAM_RESP_SCORE_LIST_T `json:\"param\"`\r\n }\r\n type PARAM_RESP_SCORE_LIST_T struct {\r\n IsCreate int8           `json:\"iscreate\"` //0：参与的牌局, 1: 创建的牌局\r\n List     []USER_SCORE_T `json:\"list\"`\r\n }\r\n type USER_SCORE_T struct {\r\n PrivateId  int    `json:\"privateid\"`\r\n CreateTime int64  `json:\"createtime\"`\r\n LiveTime   int64  `json:\"livetime\"`\r\n TableName  string `json:\"tablename\"`\r\n OwnerName  string `json:\"ownername\"`\r\n HeadUrl    string `json:\"headurl\"`\r\n CarryCoin  int    `json:\"carrycoin\"` //携带\r\n WinCoin    int    `json:\"wincoin\"`   //输赢\r\n }\r\n\r\n */\r\n\r\nfunction ScoreListRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_SCORE_LIST_CMD_ID;\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        this.param = msg.param;\r\n        //var json = JSON.parse(BASE64.decoder(msg.param));\r\n        this.iscreate = this.param.iscreate;\r\n        this.list = this.param.list;\r\n\r\n    };\r\n}\r\n\r\nmodule.exports =  ScoreListRespPacket;"
+  ]
+}

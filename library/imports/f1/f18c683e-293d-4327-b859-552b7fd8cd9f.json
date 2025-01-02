@@ -1,0 +1,38 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "5.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "表情_0044_face6_anims_i6p-i6p_10": {
+      "__uuid__": "28f0fe4a-58fb-46ba-981f-a6777aa22aa2"
+    },
+    "表情_0045_face6_anims_i6p-i6p_09": {
+      "__uuid__": "715a71d2-0aad-4cbc-82b7-ce26471f2d60"
+    },
+    "表情_0046_face6_anims_i6p-i6p_08": {
+      "__uuid__": "0b4d6b04-d8c0-4248-85a4-1f4d7ec998ea"
+    },
+    "表情_0047_face6_anims_i6p-i6p_07": {
+      "__uuid__": "85f0c467-5f44-4568-8f2e-d07818428d85"
+    },
+    "表情_0048_face6_anims_i6p-i6p_06": {
+      "__uuid__": "9e06d428-5475-4ee0-89e2-0e5766929129"
+    },
+    "表情_0049_face6_anims_i6p-i6p_05": {
+      "__uuid__": "c40fd88d-acf0-4b5b-b784-eec1d55cc0a9"
+    },
+    "表情_0050_face6_anims_i6p-i6p_04": {
+      "__uuid__": "4f8d28e6-1ff1-4abd-9e26-a425e14e0d2e"
+    },
+    "表情_0051_face6_anims_i6p-i6p_03": {
+      "__uuid__": "c52d0378-af17-4348-9e82-cffc657fad1f"
+    },
+    "表情_0052_face6_anims_i6p-i6p_02": {
+      "__uuid__": "bd1f2751-89ad-4c67-8337-be402541df24"
+    },
+    "表情_0053_face6_anims_i6p-i6p_01": {
+      "__uuid__": "a8d25009-bf38-4361-a008-c3ca34b952c7"
+    }
+  }
+}

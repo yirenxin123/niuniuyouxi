@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_find_on",
+    "texture": "1afdb9c1-7273-4590-a73d-6953f5beb21d",
+    "atlas": "",
+    "rect": [
+      10,
+      10,
+      79,
+      79
+    ],
+    "offset": [
+      -0.5,
+      0.5
+    ],
+    "originalSize": [
+      100,
+      100
+    ]
+  }
+}

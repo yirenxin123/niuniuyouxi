@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "NotCallBankerFlag",
+    "texture": "368ab26c-63d7-44c6-a1d0-b8cbbed9b3d2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      93,
+      51
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      93,
+      51
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Cancle_off",
+    "texture": "409cd85b-a0ac-4f00-b63a-f9d391a90d51",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      118,
+      144
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      118,
+      144
+    ]
+  }
+}

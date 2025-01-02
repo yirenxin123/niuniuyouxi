@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "ScoreDetailRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_SCORE_DETAIL_CMD_ID",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "param",
+    "table",
+    "myself",
+    "list",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8CA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;AACA,SAASC,qBAAT,GAAiC;AAC7BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD6B,CACC;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,2BAAlB;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;AAC5B,aAAKC,GAAL,GAAcD,IAAIC,GAAlB;AACA,aAAKC,GAAL,GAAcF,IAAIE,GAAlB;AACA,aAAKC,IAAL,GAAcH,IAAIG,IAAlB;AACA,aAAKC,IAAL,GAAcJ,IAAII,IAAlB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ,aAAKC,KAAL,GAAcP,IAAIO,KAAlB;AACA,aAAKC,KAAL,GAAc,KAAKD,KAAL,CAAWC,KAAzB;AACA,aAAKC,MAAL,GAAc,KAAKF,KAAL,CAAWE,MAAzB;AACA,aAAKC,IAAL,GAAc,KAAKH,KAAL,CAAWG,IAAzB;AACH,KAXD;AAYH;;AAEDC,OAAOC,OAAP,GAAkBlB,qBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/30.\r\n */\r\n/**\r\n type US_RESP_SCORE_DETAIL_T struct {\r\n     JsonHead\r\n     RespHead\r\n     Param PARAM_RESP_SCORE_DETAIL_T `json:\"param\"`\r\n }\r\n\r\n type PARAM_RESP_SCORE_DETAIL_T struct {\r\n     Table  PARAM_TABLE_DETAIL_T `json:\"table\"`\r\n     MySelf PARAM_MYSELF_SCORE_T `json:\"myself\"`\r\n    List   []TABLE_USER_SCORE_T `json:\"list\"`\r\n }\r\n\r\n type PARAM_TABLE_DETAIL_T struct {\r\n     TableName string `json:\"tablename\"` //牌局名称\r\n     GameId    int    `json:\"gameid\"`    //选择玩法(游戏id)\r\n     MinAnte   int    `json:\"minante\"`   //最小下注(1)\r\n     GameType  int    `json:\"gametype\"`  //抢庄模式\r\n     LiveTime  int64  `json:\"livetime\"`  //桌子时间\r\n     MaxSeat   int    `json:\"maxseat\"`   //本桌人数\r\n }\r\n\r\n type PARAM_MYSELF_SCORE_T struct {\r\n     CarryCoin  int `json:\"carrycoin\"`  //带入金币\r\n     WinCoin    int `json:\"wincoin\"`    //输赢(最终战绩)\r\n     WinNum     int `json:\"winnum\"`     //赢牌次数\r\n     LoseNum    int `json:\"losenum\"`    //失败次数\r\n     PlayNum    int `json:\"playnum\"`    //玩牌次数\r\n     SuperNum   int `json:\"supernum\"`   //超级抢庄次数\r\n     NormalNum  int `json:\"normalnum\"`  //普通抢庄次数\r\n     NotCallNum int `json:\"notcallnum\"` //未叫庄次数\r\n     BankerNum  int `json:\"bankernum\"`  //坐庄次数\r\n     ChatNum    int `json:\"chatnum\"`    //聊天次数\r\n     GiftNum    int `json:\"giftnum\"`    //发送礼物次数\r\n     UseGold    int `json:\"usegold\"`    //发送礼物消耗金币\r\n     UseDiamond int `json:\"usediamond\"` //抢庄消耗钻石\r\n }\r\n\r\n type TABLE_USER_SCORE_T struct {\r\n     Uid       int    `json:\"uid\"`\r\n     Name      string `json:\"name\"`\r\n     HeadUrl   string `json:\"headurl\"`\r\n     CarryCoin int    `json:\"carrycoin\"`\r\n     WinCoin   int    `json:\"wincoin\"`\r\n }\r\n* */\r\nvar MessageResp = require(\"MessageResp\");\r\nfunction ScoreDetailRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_SCORE_DETAIL_CMD_ID;\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n        this.seq    = msg.seq;\r\n        this.uid    = msg.uid;\r\n        this.code   = msg.code;\r\n        this.desc   = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        this.param  = msg.param;\r\n        this.table  = this.param.table;\r\n        this.myself = this.param.myself;\r\n        this.list   = this.param.list;\r\n    };\r\n}\r\n\r\nmodule.exports =  ScoreDetailRespPacket;"
+  ]
+}

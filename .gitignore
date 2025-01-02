@@ -1,0 +1,5 @@
+temp/*
+assets/Script/.idea/*
+local/*
+build/jsb-binary/res/*
+build/jsb-binary/src/*

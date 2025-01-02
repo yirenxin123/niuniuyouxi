@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BankerFlag",
+    "texture": "31081de6-06ce-485f-9a86-68fd6dceed89",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      44,
+      47
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      44,
+      47
+    ]
+  }
+}

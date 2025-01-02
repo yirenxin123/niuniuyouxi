@@ -1,0 +1,46 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "EnterGameAnim",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Bg": {
+        "props": {}
+      },
+      "Bg/GameLayout": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": -1920
+            }
+          ]
+        }
+      },
+      "Bg/RoomLayout": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 1920
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

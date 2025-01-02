@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "IMSwitch_on",
+    "texture": "0bd868be-d854-48ab-bcc3-42a5317cadce",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      157,
+      75
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      157,
+      75
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Rule_off",
+    "texture": "6a0f48f3-78fa-4509-8ac8-63b912afa138",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      60,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      60,
+      54
+    ]
+  }
+}

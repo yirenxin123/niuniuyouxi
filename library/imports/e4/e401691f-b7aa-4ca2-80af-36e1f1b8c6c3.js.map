@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "BasePop",
+    "require",
+    "MessageFactory",
+    "MusicMgr",
+    "Audio_Common",
+    "GameSystem",
+    "cc",
+    "Class",
+    "extends",
+    "properties",
+    "Content",
+    "Label",
+    "Time",
+    "onLoad",
+    "callBackBtn",
+    "event",
+    "CustomEventData",
+    "log",
+    "btnName",
+    "target",
+    "getName",
+    "playEffect",
+    "AUDIO_BTN_CLICK",
+    "dismiss",
+    "setContent",
+    "msg",
+    "string",
+    "BASE64",
+    "decoder",
+    "type",
+    "data",
+    "msgid",
+    "createMessageReq",
+    "US_REQ_SET_MSG_READ_CMD_ID",
+    "send"
+  ],
+  "mappings": ";;AAAA,IAAIA,UAAUC,QAAQ,SAAR,CAAd;AACA,IAAIC,iBAAiBD,QAAQ,gBAAR,CAArB;AACA,IAAIE,WAAWF,QAAQ,UAAR,CAAf;AACA,IAAIG,eAAeH,QAAQ,cAAR,CAAnB;AACA,IAAII,aAAaJ,QAAQ,YAAR,CAAjB;AACAK,GAAGC,KAAH,CAAS;AACLC,aAASR,OADJ;;AAGLS,gBAAY;AACRC,iBAAUJ,GAAGK,KADL;AAERC,cAAON,GAAGK;AAFF,KAHP;;AAQL;AACAE,YAAQ,kBAAY,CAEnB,CAXI;;AAaL;AACA;;AAEA;;AAEAC,iBAAc,qBAAUC,KAAV,EAAkBC,eAAlB,EAAmC;AAC7CV,WAAGW,GAAH,CAAO,yDAAyDD,eAAhE;AACA,YAAIE,UAAUH,MAAMI,MAAN,CAAaC,OAAb,EAAd;AACAd,WAAGW,GAAH,CAAO,iDAAiDC,OAAxD;AACAf,iBAASkB,UAAT,CAAoBjB,aAAakB,eAAjC;AACA,YAAGJ,WAAW,UAAd,EAA0B;AACtB,iBAAKK,OAAL;AACH;AACJ,KA1BI;;AA4BLC,gBAAa,oBAAUC,GAAV,EAAe;AACxB,aAAKf,OAAL,CAAagB,MAAb,GAAuBC,OAAOC,OAAP,CAAeH,IAAIA,GAAnB,CAAvB;AACA,YAAGA,IAAII,IAAJ,IAAY,CAAf,EACI;AACJ,YAAIC,OAAO;AACPD,kBAAOJ,IAAII,IADJ;AAEPE,mBAAQN,IAAIM;AAFL,SAAX;AAIA7B,uBAAe8B,gBAAf,CAAgCC,0BAAhC,EAA4DC,IAA5D,CAAiEJ,IAAjE;AACH;AArCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var BasePop = require(\"BasePop\");\r\nvar MessageFactory = require('MessageFactory');\r\nvar MusicMgr = require('MusicMgr');\r\nvar Audio_Common = require('Audio_Common');\r\nvar GameSystem = require(\"GameSystem\");\r\ncc.Class({\r\n    extends: BasePop,\r\n\r\n    properties: {\r\n        Content : cc.Label,\r\n        Time : cc.Label,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n    \r\n    callBackBtn : function (event , CustomEventData) {\r\n        cc.log(\"MessageCellDetailView.callbackBtn,CustomEventData = \" + CustomEventData);\r\n        var btnName = event.target.getName();\r\n        cc.log(\"MessageCellDetailView.callbackBtn,btnName = \" + btnName);\r\n        MusicMgr.playEffect(Audio_Common.AUDIO_BTN_CLICK);\r\n        if(btnName == \"BtnClose\") {\r\n            this.dismiss();\r\n        }\r\n    },\r\n    \r\n    setContent : function (msg) {\r\n        this.Content.string =  BASE64.decoder(msg.msg);\r\n        if(msg.type == 1)\r\n            return\r\n        var data = {\r\n            type : msg.type,\r\n            msgid : msg.msgid,\r\n        };\r\n        MessageFactory.createMessageReq(US_REQ_SET_MSG_READ_CMD_ID).send(data);\r\n    }\r\n});\r\n"
+  ]
+}

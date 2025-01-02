@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "window",
+    "Bullfight_CardType",
+    "cc",
+    "Enum",
+    "E_BULL_ZERO",
+    "E_BULL_ONE",
+    "E_BULL_TWO",
+    "E_BULL_THREE",
+    "E_BULL_FOUR",
+    "E_BULL_FIVE",
+    "E_BULL_SIX",
+    "E_BULL_SEVEN",
+    "E_BULL_EIGHT",
+    "E_BULL_NINE",
+    "E_BULL_PAIR",
+    "E_BULL_BULL",
+    "E_BULL_LINE",
+    "E_BULL_THREE_TWO",
+    "E_BULL_BOMB",
+    "E_BULL_FIVE_KING",
+    "E_BULL_SMALL_FIVE",
+    "E_BULL_MAX",
+    "Bullfight_CardTypeName"
+  ],
+  "mappings": ";;AAAA;;;;AAIAA,OAAOC,kBAAP,GAA4BC,GAAGC,IAAH,CAAQ;AAChCC,iBAAoB,CADY,EACT;AACvBC,gBAAoB,CAFY,EAET;AACvBC,gBAAoB,CAHY;AAIhCC,kBAAoB,CAJY;AAKhCC,iBAAoB,CALY;AAMhCC,iBAAoB,CANY;AAOhCC,gBAAoB,CAPY;AAQhCC,kBAAoB,CARY;AAShCC,kBAAoB,CATY;AAUhCC,iBAAoB,CAVY;AAWhCC,iBAAoB,EAXY,EAWR;AACxBC,iBAAoB,EAZY,EAYR;AACxBC,iBAAoB,EAbY,EAaR;AACxBC,sBAAoB,EAdY,EAcR;AACxBC,iBAAoB,EAfY,EAeR;AACxBC,sBAAoB,EAhBY,EAgBR;AACxBC,uBAAoB,EAjBY,EAiBR;AACxBC,gBAAoB;;AAlBY,CAAR,CAA5B;;AAsBArB,OAAOsB,sBAAP,GAAgC,CAC5B,IAD4B,EAE5B,IAF4B,EAG5B,IAH4B,EAI5B,IAJ4B,EAK5B,IAL4B,EAM5B,IAN4B,EAO5B,IAP4B,EAQ5B,IAR4B,EAS5B,IAT4B,EAU5B,IAV4B,EAW5B,KAX4B,EAY5B,IAZ4B,EAa5B,KAb4B,EAc5B,KAd4B,EAe5B,IAf4B,EAgB5B,KAhB4B,EAiB5B,KAjB4B,CAAhC",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/19.\r\n */\r\n\r\nwindow.Bullfight_CardType = cc.Enum({\r\n    E_BULL_ZERO       : 0, //没牛\r\n    E_BULL_ONE        : 1, //牛1\r\n    E_BULL_TWO        : 2,\r\n    E_BULL_THREE      : 3,\r\n    E_BULL_FOUR       : 4,\r\n    E_BULL_FIVE       : 5,\r\n    E_BULL_SIX        : 6,\r\n    E_BULL_SEVEN      : 7,\r\n    E_BULL_EIGHT      : 8,\r\n    E_BULL_NINE       : 9,\r\n    E_BULL_PAIR       : 10, //牛对子\r\n    E_BULL_BULL       : 11, //牛牛\r\n    E_BULL_LINE       : 12, //牛顺子\r\n    E_BULL_THREE_TWO  : 13, //三带二\r\n    E_BULL_BOMB       : 14, //炸弹\r\n    E_BULL_FIVE_KING  : 15, //五花牛\r\n    E_BULL_SMALL_FIVE : 16, //五小牛\r\n    E_BULL_MAX        : 17,\r\n\r\n});\r\n\r\nwindow.Bullfight_CardTypeName = [\r\n    \"没牛\",\r\n    \"牛一\",\r\n    \"牛二\",\r\n    \"牛三\",\r\n    \"牛四\",\r\n    \"牛五\",\r\n    \"牛六\",\r\n    \"牛七\",\r\n    \"牛八\",\r\n    \"牛九\",\r\n    \"牛对子\",\r\n    \"牛牛\",\r\n    \"牛顺子\",\r\n    \"三带二\",\r\n    \"炸弹\",\r\n    \"五花牛\",\r\n    \"五小牛\",\r\n];"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BtnAddPhoto",
+    "texture": "67d6d0ad-472d-4ded-abb5-ba3c1f3b145d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      163,
+      163
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      163,
+      163
+    ]
+  }
+}

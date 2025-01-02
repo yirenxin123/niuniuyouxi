@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GameSystem",
+    "ScoreListReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_REQ_SCORE_LIST_CMD_ID",
+    "send",
+    "msg",
+    "data",
+    "seq",
+    "uid",
+    "param",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA;;;;;;;;;;;;;AAaA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;;AAEA,SAASE,kBAAT,GAA8B;AAC1BH,eAAWI,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EAD0B,CACG;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,wBAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;;AAEvB,aAAKC,IAAL,GAAY;AACRL,iBAAK,KAAKA,GADF;AAERM,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA,GAHF;AAIRC,mBAAQJ;AAJA,SAAZ;;AAUAK,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2CV,OAAOW,mBAAlD,EAAuE,IAAvE;AACH,KAbD;AAcH;;AAEDC,OAAOC,OAAP,GAAkBhB,kBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/30.\r\n */\r\nvar MessageReq = require(\"MessageReq\");\r\n/*\r\n * type US_REQ_SCORE_LIST_T struct {\r\n JsonHead\r\n Param PARAM_REQ_SCORE_LIST_T `json:\"param\"`\r\n }\r\n type PARAM_REQ_SCORE_LIST_T struct {\r\n IsCreate int8 `json:\"iscreate` //0：参与的牌局, 1: 创建的牌局\r\n Start    int  `json:\"start\"`   //从哪里开始\r\n Total    int  `json:\"total\"`   //多少个\r\n }\r\n }\r\n\r\n * */\r\nvar GameSystem = require(\"GameSystem\");\r\n\r\nfunction ScoreListReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_SCORE_LIST_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n            param : msg,\r\n            // iscreate : msg.iscreate,\r\n            // start : msg.start,\r\n            // total : msg.total,\r\n        };\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  ScoreListReqPacket;"
+  ]
+}

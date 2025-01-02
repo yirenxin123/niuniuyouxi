@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "RedArrows",
+    "texture": "51c75598-9998-4ae4-8e3e-f51f4add7587",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      78,
+      42
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      78,
+      42
+    ]
+  }
+}

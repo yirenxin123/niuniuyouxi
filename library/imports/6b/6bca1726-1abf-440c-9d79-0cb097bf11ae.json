@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActivityFlag_1",
+    "texture": "a1e51f08-0ce9-4c5f-8e83-f218b0fa9c1d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      141,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      141,
+      68
+    ]
+  }
+}

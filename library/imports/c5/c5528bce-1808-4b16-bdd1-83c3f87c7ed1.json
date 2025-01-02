@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "MySuccessTitle",
+    "texture": "bf0ccfa3-1936-4412-964e-fe9b8b408b57",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      736,
+      98
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      736,
+      98
+    ]
+  }
+}

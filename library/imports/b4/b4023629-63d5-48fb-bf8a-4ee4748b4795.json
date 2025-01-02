@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "CryingFace",
+    "texture": "db717b50-2a1f-4ee1-9ac0-2b8deb0862e3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      291,
+      290
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      291,
+      290
+    ]
+  }
+}

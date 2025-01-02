@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "manager",
+    "texture": "328b7ac3-da53-4148-a681-a5075037f03c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      37,
+      44
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      37,
+      44
+    ]
+  }
+}

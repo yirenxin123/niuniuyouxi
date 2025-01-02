@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "webview_bg",
+    "texture": "26b32f96-29bf-4e39-8f0e-0c346f97efca",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1941,
+      80
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1941,
+      80
+    ]
+  }
+}

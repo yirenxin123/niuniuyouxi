@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BtnPersonsOn",
+    "texture": "758b9f85-c727-4495-bec1-e1b34b12309d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      66,
+      64
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      66,
+      64
+    ]
+  }
+}

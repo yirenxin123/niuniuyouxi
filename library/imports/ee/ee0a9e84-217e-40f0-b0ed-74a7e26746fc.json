@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BtnLocalLogin",
+    "texture": "9750d7e4-1c21-4860-b65e-ead2a6e23b92",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      641,
+      134
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      641,
+      134
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Service_off",
+    "texture": "f5b0d47f-856e-447f-9a6a-09f086c9f132",
+    "atlas": "",
+    "rect": [
+      13,
+      13,
+      74,
+      74
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      100,
+      100
+    ]
+  }
+}

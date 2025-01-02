@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dt-lbbj",
+    "texture": "da373ef2-6aa5-48c3-a4e9-5f189043a930",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1920,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1920,
+      53
+    ]
+  }
+}

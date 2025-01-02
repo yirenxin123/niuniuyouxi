@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "SliderBar",
+    "texture": "066542a7-e981-4168-ab33-97933bb7a104",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      826,
+      19
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      826,
+      19
+    ]
+  }
+}

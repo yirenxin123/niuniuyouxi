@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "VoicePlayFlag1",
+    "texture": "8746bc5e-9c0e-48f2-88e0-d54bd873cc74",
+    "atlas": "",
+    "rect": [
+      0,
+      13,
+      9,
+      22
+    ],
+    "offset": [
+      -11,
+      -0.5
+    ],
+    "originalSize": [
+      31,
+      47
+    ]
+  }
+}

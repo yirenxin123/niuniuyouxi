@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "StartGameRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_GAME_SWITCH_CMD_ID",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "isstart",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA;;;;;;;AAOA,SAASC,mBAAT,GAA+B;AAC3BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD2B,CACG;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,0BAAlB;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAeD,IAAIC,GAAnB;AACA,aAAKC,GAAL,GAAeF,IAAIE,GAAnB;AACA,aAAKC,IAAL,GAAeH,IAAIG,IAAnB;AACA,aAAKC,IAAL,GAAeJ,IAAII,IAAnB;AACA,aAAKC,OAAL,GAAeL,IAAIK,OAAnB;AACH,KAPD;AAQH;;AAEDC,OAAOC,OAAP,GAAkBb,mBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/1.\r\n */\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\n/*\r\n* type US_RESP_GAME_SWITCH_T struct {\r\n JsonHead\r\n RespHead\r\n }\r\n */\r\n\r\nfunction StartGameRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_GAME_SWITCH_CMD_ID;\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq     = msg.seq;\r\n        this.uid     = msg.uid;\r\n        this.code    = msg.code;\r\n        this.desc    = msg.desc;\r\n        this.isstart = msg.isstart;\r\n    };\r\n}\r\n\r\nmodule.exports =  StartGameRespPacket;"
+  ]
+}

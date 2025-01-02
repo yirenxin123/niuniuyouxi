@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_CreateRoomGoldOff",
+    "texture": "be0f2108-29e0-4b02-950e-d120215b8b24",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      430,
+      116
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      430,
+      116
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BetCountBg",
+    "texture": "0430b52a-9b15-4f04-8154-ffd7706b2988",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      267,
+      59
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      267,
+      59
+    ]
+  }
+}

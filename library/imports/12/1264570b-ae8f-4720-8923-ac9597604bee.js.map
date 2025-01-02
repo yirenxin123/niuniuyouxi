@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "BannerListReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_REQ_BANNER_LIST_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA;;;;;;;;;;;;;;AAcA,SAASC,mBAAT,GAA+B;AAC3BF,eAAWG,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EAD2B,CACE;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,yBAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,WAAGC,GAAH,CAAO,0BAAP;AACA,aAAKC,IAAL,GAAY;AACRP,iBAAK,KAAKA,GADF;AAERQ,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA;AAHF,SAAZ;;AAMAC,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2CX,OAAOY,mBAAlD,EAAuE,IAAvE;AACH,KATD;AAUH;;AAEDC,OAAOC,OAAP,GAAkBjB,mBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/30.\r\n */\r\nvar MessageReq = require(\"MessageReq\");\r\n/*\r\n * type US_REQ_SCORE_LIST_T struct {\r\n JsonHead\r\n Param PARAM_REQ_SCORE_LIST_T `json:\"param\"`\r\n }\r\n type PARAM_REQ_SCORE_LIST_T struct {\r\n IsCreate int8 `json:\"iscreate` //0：参与的牌局, 1: 创建的牌局\r\n Start    int  `json:\"start\"`   //从哪里开始\r\n Total    int  `json:\"total\"`   //多少个\r\n }\r\n }\r\n\r\n * */\r\n\r\nfunction BannerListReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_BANNER_LIST_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"BannerListReqPacket.send\");\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid\r\n        };\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  BannerListReqPacket;\r\n\r\n\r\n"
+  ]
+}

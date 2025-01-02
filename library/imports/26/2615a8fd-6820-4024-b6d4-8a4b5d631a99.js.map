@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MusicMgr",
+    "require",
+    "Audio_Common",
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "AreaName",
+    "Label",
+    "BtnFlag",
+    "Sprite",
+    "onLoad",
+    "name",
+    "callBackBtn",
+    "event",
+    "CustomEventData",
+    "BtnName",
+    "target",
+    "getName",
+    "log",
+    "playEffect",
+    "AUDIO_BTN_CLICK",
+    "dismiss",
+    "setAreaCellInfo",
+    "iCount",
+    "string",
+    "node",
+    "active"
+  ],
+  "mappings": ";;AAAA,IAAIA,WAAWC,QAAQ,UAAR,CAAf;AACA,IAAIC,eAAeD,QAAQ,cAAR,CAAnB;AACAE,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACR;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACAC,kBAAWL,GAAGM,KAXN;AAYRC,iBAAUP,GAAGQ;AAZL,KAHP;;AAkBL;AACAC,YAAQ,kBAAY;AAChB,aAAKC,IAAL,GAAY,EAAZ;AACH,KArBI;;AAuBL;AACA;;AAEA;;AAEAC,iBAAc,qBAAUC,KAAV,EAAgBC,eAAhB,EAAiC;AAC3C,YAAIC,UAAUF,MAAMG,MAAN,CAAaC,OAAb,EAAd;AACAhB,WAAGiB,GAAH,CAAO,wCAAwCH,OAA/C;AACAjB,iBAASqB,UAAT,CAAoBnB,aAAaoB,eAAjC;AACA,YAAGL,WAAW,UAAd,EACA;AACI,iBAAKM,OAAL;AACH,SAHD,MAIK,IAAGN,WAAW,cAAd,EACL,CAEC;AAGJ,KA1CI;;AA4CLO,qBAAkB,yBAAUX,IAAV,EAAeY,MAAf,EAAuB;AACrC,aAAKZ,IAAL,GAAYA,IAAZ;AACA,aAAKL,QAAL,CAAckB,MAAd,GAAuBb,IAAvB;AACA,YAAGY,UAAU,CAAb,EACA;AACI,iBAAKf,OAAL,CAAaiB,IAAb,CAAkBC,MAAlB,GAA2B,KAA3B;AACH;AACJ;AAnDI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var MusicMgr = require('MusicMgr');\r\nvar Audio_Common = require('Audio_Common');\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        // foo: {\r\n        //    default: null,      // The default value will be used only when the component attaching\r\n        //                           to a node for the first time\r\n        //    url: cc.Texture2D,  // optional, default is typeof default\r\n        //    serializable: true, // optional, default is true\r\n        //    visible: true,      // optional, default is true\r\n        //    displayName: 'Foo', // optional\r\n        //    readonly: false,    // optional, default is false\r\n        // },\r\n        // ...\r\n        AreaName : cc.Label,\r\n        BtnFlag : cc.Sprite,\r\n    },\r\n    \r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.name = \"\";\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n\r\n    callBackBtn : function (event,CustomEventData) {\r\n        var BtnName = event.target.getName();\r\n        cc.log(\"ClubAreaCell.callBackBtn,BtnName = \" + BtnName);\r\n        MusicMgr.playEffect(Audio_Common.AUDIO_BTN_CLICK);\r\n        if(BtnName == \"BtnClose\")\r\n        {\r\n            this.dismiss();\r\n        }\r\n        else if(BtnName == \"ClubAreaCell\")\r\n        {\r\n\r\n        }\r\n\r\n\r\n    },\r\n    \r\n    setAreaCellInfo : function (name,iCount) {\r\n        this.name = name;\r\n        this.AreaName.string = name;\r\n        if(iCount <= 0)\r\n        {\r\n            this.BtnFlag.node.active = false;\r\n        }\r\n    },\r\n});\r\n"
+  ]
+}

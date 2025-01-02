@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "NoProcesseBg",
+    "texture": "123aa363-7f23-49f1-a782-603a34eb9908",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      968,
+      69
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      968,
+      69
+    ]
+  }
+}

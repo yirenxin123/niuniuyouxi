@@ -1,0 +1,52 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GameSystem",
+    "window",
+    "ChatType",
+    "cc",
+    "Enum",
+    "E_CHAT_WORD_KIND",
+    "E_CHAT_GIFT_KIND",
+    "E_CHAT_FACE_KIND",
+    "E_CHAT_VOICE_KIND",
+    "GiftType",
+    "E_ROSE_GIFT",
+    "E_LOVE_GIFT",
+    "E_FOAM_GIFT",
+    "E_BIG_ROSE_GIFT",
+    "E_KETCHUP_GIFT",
+    "ChatReqPacket",
+    "apply",
+    "cmd",
+    "US_REQ_GAME_CHAT_CMD_ID",
+    "send",
+    "msg",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "gamesvcid",
+    "getInstance",
+    "tableid",
+    "touid",
+    "kind",
+    "type",
+    "text",
+    "GlobalEventManager",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA;;;;;;;;;;;;;;;;;;;;AAoBAE,OAAOC,QAAP,GAAkBC,GAAGC,IAAH,CAAS;AACvBC,sBAAoB,CADG,EACA;AACvBC,sBAAoB,CAFG,EAEA;AACvBC,sBAAoB,CAHG,EAGA;AACvBC,uBAAoB,CAJG,EAAT,CAAlB;;AAOAP,OAAOQ,QAAP,GAAkBN,GAAGC,IAAH,CAAS;AACvBM,iBAAa,CADU,EACP;AAChBC,iBAAa,CAFU,EAEP;AAChBC,iBAAa,CAHU,EAGP;AAChBC,qBAAiB,CAJM,EAIH;AACpBC,oBAAgB,CALO,EAAT,CAAlB;;AAQA,SAASC,aAAT,GAAyB;AACrBjB,eAAWkB,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EADqB,CACQ;;AAE7B,SAAKC,GAAL,GAAWhB,OAAOiB,uBAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBjB,WAAGkB,GAAH,CAAO,oBAAP;AACA,aAAKC,IAAL,GAAY;AACRL,iBAAK,KAAKA,GADF;AAERM,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA,GAHF;AAIRC,uBAAYzB,WAAW0B,WAAX,GAAyBD,SAJ7B;AAKRE,qBAAU3B,WAAW0B,WAAX,GAAyBC,OAL3B;AAMRC,mBAAQR,IAAIQ,KANJ;AAORC,kBAAOT,IAAIS,IAPH;AAQRC,kBAAOV,IAAIU,IARH;AASRC,kBAAOX,IAAIW;AATH,SAAZ;;AAYAC,2BAAmBN,WAAnB,GAAiCO,SAAjC,CAA2ChC,OAAOiC,mBAAlD,EAAuE,IAAvE;AACH,KAfD;AAgBH;;AAEDC,OAAOC,OAAP,GAAkBrB,aAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/1.\r\n */\r\n\r\nvar MessageReq = require(\"MessageReq\");\r\nvar GameSystem = require(\"GameSystem\");\r\n/*\r\n* const (\r\n E_CHAT_TEXT_MSG = 1 //是文本聊天\r\n E_CHAT_GIFT_MSG   = 2 //是表情\r\n )\r\n\r\n const (\r\n E_ROSE_GIFT     = 1 //玫瑰\r\n E_LOVE_GIFT     = 2 //爱心\r\n E_FOAM_GIFT     = 3 //泡沫\r\n E_BIG_ROSE_GIFT = 4 //大朵玫瑰\r\n E_KETCHUP_GIFT  = 5 //番茄酱\r\n )\r\n\r\n ToUid uint32 `json:\"touid\"`\r\n Kind  int    `json:\"kind\"`\r\n Type  int    `json:\"type\"` //具体某个礼物or某个表情(具体表情索引客户端自定义)\r\n Text  string `json:\"text\"` //文字or语音内容\r\n* **/\r\n\r\nwindow.ChatType = cc.Enum ({\r\n    E_CHAT_WORD_KIND  : 1, //文字\r\n    E_CHAT_GIFT_KIND  : 2, //礼物\r\n    E_CHAT_FACE_KIND  : 3, //表情\r\n    E_CHAT_VOICE_KIND : 4, //语音\r\n});\r\n\r\nwindow.GiftType = cc.Enum ({\r\n    E_ROSE_GIFT: 1, //玫瑰\r\n    E_LOVE_GIFT: 2, //爱心\r\n    E_FOAM_GIFT: 3, //泡沫\r\n    E_BIG_ROSE_GIFT: 4, //大朵玫瑰\r\n    E_KETCHUP_GIFT: 5, //番茄酱\r\n});\r\n\r\nfunction ChatReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_GAME_CHAT_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"ChatReqPacket.send\");\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n            gamesvcid : GameSystem.getInstance().gamesvcid,\r\n            tableid : GameSystem.getInstance().tableid,\r\n            touid : msg.touid,\r\n            kind : msg.kind,\r\n            type : msg.type,\r\n            text : msg.text,\r\n        }\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  ChatReqPacket;"
+  ]
+}

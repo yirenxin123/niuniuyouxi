@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "PersonFlag",
+    "texture": "6151e212-ad32-4671-a8cf-1b6596211dde",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      46,
+      56
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      46,
+      56
+    ]
+  }
+}

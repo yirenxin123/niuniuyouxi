@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GamePlayer",
+    "GameSystem",
+    "FindReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_REQ_FOUND_TABLE_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "start",
+    "total",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA;;;;;;;;;;;;AAYA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA,IAAIE,aAAaF,QAAQ,YAAR,CAAjB;;AAEA,SAASG,aAAT,GAAyB;AACrBJ,eAAWK,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EADqB,CACQ;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,yBAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,WAAGC,GAAH,CAAO,wBAAP;;AAEA,aAAKC,IAAL,GAAY;AACRP,iBAAK,KAAKA,GADF;AAERQ,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA,GAHF;AAIRC,mBAAQN,IAAIM,KAJJ;AAKRC,mBAAQP,IAAIO;AALJ,SAAZ;;AAQAC,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2Cb,OAAOc,mBAAlD,EAAuE,IAAvE;AACH,KAZD;AAaH;;AAEDC,OAAOC,OAAP,GAAkBnB,aAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/30.\r\n */\r\n/*\r\n * type US_REQ_FOUND_TABLE_T struct {\r\n JsonHead\r\n Param PARAM_REQ_FOUND_TABLE_T `json:\"param\"`\r\n }\r\n type PARAM_REQ_FOUND_TABLE_T struct {\r\n Start int `json:\"start\"`\r\n Total int `json:\"total\"`\r\n }\r\n\r\n * */\r\n\r\nvar MessageReq = require(\"MessageReq\");\r\nvar GamePlayer = require('GamePlayer');\r\nvar GameSystem = require('GameSystem')\r\n\r\nfunction FindReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_FOUND_TABLE_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"FindRoomReqPacket.send\");\r\n\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n            start : msg.start,\r\n            total : msg.total,\r\n        }\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  FindReqPacket;\r\n"
+  ]
+}

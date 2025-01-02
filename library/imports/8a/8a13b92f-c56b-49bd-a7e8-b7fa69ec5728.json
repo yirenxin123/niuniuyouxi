@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_EnterRoom",
+    "texture": "ebdcbe7b-2cca-4e63-b230-4b34ca3a267e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      536,
+      153
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      536,
+      153
+    ]
+  }
+}

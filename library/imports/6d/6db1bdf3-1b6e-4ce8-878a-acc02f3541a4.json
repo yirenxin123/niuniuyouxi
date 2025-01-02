@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "light3",
+    "texture": "7f7ab53f-47c2-4849-a2c1-27eac2e09f95",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      160,
+      160
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      160,
+      160
+    ]
+  }
+}

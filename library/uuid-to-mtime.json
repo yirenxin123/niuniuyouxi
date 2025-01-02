@@ -1,0 +1,4657 @@
+{
+  "c5c71020-780f-4d8c-9a83-159e4a7dc01f": {
+    "asset": 1502948914713,
+    "meta": 1502949311470,
+    "relativePath": "resources"
+  },
+  "731d50d8-e785-41ac-9600-07581940bc39": {
+    "asset": 1502948914426,
+    "meta": 1502949311471,
+    "relativePath": "resources\\prefabs"
+  },
+  "cccb0997-8213-4be0-9063-c19e8b45a319": {
+    "asset": 1502948914435,
+    "meta": 1502949311472,
+    "relativePath": "resources\\prefabs\\LoadingView"
+  },
+  "7a66bbe8-66f9-47d6-8609-a5893f1070e7": {
+    "asset": 1499614783272,
+    "meta": 1499995491312,
+    "relativePath": "resources\\prefabs\\LoadingView\\LoadingView.prefab"
+  },
+  "954080ca-f426-44f0-9ea6-24ae52c6676c": {
+    "asset": 1499614783273,
+    "meta": 1499995491315,
+    "relativePath": "resources\\prefabs\\LoadingView\\LoadingViewClip.anim"
+  },
+  "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
+    "asset": 1502948914616,
+    "meta": 1502949311474,
+    "relativePath": "resources\\Scene"
+  },
+  "d2ba85ae-eeef-4111-a658-c03a9a5f1f1f": {
+    "asset": 1499614783276,
+    "meta": 1499995491324,
+    "relativePath": "resources\\prefabs\\toastView.prefab"
+  },
+  "aba8df71-670e-4409-bce8-753bf90e2236": {
+    "asset": 1502948914449,
+    "meta": 1502949311475,
+    "relativePath": "resources\\Scene\\CommCard"
+  },
+  "44dae313-253c-4a3f-8bc9-f3e656a6e46c": {
+    "asset": 1499614782720,
+    "meta": 1499995491327,
+    "relativePath": "resources\\Scene\\CommCard\\Card_Rotation.anim"
+  },
+  "dadc9990-e210-4f21-babf-cdab8005f658": {
+    "asset": 1502948914590,
+    "meta": 1502949311477,
+    "relativePath": "resources\\Scene\\ComScene"
+  },
+  "e1422695-3132-4969-af0d-c630e5b58c0a": {
+    "asset": 1502948914588,
+    "meta": 1502949311478,
+    "relativePath": "resources\\Scene\\ComScene\\PopView"
+  },
+  "69e5612e-79de-4848-81b8-c170b6746bd4": {
+    "asset": 1499614782692,
+    "meta": 1499995491419,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\MessageCell.prefab"
+  },
+  "b489ceda-c0aa-4574-9aa5-ab81f15a15e7": {
+    "asset": 1499614782693,
+    "meta": 1499995491422,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\MessageCellDetailView.prefab"
+  },
+  "bea5cf1e-4b62-4249-941e-0f5b233f0318": {
+    "asset": 1499614782695,
+    "meta": 1499995491430,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\MessageView.prefab"
+  },
+  "3acacd90-e9d1-4d6a-85d2-508792f032b9": {
+    "asset": 1499614782698,
+    "meta": 1499995491441,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\NetMsg.prefab"
+  },
+  "7fa49446-49e6-4bcc-b7d1-bb69001c59fd": {
+    "asset": 1499614782712,
+    "meta": 1499995491459,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\rollMsg.prefab"
+  },
+  "56bb5f09-d49f-4306-96af-d845fdd9335e": {
+    "asset": 1499614782702,
+    "meta": 1499995491453,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ProduceCell2.prefab"
+  },
+  "a9b85307-5d82-45c2-a751-6c0d0e501ade": {
+    "asset": 1499614782706,
+    "meta": 1499995491472,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ShareView.prefab"
+  },
+  "04675edc-24f1-4611-9ca1-bcf6f33da415": {
+    "asset": 1499614782709,
+    "meta": 1499995491488,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\SuccessView.prefab"
+  },
+  "045339ff-9dd9-42d8-80e5-a0dd6c50f206": {
+    "asset": 1502948914598,
+    "meta": 1502949311480,
+    "relativePath": "resources\\Scene\\ComScene\\SceneView"
+  },
+  "4a648ca2-ecd8-40bc-9ff9-39fe5d520681": {
+    "asset": 1502948914614,
+    "meta": 1502949311481,
+    "relativePath": "resources\\Scene\\ComScene\\SceneView\\HallScene"
+  },
+  "eef8fc4d-34da-46bf-9e1f-ac3c82627016": {
+    "asset": 1499614782714,
+    "meta": 1499995491507,
+    "relativePath": "resources\\Scene\\ComScene\\SceneView\\HallScene\\BackHallAnim.anim"
+  },
+  "5acb8ec0-83d0-4c83-94b6-04098bceb9bd": {
+    "asset": 1499614782715,
+    "meta": 1499995491505,
+    "relativePath": "resources\\Scene\\ComScene\\SceneView\\HallScene\\EnterGameAnim.anim"
+  },
+  "554a9105-8241-440d-9094-c2cc8330e2c0": {
+    "asset": 1499614782716,
+    "meta": 1499995491510,
+    "relativePath": "resources\\Scene\\ComScene\\SceneView\\HallScene\\HallBottomClip.anim"
+  },
+  "bd4c778d-24d3-4b33-ae2f-1865c047ef11": {
+    "asset": 1499614782718,
+    "meta": 1499995491517,
+    "relativePath": "resources\\Scene\\ComScene\\SceneView\\HallScene\\HallTopClip.anim"
+  },
+  "f7c86781-f664-4fe4-8a59-10bcda1c0678": {
+    "asset": 1502948914619,
+    "meta": 1502949311483,
+    "relativePath": "resources\\Scene\\GameScene"
+  },
+  "953ef970-cdb1-447c-a8ab-7c3c1a4666ee": {
+    "asset": 1502948914703,
+    "meta": 1502949311484,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight"
+  },
+  "722491f8-b4b0-4bbf-a4a1-139432f3f838": {
+    "asset": 1502948914634,
+    "meta": 1502949311486,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Animation"
+  },
+  "2576983b-7b13-4794-916f-ce1e94998f33": {
+    "asset": 1499614782724,
+    "meta": 1499995491529,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Animation\\winAniOnHead.anim"
+  },
+  "d55ed1d6-e4f7-4aa8-b2d2-7a75ce746f53": {
+    "asset": 1502948914701,
+    "meta": 1502949311487,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs"
+  },
+  "d126dfaf-4d2c-4447-89d4-4af6f75b4635": {
+    "asset": 1499614782722,
+    "meta": 1499995491530,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Animation\\WinScoreAni.anim"
+  },
+  "9be2af26-0dba-495a-b18f-f3aac3d2a721": {
+    "asset": 1499614782729,
+    "meta": 1499995491551,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_Clock.prefab"
+  },
+  "4c068a45-e1c7-436e-8808-3aa26fb18d52": {
+    "asset": 1499614782738,
+    "meta": 1499995491591,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_MenuRunIn.anim"
+  },
+  "1eb62b19-7850-4b99-85cf-f02a5bdb4d70": {
+    "asset": 1499614782739,
+    "meta": 1499995491594,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_MultCell.prefab"
+  },
+  "39835faa-405d-49bf-8b58-622dd5326da6": {
+    "asset": 1499614782740,
+    "meta": 1499995491598,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_OwnerView.prefab"
+  },
+  "59825ea4-8d30-4e1c-87be-a57178bcac0f": {
+    "asset": 1499614782743,
+    "meta": 1499995491611,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_PlayerList.prefab"
+  },
+  "3ead9dfb-854c-44fd-9bfb-3db9fc593a6f": {
+    "asset": 1499614782745,
+    "meta": 1499995491622,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_RoomInfo.prefab"
+  },
+  "fd725c83-29d2-4aa1-8c8c-1c23bd8ed6fa": {
+    "asset": 1499614782746,
+    "meta": 1499995491625,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_RuleView.prefab"
+  },
+  "79660c5d-f184-48f7-b32c-9ca8864efef3": {
+    "asset": 1502948914710,
+    "meta": 1502949311489,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\SceneView"
+  },
+  "19912b3b-a031-4c0d-a9aa-92f4f95491a7": {
+    "asset": 1499614782757,
+    "meta": 1499995491645,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\SceneView\\Bullfight_PlayerWinScoreClip.anim"
+  },
+  "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
+    "asset": 1502948915597,
+    "meta": 1502949311490,
+    "relativePath": "resources\\Texture"
+  },
+  "39ff85ce-6c03-4b07-ac1e-a9c191a10684": {
+    "asset": 1502948914738,
+    "meta": 1502949311492,
+    "relativePath": "resources\\Texture\\CommCard"
+  },
+  "2674008a-2ae8-413c-bb26-f7fb1230af41": {
+    "asset": 1499614782963,
+    "meta": 1499995499237,
+    "relativePath": "resources\\Texture\\CommCard\\card.plist"
+  },
+  "d23a9c0a-8dce-48ea-8cfa-be1e98ea9d0b": {
+    "asset": 1502948915484,
+    "meta": 1502949311493,
+    "relativePath": "resources\\Texture\\ComScene"
+  },
+  "1f4d5bc1-5e0a-4087-bb20-bf610a0a7342": {
+    "asset": 1502948915298,
+    "meta": 1502949311495,
+    "relativePath": "resources\\Texture\\ComScene\\PopView"
+  },
+  "f32c8533-73e6-4361-a8be-dfe48d89085b": {
+    "asset": 1502948914786,
+    "meta": 1502949311496,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\AlertView"
+  },
+  "7b83cfe8-4e91-4afc-a3eb-8ddd8b6e8829": {
+    "asset": 1499614782963,
+    "meta": 1499995491709,
+    "relativePath": "resources\\Texture\\CommCard\\card-0.png"
+  },
+  "0c9bd670-fa23-46a1-b894-f0aec833ca62": {
+    "asset": 1499614782760,
+    "meta": 1499995491739,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\AlertView\\Btn_Big.png"
+  },
+  "31f6bc7d-d2b8-4108-bec9-45cadd956b76": {
+    "asset": 1499614782762,
+    "meta": 1499995491747,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\AlertView\\Btn_Small.png"
+  },
+  "28719461-894f-4cd4-bac5-ece891f60af2": {
+    "asset": 1499614782761,
+    "meta": 1499995491741,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\AlertView\\Btn_Close.png"
+  },
+  "2e088459-f08c-4e02-aa5c-1037e0c41aaf": {
+    "asset": 1499614782772,
+    "meta": 1499995491790,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\AlertView\\PopBgSmall.png"
+  },
+  "eb393e52-9ba3-4fd4-aa06-e98bbcca447f": {
+    "asset": 1502948914889,
+    "meta": 1502949311498,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView"
+  },
+  "af64945e-9216-4728-b1bc-93890392c3c1": {
+    "asset": 1499614782780,
+    "meta": 1499995491805,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\Btn_YellowBg.png"
+  },
+  "67d6d0ad-472d-4ded-abb5-ba3c1f3b145d": {
+    "asset": 1499614782773,
+    "meta": 1499995491812,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\BtnAddPhoto.png"
+  },
+  "0af75fb4-c901-4014-a1f5-4d414201ec1c": {
+    "asset": 1499614782774,
+    "meta": 1499995491825,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\BtnAddToClub.png"
+  },
+  "30b26bbe-0e0f-4fc1-9d13-293b7472cf51": {
+    "asset": 1499614782769,
+    "meta": 1499995491850,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\AlertView\\PopBgBig.png"
+  },
+  "8b30d98f-1db4-4eeb-ae92-d16c4a9c3f0f": {
+    "asset": 1499614782775,
+    "meta": 1499995491839,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\BtnGreenBG.png"
+  },
+  "ae1bb596-9dc4-496e-b42f-4bfe8bc1bd81": {
+    "asset": 1499614782776,
+    "meta": 1499995491854,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\BtnNewClub.png"
+  },
+  "6d7ed28f-54d6-454a-8fd0-cab7da5479df": {
+    "asset": 1499614782777,
+    "meta": 1499995491857,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\BtnPersonsOff.png"
+  },
+  "758b9f85-c727-4495-bec1-e1b34b12309d": {
+    "asset": 1499614782778,
+    "meta": 1499995491865,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\BtnPersonsOn.png"
+  },
+  "c0128fce-d394-4120-847c-fe390b18262d": {
+    "asset": 1499614782778,
+    "meta": 1499995491870,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\BtnPosition.png"
+  },
+  "1f226486-708d-4251-b1c7-d6d31e1c7100": {
+    "asset": 1499614782780,
+    "meta": 1499995491883,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\BtnShare.png"
+  },
+  "ea00a6b8-5144-4e16-800b-2b638b1977e8": {
+    "asset": 1499614782779,
+    "meta": 1499995491879,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\BtnRedBG.png"
+  },
+  "54fb5c06-f36e-411a-88f8-223423a3ac3d": {
+    "asset": 1499614782781,
+    "meta": 1499995491895,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\ClubAddBg.png"
+  },
+  "e40e1281-b754-4040-a23b-a95d797ec0ba": {
+    "asset": 1499614782782,
+    "meta": 1499995491889,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\ClubFlag.png"
+  },
+  "eb7c0c0f-0f8d-43bc-86ae-8e7fdda0bab0": {
+    "asset": 1499614782784,
+    "meta": 1499995491912,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\ClubIconOn.png"
+  },
+  "a284182a-f804-4524-91f8-98ddaab618c8": {
+    "asset": 1499614782783,
+    "meta": 1499995491917,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\ClubIconOff.png"
+  },
+  "6b990d02-d7fd-4866-b252-a832118be2e0": {
+    "asset": 1499614782785,
+    "meta": 1499995491923,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\EditBoxBg.png"
+  },
+  "6c0daaf8-5626-4df7-ab42-d849d7814e71": {
+    "asset": 1499614782786,
+    "meta": 1499995491926,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\FindFlag.png"
+  },
+  "acdf35b4-f3a8-45fa-8ee2-e05311ae7b77": {
+    "asset": 1499614782796,
+    "meta": 1499995491988,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\mailFlag.png"
+  },
+  "6151e212-ad32-4671-a8cf-1b6596211dde": {
+    "asset": 1499614782787,
+    "meta": 1499995492002,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\PersonFlag.png"
+  },
+  "79202aa6-5f67-493c-8ff5-51282bb72d2a": {
+    "asset": 1499614782786,
+    "meta": 1499995492025,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\PermissionBg.png"
+  },
+  "097b42bf-19d9-46ac-ade6-d6dddb00ef86": {
+    "asset": 1502948914933,
+    "meta": 1502949311499,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView"
+  },
+  "51c75598-9998-4ae4-8e3e-f51f4add7587": {
+    "asset": 1499614782788,
+    "meta": 1499995492012,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\RedArrows.png"
+  },
+  "ea557ec8-1ebd-492c-8197-ffc539e62d72": {
+    "asset": 1499614782800,
+    "meta": 1499995492034,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView\\Btn_Back.png"
+  },
+  "98050968-43e3-4cd4-a2c1-431df0553671": {
+    "asset": 1499614782804,
+    "meta": 1499995492043,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView\\Diamond.png"
+  },
+  "d18ecec1-9404-4b87-8ffa-bd0e8f4c3c23": {
+    "asset": 1499614782805,
+    "meta": 1499995492059,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView\\Head.png"
+  },
+  "65a76b65-ce0d-4770-8fc1-95fa17c84b82": {
+    "asset": 1499614782806,
+    "meta": 1499995492066,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView\\HeadBg.png"
+  },
+  "5920b1db-04af-4e58-8752-4442f739b8cd": {
+    "asset": 1499614782807,
+    "meta": 1499995492073,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView\\SwitchOff.png"
+  },
+  "acf45f71-2386-4295-965a-8bdac0b8f19a": {
+    "asset": 1499614782808,
+    "meta": 1499995492082,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView\\SwitchOn.png"
+  },
+  "a2114baf-05ab-418f-b6c8-aaf7feca6ba1": {
+    "asset": 1499614782809,
+    "meta": 1499995492092,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView\\YellowBg.png"
+  },
+  "9aa05f41-2270-44cb-ade6-65fc423d9df7": {
+    "asset": 1502948914961,
+    "meta": 1502949311501,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\FindView"
+  },
+  "b4a4f555-1905-484c-b649-533eb0b70d40": {
+    "asset": 1499614782810,
+    "meta": 1499995492104,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\FindView\\Arrow.png"
+  },
+  "db717b50-2a1f-4ee1-9ac0-2b8deb0862e3": {
+    "asset": 1499614782811,
+    "meta": 1499995492121,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\FindView\\CryingFace.png"
+  },
+  "089fd533-95b3-49b2-8bdc-ad4ad6c51fc5": {
+    "asset": 1499614782812,
+    "meta": 1499995492134,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\FindView\\PointOff.png"
+  },
+  "00046782-cd58-4e4a-bd35-a4eddeb152e6": {
+    "asset": 1499614782807,
+    "meta": 1499995492137,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView\\LeftCommBg.png"
+  },
+  "2d1e111b-2ce2-4e03-9448-6e2b905e42d0": {
+    "asset": 1499614782813,
+    "meta": 1499995492143,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\FindView\\PointOn.png"
+  },
+  "6ea31093-48b7-41c1-968b-8823164ad85c": {
+    "asset": 1502948914999,
+    "meta": 1502949311502,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView"
+  },
+  "a96c2b1d-6505-421e-b390-12c887d02074": {
+    "asset": 1499614782818,
+    "meta": 1499995492163,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView\\Color1_off.png"
+  },
+  "bacb6aac-909f-4e08-8489-1bb80ccfd58d": {
+    "asset": 1499614782819,
+    "meta": 1499995492167,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView\\Color1_on.png"
+  },
+  "6fae9d89-a151-4a9b-ae49-d9a937e92d92": {
+    "asset": 1499614782820,
+    "meta": 1499995492171,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView\\Color2_off.png"
+  },
+  "29e28596-1939-49a4-8b83-685181444253": {
+    "asset": 1499614782821,
+    "meta": 1499995492174,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView\\Color2_on.png"
+  },
+  "12af39dc-f8b3-4ca6-bfea-0f42bd9cdeb6": {
+    "asset": 1499614782821,
+    "meta": 1499995492180,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView\\Color3_off.png"
+  },
+  "9f2e1d37-7a38-41cb-a181-983a26dbff80": {
+    "asset": 1499614782823,
+    "meta": 1499995492190,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView\\Color4_off.png"
+  },
+  "449f76d5-5e94-4121-b927-88904862f284": {
+    "asset": 1499614782822,
+    "meta": 1499995492183,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView\\Color3_on.png"
+  },
+  "04af2716-da9a-45de-af72-1773be252714": {
+    "asset": 1499614782824,
+    "meta": 1499995492192,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView\\Color4_on.png"
+  },
+  "fc2e17ed-0945-49d9-af67-e9d4398d1d46": {
+    "asset": 1502948915023,
+    "meta": 1502949311504,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MessageView"
+  },
+  "3975f1ca-7bc1-4ad2-8ffd-0e5df3840487": {
+    "asset": 1499614782824,
+    "meta": 1499995492203,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\LoadingView\\LoadingViewBg.png"
+  },
+  "28f9af80-d8e3-4fd0-b03a-eefc57bcc9e8": {
+    "asset": 1499614782826,
+    "meta": 1499995492206,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MessageView\\Btn_Yellow_Bg.png"
+  },
+  "168a3f34-a4c2-4986-96f1-c3f13e52364d": {
+    "asset": 1499614782830,
+    "meta": 1499995492214,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MessageView\\line.png"
+  },
+  "188245ab-1f74-45ca-9e6d-77bf6b906494": {
+    "asset": 1499614782827,
+    "meta": 1499995492216,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MessageView\\ClubMsg.png"
+  },
+  "ee56a8be-7b32-4958-9858-7973273a2540": {
+    "asset": 1499614782828,
+    "meta": 1499995492224,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MessageView\\NoticeRedTip.png"
+  },
+  "4f43b7b4-796c-4f4d-a72b-49729d0f2649": {
+    "asset": 1499614782828,
+    "meta": 1499995492245,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MessageView\\MessageCell.png"
+  },
+  "69ff56f3-f0ae-4356-95ad-2ede9c2b7039": {
+    "asset": 1502948915084,
+    "meta": 1502949311505,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView"
+  },
+  "ffa1f536-78f8-4deb-aa48-1d3f7872baab": {
+    "asset": 1499614782829,
+    "meta": 1499995492231,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MessageView\\SysMsg.png"
+  },
+  "becfd5bb-1d48-470c-af30-a9a909d8568c": {
+    "asset": 1499614782833,
+    "meta": 1499995492252,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnFlag.png"
+  },
+  "6770d5d6-73c3-4f5f-86d4-c3f1ca726879": {
+    "asset": 1499614782831,
+    "meta": 1499995492240,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnClub.png"
+  },
+  "8a686f02-e10c-467a-8f41-ea3b39e6cc47": {
+    "asset": 1499614782835,
+    "meta": 1499995492259,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnNotice.png"
+  },
+  "a70095b0-b0ea-4362-9f63-8dcb3a9e26a3": {
+    "asset": 1499614782834,
+    "meta": 1499995492255,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnMessage.png"
+  },
+  "f8b6f6c2-eece-4336-9842-56342419582b": {
+    "asset": 1499614782835,
+    "meta": 1499995492264,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnRule.png"
+  },
+  "3bbc55dc-9a75-4435-901f-dc8890b75353": {
+    "asset": 1499614782836,
+    "meta": 1499995492267,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnService.png"
+  },
+  "9f953e1e-280f-448c-a524-aee4bb7c2e01": {
+    "asset": 1499614782837,
+    "meta": 1499995492271,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnSetting.png"
+  },
+  "09911f65-ed07-44b5-922d-474104e896de": {
+    "asset": 1499614782837,
+    "meta": 1499995492274,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnShare.png"
+  },
+  "5f243c94-baa1-459a-9bef-834a55605328": {
+    "asset": 1499614782838,
+    "meta": 1499995492278,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnSuccess.png"
+  },
+  "51b9b2d0-e898-4a23-bc64-a51bb18c2e3b": {
+    "asset": 1499614782839,
+    "meta": 1499995492284,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\FontID.png"
+  },
+  "9ed811f1-1a53-4b1c-9944-b0bbd2b522df": {
+    "asset": 1499614782841,
+    "meta": 1499995492288,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\gold.png"
+  },
+  "ea1b351a-cfdc-4c12-99fe-f30a6e84f3fb": {
+    "asset": 1499614782842,
+    "meta": 1499995492291,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\man.png"
+  },
+  "d40a88d9-a6fe-4a19-97db-6ad083ed3daf": {
+    "asset": 1499614782840,
+    "meta": 1499995492295,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\Mine.png"
+  },
+  "2d0fdac5-4d8b-4f8e-b1f0-cc654ef869c2": {
+    "asset": 1499614782845,
+    "meta": 1499995492301,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\woman.png"
+  },
+  "c7951d33-ac69-4a44-8686-3952039e87e9": {
+    "asset": 1502948915092,
+    "meta": 1502949311507,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\NoticeView"
+  },
+  "a787524f-5458-4025-a867-332bdd9c02ca": {
+    "asset": 1499614782847,
+    "meta": 1499995492327,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\NoticeView\\title.png"
+  },
+  "24bab7d9-7e23-4946-88de-b1af2855e980": {
+    "asset": 1502948915138,
+    "meta": 1502949311508,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView"
+  },
+  "87184c07-5444-4f91-8a17-1975462f366e": {
+    "asset": 1499614782849,
+    "meta": 1499995492349,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\ContentBg.png"
+  },
+  "61eb1678-c2e0-429e-823f-062dda4d764f": {
+    "asset": 1499614782846,
+    "meta": 1499995492371,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\NoticeView\\bg.png"
+  },
+  "768454ed-a279-4d34-9e93-b1ad19ce1503": {
+    "asset": 1499614782849,
+    "meta": 1499995492357,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\FontCommit.png"
+  },
+  "594a74c3-bd28-45a4-96bd-8074af5dfa90": {
+    "asset": 1499614782850,
+    "meta": 1499995492366,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\FontCommitLabel.png"
+  },
+  "a940f4ee-aad0-499c-8d0a-558a88a85608": {
+    "asset": 1499614782852,
+    "meta": 1499995492380,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\FontNoProcesse.png"
+  },
+  "392fca14-bca6-4b94-9ba5-499d08f859f4": {
+    "asset": 1499614782851,
+    "meta": 1499995492375,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\FontHistoryLabel.png"
+  },
+  "46f201f9-60ab-4172-b1d0-ceeeec551c75": {
+    "asset": 1499614782852,
+    "meta": 1499995492383,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\FontProcessed.png"
+  },
+  "eb689b91-3d19-471f-a30d-1c287baf4d67": {
+    "asset": 1499614782853,
+    "meta": 1499995492387,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\FontServiceOnlineLabel.png"
+  },
+  "02ff00d0-99bd-4397-aad4-c8f8a9b449ed": {
+    "asset": 1499614782854,
+    "meta": 1499995492391,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\HistoryTitleBg.png"
+  },
+  "95c6991e-d8ed-4d7e-9ba6-2a4dabe37244": {
+    "asset": 1499614782854,
+    "meta": 1499995492420,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\InfoBg.png"
+  },
+  "123aa363-7f23-49f1-a782-603a34eb9908": {
+    "asset": 1499614782855,
+    "meta": 1499995492402,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\NoProcesseBg.png"
+  },
+  "e68325d6-c03a-4ef9-94a8-356f690ec4bc": {
+    "asset": 1499614782856,
+    "meta": 1499995492423,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\TelBg.png"
+  },
+  "0346895d-a798-4b59-9b56-91772601617b": {
+    "asset": 1499614782856,
+    "meta": 1499995492413,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\ProcessedBg.png"
+  },
+  "6a26a866-745c-4970-baba-0b1a26c5a29c": {
+    "asset": 1502948915167,
+    "meta": 1502949311509,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView"
+  },
+  "996ff46a-b6e3-4b81-b4b0-805540110f36": {
+    "asset": 1499614782858,
+    "meta": 1499995492435,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView\\FontQuitLogin.png"
+  },
+  "85d59778-299c-47de-b6ee-183956681849": {
+    "asset": 1499614782857,
+    "meta": 1499995492432,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ServiceView\\Title.png"
+  },
+  "5e0880b9-923b-49d7-afdc-572bf5ef27b9": {
+    "asset": 1499614782859,
+    "meta": 1499995492441,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView\\IM.png"
+  },
+  "185d4faa-07fa-44bf-849a-a2318aa7580e": {
+    "asset": 1499614782860,
+    "meta": 1499995492445,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView\\IMSwitch_off.png"
+  },
+  "0bd868be-d854-48ab-bcc3-42a5317cadce": {
+    "asset": 1499614782861,
+    "meta": 1499995492449,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView\\IMSwitch_on.png"
+  },
+  "c9dfa20f-6f9e-4b34-a004-509ad547636b": {
+    "asset": 1499614782862,
+    "meta": 1499995492452,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView\\Music.png"
+  },
+  "064555dd-ab08-47ff-852d-f508273c9792": {
+    "asset": 1499614782862,
+    "meta": 1499995492456,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView\\Slider.png"
+  },
+  "88d64e9a-ce00-4774-bb74-d3423396b637": {
+    "asset": 1499614782863,
+    "meta": 1499995492460,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView\\SliderBg.png"
+  },
+  "8d141de0-1b73-40bd-b37c-bcb90a8ad4e6": {
+    "asset": 1499614782864,
+    "meta": 1499995492464,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView\\SliderPlan.png"
+  },
+  "aab9804d-38c2-4133-b533-cf4b660b4ef6": {
+    "asset": 1502948915179,
+    "meta": 1502949311511,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShareView"
+  },
+  "e1f8605b-ef4f-45b6-a469-4295fc5993dc": {
+    "asset": 1499614782865,
+    "meta": 1499995492469,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SetView\\Title.png"
+  },
+  "2de67253-8c5e-4579-8322-4ce3c58312bf": {
+    "asset": 1499614782866,
+    "meta": 1499995492475,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShareView\\friends.png"
+  },
+  "78cbafd4-2a8f-42ff-9892-d3f27f0105ec": {
+    "asset": 1502948915241,
+    "meta": 1502949311512,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView"
+  },
+  "6af21f47-3333-4b7a-bae9-722d094442f1": {
+    "asset": 1499614782867,
+    "meta": 1499995492486,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShareView\\wechat.png"
+  },
+  "15c6e2b3-19ed-4120-a258-3d13bfbf425d": {
+    "asset": 1499614782869,
+    "meta": 1499995492500,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\BtnBuy.png"
+  },
+  "65838298-dff4-4624-90e8-62467ea1fe34": {
+    "asset": 1499614782870,
+    "meta": 1499995492509,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\CommodityCellBg.png"
+  },
+  "e3e13c56-069f-448d-b449-a815f603d457": {
+    "asset": 1499614782871,
+    "meta": 1499995492512,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Diamond_1.png"
+  },
+  "b10042df-79a1-49f4-bac7-ac8e825e831e": {
+    "asset": 1499614782872,
+    "meta": 1499995492519,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Diamond_2.png"
+  },
+  "c74883c0-ec6e-4263-bd3b-c23f819d7063": {
+    "asset": 1499614782873,
+    "meta": 1499995492522,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Diamond_3.png"
+  },
+  "16a6ba5e-5aff-4302-a1e1-c5167c0e5e24": {
+    "asset": 1499614782873,
+    "meta": 1499995492527,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Diamond_4.png"
+  },
+  "18e72fa9-109c-479c-a225-cc6fc62fcf09": {
+    "asset": 1499614782874,
+    "meta": 1499995492533,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Diamond_5.png"
+  },
+  "a1630b91-f4af-423b-a857-def3246674ac": {
+    "asset": 1499614782875,
+    "meta": 1499995492543,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Diamond_6.png"
+  },
+  "d17a43ff-7f04-4e31-b9e8-1b563248efdb": {
+    "asset": 1499614782876,
+    "meta": 1499995492541,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Gold_1.png"
+  },
+  "399d115c-1693-471f-b044-aaf5cc44bcc2": {
+    "asset": 1499614782877,
+    "meta": 1499995492550,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Gold_2.png"
+  },
+  "d09f7047-3017-48b1-bb57-84b229fa3b7c": {
+    "asset": 1499614782877,
+    "meta": 1499995492555,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Gold_3.png"
+  },
+  "a500029c-36f1-42b0-a74a-357549284955": {
+    "asset": 1499614782878,
+    "meta": 1499995492559,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Gold_4.png"
+  },
+  "344bca77-4065-4e3f-8b61-36eae3c93ce4": {
+    "asset": 1499614782879,
+    "meta": 1499995492564,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Gold_5.png"
+  },
+  "b346a579-2e12-44b6-aadd-7d375b13205e": {
+    "asset": 1499614782880,
+    "meta": 1499995492572,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\Gold_6.png"
+  },
+  "680fb6a9-c1e5-406d-9936-35201016cda8": {
+    "asset": 1499614782881,
+    "meta": 1499995492578,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\prop_1.png"
+  },
+  "35fae278-d119-4cb7-8864-951d7fdf3a56": {
+    "asset": 1499614782882,
+    "meta": 1499995492585,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\prop_2.png"
+  },
+  "aa479f7c-8f52-454c-adab-b8ccf6884b67": {
+    "asset": 1502948915266,
+    "meta": 1502949311514,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SuccessView"
+  },
+  "893dc769-caa2-44e2-8989-6ca387ae7dd6": {
+    "asset": 1499614782882,
+    "meta": 1499995492591,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\prop_3.png"
+  },
+  "c0ad622e-299f-48c6-bb19-1e7dc8c4c408": {
+    "asset": 1499614782888,
+    "meta": 1499995492626,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SuccessView\\RoomRuleTitle.png"
+  },
+  "f6b0cd79-5217-4e03-b1e3-2db7cdb750e8": {
+    "asset": 1499614782889,
+    "meta": 1499995492634,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SuccessView\\timeFlag.png"
+  },
+  "8f9028be-8d0e-4cb9-83ed-1d13fce525aa": {
+    "asset": 1499614782888,
+    "meta": 1499995492637,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SuccessView\\SuccessCellBg.png"
+  },
+  "36f1976d-eecb-44c3-91bc-f44acad6becd": {
+    "asset": 1502948915460,
+    "meta": 1502949311518,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView"
+  },
+  "677d479f-79f9-4318-9b49-6488a5bdbefd": {
+    "asset": 1502948915329,
+    "meta": 1502949311519,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\Common"
+  },
+  "6c1bd1c4-e5e2-42c5-b7f1-a116372617f2": {
+    "asset": 1499614782890,
+    "meta": 1499995492642,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SuccessView\\timeFlagWhite.png"
+  },
+  "125524db-0c06-405b-b9a6-aa393aa8eca2": {
+    "asset": 1499614782908,
+    "meta": 1499995492712,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\Common\\DefaultHead.png"
+  },
+  "53aa3514-016e-491a-b874-5d3c21f2cbd3": {
+    "asset": 1499614782909,
+    "meta": 1499995492718,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\Common\\SpeakerImg.png"
+  },
+  "b3cf7ddb-4ad0-4230-b7c6-038f85113faf": {
+    "asset": 1499614782909,
+    "meta": 1499995492727,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\Common\\TipsBg.png"
+  },
+  "4d513d51-08cd-42bb-a972-0a4342c066c5": {
+    "asset": 1502948915369,
+    "meta": 1502949311521,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene"
+  },
+  "e95b71ca-21ab-4cfd-b4c0-813b6249dcbb": {
+    "asset": 1499614782911,
+    "meta": 1499995492738,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BottomBg.png"
+  },
+  "1ed3e7a0-5da2-4bad-959c-73e85c55c43c": {
+    "asset": 1502948915458,
+    "meta": 1502949311522,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg"
+  },
+  "ff32b14a-43c0-46d1-830e-a87828884684": {
+    "asset": 1499614782907,
+    "meta": 1499995492751,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\Common\\Bg.jpg"
+  },
+  "fdb53ab1-05d8-451c-94e9-39b868e509f8": {
+    "asset": 1499614782947,
+    "meta": 1499995493042,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\defaultHead.png"
+  },
+  "104be959-8c91-4922-a690-b3159626372e": {
+    "asset": 1499614782934,
+    "meta": 1499995493049,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\FontID.png"
+  },
+  "63e91519-6f84-41af-b114-3106a849b18f": {
+    "asset": 1499614782935,
+    "meta": 1499995493054,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\GoldImg.png"
+  },
+  "a007c52a-a5ec-4bc3-a079-fd6a5369115e": {
+    "asset": 1499614782944,
+    "meta": 1499995493062,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\HeadBg.png"
+  },
+  "3b7c21d3-f95c-4133-9b25-2a8738bf8b95": {
+    "asset": 1499614782945,
+    "meta": 1499995493077,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\MoreBtnBg.png"
+  },
+  "d64aec5f-43a0-4612-abad-a39ac25c7bb9": {
+    "asset": 1499614782945,
+    "meta": 1499995493083,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\NickBg.png"
+  },
+  "5ab14070-8de4-486c-9482-7a627a0e48fb": {
+    "asset": 1502948915481,
+    "meta": 1502949311523,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\LoadingScene"
+  },
+  "68f8f1d7-2ea2-4021-943f-b1b2bd0889f4": {
+    "asset": 1502948915497,
+    "meta": 1502949311525,
+    "relativePath": "resources\\Texture\\ComScene\\Sound"
+  },
+  "e91b637b-7582-4903-842a-80af9767052a": {
+    "asset": 1499614782956,
+    "meta": 1499614782957,
+    "relativePath": "resources\\Texture\\ComScene\\Sound\\btnclick.mp3"
+  },
+  "520c62b3-c3b6-43f4-a520-42b08abdaef0": {
+    "asset": 1499614782957,
+    "meta": 1499614782958,
+    "relativePath": "resources\\Texture\\ComScene\\Sound\\coinsfly.mp3"
+  },
+  "b0ce147a-fa98-4e8f-b75a-94add99cce37": {
+    "asset": 1499614782958,
+    "meta": 1499614782958,
+    "relativePath": "resources\\Texture\\ComScene\\Sound\\daojishi.mp3"
+  },
+  "f6d349a6-5574-43ae-b947-5fe048edc01d": {
+    "asset": 1499614782959,
+    "meta": 1499614782959,
+    "relativePath": "resources\\Texture\\ComScene\\Sound\\sit.mp3"
+  },
+  "ec983fd3-79b4-4ea1-87f3-4b1a07584edc": {
+    "asset": 1502948915514,
+    "meta": 1502949311527,
+    "relativePath": "resources\\Texture\\Coom"
+  },
+  "da373ef2-6aa5-48c3-a4e9-5f189043a930": {
+    "asset": 1499614783001,
+    "meta": 1499995493174,
+    "relativePath": "resources\\Texture\\Coom\\dt-lbbj.png"
+  },
+  "9dc1cfe5-e96e-4ba2-9913-bbcfcb25799f": {
+    "asset": 1499614783001,
+    "meta": 1499995493486,
+    "relativePath": "resources\\Texture\\Coom\\lb.png"
+  },
+  "069cbea3-1ddc-4aa1-b929-d0a021af27bb": {
+    "asset": 1502948915601,
+    "meta": 1502949311532,
+    "relativePath": "resources\\Texture\\GameSscene"
+  },
+  "4a8596f0-b290-4c6d-83d7-9b8816fd8366": {
+    "asset": 1502948916538,
+    "meta": 1502949311534,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight"
+  },
+  "74195015-7a67-423c-bdce-2cb3b94ae818": {
+    "asset": 1502948915612,
+    "meta": 1502949311535,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation"
+  },
+  "d5d5812b-c0ff-4d15-8c14-199723ee85c4": {
+    "asset": 1502948915641,
+    "meta": 1502949311537,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation"
+  },
+  "c5010393-e018-4813-bcd6-100dbf48ec87": {
+    "asset": 1499614783003,
+    "meta": 1499995493514,
+    "relativePath": "resources\\Texture\\Coom\\toastbg.png"
+  },
+  "c8655846-c2d6-465e-bb67-f05ba8b8be38": {
+    "asset": 1499614783006,
+    "meta": 1499995493535,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation\\anim_youwi1.png"
+  },
+  "a0ebd847-5805-4eea-bd53-d0d9875d5747": {
+    "asset": 1499614783007,
+    "meta": 1499995493532,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation\\anim_youwin2.png"
+  },
+  "62e6f653-9249-44f0-b4ce-5cf317479dfe": {
+    "asset": 1499614783008,
+    "meta": 1499995493557,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation\\anim_youwin3.png"
+  },
+  "afd3a671-f360-43a8-8e92-30fad65d39ea": {
+    "asset": 1499614783009,
+    "meta": 1499995493555,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation\\anim_youwin4.png"
+  },
+  "0410cc36-b896-4c4b-b4ec-e474dd55ac80": {
+    "asset": 1499614783010,
+    "meta": 1499995493577,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation\\anim_youwin5.png"
+  },
+  "c51044d4-2daa-45f2-8b8a-02c7ffb7de58": {
+    "asset": 1499614783011,
+    "meta": 1499995493574,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation\\anim_youwin6.png"
+  },
+  "8b07041f-3e33-469e-b362-2661af0928c8": {
+    "asset": 1499614783012,
+    "meta": 1499995493590,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation\\light1.png"
+  },
+  "7890742e-00aa-4619-afad-8f0a5c16f5b3": {
+    "asset": 1499614783013,
+    "meta": 1499995493587,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation\\light2.png"
+  },
+  "0b8ff586-96ba-4be0-bbe2-077e27e8e390": {
+    "asset": 1502948915820,
+    "meta": 1502949311538,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView"
+  },
+  "7f7ab53f-47c2-4849-a2c1-27eac2e09f95": {
+    "asset": 1499614783014,
+    "meta": 1499995493597,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Animation\\win_animation\\light3.png"
+  },
+  "61795654-cb06-4558-9a0b-13eacabbe639": {
+    "asset": 1502948915689,
+    "meta": 1502949311540,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView"
+  },
+  "3260d198-7259-439c-b0d5-72268d551f95": {
+    "asset": 1499614783022,
+    "meta": 1499995493634,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\Btn_Tips_off.png"
+  },
+  "41310e5f-2f4f-4103-8d0b-9af9f9d1c9e3": {
+    "asset": 1499614783023,
+    "meta": 1499995493636,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\Btn_Tips_on.png"
+  },
+  "34c2be3e-e5ad-4053-b6d9-5a66b77107fa": {
+    "asset": 1499614783020,
+    "meta": 1499995493647,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\BtnSure.png"
+  },
+  "caab3e74-c769-45f5-9b7a-2991d5a80b19": {
+    "asset": 1499614783019,
+    "meta": 1499995493653,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\BtnBar.png"
+  },
+  "a7b4c4b4-32ce-45b5-87c1-91230453a30c": {
+    "asset": 1499614783026,
+    "meta": 1499995493659,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\CurSelectionBg.png"
+  },
+  "de5f93ee-5a3b-4a86-a017-f83913ab281a": {
+    "asset": 1499614783025,
+    "meta": 1499995493689,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\CarryGoldBg.png"
+  },
+  "5704150a-38a4-4305-b192-6e9e189b9f36": {
+    "asset": 1499614783028,
+    "meta": 1499995493684,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\ProgressBg.png"
+  },
+  "904d68b6-babb-4a37-a70f-a98e2715059c": {
+    "asset": 1502948915759,
+    "meta": 1502949311542,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom"
+  },
+  "f1796b75-72ad-4e34-9e48-44ddc0492ccc": {
+    "asset": 1499614783027,
+    "meta": 1499995493678,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\GoldInfoBg.png"
+  },
+  "3f428ac1-4320-4fe7-8bbc-8f99cd64bd15": {
+    "asset": 1499614783030,
+    "meta": 1499995493696,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_Close.png"
+  },
+  "e39369f2-e2e7-44f1-85f4-297119b720c0": {
+    "asset": 1499614783029,
+    "meta": 1499995493692,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\AddFlag.png"
+  },
+  "96076254-e7a5-4602-9324-f671f58b62de": {
+    "asset": 1499614783036,
+    "meta": 1499995493730,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_Label_off.png"
+  },
+  "94c48d19-79b8-4ad6-ba17-ebfb05b5da84": {
+    "asset": 1499614783031,
+    "meta": 1499995493703,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_CreateRoom.png"
+  },
+  "77228ecb-e7fb-4633-ba85-d16f6bccb68c": {
+    "asset": 1499614783037,
+    "meta": 1499995493736,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_Label_on.png"
+  },
+  "c80ed282-55c2-42e0-94ac-8aaae8c1ce87": {
+    "asset": 1499614783035,
+    "meta": 1499995493740,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_Label_Point.png"
+  },
+  "f736d43e-9c55-475c-ba84-7566878ee681": {
+    "asset": 1499614783038,
+    "meta": 1499995493745,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_Yellow.png"
+  },
+  "8e4ec5b2-79e3-4caa-954e-a6656d12c9ec": {
+    "asset": 1499614783039,
+    "meta": 1499995493757,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\LabelPointBg.png"
+  },
+  "d7ab8c65-7cc4-4de9-bfc2-b5ba0de42305": {
+    "asset": 1499614783039,
+    "meta": 1499995493771,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\RoomNameEditBoxBg.png"
+  },
+  "9bb98f4e-d44b-404d-8d58-6d11f7fa121a": {
+    "asset": 1499614783043,
+    "meta": 1499995493779,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\SubFlag.png"
+  },
+  "e08f5221-2243-4bf7-8769-5f42708c1b30": {
+    "asset": 1499614783043,
+    "meta": 1499995493782,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\ToggleBg.png"
+  },
+  "dacd5048-05d0-451f-9533-39463e09c8b8": {
+    "asset": 1499614783044,
+    "meta": 1499995493788,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\ToggleFlag.png"
+  },
+  "bfbe30f5-db86-4fa4-95c2-b6abaaa82c35": {
+    "asset": 1499614783045,
+    "meta": 1499995493800,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\whiteBg.png"
+  },
+  "c332a811-753b-4564-bbcb-bff09eeaefc6": {
+    "asset": 1502948915805,
+    "meta": 1502949311543,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView"
+  },
+  "6614da29-853c-4f62-8871-cb37f896a855": {
+    "asset": 1499614783045,
+    "meta": 1499995493796,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\TopBg.png"
+  },
+  "f0575d87-8082-45ae-8556-356b44b8b0f1": {
+    "asset": 1499614783050,
+    "meta": 1499995493810,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face1.png"
+  },
+  "848cf1be-4d3c-4894-aae3-c8ea3bd0deec": {
+    "asset": 1499614783049,
+    "meta": 1499995493833,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\ExpressionBg.png"
+  },
+  "0bedf538-6399-4041-8670-2a8aeae71cbc": {
+    "asset": 1499614783051,
+    "meta": 1499995493820,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face10.png"
+  },
+  "2d160ef9-d5f8-459d-827e-46a4ff68fd4a": {
+    "asset": 1499614783052,
+    "meta": 1499995493830,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face11.png"
+  },
+  "87e2a9f4-f5b5-4e23-877e-baf61e9a5bea": {
+    "asset": 1499614783052,
+    "meta": 1499995493842,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face12.png"
+  },
+  "462136aa-215c-4c5b-86a3-ed69b1698f2d": {
+    "asset": 1499614783053,
+    "meta": 1499995493845,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face2.png"
+  },
+  "640585e5-a179-4413-af14-9c13914c3209": {
+    "asset": 1499614783054,
+    "meta": 1499995493851,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face3.png"
+  },
+  "6ac8527a-5808-44f9-a40a-7b614c1471ea": {
+    "asset": 1499614783055,
+    "meta": 1499995493859,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face5.png"
+  },
+  "f3e22a6f-9fde-47e7-b72b-74125d42b90b": {
+    "asset": 1499614783055,
+    "meta": 1499995493855,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face4.png"
+  },
+  "506886fa-f470-4154-8709-e58d0743b698": {
+    "asset": 1499614783056,
+    "meta": 1499995493865,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face6.png"
+  },
+  "1a9c9796-9e32-408f-bdf4-54b20a2b8690": {
+    "asset": 1499614783057,
+    "meta": 1499995493869,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face7.png"
+  },
+  "4742f742-00b2-44e8-aeb6-3abb9854d9c2": {
+    "asset": 1499614783059,
+    "meta": 1499995493881,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face9.png"
+  },
+  "674e10f2-aec5-4679-bf4b-ad9555dec3d3": {
+    "asset": 1499614783058,
+    "meta": 1499995493878,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\ExpressionView\\face8.png"
+  },
+  "1eb8ceb0-ba02-4e34-b795-f7563c3a90f4": {
+    "asset": 1502948915817,
+    "meta": 1502949311545,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\RoomInfo"
+  },
+  "9a361da6-1f5b-4db9-b1df-11ba1418ffc5": {
+    "asset": 1499614783060,
+    "meta": 1499995493889,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\RoomInfo\\MulBg.png"
+  },
+  "78e436bb-d6f1-4bcb-87a2-9d11dd15b6db": {
+    "asset": 1499614783061,
+    "meta": 1499995493892,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\RoomInfo\\RoomInfoTitle.png"
+  },
+  "37c8d43f-0e10-4930-8eb8-00759fc9c6c4": {
+    "asset": 1502948915866,
+    "meta": 1502949311546,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView"
+  },
+  "7cfac3f9-a921-4c29-bace-c7028ae0af0d": {
+    "asset": 1499614783061,
+    "meta": 1499995493897,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\RoomInfo\\RoomMultTitle.png"
+  },
+  "7abebe2d-eab1-4816-a23a-1c49acba1a7e": {
+    "asset": 1499614783064,
+    "meta": 1499995493902,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\bigrose.png"
+  },
+  "4ca213f9-a3f1-468c-8f13-9e2612230650": {
+    "asset": 1499614783065,
+    "meta": 1499995493905,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\chipImg.png"
+  },
+  "711d550d-37e2-4653-91a9-d10aec6145df": {
+    "asset": 1499614783063,
+    "meta": 1499995493923,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\Infobg.png"
+  },
+  "91ebb3e5-596a-4715-99d5-2b4b76a37e10": {
+    "asset": 1499614783066,
+    "meta": 1499995493912,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\love.png"
+  },
+  "3c7f2e91-f1f9-4d3b-94b0-27ad03fb9879": {
+    "asset": 1499614783067,
+    "meta": 1499995493921,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\man.png"
+  },
+  "e5d39d61-b3e1-42d8-99a8-b5b3ee69e314": {
+    "asset": 1499614783067,
+    "meta": 1499995493933,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\paopao.png"
+  },
+  "5cc63dd1-17e3-43a2-82b4-3e43e7f0541d": {
+    "asset": 1499614783068,
+    "meta": 1499995493929,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\popViewBg.png"
+  },
+  "6567727c-5b78-4c83-be64-a84006773b79": {
+    "asset": 1499614783064,
+    "meta": 1499995493942,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\Sound.png"
+  },
+  "05e8d752-10a5-4df8-8e1e-545d12f50f03": {
+    "asset": 1499614783069,
+    "meta": 1499995493939,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\rose.png"
+  },
+  "dc57f8e3-4030-4a93-8413-c5bedc7ea422": {
+    "asset": 1499614783071,
+    "meta": 1499995493952,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\woman.png"
+  },
+  "35e1661c-d912-4048-a097-5b313c3401e3": {
+    "asset": 1502948916508,
+    "meta": 1502949311547,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView"
+  },
+  "4628e8ae-6850-4313-a1fd-8919fdb1c3ae": {
+    "asset": 1499614783070,
+    "meta": 1499995493949,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\UserInfoView\\tomato.png"
+  },
+  "8317a7bb-038f-4948-872c-067d382dc812": {
+    "asset": 1499614783073,
+    "meta": 1499995493962,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\BatteryBar.png"
+  },
+  "31081de6-06ce-485f-9a86-68fd6dceed89": {
+    "asset": 1499614783072,
+    "meta": 1499995493960,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\BankerFlag.png"
+  },
+  "b7f5a421-9530-4d7f-b94f-f5cf3dff1564": {
+    "asset": 1502948916180,
+    "meta": 1502949311549,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn"
+  },
+  "1cdb94ca-88be-4d62-b1e8-4d3346720983": {
+    "asset": 1499614783073,
+    "meta": 1499995493967,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\BatteryBg.png"
+  },
+  "ac1612e5-c6d2-45cc-aa12-db55f0f75a38": {
+    "asset": 1499614783075,
+    "meta": 1499995493983,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_BetSure_off.png"
+  },
+  "96e55ce1-0067-4142-8072-bda6a001921b": {
+    "asset": 1499614783076,
+    "meta": 1499995493986,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_BetSure_on.png"
+  },
+  "e1ba1873-81b7-41d2-a6a2-93c0c11613bf": {
+    "asset": 1499614783076,
+    "meta": 1499995493994,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_CallBanker_off.png"
+  },
+  "290eef6b-a79b-4aad-be96-f590cc927371": {
+    "asset": 1499614783077,
+    "meta": 1499995493997,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_CallBanker_on.png"
+  },
+  "7eb4ef72-9365-41c2-9e6d-80725085a88d": {
+    "asset": 1499614783080,
+    "meta": 1499995494019,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Charge_off.png"
+  },
+  "f2d755ea-a1d0-4a67-b5db-420215e4d9da": {
+    "asset": 1499614783080,
+    "meta": 1499995494017,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Charge_on.png"
+  },
+  "26b7c1c2-d666-4ec1-82d8-32be3b144911": {
+    "asset": 1499614783081,
+    "meta": 1499995494029,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Chat_off.png"
+  },
+  "00d9cb81-005b-4e6b-8707-792131acdb46": {
+    "asset": 1499614783082,
+    "meta": 1499995494026,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Chat_on.png"
+  },
+  "a1bd943b-39a0-43ef-b8a9-4a451f5a3ddd": {
+    "asset": 1499614783084,
+    "meta": 1499995494038,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Dismiss_off.png"
+  },
+  "f8630bf0-be37-42d9-99b6-c34073ade5be": {
+    "asset": 1499614783084,
+    "meta": 1499995494049,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Dismiss_on.png"
+  },
+  "635699e0-bf42-4c94-bbea-2fdc03d6bc7f": {
+    "asset": 1499614783086,
+    "meta": 1499995494060,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Exit_on.png"
+  },
+  "42f8dbc1-70ef-4e29-ac64-dabf40a5ab6d": {
+    "asset": 1499614783085,
+    "meta": 1499995494051,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Exit_off.png"
+  },
+  "b1b3b058-e8bd-4acb-a512-059899135492": {
+    "asset": 1499614783087,
+    "meta": 1499995494070,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Green_Small.png"
+  },
+  "a50bcea4-b53e-47f1-8b50-5329b6dd0c82": {
+    "asset": 1499614783087,
+    "meta": 1499995494058,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Green_Big.png"
+  },
+  "44570a69-a9e7-45ab-b062-3a7ef2c30b01": {
+    "asset": 1499614783088,
+    "meta": 1499995494071,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_HadBullfight_off.png"
+  },
+  "ed2c1e3a-85d7-4bd3-b373-912435d35ab9": {
+    "asset": 1499614783089,
+    "meta": 1499995494079,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_HadBullfight_on.png"
+  },
+  "07725d1a-faa7-4d0b-a235-910b7660627f": {
+    "asset": 1499614783090,
+    "meta": 1499995494082,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Hosting_off.png"
+  },
+  "5d9c63cf-f99f-429c-986b-750531253e53": {
+    "asset": 1499614783091,
+    "meta": 1499995494090,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Hosting_on.png"
+  },
+  "686e695b-7504-4e7e-8ffa-776234a30bde": {
+    "asset": 1499614783092,
+    "meta": 1499995494092,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Menu_off.png"
+  },
+  "2cecfe19-b5af-4606-88a2-d8ceb743ed8b": {
+    "asset": 1499614783092,
+    "meta": 1499995494099,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Menu_on.png"
+  },
+  "194a1ec5-d14f-4e7a-acbb-60310932b7f4": {
+    "asset": 1499614783095,
+    "meta": 1499995494109,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_NotCallBanker_off.png"
+  },
+  "47080b08-10cf-443a-a91c-3d191f41d9a0": {
+    "asset": 1499614783096,
+    "meta": 1499995494114,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_NotCallBanker_on.png"
+  },
+  "897b81fb-1ab4-48fb-91bf-a7aea49e0ec3": {
+    "asset": 1499614783097,
+    "meta": 1499995494117,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_NotHadBullfight_off.png"
+  },
+  "44df1dc8-08c6-4845-841d-8f7bc1ff127c": {
+    "asset": 1499614783097,
+    "meta": 1499995494121,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_NotHadBullfight_on.png"
+  },
+  "58ee31bd-5389-4275-97e0-fdaca30116b3": {
+    "asset": 1499614783098,
+    "meta": 1499995494124,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Owner_off.png"
+  },
+  "d4aad87a-5088-434a-96fd-8eba720fe547": {
+    "asset": 1499614783099,
+    "meta": 1499995494127,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Owner_on.png"
+  },
+  "4b250f6e-cf6e-4046-ad0d-fb4d99f362e8": {
+    "asset": 1499614783100,
+    "meta": 1499995494134,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Ready_off.png"
+  },
+  "fb2842e2-83dd-4c99-b9c7-8bc11773ff78": {
+    "asset": 1499614783101,
+    "meta": 1499995494141,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Red_Big.png"
+  },
+  "e3192c8d-8ce3-440d-94ff-864c55af98a7": {
+    "asset": 1499614783101,
+    "meta": 1499995494138,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Ready_on.png"
+  },
+  "74ba2dfb-46e2-4c15-9112-192a035b97ef": {
+    "asset": 1499614783103,
+    "meta": 1499995494149,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_RoomInfo_off.png"
+  },
+  "5808f9ed-9d9c-484d-a72d-9d046112e875": {
+    "asset": 1499614783102,
+    "meta": 1499995494145,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Red_Small.png"
+  },
+  "6a0f48f3-78fa-4509-8ac8-63b912afa138": {
+    "asset": 1499614783104,
+    "meta": 1499995494157,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Rule_off.png"
+  },
+  "817acbbb-cba9-41d0-aeb5-c51b631785da": {
+    "asset": 1499614783103,
+    "meta": 1499995494152,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_RoomInfo_on.png"
+  },
+  "f8530e30-3406-479c-828f-ea6979ddbe33": {
+    "asset": 1499614783105,
+    "meta": 1499995494161,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Rule_on.png"
+  },
+  "f96b4b8a-5b91-4899-92c8-74306dc3a2d1": {
+    "asset": 1499614783107,
+    "meta": 1499995494178,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Speech_off.png"
+  },
+  "35d82767-199b-454a-853d-ccac8f1f2d9d": {
+    "asset": 1499614783108,
+    "meta": 1499995494181,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Speech_on.png"
+  },
+  "a2e2cc06-8e98-4ff3-80b2-45c1aea91405": {
+    "asset": 1499614783109,
+    "meta": 1499995494186,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_StandUp_off.png"
+  },
+  "4e311f3e-a559-406e-9bbb-4adb1acdd5f3": {
+    "asset": 1499614783109,
+    "meta": 1499995494189,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_StandUp_on.png"
+  },
+  "41126edd-0e61-42ad-b6de-d90b285dbdb7": {
+    "asset": 1499614783110,
+    "meta": 1499995494197,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Start_off.png"
+  },
+  "7599978c-0284-4d71-a659-fbc2bdeac48d": {
+    "asset": 1499614783112,
+    "meta": 1499995494206,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Success_off.png"
+  },
+  "2e7b57fd-5143-4443-be16-d69665d60a2f": {
+    "asset": 1499614783111,
+    "meta": 1499995494200,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Start_on.png"
+  },
+  "be831de7-8c53-4814-b8fb-36319913c18f": {
+    "asset": 1499614783112,
+    "meta": 1499995494210,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Success_on.png"
+  },
+  "93558a15-7a41-4e85-9b18-0f5a01217184": {
+    "asset": 1499614783113,
+    "meta": 1499995494214,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_SuperCallBanker_off.png"
+  },
+  "7403d0ce-9e7b-4fc3-9485-08d37cbe2e96": {
+    "asset": 1499614783114,
+    "meta": 1499995494217,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_SuperCallBanker_on.png"
+  },
+  "68b0119a-37a8-4a8e-baf1-07d503c2f63f": {
+    "asset": 1502948916292,
+    "meta": 1502949311551,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType"
+  },
+  "0430b52a-9b15-4f04-8154-ffd7706b2988": {
+    "asset": 1499614783121,
+    "meta": 1499995494227,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\BetCountBg.png"
+  },
+  "b058da76-1a60-4d25-bd6e-1e962cb693c1": {
+    "asset": 1499614783122,
+    "meta": 1499995494237,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\CallBankerFlag.png"
+  },
+  "cee53bc9-d485-41f0-9a97-87219f08800e": {
+    "asset": 1499614783123,
+    "meta": 1499995494248,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\GrayBg.png"
+  },
+  "02fcc24a-3e57-483b-a062-e07d00b9edbe": {
+    "asset": 1499614783128,
+    "meta": 1499995494257,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_0.png"
+  },
+  "cc8c23b3-44b1-47c0-9005-eca92c64fedd": {
+    "asset": 1499614783128,
+    "meta": 1499995494270,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_1.png"
+  },
+  "3365c6d0-3947-4b22-b175-0b85d262e980": {
+    "asset": 1499614783129,
+    "meta": 1499995494268,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_10.png"
+  },
+  "86db0316-22f3-4542-a6c1-fd9895d5aec2": {
+    "asset": 1499614783130,
+    "meta": 1499995494279,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_11.png"
+  },
+  "08874238-38d1-4ad0-b09d-905c9d73d1aa": {
+    "asset": 1499614783131,
+    "meta": 1499995494277,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_12.png"
+  },
+  "3089992d-0311-4061-9e01-2d17d91c7623": {
+    "asset": 1499614783131,
+    "meta": 1499995494285,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_13.png"
+  },
+  "d5c9aef4-5020-409a-8e31-b7cf60c5eb44": {
+    "asset": 1499614783132,
+    "meta": 1499995494293,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_14.png"
+  },
+  "8b55f303-099c-47cd-a14c-f7554d0b33d2": {
+    "asset": 1499614783133,
+    "meta": 1499995494300,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_15.png"
+  },
+  "f68098ce-9ea4-46fb-9cf8-18d8a395c624": {
+    "asset": 1499614783135,
+    "meta": 1499995494309,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_2.png"
+  },
+  "71df3e13-d9fc-4dd5-be42-e53d1606b99a": {
+    "asset": 1499614783135,
+    "meta": 1499995494312,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_3.png"
+  },
+  "84b0fe0d-68d9-44d9-bb63-ce404a467470": {
+    "asset": 1499614783137,
+    "meta": 1499995494319,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_4.png"
+  },
+  "483f4895-d47f-4165-b916-e1c9851c560d": {
+    "asset": 1499614783137,
+    "meta": 1499995494322,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_5.png"
+  },
+  "24071f47-73b5-4cb7-8cd2-8e940f6f8884": {
+    "asset": 1499614783138,
+    "meta": 1499995494331,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_6.png"
+  },
+  "4c15666b-f9c8-453b-a70b-da184c6e4eb1": {
+    "asset": 1499614783139,
+    "meta": 1499995494328,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_7.png"
+  },
+  "ea8f7036-8320-4c81-81ab-aad8137c129e": {
+    "asset": 1499614783140,
+    "meta": 1499995494335,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_8.png"
+  },
+  "ccefa581-2b8e-4d2a-9b25-624e43ce593a": {
+    "asset": 1499614783140,
+    "meta": 1499995494338,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_9.png"
+  },
+  "2b28e399-daf0-4ffb-a784-0094e6d35c05": {
+    "asset": 1499614783124,
+    "meta": 1499995494347,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\ReadyFlag.png"
+  },
+  "368ab26c-63d7-44c6-a1d0-b8cbbed9b3d2": {
+    "asset": 1499614783124,
+    "meta": 1499995494342,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\NotCallBankerFlag.png"
+  },
+  "6dea8b49-484a-4b47-ada7-b4fd72a51501": {
+    "asset": 1499614783126,
+    "meta": 1499995494357,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\SuperNotCallBankerFlag.png"
+  },
+  "b32b5f0d-15d8-435c-8d9c-2495253e729e": {
+    "asset": 1499614783125,
+    "meta": 1499995494352,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\RedBg.png"
+  },
+  "cedb19a6-8ac4-4483-a5d2-15e56cf31734": {
+    "asset": 1502948916485,
+    "meta": 1502949311552,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift"
+  },
+  "2c758495-2781-40ee-88cf-066171c0062e": {
+    "asset": 1502948916362,
+    "meta": 1502949311553,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Bomb"
+  },
+  "a37dfad9-ccce-4117-80f8-605beebd0f14": {
+    "asset": 1499614783179,
+    "meta": 1499995494374,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Bomb.png"
+  },
+  "a2362425-4a2a-4406-ad1f-b566f38d3c79": {
+    "asset": 1499614783180,
+    "meta": 1499995494384,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Bomb\\1.png"
+  },
+  "b4cb6483-a3b1-4504-bcd9-99b8fa5b1194": {
+    "asset": 1499614783181,
+    "meta": 1499995494388,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Bomb\\2.png"
+  },
+  "320dd890-b4cc-4f4e-874c-d60fb76608ba": {
+    "asset": 1499614783182,
+    "meta": 1499995494397,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Bomb\\3.png"
+  },
+  "3949ed73-3a49-4ad2-83be-e09633782b9c": {
+    "asset": 1499614783183,
+    "meta": 1499995494402,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Bomb\\4.png"
+  },
+  "8c648c1a-c510-43e0-98e7-d1c5ce022a73": {
+    "asset": 1499614783184,
+    "meta": 1499995494408,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Bomb\\5.png"
+  },
+  "bfb2b679-6141-4683-b731-26b9186806c9": {
+    "asset": 1499614783185,
+    "meta": 1499995494416,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Bomb\\6.png"
+  },
+  "d6c922ab-493a-4dba-9a04-cc8b0d8c07bb": {
+    "asset": 1499614783186,
+    "meta": 1499995494419,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Bomb\\7.png"
+  },
+  "482f66d5-6654-4811-b60c-08efa759bc08": {
+    "asset": 1502948916407,
+    "meta": 1502949311555,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken"
+  },
+  "002af0ec-72fd-4fde-8444-e783fe27b797": {
+    "asset": 1499614783210,
+    "meta": 1499995494436,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\1.png"
+  },
+  "073511cf-afa6-4bcc-8450-59d06a8e3393": {
+    "asset": 1499614783209,
+    "meta": 1499995494434,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken.png"
+  },
+  "4962b301-092c-491a-8da9-8b84509397fc": {
+    "asset": 1499614783211,
+    "meta": 1499995494445,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\10.png"
+  },
+  "af2cf9aa-9d5f-40b7-989a-ed21b12f73be": {
+    "asset": 1499614783212,
+    "meta": 1499995494448,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\11.png"
+  },
+  "1423adb3-9f87-4d32-bd55-5d2c174c9b31": {
+    "asset": 1499614783214,
+    "meta": 1499995494461,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\2.png"
+  },
+  "df70cab2-7fd1-476f-972b-b1c97bb8b895": {
+    "asset": 1499614783213,
+    "meta": 1499995494455,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\12.png"
+  },
+  "58584685-ed8f-4a7d-b80b-2763f97dbe17": {
+    "asset": 1499614783215,
+    "meta": 1499995494466,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\3.png"
+  },
+  "cf125242-f5ba-4bc3-9e95-7d890160a2d6": {
+    "asset": 1499614783216,
+    "meta": 1499995494473,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\4.png"
+  },
+  "97e96ebc-7bee-4776-ac71-b34d0e090b93": {
+    "asset": 1499614783218,
+    "meta": 1499995494485,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\6.png"
+  },
+  "df5f1e74-9715-4bd1-850b-981810a47b9a": {
+    "asset": 1499614783217,
+    "meta": 1499995494478,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\5.png"
+  },
+  "9af0cd7d-e681-473a-9d3f-f9e4695d9171": {
+    "asset": 1499614783219,
+    "meta": 1499995494492,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\7.png"
+  },
+  "d158fbe3-099c-443e-a647-434653448b7a": {
+    "asset": 1499614783220,
+    "meta": 1499995494497,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\8.png"
+  },
+  "f34bea13-8c0d-4275-8dc8-320c4a3bf826": {
+    "asset": 1502948916449,
+    "meta": 1502949311556,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight"
+  },
+  "c8d11859-04a2-481d-82cf-2f6ff5512526": {
+    "asset": 1499614783221,
+    "meta": 1499995494503,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\chicken\\9.png"
+  },
+  "29b69829-3241-4d51-a7b5-20531c50ae9e": {
+    "asset": 1499614783187,
+    "meta": 1499995494509,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight.png"
+  },
+  "a57071a9-bf1a-4c73-93eb-c8cd8a198533": {
+    "asset": 1499614783189,
+    "meta": 1499995494522,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight\\2.png"
+  },
+  "e6aac107-2ff8-432a-9608-88e665266bfb": {
+    "asset": 1499614783188,
+    "meta": 1499995494519,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight\\1.png"
+  },
+  "19dc3b3a-bdde-4cc9-8a25-3d37629d0806": {
+    "asset": 1499614783190,
+    "meta": 1499995494531,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight\\3.png"
+  },
+  "ea951215-7e9f-4a3f-99fa-dc9779c86636": {
+    "asset": 1499614783191,
+    "meta": 1499995494534,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight\\4.png"
+  },
+  "7578cf34-e489-4d84-97cc-7ca1b25069e5": {
+    "asset": 1499614783192,
+    "meta": 1499995494539,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight\\5.png"
+  },
+  "13bfabcc-3920-42bb-a07e-c193f118040a": {
+    "asset": 1499614783193,
+    "meta": 1499995494546,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight\\6.png"
+  },
+  "8856db9c-e204-4932-8fab-cf4f335ae317": {
+    "asset": 1499614783194,
+    "meta": 1499995494551,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight\\7.png"
+  },
+  "fcb568f6-ff27-4d01-b5ef-d1e8a726cb4a": {
+    "asset": 1499614783195,
+    "meta": 1499995494558,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight\\8.png"
+  },
+  "e8e3fe0f-d363-4547-935b-4a8b2f0d53bb": {
+    "asset": 1502948916482,
+    "meta": 1502949311557,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Kiss"
+  },
+  "b72415be-86fa-4796-ae90-60c0c3d59463": {
+    "asset": 1499614783196,
+    "meta": 1499995494563,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Fight\\9.png"
+  },
+  "030078fd-7975-4ea1-81d4-f6ace6dac2c9": {
+    "asset": 1499614783197,
+    "meta": 1499995494570,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Kiss.png"
+  },
+  "c3c469d1-723e-4eec-b454-87a5eaa93f97": {
+    "asset": 1499614783198,
+    "meta": 1499995494584,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Kiss\\2.png"
+  },
+  "9c3e469e-e9a8-4712-b06c-8c557be6da39": {
+    "asset": 1499614783198,
+    "meta": 1499995494573,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Kiss\\1.png"
+  },
+  "7e9ba3ec-38ed-4350-a03c-e727e773110e": {
+    "asset": 1499614783200,
+    "meta": 1499995494587,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Kiss\\3.png"
+  },
+  "190b74e7-dc0b-4cd8-a7b9-9a4850bef6db": {
+    "asset": 1499614783201,
+    "meta": 1499995494595,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Kiss\\4.png"
+  },
+  "1499e50c-d215-41cd-b087-e9abde91801c": {
+    "asset": 1499614783201,
+    "meta": 1499995494599,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Kiss\\5.png"
+  },
+  "76803129-1c3f-4886-a59d-404c7072bdd7": {
+    "asset": 1499614783202,
+    "meta": 1499995494608,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Kiss\\6.png"
+  },
+  "1f1ed031-a081-4f21-b854-5f80effe39b5": {
+    "asset": 1502948916501,
+    "meta": 1502949311559,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Tomato"
+  },
+  "9f274b0a-3cc0-4780-9a46-823c635e9a22": {
+    "asset": 1499614783203,
+    "meta": 1499995494613,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Kiss\\7.png"
+  },
+  "1e3579f3-d52d-4654-bc84-67e278951f58": {
+    "asset": 1499614783204,
+    "meta": 1499995494617,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Tomato.png"
+  },
+  "21e09b84-638b-4c32-8a0f-53e0fa527fb1": {
+    "asset": 1499614783205,
+    "meta": 1499995494623,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Tomato\\1.png"
+  },
+  "0a126f5a-5340-4c62-9be9-05862b82f817": {
+    "asset": 1499614783206,
+    "meta": 1499995494627,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Tomato\\2.png"
+  },
+  "e1aaffcd-aadb-49e2-85ed-d208967df860": {
+    "asset": 1499614783207,
+    "meta": 1499995494633,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Tomato\\3.png"
+  },
+  "10241997-70e1-4443-87cb-eefd7401afab": {
+    "asset": 1499614783208,
+    "meta": 1499995494639,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Gift\\Tomato\\4.png"
+  },
+  "abffb0c7-0a8e-4ed6-ad90-a902deb414d5": {
+    "asset": 1499614783221,
+    "meta": 1499995494649,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\GoldImg.png"
+  },
+  "8e843c82-86af-4eb1-93ae-a2cb414f685b": {
+    "asset": 1499614783235,
+    "meta": 1499995494656,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\head.png"
+  },
+  "4cb6e604-a448-47f0-9ba9-d32d40422d1c": {
+    "asset": 1502948916535,
+    "meta": 1502949311560,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\HeadImg"
+  },
+  "098114f5-5223-491a-8ae1-0d1f2113e900": {
+    "asset": 1499614783235,
+    "meta": 1499995494658,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\headBg.png"
+  },
+  "ec66d1a7-f76b-4285-9102-e3fe69c31983": {
+    "asset": 1499614783223,
+    "meta": 1499995494666,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\HeadImg\\GoldBg.png"
+  },
+  "643857d2-1d83-4df5-baa2-f5ee39d33ce8": {
+    "asset": 1499614783222,
+    "meta": 1499995494669,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\HeadImg\\DefaultHead.png"
+  },
+  "a6f3516a-63b5-44ba-9ff2-ccfbace40bb2": {
+    "asset": 1499614783224,
+    "meta": 1499995494678,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\HeadImg\\HeadBg.png"
+  },
+  "d59b61c4-0ef8-497d-9b3b-c4e151f0af01": {
+    "asset": 1499614783225,
+    "meta": 1499995494675,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\HeadImg\\HeadFrame.png"
+  },
+  "3646bffd-7a9a-4bf4-b7da-56c578558b59": {
+    "asset": 1499614783226,
+    "meta": 1499995494686,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\HeadImg\\ScoreBg.png"
+  },
+  "c48c0134-46f6-4471-b15b-9d9249233cf4": {
+    "asset": 1499614783226,
+    "meta": 1499995494687,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\HeadImg\\InterdictionFlag.png"
+  },
+  "d89ff5b7-1a05-4d50-8dcb-03dc486719ca": {
+    "asset": 1499614783227,
+    "meta": 1499995494697,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\HeadImg\\TimeCireCle.png"
+  },
+  "d4ec988c-d17e-44e4-b072-0f30351dd97f": {
+    "asset": 1499614783228,
+    "meta": 1499995494694,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\HeadImg\\TimeSpark.png"
+  },
+  "478c8300-2354-45ab-84fa-23984f5cb411": {
+    "asset": 1499614783228,
+    "meta": 1499995499600,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\LabelTime.labelatlas"
+  },
+  "13fcd8f1-0782-4490-abb1-df10aef0099a": {
+    "asset": 1499614783229,
+    "meta": 1499995494705,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\LabelTime.png"
+  },
+  "974e5159-a3eb-4d3d-bd7c-a71300820ba5": {
+    "asset": 1499614783236,
+    "meta": 1499995494718,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\menuBg.png"
+  },
+  "4f3461f9-ebd0-44b2-82aa-207b6831efcc": {
+    "asset": 1499614783230,
+    "meta": 1499995494721,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\PlayerInfoBg.png"
+  },
+  "330b2017-b064-4d4e-96aa-17e6ce668bd2": {
+    "asset": 1499614783231,
+    "meta": 1499995494731,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\StandDown.png"
+  },
+  "73d9928a-7a9e-4b58-a011-ff50277d123f": {
+    "asset": 1499614783231,
+    "meta": 1499995494729,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\PlayerItemBg.png"
+  },
+  "f760ea21-98ae-4846-8dcc-823e6f718e09": {
+    "asset": 1499614783233,
+    "meta": 1499995494742,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\TimeClockBgFrame.png"
+  },
+  "2e7a1014-254e-4e25-9af1-f5edc4b4e795": {
+    "asset": 1499614783232,
+    "meta": 1499995494739,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\TimeClockBg.png"
+  },
+  "7dc38019-44ac-471d-bef2-b05d03da0ebf": {
+    "asset": 1502948916675,
+    "meta": 1502949311561,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound"
+  },
+  "aa4a7e6f-e572-4c40-84c8-15dba91842d0": {
+    "asset": 1499614783238,
+    "meta": 1499614783239,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\GameGroundMusic.mp3"
+  },
+  "1931c074-ab31-400a-99d2-81874a35aef1": {
+    "asset": 1499614783240,
+    "meta": 1499614783241,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\lose.mp3"
+  },
+  "a5cdc86e-b1d3-4c27-aa40-721f68ea3ec3": {
+    "asset": 1499614783241,
+    "meta": 1499614783241,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\man4bomb.mp3"
+  },
+  "e54a94d8-7d60-4fea-b3d1-c083e9b6aa74": {
+    "asset": 1499614783242,
+    "meta": 1499614783242,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\man5flowerbull.mp3"
+  },
+  "c5537fcb-9bee-4f66-bb9a-e3f4622fa75c": {
+    "asset": 1499614783243,
+    "meta": 1499614783243,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\man5littlebull.mp3"
+  },
+  "10d7d579-c3c9-4553-8cda-ccc5c7128506": {
+    "asset": 1499614783247,
+    "meta": 1499614783247,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull0.mp3"
+  },
+  "5c8daf86-6404-4bbe-80d9-8363e0977fa8": {
+    "asset": 1499614783247,
+    "meta": 1499614783248,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull1.mp3"
+  },
+  "1163795c-702b-4dca-8b88-2337a44a42ad": {
+    "asset": 1499614783248,
+    "meta": 1499614783248,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull10.mp3"
+  },
+  "467de9bb-fb36-4c20-94f2-54121702bfa9": {
+    "asset": 1499614783249,
+    "meta": 1499614783249,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull2.mp3"
+  },
+  "536a0309-e4fd-4cd2-acb3-53e269935bd1": {
+    "asset": 1499614783250,
+    "meta": 1499614783250,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull3.mp3"
+  },
+  "fbcf42c5-db76-4a24-871f-04ca142d238e": {
+    "asset": 1499614783251,
+    "meta": 1499614783251,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull4.mp3"
+  },
+  "1b5c92f0-f70d-426f-88fa-a3b89f915668": {
+    "asset": 1499614783251,
+    "meta": 1499614783252,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull5.mp3"
+  },
+  "6987da2e-4c93-46c1-b042-d408bbe7d0ac": {
+    "asset": 1499614783252,
+    "meta": 1499614783252,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull6.mp3"
+  },
+  "c825e5b1-cea4-4d18-b41e-5eebc0e2ac9b": {
+    "asset": 1499614783253,
+    "meta": 1499614783253,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull7.mp3"
+  },
+  "2cdcce88-dc6b-4e0c-80a3-d2892c1795cb": {
+    "asset": 1499614783254,
+    "meta": 1499614783254,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull8.mp3"
+  },
+  "d451a060-46c5-49c7-b15f-5de2147e7e92": {
+    "asset": 1499614783254,
+    "meta": 1499614783255,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manbull9.mp3"
+  },
+  "7167db8d-87cd-41ad-9baf-6b39995cafad": {
+    "asset": 1499614783243,
+    "meta": 1499614783244,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manCallbanker.mp3"
+  },
+  "e821a257-47c6-4621-99f7-96d0b1fd13e9": {
+    "asset": 1499614783244,
+    "meta": 1499614783244,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manNoCallbanker.mp3"
+  },
+  "af17b530-5567-4f62-8a72-5b3f6158554a": {
+    "asset": 1499614783245,
+    "meta": 1499614783245,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manStraight.mp3"
+  },
+  "43b0e62b-65b6-4e25-8295-3d513bb4a590": {
+    "asset": 1499614783246,
+    "meta": 1499614783246,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\manThreeWithTwo.mp3"
+  },
+  "9af3fa47-0945-40aa-be9b-bd3e137c670e": {
+    "asset": 1499614783239,
+    "meta": 1499614783240,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\SendCard.mp3"
+  },
+  "ee1931cf-df82-4a27-a6b7-3915f82b0e17": {
+    "asset": 1499614783255,
+    "meta": 1499614783256,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\win.mp3"
+  },
+  "963c25e0-30f7-4395-93a4-bd8f88195c6d": {
+    "asset": 1499614783256,
+    "meta": 1499614783256,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\woman4bomb.mp3"
+  },
+  "cc7bf969-8fbf-4f8f-8f43-1f1de63041a0": {
+    "asset": 1499614783257,
+    "meta": 1499614783257,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\woman5flowerbull.mp3"
+  },
+  "63929d7d-a6ba-4f9b-a222-32dc9c8f34fc": {
+    "asset": 1499614783257,
+    "meta": 1499614783258,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\woman5littlebull.mp3"
+  },
+  "270fddd5-8f0a-462a-bf6c-b62c7326e71b": {
+    "asset": 1499614783261,
+    "meta": 1499614783262,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull0.mp3"
+  },
+  "0b657aa6-153e-40f5-8ff4-b8ed7602b680": {
+    "asset": 1499614783262,
+    "meta": 1499614783262,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull1.mp3"
+  },
+  "4194d453-539f-407e-b47a-ee11c0d3347a": {
+    "asset": 1499614783263,
+    "meta": 1499614783263,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull10.mp3"
+  },
+  "6173a70b-d78e-41ba-b4ab-85a03bdeb2ce": {
+    "asset": 1499614783264,
+    "meta": 1499614783264,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull2.mp3"
+  },
+  "e747208c-92a0-44d9-a03f-6ccd0c47f893": {
+    "asset": 1499614783265,
+    "meta": 1499614783265,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull3.mp3"
+  },
+  "131560c1-9d4c-4ad5-bd5d-bfb8f358fce3": {
+    "asset": 1499614783265,
+    "meta": 1499614783266,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull4.mp3"
+  },
+  "82ef708b-1b93-40d2-be55-6357c607c4a7": {
+    "asset": 1499614783266,
+    "meta": 1499614783267,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull5.mp3"
+  },
+  "441dcb25-2edc-4202-bf51-ccecb10fb9cc": {
+    "asset": 1499614783267,
+    "meta": 1499614783268,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull6.mp3"
+  },
+  "e989478a-3d30-479c-817e-78da3898e5eb": {
+    "asset": 1499614783268,
+    "meta": 1499614783268,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull7.mp3"
+  },
+  "5c5618f2-485f-4f17-a726-ed37882f2348": {
+    "asset": 1499614783269,
+    "meta": 1499614783269,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull8.mp3"
+  },
+  "c26e1913-0514-4331-a090-6abc5518d209": {
+    "asset": 1499614783269,
+    "meta": 1499614783270,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanbull9.mp3"
+  },
+  "470b8711-ac17-4aaa-93ed-60e5478eb8f5": {
+    "asset": 1499614783258,
+    "meta": 1499614783259,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanCallbanker.mp3.mp3"
+  },
+  "2bb9056e-b269-4a8a-937d-b80492344063": {
+    "asset": 1499614783259,
+    "meta": 1499614783259,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanNoCallbanker.mp3"
+  },
+  "007765b6-8d7d-4187-8704-85486561096d": {
+    "asset": 1499614783260,
+    "meta": 1499614783260,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanStraight.mp3"
+  },
+  "771e429a-9261-4ea7-b39d-33c8a0934591": {
+    "asset": 1499614783260,
+    "meta": 1499614783261,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\Sound\\womanThreeWithTwo.mp3"
+  },
+  "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
+    "asset": 1502948918321,
+    "meta": 1502949311563,
+    "relativePath": "Script"
+  },
+  "c0fc9c3c-89a8-4384-bf3d-d77613bbfb21": {
+    "asset": 1502948916725,
+    "meta": 1502949311564,
+    "relativePath": "Script\\Comm"
+  },
+  "a8027877-d8d6-4645-97a0-52d4a0123dba": {
+    "asset": 1499614783270,
+    "meta": 1499995494983,
+    "relativePath": "resources\\Texture\\singleColor.png"
+  },
+  "3800f953-9b24-4291-8590-2c5a767c7f33": {
+    "asset": 1499614782531,
+    "meta": 1502241595696,
+    "relativePath": "Script\\Comm\\Audio_Common.js"
+  },
+  "ea97c605-9fc6-4112-8d6c-db921182acc7": {
+    "asset": 1502948916723,
+    "meta": 1502949311565,
+    "relativePath": "Script\\Comm\\PokerCard"
+  },
+  "a911d888-0fcc-4d6f-b6d3-0c92cb0f7f92": {
+    "asset": 1502948916788,
+    "meta": 1502949311567,
+    "relativePath": "Script\\Comm\\Util"
+  },
+  "d3d5ce62-ea31-41c7-8a3e-759967d6164b": {
+    "asset": 1502948917029,
+    "meta": 1502949311568,
+    "relativePath": "Script\\ComScene"
+  },
+  "86c1af8a-9e3e-49aa-8c70-26f56c120af6": {
+    "asset": 1499614782488,
+    "meta": 1502241595946,
+    "relativePath": "Script\\ComScene\\BaseView.js"
+  },
+  "73487742-3335-4a95-9be1-31fdadeafccb": {
+    "asset": 1502948917027,
+    "meta": 1502949311569,
+    "relativePath": "Script\\ComScene\\PopView"
+  },
+  "7170a98a-b8f0-44bf-9b04-3d7ee65db06d": {
+    "asset": 1499614782491,
+    "meta": 1502241596133,
+    "relativePath": "Script\\ComScene\\PopView\\ChineseCity.js"
+  },
+  "c784639d-52fc-43e8-9dce-68037fc0de9f": {
+    "asset": 1499614782513,
+    "meta": 1502241596601,
+    "relativePath": "Script\\ComScene\\PopView\\PickerAddressView.js"
+  },
+  "3c73de99-7b7c-4c25-8f1b-aa5d13ebc819": {
+    "asset": 1502948917049,
+    "meta": 1502949311572,
+    "relativePath": "Script\\GameScene"
+  },
+  "89a30581-30d0-4a59-957e-6117c1d8fb27": {
+    "asset": 1502948917272,
+    "meta": 1502949311574,
+    "relativePath": "Script\\GameScene\\Bullfight"
+  },
+  "a8aa519a-5a4f-4aaa-b7f3-d7106e093c34": {
+    "asset": 1502948917179,
+    "meta": 1502949311575,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd"
+  },
+  "6f8995d9-e482-4c9a-b713-59ead4edf5be": {
+    "asset": 1502948917094,
+    "meta": 1502949311576,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Req"
+  },
+  "9093429d-d1e0-4640-8f84-0449598d8e4a": {
+    "asset": 1502948917177,
+    "meta": 1502949311578,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp"
+  },
+  "77ec7636-dc42-46ee-829c-d23d46039d1b": {
+    "asset": 1499614782551,
+    "meta": 1502241597225,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_NotifyNotBetPacket.js"
+  },
+  "b3f9c2dc-3804-4c24-a5f4-85d5c02cfce2": {
+    "asset": 1499614782551,
+    "meta": 1502241597225,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_NotifyNotCallBankerPacket.js"
+  },
+  "8cf90698-cc51-4b22-b159-22e8527d0c57": {
+    "asset": 1502948917187,
+    "meta": 1502949311579,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\MessageFactory"
+  },
+  "64b8b490-e6ae-4429-bfcd-50492be25a68": {
+    "asset": 1499614782557,
+    "meta": 1502241597288,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\MessageFactory\\Cmd_Bullfight.js"
+  },
+  "54729bba-7818-49f1-96f0-5c79ccd2dcf9": {
+    "asset": 1499614782557,
+    "meta": 1502241597303,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\MessageFactory\\MessageFactory_Bullfight.js"
+  },
+  "abab2580-cdce-48a3-8c16-ffc789ea25ea": {
+    "asset": 1502948917196,
+    "meta": 1502949311580,
+    "relativePath": "Script\\GameScene\\Bullfight\\Common"
+  },
+  "fd0d3c27-c16e-4add-a552-4f17eb3edcef": {
+    "asset": 1499614782559,
+    "meta": 1502241597303,
+    "relativePath": "Script\\GameScene\\Bullfight\\Common\\Bullfight_AudioConfig.js"
+  },
+  "4873c6f1-a79d-489b-88cb-20f867f3bf6c": {
+    "asset": 1502948917270,
+    "meta": 1502949311582,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView"
+  },
+  "46d6266d-71da-420a-b8e3-55b0e141ab9f": {
+    "asset": 1502948917315,
+    "meta": 1502949311583,
+    "relativePath": "Script\\GameScene\\Bullfight\\SceneView"
+  },
+  "031e850e-3bb6-489d-be4e-f2418bdf702b": {
+    "asset": 1502948917400,
+    "meta": 1502949311585,
+    "relativePath": "Script\\libs"
+  },
+  "39b83f2e-26d5-424a-a935-8dcbeccd343d": {
+    "asset": 1499614782662,
+    "meta": 1502241597912,
+    "relativePath": "Script\\libs\\Base64.js"
+  },
+  "679aa224-8eed-4167-a441-1030d488eff7": {
+    "asset": 1499614782665,
+    "meta": 1502241597912,
+    "relativePath": "Script\\libs\\long.js"
+  },
+  "e75c955b-d3f1-442c-9b80-4e4e76a63f72": {
+    "asset": 1499614782663,
+    "meta": 1502241597927,
+    "relativePath": "Script\\libs\\Map.js"
+  },
+  "accbbb67-6c65-452e-8d3d-da255ab5b2f0": {
+    "asset": 1502948917405,
+    "meta": 1502949311587,
+    "relativePath": "Script\\Manager"
+  },
+  "00e011fd-0d85-441f-98f3-b163b3f29ecb": {
+    "asset": 1499614782666,
+    "meta": 1502241597943,
+    "relativePath": "Script\\libs\\md5.js"
+  },
+  "678e427c-7e05-49d4-bc68-90d58382e202": {
+    "asset": 1502948917440,
+    "meta": 1502949311588,
+    "relativePath": "Script\\Moudle"
+  },
+  "24b733a9-e3e1-41cc-9d85-659c630080e8": {
+    "asset": 1502948918279,
+    "meta": 1502949311590,
+    "relativePath": "Script\\Network"
+  },
+  "8f0dc3db-4ed0-4c3f-afda-57ed29647d2b": {
+    "asset": 1502948918229,
+    "meta": 1502949311592,
+    "relativePath": "Script\\Network\\Cmd"
+  },
+  "466edcd7-6262-4711-bd7a-af22697e9685": {
+    "asset": 1502948917820,
+    "meta": 1502949311593,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req"
+  },
+  "a25ae4e0-d7d0-4f16-b071-1cc90bfdaf52": {
+    "asset": 1502948918226,
+    "meta": 1502949311594,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp"
+  },
+  "6e195184-186c-46bf-9755-c28bd5d38123": {
+    "asset": 1499614782626,
+    "meta": 1502241598333,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\FindRespPacket.js"
+  },
+  "60314b8d-f1b6-42d2-b240-09d751990c44": {
+    "asset": 1499614782627,
+    "meta": 1502241598348,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\FindRoomRespPacket.js"
+  },
+  "d8474e34-31a8-4476-9265-eba144db96e9": {
+    "asset": 1499614782628,
+    "meta": 1502241598348,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\GetClubListRespPacket.js"
+  },
+  "2917403b-43f5-41e2-8289-e22f98b8c266": {
+    "asset": 1499614782630,
+    "meta": 1502241598364,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\GetMsgListRespPacket.js"
+  },
+  "83fa3bb0-7e52-4177-9e03-0d578a472ff7": {
+    "asset": 1499614782631,
+    "meta": 1502241598380,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\GetMsgNumRespPacket.js"
+  },
+  "dd823b2d-0ab6-4e3a-aad9-51cd8cc46832": {
+    "asset": 1499614782639,
+    "meta": 1502241598473,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\NotifyOwnerOverPacket.js"
+  },
+  "d9d3eaaf-12bf-4645-8331-e604fbc3900e": {
+    "asset": 1499614782642,
+    "meta": 1502241598520,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ScoreDetailRespPacket.js"
+  },
+  "6bc69c15-dd46-44d3-842c-0384b1bd0aed": {
+    "asset": 1499614782643,
+    "meta": 1502241598520,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ScoreListRespPacket.js"
+  },
+  "6e125692-1d50-455f-99d0-406d36dd9d8f": {
+    "asset": 1499614782645,
+    "meta": 1502241598567,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ShopConfRespPacket.js"
+  },
+  "a7b6da87-731a-4e85-abe6-5f52f4f33136": {
+    "asset": 1502948918241,
+    "meta": 1502949311596,
+    "relativePath": "Script\\Network\\Cmd\\MessageFactory"
+  },
+  "3809c3bc-7d14-48af-864f-cadf6332ce70": {
+    "asset": 1502948918274,
+    "meta": 1502949311597,
+    "relativePath": "Script\\Network\\Http"
+  },
+  "e94995b9-30d2-450c-bed9-15e1906cb6ec": {
+    "asset": 1499614782652,
+    "meta": 1502241598723,
+    "relativePath": "Script\\Network\\Http\\HttpPacket.js"
+  },
+  "2c402f57-9ea9-4256-8e0e-f7510e111315": {
+    "asset": 1502948918317,
+    "meta": 1502949311598,
+    "relativePath": "Script\\Network\\Socket"
+  },
+  "73c60ab3-a82c-4863-93ce-e3f08c60016c": {
+    "asset": 1499614782654,
+    "meta": 1502241598738,
+    "relativePath": "Script\\Network\\Socket\\MessageReq.js"
+  },
+  "e2e9b511-4c5a-412b-849d-74d3b4bece55": {
+    "asset": 1499614782656,
+    "meta": 1502241598848,
+    "relativePath": "Script\\Network\\Socket\\SocketData.js"
+  },
+  "ee1fc63d-f6ea-4591-905d-9e606fc4ca22": {
+    "asset": 1503103375887,
+    "meta": 1503712865449,
+    "relativePath": "Script\\Platform"
+  },
+  "b472ecd4-f10a-497e-bf3f-10e8994e530a": {
+    "asset": 1499614782660,
+    "meta": 1502241598972,
+    "relativePath": "Script\\Platform\\Platform.js"
+  },
+  "52426acd-3e5f-4c7e-9ff2-4c1964deb6f3": {
+    "asset": 1499614782647,
+    "meta": 1502241598614,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\UserDetailRespPacket.js"
+  },
+  "d2b0d65e-e500-4edd-82a0-bcc919071de0": {
+    "asset": 1499614782887,
+    "meta": 1499995492617,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SuccessView\\OtherTitle.png"
+  },
+  "bf0ccfa3-1936-4412-964e-fe9b8b408b57": {
+    "asset": 1499614782886,
+    "meta": 1499995492606,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SuccessView\\MySuccessTitle.png"
+  },
+  "085e8d82-6104-4814-8be6-4095bd03e7ff": {
+    "asset": 1502948915594,
+    "meta": 1502949311530,
+    "relativePath": "resources\\Texture\\Coom\\Face"
+  },
+  "cc8e8285-0fe7-47b8-b720-1f64ec712a89": {
+    "asset": 1499614782965,
+    "meta": 1499995499340,
+    "relativePath": "resources\\Texture\\Coom\\Face\\1.plist"
+  },
+  "b6a5c6e6-e99d-4cfe-9403-769229d982f9": {
+    "asset": 1499614782968,
+    "meta": 1499995499357,
+    "relativePath": "resources\\Texture\\Coom\\Face\\10.plist"
+  },
+  "7d61b571-65e7-4834-af69-6342394d258d": {
+    "asset": 1499614782967,
+    "meta": 1499995493224,
+    "relativePath": "resources\\Texture\\Coom\\Face\\1.png"
+  },
+  "8527996f-e75a-4140-b586-322906fa4df1": {
+    "asset": 1499614782970,
+    "meta": 1499995493237,
+    "relativePath": "resources\\Texture\\Coom\\Face\\10.png"
+  },
+  "7a4bf298-72b7-432e-b6c5-51ab5ee4eb1e": {
+    "asset": 1499614782975,
+    "meta": 1499995499408,
+    "relativePath": "resources\\Texture\\Coom\\Face\\2.plist"
+  },
+  "750f95ad-de15-4132-ae7c-7a804e115067": {
+    "asset": 1499614782978,
+    "meta": 1499995499442,
+    "relativePath": "resources\\Texture\\Coom\\Face\\3.plist"
+  },
+  "a9509b4f-c598-4caf-a85c-0d853e51f2ce": {
+    "asset": 1499614782977,
+    "meta": 1499995493305,
+    "relativePath": "resources\\Texture\\Coom\\Face\\2.png"
+  },
+  "67634b6b-4637-47ef-b031-bfc4cf581297": {
+    "asset": 1499614782984,
+    "meta": 1499995499457,
+    "relativePath": "resources\\Texture\\Coom\\Face\\4.plist"
+  },
+  "fc990160-660d-453a-af60-b8f1f7b6e215": {
+    "asset": 1499614782983,
+    "meta": 1499995493371,
+    "relativePath": "resources\\Texture\\Coom\\Face\\3.png"
+  },
+  "f18c683e-293d-4327-b859-552b7fd8cd9f": {
+    "asset": 1499614782987,
+    "meta": 1499995499471,
+    "relativePath": "resources\\Texture\\Coom\\Face\\5.plist"
+  },
+  "93204b42-517b-4287-a47b-c6800e961e00": {
+    "asset": 1499614782986,
+    "meta": 1499995493357,
+    "relativePath": "resources\\Texture\\Coom\\Face\\4.png"
+  },
+  "84ccf665-8be6-475f-b3f0-e9151eccb057": {
+    "asset": 1499614782990,
+    "meta": 1499995499486,
+    "relativePath": "resources\\Texture\\Coom\\Face\\6.plist"
+  },
+  "7e142f4d-b332-49a2-be74-4464fc1599e1": {
+    "asset": 1499614782989,
+    "meta": 1499995493407,
+    "relativePath": "resources\\Texture\\Coom\\Face\\5.png"
+  },
+  "7dfcc566-18da-47fa-959e-364e6b2e9869": {
+    "asset": 1499614782991,
+    "meta": 1499995493424,
+    "relativePath": "resources\\Texture\\Coom\\Face\\6.png"
+  },
+  "9d79ac2a-a818-4343-ba99-657f7df8e363": {
+    "asset": 1499614782992,
+    "meta": 1499995499502,
+    "relativePath": "resources\\Texture\\Coom\\Face\\7.plist"
+  },
+  "c40f9883-b5c9-4567-be17-4e57aef154b7": {
+    "asset": 1499614782995,
+    "meta": 1499995499517,
+    "relativePath": "resources\\Texture\\Coom\\Face\\8.plist"
+  },
+  "ae56bf5a-f263-4e3f-b76f-3145b2e2e81f": {
+    "asset": 1499614782997,
+    "meta": 1499995493479,
+    "relativePath": "resources\\Texture\\Coom\\Face\\8.png"
+  },
+  "e5014a10-9689-44d4-b9d4-7a687136d881": {
+    "asset": 1499614782994,
+    "meta": 1499995493464,
+    "relativePath": "resources\\Texture\\Coom\\Face\\7.png"
+  },
+  "d0c1dff9-153c-44d4-bd04-2e25023ebcce": {
+    "asset": 1499614782998,
+    "meta": 1499995499533,
+    "relativePath": "resources\\Texture\\Coom\\Face\\9.plist"
+  },
+  "07137e19-ea38-429a-a266-58f678c56ab9": {
+    "asset": 1499614783000,
+    "meta": 1499995493508,
+    "relativePath": "resources\\Texture\\Coom\\Face\\9.png"
+  },
+  "2b3cbe74-6dd8-4a9f-be15-5609b080df01": {
+    "asset": 1499614783115,
+    "meta": 1499995493972,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_bet_off.png"
+  },
+  "cc1ecb8b-9a1e-4f75-842c-d970ef9f9059": {
+    "asset": 1499614783115,
+    "meta": 1499995493976,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_bet_on.png"
+  },
+  "409cd85b-a0ac-4f00-b63a-f9d391a90d51": {
+    "asset": 1499614783078,
+    "meta": 1499995494005,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Cancle_off.png"
+  },
+  "7f2b3476-f684-4d91-aa19-0093a002e063": {
+    "asset": 1499614783079,
+    "meta": 1499995494008,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Cancle_on.png"
+  },
+  "64e7b5d4-ba1a-4f18-83d4-688922d8df53": {
+    "asset": 1499614783093,
+    "meta": 1499995494102,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Music_off.png"
+  },
+  "79c7de42-188f-4b38-9709-26955d408f70": {
+    "asset": 1499614783094,
+    "meta": 1499995494106,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Music_on.png"
+  },
+  "8c11dcb2-6d4f-4ffc-a402-ec73b905e8f0": {
+    "asset": 1499614782971,
+    "meta": 1499995499374,
+    "relativePath": "resources\\Texture\\Coom\\Face\\12.plist"
+  },
+  "a309e965-33c1-4acc-9edf-3b84afa9b68d": {
+    "asset": 1499614782973,
+    "meta": 1499995499393,
+    "relativePath": "resources\\Texture\\Coom\\Face\\13.plist"
+  },
+  "f39262f4-5506-4b2c-b45e-0af2a4fe54d3": {
+    "asset": 1499614782975,
+    "meta": 1499995493275,
+    "relativePath": "resources\\Texture\\Coom\\Face\\13.png"
+  },
+  "ff50f8ee-3a43-47e0-9add-e28ce6430a41": {
+    "asset": 1499614782973,
+    "meta": 1499995493259,
+    "relativePath": "resources\\Texture\\Coom\\Face\\12.png"
+  },
+  "daab63a3-fc2c-45f9-a294-305f80b50089": {
+    "asset": 1499614782737,
+    "meta": 1499995491560,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_ExpressionView.prefab"
+  },
+  "5d7111ec-c660-46cc-a97c-60a1f92bf0dc": {
+    "asset": 1499614782664,
+    "meta": 1502241597912,
+    "relativePath": "Script\\libs\\aes.js"
+  },
+  "2261a13f-f66c-4c74-b559-ed7818eb724e": {
+    "asset": 1499614782960,
+    "meta": 1499995499190,
+    "relativePath": "resources\\Texture\\CommCard\\11.plist"
+  },
+  "f2793866-d62d-4d9d-a04a-32f5d87ff80d": {
+    "asset": 1499614782720,
+    "meta": 1499995491331,
+    "relativePath": "resources\\Scene\\CommCard\\Card.prefab"
+  },
+  "e1ac94c7-cb9d-4e8b-8b95-1bfe37883e51": {
+    "asset": 1499614782962,
+    "meta": 1499995491724,
+    "relativePath": "resources\\Texture\\CommCard\\11.png"
+  },
+  "b1a03be9-26ef-4e82-a65d-f742a3018892": {
+    "asset": 1499614782728,
+    "meta": 1499995491548,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_CardItemSelf.prefab"
+  },
+  "e5e35f67-03f1-4328-977a-0c0212728e13": {
+    "asset": 1499614782546,
+    "meta": 1502241597163,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_GetPlayersListRespPacket.js"
+  },
+  "7ff7a679-46cb-4561-95cf-d827d3108c2b": {
+    "asset": 1499614783035,
+    "meta": 1499995493726,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_CreateRoomGoldOn.png"
+  },
+  "cee6604b-66aa-4fdc-a17b-1c353e345eb8": {
+    "asset": 1499614782654,
+    "meta": 1502241598738,
+    "relativePath": "Script\\Network\\Socket\\Message.js"
+  },
+  "31548187-4b1d-4d5a-ba53-c3dbfd5f489e": {
+    "asset": 1499614782655,
+    "meta": 1502241598754,
+    "relativePath": "Script\\Network\\Socket\\MessageResp.js"
+  },
+  "c1a62750-6230-4bdc-b868-02711249e785": {
+    "asset": 1499614782623,
+    "meta": 1502241598286,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\CreateTableCostRespPacket.js"
+  },
+  "9d3398b7-d225-4f4b-93a9-8d2e1891f6f1": {
+    "asset": 1502948915295,
+    "meta": 1502949311515,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice"
+  },
+  "d3350d35-3b87-4993-ab0e-64341df03ff2": {
+    "asset": 1499614782891,
+    "meta": 1499995492646,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice\\Voice1.png"
+  },
+  "9b25cad6-651c-4bdc-811d-707444c147a8": {
+    "asset": 1499614782892,
+    "meta": 1499995492649,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice\\Voice2.png"
+  },
+  "05b59c23-0134-44ee-bf58-7e4562c33156": {
+    "asset": 1499614782893,
+    "meta": 1499995492653,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice\\Voice3.png"
+  },
+  "6a1df1b8-3d03-4100-8055-55ca920de7d7": {
+    "asset": 1499614782894,
+    "meta": 1499995492664,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice\\VoiceFlag.png"
+  },
+  "4f6f1a28-5e14-401e-95b8-64acb05bc5b6": {
+    "asset": 1499614782893,
+    "meta": 1499995492662,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice\\VoiceBg.png"
+  },
+  "77f395de-0613-41f0-8a34-ac535385ee37": {
+    "asset": 1499614782895,
+    "meta": 1499995492674,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice\\VoicePalyBg.png"
+  },
+  "07d5447a-27c8-4582-9fc2-dd9f64987fd6": {
+    "asset": 1499614782897,
+    "meta": 1499995492681,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice\\VoicePlayFlag2.png"
+  },
+  "8746bc5e-9c0e-48f2-88e0-d54bd873cc74": {
+    "asset": 1499614782896,
+    "meta": 1499995492671,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice\\VoicePlayFlag1.png"
+  },
+  "49aa426a-da4c-4c61-ba68-90cd230f73ce": {
+    "asset": 1499614782898,
+    "meta": 1499995492684,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\Voice\\VoicePlayFlag3.png"
+  },
+  "c340f75a-6bc2-4fab-9914-2d13ea4f0bae": {
+    "asset": 1499614782640,
+    "meta": 1502241598504,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\NotifyPayOperatePacket.js"
+  },
+  "e3e58220-0897-49bf-b98b-32334a7742ff": {
+    "asset": 1499614782625,
+    "meta": 1502241598317,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\EnterRoomRespPacket.js"
+  },
+  "1ade9351-59a7-4ee9-9dc2-1bbf353adf46": {
+    "asset": 1499614782711,
+    "meta": 1499995491494,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\VoicePlayView.prefab"
+  },
+  "bfbd5286-2b62-4a81-a219-5239e12ab697": {
+    "asset": 1499614782711,
+    "meta": 1499995491501,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\VoiceView.prefab"
+  },
+  "628777ca-f791-42b4-b7a6-6f508da650a3": {
+    "asset": 1499614782549,
+    "meta": 1502241597194,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_NotifyGameStartPacket.js"
+  },
+  "44a72a02-76bd-4bb7-8bda-7ec7051c433c": {
+    "asset": 1499614782507,
+    "meta": 1502241596508,
+    "relativePath": "Script\\ComScene\\PopView\\LoadingView.js"
+  },
+  "806974a7-8be4-4782-8b88-4d40f14f8922": {
+    "asset": 1499614782621,
+    "meta": 1502241598270,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\CreateClubRespPacket.js"
+  },
+  "d9def479-16bf-4edf-bdc4-3db0d8dfb604": {
+    "asset": 1499614782524,
+    "meta": 1502241596835,
+    "relativePath": "Script\\ComScene\\PopView\\ToastView.js"
+  },
+  "56ce1f5e-a778-4c3c-b6e0-740ebf14276b": {
+    "asset": 1499614782650,
+    "meta": 1502241598707,
+    "relativePath": "Script\\Network\\Http\\HttpConfig.js"
+  },
+  "328b7ac3-da53-4148-a681-a5075037f03c": {
+    "asset": 1499614782797,
+    "meta": 1499995491996,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\manager.png"
+  },
+  "4c5937d6-4e7d-4cfb-abca-cf5a28d00564": {
+    "asset": 1499614782798,
+    "meta": 1499995491995,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\owner.png"
+  },
+  "d3cf4d28-c106-4959-adb1-64c149f9c2da": {
+    "asset": 1499614782621,
+    "meta": 1502241598270,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ClubUpgradeCostRespPacket.js"
+  },
+  "39581358-2621-4620-9158-7a072d9dfb7a": {
+    "asset": 1499614782799,
+    "meta": 1499995492023,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\table.png"
+  },
+  "7fafc4f0-c0b2-4c44-b24f-d0cbb77e9fce": {
+    "asset": 1499614783271,
+    "meta": 1499995494766,
+    "relativePath": "resources\\Texture\\table.png"
+  },
+  "397f345a-5f44-4951-bce9-2180d81b86cf": {
+    "asset": 1499614782912,
+    "meta": 1499995492759,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Activity_off.png"
+  },
+  "2d818be5-31c6-4abd-b0f6-8b3b24491925": {
+    "asset": 1499614782913,
+    "meta": 1499995492771,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Activity_on.png"
+  },
+  "75799926-efca-4f9f-8928-efbe92ee97e8": {
+    "asset": 1499614782917,
+    "meta": 1499995492827,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Friends_off.png"
+  },
+  "6b05b806-807d-4bcd-8699-6b93f3f05fb7": {
+    "asset": 1499614782917,
+    "meta": 1499995492836,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Friends_on.png"
+  },
+  "32b2e96a-c27e-4446-8695-c4327d500df1": {
+    "asset": 1499614782919,
+    "meta": 1499995492880,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_More_off.png"
+  },
+  "17987df9-6984-4e43-9e4c-16a2d5052eb7": {
+    "asset": 1499614782919,
+    "meta": 1499995492883,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_More_on.png"
+  },
+  "743aa2c7-c31a-4be6-b82b-08e7ec7cae1f": {
+    "asset": 1499614782921,
+    "meta": 1499995492907,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Notice_off.png"
+  },
+  "d2f1771d-36cd-49c9-ac72-8e4bde99f908": {
+    "asset": 1499614782921,
+    "meta": 1499995492904,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Notice_on.png"
+  },
+  "62046a8a-ac07-4a21-a286-4e1a3d84d119": {
+    "asset": 1499614782922,
+    "meta": 1499995492926,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Rule_off.png"
+  },
+  "4f8105a7-5151-4dea-9221-f359b1981711": {
+    "asset": 1499614782923,
+    "meta": 1499995492930,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Rule_on.png"
+  },
+  "f5b0d47f-856e-447f-9a6a-09f086c9f132": {
+    "asset": 1499614782924,
+    "meta": 1499995492947,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Service_off.png"
+  },
+  "02269af0-5507-4a50-b6c8-cb5f5592175b": {
+    "asset": 1499614782924,
+    "meta": 1499995492952,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Service_on.png"
+  },
+  "96f50755-7738-4a3a-8e63-ce65f81aaa7e": {
+    "asset": 1499614782925,
+    "meta": 1499995492968,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Setting_off.png"
+  },
+  "1de34d93-2470-4f03-837c-21f523ff2f32": {
+    "asset": 1499614782926,
+    "meta": 1499995492972,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Setting_on.png"
+  },
+  "00f16ed4-89b0-4169-9570-7c1d605d5141": {
+    "asset": 1499614782926,
+    "meta": 1499995492988,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Share_off.png"
+  },
+  "f1324efc-a039-41d1-9860-8e39c622643c": {
+    "asset": 1499614782927,
+    "meta": 1499995492994,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Share_on.png"
+  },
+  "1b537f30-5ca8-4fd0-bc74-597ac4821f61": {
+    "asset": 1499614783037,
+    "meta": 1499995493760,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_White.png"
+  },
+  "71674b1c-6237-43fc-8da7-fa2a9aeae633": {
+    "asset": 1499614782620,
+    "meta": 1502241598270,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ClubOwnerModifyRoleRespPacket.js"
+  },
+  "146d81d5-37ed-45c4-8f82-b0e7cfa95030": {
+    "asset": 1499614782619,
+    "meta": 1502241598255,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ClubDelMemberRespPacket.js"
+  },
+  "7807fb7b-7236-4935-bcc8-ed2d71847af9": {
+    "asset": 1499614782690,
+    "meta": 1499995491407,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\CusWebView.prefab"
+  },
+  "739d7af5-959a-4809-88f0-eb1b02eeb999": {
+    "asset": 1502948915307,
+    "meta": 1502949311516,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\WebView"
+  },
+  "89c2dd3b-87e4-491a-8b63-e26cc468f03e": {
+    "asset": 1499614782899,
+    "meta": 1499995492693,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\WebView\\hd_fh_n.png"
+  },
+  "9edda25d-7f82-403e-b2e0-0b89e8450ba6": {
+    "asset": 1499614782900,
+    "meta": 1499995492694,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\WebView\\hd_fh_s.png"
+  },
+  "b65d21c2-3e91-49ea-b302-38364c4d61b0": {
+    "asset": 1499614783106,
+    "meta": 1499995494169,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Share_off.png"
+  },
+  "26b32f96-29bf-4e39-8f0e-0c346f97efca": {
+    "asset": 1499614782900,
+    "meta": 1499995492704,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\WebView\\webview_bg.png"
+  },
+  "78ecd2c9-d418-44f7-b4a2-d4e76fcf8baa": {
+    "asset": 1499614783106,
+    "meta": 1499995494172,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Share_on.png"
+  },
+  "c045fd7b-6e66-43b6-bef4-4eeac5a53536": {
+    "asset": 1499614782626,
+    "meta": 1502241598333,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ExchangeGoldRespPacket.js"
+  },
+  "a05cabc9-116e-4c14-ad34-e0c7392d7af2": {
+    "asset": 1499614782701,
+    "meta": 1499995491450,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ProduceCell.prefab"
+  },
+  "5be70c34-f38c-4fe6-ab3a-80ac0eadb904": {
+    "asset": 1499614782705,
+    "meta": 1499995491469,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\SettingView.prefab"
+  },
+  "1568b9f6-089e-48fa-b82b-52f0387eda01": {
+    "asset": 1499614782710,
+    "meta": 1499995491491,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\UserHead.prefab"
+  },
+  "1b9a3973-6bde-494e-b5b2-b33c00b06962": {
+    "asset": 1499614782725,
+    "meta": 1499995491538,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfighgt_Menu.prefab"
+  },
+  "08e2dd9d-4c7d-4fc2-ad31-ed86a8b66e60": {
+    "asset": 1499614782536,
+    "meta": 1502241595946,
+    "relativePath": "Script\\Comm\\Util\\UtilTool.js"
+  },
+  "cadee0d6-5768-476f-8c19-a8828b88faed": {
+    "asset": 1499614782651,
+    "meta": 1502241598723,
+    "relativePath": "Script\\Network\\Http\\HttpManager.js"
+  },
+  "13cf20f3-deb6-4fc5-803d-d4df94ca627a": {
+    "asset": 1499614782728,
+    "meta": 1499995491554,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_CarryGoldView.prefab"
+  },
+  "0489c0dd-52ce-4992-aa1a-c9021e4f7e1b": {
+    "asset": 1499614782539,
+    "meta": 1502241597085,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Req\\Bullfight_BetCoinReqPacket.js"
+  },
+  "a353854b-133b-43f3-8ca5-57cb8ed6372a": {
+    "asset": 1499614782540,
+    "meta": 1502241597100,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Req\\Bullfight_CallBankerReqPacket.js"
+  },
+  "2e6cc96a-378b-44ea-8ff2-8b900071c352": {
+    "asset": 1499614782540,
+    "meta": 1502241597100,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Req\\Bullfight_GetPlayersListReqPacket.js"
+  },
+  "c107c493-416a-4267-8197-a53cb4ac7c6c": {
+    "asset": 1499614782542,
+    "meta": 1502241597116,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Req\\Bullfight_OpenCardReqPacket.js"
+  },
+  "238b3c10-2724-4e42-bebb-9b88311bbd89": {
+    "asset": 1499614782543,
+    "meta": 1502241597132,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Req\\Bullfight_ReadyReqPacket.js"
+  },
+  "4dad377a-dbde-4a32-aca2-d36ba0a36509": {
+    "asset": 1499614782544,
+    "meta": 1502241597132,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Req\\Bullfight_TableDetailReqPacket.js"
+  },
+  "832c5e1c-8a18-467f-887d-469bd9877df2": {
+    "asset": 1499614782545,
+    "meta": 1502241597147,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_BetCoinRespPacket.js"
+  },
+  "edf89304-0804-4df4-9ceb-41d9eefbfdeb": {
+    "asset": 1499614782547,
+    "meta": 1502241597163,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_HelpRespPacket.js"
+  },
+  "6e406c21-f4ae-43a2-8009-9a03b92bfce9": {
+    "asset": 1499614782552,
+    "meta": 1502241597241,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_NotifyOpenCardPacket.js"
+  },
+  "996241e3-17ea-4b75-bf1c-3419cae3a171": {
+    "asset": 1499614782553,
+    "meta": 1502241597241,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_NotifySureBankerPacket.js"
+  },
+  "88ced67d-a019-42fd-a952-24ac1908fe84": {
+    "asset": 1499614782554,
+    "meta": 1502241597256,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_ReadyRespPacket.js"
+  },
+  "d15729a5-0a3b-428f-a1aa-f30dded1ca93": {
+    "asset": 1499614782589,
+    "meta": 1502241598005,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\CarryCoinReqPacket.js"
+  },
+  "f045aa7a-fdea-44c8-84e0-e7e6770c01b2": {
+    "asset": 1499614782590,
+    "meta": 1502241598005,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ChatReqPacket.js"
+  },
+  "4f3a78ab-5883-460e-8551-34f197494048": {
+    "asset": 1499614782590,
+    "meta": 1502241598021,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ClubCreateRoomReqPacket.js"
+  },
+  "3f254ea3-8a32-44b0-9dc3-6770525f1405": {
+    "asset": 1499614782591,
+    "meta": 1502241598021,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ClubDelMemberReqPacket.js"
+  },
+  "6a772a10-884f-4489-abf5-30162823d543": {
+    "asset": 1499614782592,
+    "meta": 1502241598036,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ClubOwnerModifyRoleReqPacket.js"
+  },
+  "84a12147-336a-444c-9a7a-58e2358dcb76": {
+    "asset": 1499614782593,
+    "meta": 1502241598036,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ClubUpgradeCostReqPacket.js"
+  },
+  "1e502302-9fd5-433e-8000-d742aafa5480": {
+    "asset": 1499614782594,
+    "meta": 1502241598036,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\CreateClubReqPacket.js"
+  },
+  "1da50e55-971e-41cc-9e43-92e91fbb63d8": {
+    "asset": 1499614782595,
+    "meta": 1502241598052,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\CreateTableCostReqPacket.js"
+  },
+  "a40d8bdf-e9df-4e02-87ac-d69e8cc4d087": {
+    "asset": 1499614782596,
+    "meta": 1502241598083,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\DismissClubReqPacket.js"
+  },
+  "891ad393-2c94-49aa-8d99-b1d224961715": {
+    "asset": 1499614782597,
+    "meta": 1502241598083,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\DismissGameReqPacket.js"
+  },
+  "1fd68335-c602-4ca3-94e2-5f70c087ddd2": {
+    "asset": 1499614782597,
+    "meta": 1502241598083,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\EnterRoomReqPacket.js"
+  },
+  "a8688363-2858-4fbf-8c23-96a7bb8fbdb7": {
+    "asset": 1499614782598,
+    "meta": 1502241598099,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ExchangeGoldReqPacket.js"
+  },
+  "cbd46e55-e1ce-48df-a706-c91eb962a293": {
+    "asset": 1499614782599,
+    "meta": 1502241598114,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\FindReqPacket.js"
+  },
+  "e73b6b36-f8f1-4936-8fe3-1cc5c99c3929": {
+    "asset": 1499614782600,
+    "meta": 1502241598114,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\FindRoomReqPacket.js"
+  },
+  "8248f4be-c623-4ed5-9bba-7dbfc53379bb": {
+    "asset": 1499614782601,
+    "meta": 1502241598114,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\GetClubListReqPacket.js"
+  },
+  "491a9087-3976-44b5-9c92-d8b6e9f55ae5": {
+    "asset": 1499614782601,
+    "meta": 1502241598130,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\GetClubTableReqPacket.js"
+  },
+  "1ce9ae5c-ef94-4694-8c60-fd0c0d5f0124": {
+    "asset": 1499614782602,
+    "meta": 1502241598130,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\GetMemberListReqPacket.js"
+  },
+  "c9e007f5-beb0-456d-95c3-11a797bd785a": {
+    "asset": 1499614782603,
+    "meta": 1502241598130,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\GetMsgListReqPacket.js"
+  },
+  "a7bb5603-58f3-4d3c-af4e-42e1a1046e14": {
+    "asset": 1499614782604,
+    "meta": 1502241598146,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\GetMsgNumReqPacket.js"
+  },
+  "bb09046e-8b89-4f6b-a172-2fc26b458b9d": {
+    "asset": 1499614782604,
+    "meta": 1502241598146,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\HeartReqPacket.js"
+  },
+  "7cdbe870-9880-471f-88b2-710cd1a50447": {
+    "asset": 1499614782605,
+    "meta": 1502241598146,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\JoinClubReqPacket.js"
+  },
+  "b66cdee2-8648-4b23-9536-4ec5450a41e9": {
+    "asset": 1499614782606,
+    "meta": 1502241598161,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\LeaveGameReqPacket.js"
+  },
+  "9dbc355e-0e94-4a58-836f-1a4cb40e04d7": {
+    "asset": 1499614782606,
+    "meta": 1502241598161,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\LoginReqPacket.js"
+  },
+  "0e217a8e-49cd-40a3-83d8-26471696cd62": {
+    "asset": 1499614782607,
+    "meta": 1502241598161,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ModifyClubInfoReqPacket.js"
+  },
+  "4f564c37-89fd-4589-8352-0b952c6bd165": {
+    "asset": 1499614782608,
+    "meta": 1502241598177,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\MsgReadReqPacket.js"
+  },
+  "632bf26a-f3c0-4cdc-bc23-8c0c37b71f0a": {
+    "asset": 1499614782609,
+    "meta": 1502241598177,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\OwnerKickOutPlayerReqPacket.js"
+  },
+  "f460b3cf-a147-43c1-9d87-0f42c2ef51eb": {
+    "asset": 1499614782610,
+    "meta": 1502241598192,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ScoreDetailReqPacket.js"
+  },
+  "70d7d611-9b1b-456e-af3f-2fd7c707d142": {
+    "asset": 1499614782610,
+    "meta": 1502241598192,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ScoreListReqPacket.js"
+  },
+  "59ad79cf-652d-4258-afa8-a4a921b45245": {
+    "asset": 1499614782611,
+    "meta": 1502241598208,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\SearchClubReqPacket.js"
+  },
+  "82fca36c-b7b5-498d-9052-d850d8976060": {
+    "asset": 1499614782612,
+    "meta": 1502241598208,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ShopConfReqPacket.js"
+  },
+  "96513bc9-cb3e-49b9-a199-17c8048d17de": {
+    "asset": 1499614782612,
+    "meta": 1502241598208,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\SitDownReqPacket.js"
+  },
+  "c7f5970f-6dfd-410d-9d3d-eaf7ab122299": {
+    "asset": 1499614782613,
+    "meta": 1502241598224,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\StartGameReqPacket.js"
+  },
+  "53ca8834-4c42-4492-9c57-c46759a014aa": {
+    "asset": 1499614782614,
+    "meta": 1502241598224,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\UserDetailReqPacket.js"
+  },
+  "470a00f5-0e31-43e2-8f35-3e9daa8c4a4e": {
+    "asset": 1499614782617,
+    "meta": 1502241598255,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ChatRespPacket.js"
+  },
+  "1051e075-61d2-4e02-8d60-75a4af9d2342": {
+    "asset": 1499614782618,
+    "meta": 1502241598255,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ClubCreateRoomRespPacket.js"
+  },
+  "8f748c75-92b5-4ceb-af85-f1d40e214980": {
+    "asset": 1499614782622,
+    "meta": 1502241598286,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\CreateRoomRespPacket.js"
+  },
+  "efcbf765-4252-4c80-8444-00c8df41cddc": {
+    "asset": 1499614782624,
+    "meta": 1502241598317,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\DismissGameRespPacket.js"
+  },
+  "676ef986-7d2e-4b88-8a85-16017ee7a95b": {
+    "asset": 1499614782629,
+    "meta": 1502241598364,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\GetMemberListRespPacket.js"
+  },
+  "4386ecf4-5128-4860-9039-f6b8f4c72704": {
+    "asset": 1499614782631,
+    "meta": 1502241598395,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\HeartRespPacket.js"
+  },
+  "83286ba5-9c4b-444d-b61f-05f46c85a189": {
+    "asset": 1499614782635,
+    "meta": 1502241598442,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\MsgReadRespPacket.js"
+  },
+  "d0aab285-61cd-4905-80f1-b86e2ce56e02": {
+    "asset": 1499614782636,
+    "meta": 1502241598442,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\NotifyClubOwnerConfirmPacket.js"
+  },
+  "d0140620-79b8-4912-929e-7c6d780a1576": {
+    "asset": 1499614782637,
+    "meta": 1502241598458,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\NotifyDismissGame.js"
+  },
+  "1f1c2bb3-ff05-49ce-b314-b8d74084c896": {
+    "asset": 1499614782641,
+    "meta": 1502241598504,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\OwnerConfirmRespPacket.js"
+  },
+  "ed853746-2d12-445e-a1f7-2de010e9a54a": {
+    "asset": 1499614782641,
+    "meta": 1502241598520,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\OwnerKickOutPlayerRespPacket.js"
+  },
+  "a8007b00-0724-4d4c-b5ff-2f83b76ceafc": {
+    "asset": 1499614782644,
+    "meta": 1502241598536,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\SearchClubRespPacket.js"
+  },
+  "84b18218-80a7-48da-898d-3d392d453dd6": {
+    "asset": 1499614782644,
+    "meta": 1502241598551,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ServerKickOutPacket.js"
+  },
+  "0c61c2d5-35cf-4d3d-945f-ca3a2dd6518b": {
+    "asset": 1499614782656,
+    "meta": 1502241598832,
+    "relativePath": "Script\\Network\\Socket\\SocketConfig.js"
+  },
+  "6f1b98fb-9f2f-4904-91d9-4a7435fed303": {
+    "asset": 1499614782672,
+    "meta": 1499995491337,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubAddView.prefab"
+  },
+  "69e547e7-f7e5-4d0c-91ca-a7772e0f19f6": {
+    "asset": 1499614782674,
+    "meta": 1499995491341,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubAreaCell.prefab"
+  },
+  "84b06590-5513-4a64-991d-a2c26c643aae": {
+    "asset": 1499614782678,
+    "meta": 1499995491355,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubFindPopView.prefab"
+  },
+  "2153fb0f-234e-4d22-8e07-5d2e9a9399db": {
+    "asset": 1499614782683,
+    "meta": 1499995491376,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubMemberPermissionView.prefab"
+  },
+  "4af954c9-a5fc-4c12-841c-545a69bff3ed": {
+    "asset": 1499614782686,
+    "meta": 1499995491388,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubPersonsView.prefab"
+  },
+  "ac4ed445-1582-4b2c-8e56-db2c87447655": {
+    "asset": 1499614782689,
+    "meta": 1499995491404,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubView.prefab"
+  },
+  "a2f3db27-226b-4e52-ae87-3f6833ed9db6": {
+    "asset": 1499614782494,
+    "meta": 1502241596180,
+    "relativePath": "Script\\ComScene\\PopView\\ClubCell.js"
+  },
+  "851a9c32-ac8a-40cb-aefa-e6d2c5779ee5": {
+    "asset": 1499614782501,
+    "meta": 1502241596352,
+    "relativePath": "Script\\ComScene\\PopView\\ClubPersonsView.js"
+  },
+  "651407bc-758d-4771-b972-33d70edd4b5a": {
+    "asset": 1499614782634,
+    "meta": 1502241598442,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ModifyClubInfoRespPacket.js"
+  },
+  "7617b493-6152-4764-aa97-86cf709edc43": {
+    "asset": 1499614782624,
+    "meta": 1502241598302,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\DismissClubRespPacket.js"
+  },
+  "d8721408-5ec2-4d99-a00e-ec4bfda78f20": {
+    "asset": 1499614782723,
+    "meta": 1499995491534,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Animation\\YouWin.anim"
+  },
+  "04e7098a-0ee8-4d34-8419-eeb7cbfddc2d": {
+    "asset": 1499614782615,
+    "meta": 1502241598224,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\BannerListRespPacket.js"
+  },
+  "bc4b68ac-b674-4764-ad4d-274388b02b32": {
+    "asset": 1499614782608,
+    "meta": 1502241598177,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\OwnerConfirmReqPacket.js"
+  },
+  "8dee5bbf-10ab-4584-b13e-2bdcc47adb07": {
+    "asset": 1499614782726,
+    "meta": 1499995491542,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_CardItem.prefab"
+  },
+  "1264570b-ae8f-4720-8923-ac9597604bee": {
+    "asset": 1499614782588,
+    "meta": 1502241597990,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\BannerListReqPacket.js"
+  },
+  "5756d230-9be9-43f7-8cfc-3925e7a9d7ce": {
+    "asset": 1499614782619,
+    "meta": 1502241598270,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\ClubOwnerConfirmRespPacket.js"
+  },
+  "6160f273-0a9a-43cf-ab6f-91c0db10a8a3": {
+    "asset": 1499614782592,
+    "meta": 1502241598021,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\ClubOwnerConfirmReqPacket.js"
+  },
+  "57857f68-444e-4e7f-b62d-fae9f0609538": {
+    "asset": 1499614783234,
+    "meta": 1499995494642,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\gold.png"
+  },
+  "6ccaafb6-d785-4219-8af6-3e3f3f20e450": {
+    "asset": 1499614782691,
+    "meta": 1499995491411,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\FindView.prefab"
+  },
+  "47934cc5-6aed-4688-8fd4-b1637a0c351d": {
+    "asset": 1499614782747,
+    "meta": 1499995491629,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_TotalResult.prefab"
+  },
+  "6eacbb69-5940-4b72-b6b2-1c6805bb1268": {
+    "asset": 1499614782628,
+    "meta": 1502241598364,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\GetClubTableRespPacket.js"
+  },
+  "90d2c477-5fb8-4a99-967c-0bdbd869da49": {
+    "asset": 1499614782677,
+    "meta": 1499995491352,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubCreateView.prefab"
+  },
+  "16d5e2fb-f5e8-4a88-96a5-5372c462ff77": {
+    "asset": 1499614782633,
+    "meta": 1502241598426,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\LeaveGameRespPacket.js"
+  },
+  "76c1a391-8fd7-4169-9513-ebc77e9c0c74": {
+    "asset": 1499614782548,
+    "meta": 1502241597178,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_NotifyGameOverOncePacket.js"
+  },
+  "882a4a0c-bc53-4eeb-a9b1-a953801af047": {
+    "asset": 1499614782637,
+    "meta": 1502241598458,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\NotifyGameStartPacket.js"
+  },
+  "38118fb2-9b72-428e-8648-72b37fca7fe1": {
+    "asset": 1499614782646,
+    "meta": 1502241598582,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\StartGameRespPacket.js"
+  },
+  "a58d3506-4759-4983-b9f0-7d694ad29956": {
+    "asset": 1499614783127,
+    "meta": 1499995494360,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\Watcher.png"
+  },
+  "8a43d071-76cd-49d2-be56-2aa38dfe48ba": {
+    "asset": 1499614782533,
+    "meta": 1502241595806,
+    "relativePath": "Script\\Comm\\PokerCard\\Poker.js"
+  },
+  "eccc064b-ad80-4fbf-9427-6a2d8597bbe8": {
+    "asset": 1499614782638,
+    "meta": 1502241598473,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\NotifyInGameRespPacket.js"
+  },
+  "bfa1c35a-6b2e-49af-b704-d6eaccdd7d3e": {
+    "asset": 1499614782675,
+    "meta": 1499995491344,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubAreaView.prefab"
+  },
+  "00d67d0c-7950-4119-acf2-fe529b95e450": {
+    "asset": 1499614782531,
+    "meta": 1502241595743,
+    "relativePath": "Script\\Comm\\ButtonScaler.js"
+  },
+  "5b7a0962-9a87-4ce2-8bd6-699b5abe55ac": {
+    "asset": 1499614782535,
+    "meta": 1502241595946,
+    "relativePath": "Script\\Comm\\Util\\UIUtil.js"
+  },
+  "0b1c6a2a-4321-4f23-b9f1-f04b5017ca3a": {
+    "asset": 1499614782490,
+    "meta": 1502241596118,
+    "relativePath": "Script\\ComScene\\PopView\\BasePop.js"
+  },
+  "115a1bea-7c68-4877-aa16-002841fbd6fc": {
+    "asset": 1499614782501,
+    "meta": 1502241596320,
+    "relativePath": "Script\\ComScene\\PopView\\ClubPersonsCell.js"
+  },
+  "5798380c-6c41-41a6-9ac3-99220ed6b9d6": {
+    "asset": 1499614782541,
+    "meta": 1502241597116,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Req\\Bullfight_HelpReqPacket.js"
+  },
+  "05f545d1-05f1-4725-8d35-527c7c27eaf7": {
+    "asset": 1499614782570,
+    "meta": 1502241597490,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_Tourist.js"
+  },
+  "5d297f58-4fe8-4600-8172-fff6384cd4e6": {
+    "asset": 1499614782573,
+    "meta": 1502241597522,
+    "relativePath": "Script\\GameScene\\Bullfight\\SceneView\\Bullfight_CardLayout.js"
+  },
+  "6cae2972-b5e5-4e83-a174-7c6c2ac2b5ff": {
+    "asset": 1499614782585,
+    "meta": 1502241597974,
+    "relativePath": "Script\\Moudle\\GlobalEventManager.js"
+  },
+  "929201bd-bc3f-4976-a2a0-28b748ecc653": {
+    "asset": 1499614782639,
+    "meta": 1502241598489,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\NotifyOwnerSitPacket.js"
+  },
+  "0f9e11ed-c8d5-4028-a4a8-b409644739aa": {
+    "asset": 1499614783274,
+    "meta": 1499995491309,
+    "relativePath": "resources\\prefabs\\alertView.prefab"
+  },
+  "2764a8ee-b09f-44bf-8d34-482ab63233b7": {
+    "asset": 1499614782548,
+    "meta": 1502241597194,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_NotifyGameOverTotalPacket.js"
+  },
+  "be0f2108-29e0-4b02-950e-d120215b8b24": {
+    "asset": 1499614783034,
+    "meta": 1499995493721,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_CreateRoomGoldOff.png"
+  },
+  "a3a7d01b-a527-4cbd-8add-78731a1a5535": {
+    "asset": 1499614783021,
+    "meta": 1499995493626,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\Btn_Sure_on.png"
+  },
+  "bbc033b9-6aeb-40ff-889b-0e79a01a9d39": {
+    "asset": 1499614783021,
+    "meta": 1499995493623,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\Btn_Sure_off.png"
+  },
+  "5eddf644-68fe-4752-ac23-115fc7d32a31": {
+    "asset": 1499614783026,
+    "meta": 1499995493669,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CarryGoldView\\EditBg.png"
+  },
+  "03dc16d7-53bd-407d-bfce-bfd962fde93e": {
+    "asset": 1499614783083,
+    "meta": 1499995494041,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\Btn\\Btn_Contorl.png"
+  },
+  "4728daa7-73ad-4b50-aea7-91fbae24a0fc": {
+    "asset": 1499614782687,
+    "meta": 1499995491395,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubSetView.prefab"
+  },
+  "9956e38b-1000-441e-9663-66d1ad5e1bf4": {
+    "asset": 1499614782489,
+    "meta": 1502241596055,
+    "relativePath": "Script\\ComScene\\PopView\\AlertView.js"
+  },
+  "85ef819b-80a2-44a4-9f83-829591b259c7": {
+    "asset": 1499614782492,
+    "meta": 1502241596133,
+    "relativePath": "Script\\ComScene\\PopView\\ClubAddView.js"
+  },
+  "2615a8fd-6820-4024-b6d4-8a4b5d631a99": {
+    "asset": 1499614782493,
+    "meta": 1502241596164,
+    "relativePath": "Script\\ComScene\\PopView\\ClubAreaCell.js"
+  },
+  "3b1e6dd5-3fda-4ba0-b1be-269da8facfd1": {
+    "asset": 1499614782493,
+    "meta": 1502241596164,
+    "relativePath": "Script\\ComScene\\PopView\\ClubAreaView.js"
+  },
+  "d49b3fdb-51b3-484b-b2a0-d094947254b4": {
+    "asset": 1499614782495,
+    "meta": 1502241596196,
+    "relativePath": "Script\\ComScene\\PopView\\ClubCreateView.js"
+  },
+  "9166ed1c-ee75-4f3c-b9de-a298b2f1c6c7": {
+    "asset": 1499614782496,
+    "meta": 1502241596227,
+    "relativePath": "Script\\ComScene\\PopView\\ClubFindPopView.js"
+  },
+  "1c9478ab-edc4-44ab-adad-132d0e46b7e2": {
+    "asset": 1499614782499,
+    "meta": 1502241596320,
+    "relativePath": "Script\\ComScene\\PopView\\ClubMemberPermissionView.js"
+  },
+  "f385795b-bef7-4df1-8742-48c831d0a5df": {
+    "asset": 1499614782503,
+    "meta": 1502241596398,
+    "relativePath": "Script\\ComScene\\PopView\\ClubSetView.js"
+  },
+  "c0807887-069d-465a-a787-a6c8e58c171b": {
+    "asset": 1499614782507,
+    "meta": 1502241596492,
+    "relativePath": "Script\\ComScene\\PopView\\GamblingHouseCell.js"
+  },
+  "7c2769d7-8075-434a-828b-ff89982532f0": {
+    "asset": 1499614782508,
+    "meta": 1502241596508,
+    "relativePath": "Script\\ComScene\\PopView\\MessageCell.js"
+  },
+  "e401691f-b7aa-4ca2-80af-36e1f1b8c6c3": {
+    "asset": 1499614782509,
+    "meta": 1502241596523,
+    "relativePath": "Script\\ComScene\\PopView\\MessageCellDetailView.js"
+  },
+  "e020685b-deb8-4944-88dc-19809f1f68a8": {
+    "asset": 1499614782511,
+    "meta": 1502241596570,
+    "relativePath": "Script\\ComScene\\PopView\\MessageView.js"
+  },
+  "d91b37e8-a7f0-468b-9dae-0887d556f5c1": {
+    "asset": 1499614782513,
+    "meta": 1502241596601,
+    "relativePath": "Script\\ComScene\\PopView\\NoticeView.js"
+  },
+  "1f118050-3859-4d56-b5c1-c7ebb1f25c34": {
+    "asset": 1499614782517,
+    "meta": 1502241596679,
+    "relativePath": "Script\\ComScene\\PopView\\RoomInfoView.js"
+  },
+  "429f014d-bff9-4db0-8f58-4769fd428424": {
+    "asset": 1499614782518,
+    "meta": 1502241596695,
+    "relativePath": "Script\\ComScene\\PopView\\RuleView.js"
+  },
+  "328e8087-1127-430f-a12b-22548d7c7828": {
+    "asset": 1499614782519,
+    "meta": 1502241596695,
+    "relativePath": "Script\\ComScene\\PopView\\ServiceView.js"
+  },
+  "3080ad98-b454-40ea-beb5-120e59440c73": {
+    "asset": 1499614782520,
+    "meta": 1502241596726,
+    "relativePath": "Script\\ComScene\\PopView\\SettingView.js"
+  },
+  "5c028936-3bf8-4ce1-919f-383828549cdd": {
+    "asset": 1499614782563,
+    "meta": 1502241597397,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_ExpressionView.js"
+  },
+  "a5a0cd6a-d0d3-48f0-9599-1c5a323117be": {
+    "asset": 1499614782565,
+    "meta": 1502241597412,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_OwnerView.js"
+  },
+  "097ccb1a-94e1-407d-ae22-75c5dc4d2d1e": {
+    "asset": 1499614782567,
+    "meta": 1502241597459,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_RoomInfo.js"
+  },
+  "0150c466-1aba-4aa5-a6ef-70676c8bebd8": {
+    "asset": 1499614782568,
+    "meta": 1502241597475,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_RuleView.js"
+  },
+  "0ffd6c5d-5c5d-4293-90ed-bdf812ed1ef9": {
+    "asset": 1499614782573,
+    "meta": 1502241597537,
+    "relativePath": "Script\\GameScene\\Bullfight\\SceneView\\Bullfight_Clock.js"
+  },
+  "4b6b2185-05a9-427c-8cd8-26b465814c8b": {
+    "asset": 1499614782574,
+    "meta": 1502241597740,
+    "relativePath": "Script\\GameScene\\Bullfight\\SceneView\\Bullfight_CostomCardType.js"
+  },
+  "c5890d8c-66b9-4d39-a1ec-fa6b079ed429": {
+    "asset": 1499614782583,
+    "meta": 1502241597958,
+    "relativePath": "Script\\Manager\\MusicMgr.js"
+  },
+  "83b2e957-c544-427e-adea-942c8f998eb5": {
+    "asset": 1499614782521,
+    "meta": 1502241596773,
+    "relativePath": "Script\\ComScene\\PopView\\ShopView.js"
+  },
+  "5aa6b159-5ef4-41db-9be9-3bf31609a415": {
+    "asset": 1499614782707,
+    "meta": 1499995491476,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ShopView.prefab"
+  },
+  "8d98b93f-c8d4-4596-93c7-112f003b8e3c": {
+    "asset": 1499614782632,
+    "meta": 1502241598395,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\JoinClubRespPacket.js"
+  },
+  "1e8b485e-04fe-48e5-a66d-f081224c1fc1": {
+    "asset": 1499614782510,
+    "meta": 1502241596539,
+    "relativePath": "Script\\ComScene\\PopView\\MessageDetailView.js"
+  },
+  "0fd354cb-f0a9-4ca2-9813-046b777a3568": {
+    "asset": 1499614782522,
+    "meta": 1502241596788,
+    "relativePath": "Script\\ComScene\\PopView\\SitReqCell.js"
+  },
+  "73334997-54f7-4db4-8c24-b80238b24827": {
+    "asset": 1499614782497,
+    "meta": 1502241596258,
+    "relativePath": "Script\\ComScene\\PopView\\ClubJoinView.js"
+  },
+  "16a45d3d-527a-4288-a5b2-fdcfa456a071": {
+    "asset": 1499614782955,
+    "meta": 1499995493158,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\LoadingScene\\updateprogressbar.png"
+  },
+  "b2fb5f3d-bb11-400b-b93c-2f06a65210b7": {
+    "asset": 1499614782954,
+    "meta": 1499995493149,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\LoadingScene\\updateprogess.png"
+  },
+  "a249090b-24ae-4380-bae6-1c0395310d91": {
+    "asset": 1502948917358,
+    "meta": 1502949311584,
+    "relativePath": "Script\\Hotupdate"
+  },
+  "fe6a4faf-691a-4635-9840-7f767a370a61": {
+    "asset": 1499614782653,
+    "meta": 1502241598738,
+    "relativePath": "Script\\Network\\MessageFactory.js"
+  },
+  "630b6d1d-78f9-41f1-8f5c-642c5bd7f19a": {
+    "asset": 1502948917043,
+    "meta": 1502949311571,
+    "relativePath": "Script\\ComScene\\SceneView"
+  },
+  "f8e6b000-5643-4b86-9080-aa680ce1f599": {
+    "asset": 1502874684483,
+    "meta": 1502949308902,
+    "relativePath": "image"
+  },
+  "71561142-4c83-4933-afca-cb7a17f67053": {
+    "asset": 1490776574000,
+    "meta": 1502949309152,
+    "relativePath": "image\\default_btn_disabled.png"
+  },
+  "e851e89b-faa2-4484-bea6-5c01dd9f06e2": {
+    "asset": 1490776574000,
+    "meta": 1502949309154,
+    "relativePath": "image\\default_btn_normal.png"
+  },
+  "b43ff3c2-02bb-4874-81f7-f2dea6970f18": {
+    "asset": 1490776574000,
+    "meta": 1502949309163,
+    "relativePath": "image\\default_btn_pressed.png"
+  },
+  "d81ec8ad-247c-4e62-aa3c-d35c4193c7af": {
+    "asset": 1490776574000,
+    "meta": 1502949309160,
+    "relativePath": "image\\default_panel.png"
+  },
+  "99170b0b-d210-46f1-b213-7d9e3f23098a": {
+    "asset": 1490776574000,
+    "meta": 1502949309169,
+    "relativePath": "image\\default_progressbar_bg.png"
+  },
+  "cfef78f1-c8df-49b7-8ed0-4c953ace2621": {
+    "asset": 1490776574000,
+    "meta": 1502949309171,
+    "relativePath": "image\\default_progressbar.png"
+  },
+  "567dcd80-8bf4-4535-8a5a-313f1caf078a": {
+    "asset": 1490776574000,
+    "meta": 1502949309179,
+    "relativePath": "image\\default_radio_button_off.png"
+  },
+  "9d60001f-b5f4-4726-a629-2659e3ded0b8": {
+    "asset": 1490776574000,
+    "meta": 1502949309181,
+    "relativePath": "image\\default_radio_button_on.png"
+  },
+  "4bab67cb-18e6-4099-b840-355f0473f890": {
+    "asset": 1490776574000,
+    "meta": 1502949309187,
+    "relativePath": "image\\default_scrollbar_bg.png"
+  },
+  "617323dd-11f4-4dd3-8eec-0caf6b3b45b9": {
+    "asset": 1490776574000,
+    "meta": 1502949309190,
+    "relativePath": "image\\default_scrollbar_vertical_bg.png"
+  },
+  "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": {
+    "asset": 1490776574000,
+    "meta": 1502949309199,
+    "relativePath": "image\\default_scrollbar_vertical.png"
+  },
+  "0291c134-b3da-4098-b7b5-e397edbe947f": {
+    "asset": 1490776574000,
+    "meta": 1502949309196,
+    "relativePath": "image\\default_scrollbar.png"
+  },
+  "6e056173-d285-473c-b206-40a7fff5386e": {
+    "asset": 1490776574000,
+    "meta": 1502949309205,
+    "relativePath": "image\\default_sprite.png"
+  },
+  "0275e94c-56a7-410f-bd1a-fc7483f7d14a": {
+    "asset": 1490776574000,
+    "meta": 1502949309224,
+    "relativePath": "image\\default_sprite_splash.png"
+  },
+  "73a0903d-d80e-4e3c-aa67-f999543c08f5": {
+    "asset": 1490776574000,
+    "meta": 1502949309213,
+    "relativePath": "image\\default_toggle_checkmark.png"
+  },
+  "c25b9d50-c8fc-4d27-beeb-6e7c1f2e5c0f": {
+    "asset": 1490776574000,
+    "meta": 1502949309238,
+    "relativePath": "image\\default_toggle_disabled.png"
+  },
+  "d29077ba-1627-4a72-9579-7b56a235340c": {
+    "asset": 1490776574000,
+    "meta": 1502949309249,
+    "relativePath": "image\\default_toggle_normal.png"
+  },
+  "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": {
+    "asset": 1490776574000,
+    "meta": 1502949309265,
+    "relativePath": "image\\default_toggle_pressed.png"
+  },
+  "fc09f9bd-2cce-4605-b630-8145ef809ed6": {
+    "asset": 1502874659375,
+    "meta": 1502949309251,
+    "relativePath": "misc"
+  },
+  "2be36297-9abb-4fee-8049-9ed5e271da8a": {
+    "asset": 1490776574000,
+    "meta": 1490776574000,
+    "relativePath": "misc\\default_video.mp4"
+  },
+  "f6e6dd15-71d1-4ffe-ace7-24fd39942c05": {
+    "asset": 1502874664674,
+    "meta": 1502949309252,
+    "relativePath": "obsolete"
+  },
+  "b8223619-7e38-47c4-841f-9160c232495a": {
+    "asset": 1490776574000,
+    "meta": 1490776574000,
+    "relativePath": "obsolete\\atom.plist"
+  },
+  "f743d2b6-b7ea-4c14-a55b-547ed4d0a045": {
+    "asset": 1502874659390,
+    "meta": 1502949309254,
+    "relativePath": "particle"
+  },
+  "b2687ac4-099e-403c-a192-ff477686f4f5": {
+    "asset": 1490776574000,
+    "meta": 1490776574000,
+    "relativePath": "particle\\atom.plist"
+  },
+  "ae6c6c98-11e4-452f-8758-75f5c6a56e83": {
+    "asset": 1502874688677,
+    "meta": 1502949309256,
+    "relativePath": "prefab"
+  },
+  "972b9a4d-47ee-4c74-b5c3-61d8a69bc29f": {
+    "asset": 1490776574000,
+    "meta": 1502949309262,
+    "relativePath": "prefab\\button.prefab"
+  },
+  "2c937608-2562-40ea-b264-7395df6f0cea": {
+    "asset": 1490776574000,
+    "meta": 1502949309270,
+    "relativePath": "prefab\\canvas.prefab"
+  },
+  "61aeb05b-3b32-452b-8eed-2b76deeed554": {
+    "asset": 1490776574000,
+    "meta": 1502949309271,
+    "relativePath": "prefab\\editbox.prefab"
+  },
+  "27756ebb-3d33-44b0-9b96-e858fadd4dd4": {
+    "asset": 1490776574000,
+    "meta": 1502949309277,
+    "relativePath": "prefab\\label.prefab"
+  },
+  "785a442c-3ceb-45be-a46e-7317f625f3b9": {
+    "asset": 1490776574000,
+    "meta": 1502949309275,
+    "relativePath": "prefab\\layout.prefab"
+  },
+  "ca8401fe-ad6e-41a8-bd46-8e3e4e9945be": {
+    "asset": 1490776574000,
+    "meta": 1502949309282,
+    "relativePath": "prefab\\pageview.prefab"
+  },
+  "cd33edea-55f5-46c2-958d-357a01384a36": {
+    "asset": 1490776574000,
+    "meta": 1502949309281,
+    "relativePath": "prefab\\particlesystem.prefab"
+  },
+  "5965ffac-69da-4b55-bcde-9225d0613c28": {
+    "asset": 1490776574000,
+    "meta": 1502949309287,
+    "relativePath": "prefab\\progressBar.prefab"
+  },
+  "4a37dd57-78cd-4cec-aad4-f11a73d12b63": {
+    "asset": 1490776574000,
+    "meta": 1502949309288,
+    "relativePath": "prefab\\richtext.prefab"
+  },
+  "32044bd2-481f-4cf1-a656-e2b2fb1594eb": {
+    "asset": 1490776574000,
+    "meta": 1502949309293,
+    "relativePath": "prefab\\scrollview.prefab"
+  },
+  "0004d1cf-a0ad-47d8-ab17-34d3db9d35a3": {
+    "asset": 1490776574000,
+    "meta": 1502949309294,
+    "relativePath": "prefab\\slider.prefab"
+  },
+  "1f55e3be-b89b-4b79-88de-47fd31018044": {
+    "asset": 1490776574000,
+    "meta": 1502949309298,
+    "relativePath": "prefab\\sprite_splash.prefab"
+  },
+  "96083d03-c332-4a3f-9386-d03e2d19e8ee": {
+    "asset": 1490776574000,
+    "meta": 1502949309300,
+    "relativePath": "prefab\\sprite.prefab"
+  },
+  "7de03a80-4457-438d-95a7-3e7cdffd6086": {
+    "asset": 1490776574000,
+    "meta": 1502949309303,
+    "relativePath": "prefab\\tiledmap.prefab"
+  },
+  "0d784963-d024-4ea6-a7db-03be0ad63010": {
+    "asset": 1490776574000,
+    "meta": 1502949309305,
+    "relativePath": "prefab\\toggle.prefab"
+  },
+  "bf0a434c-84dd-4a8e-a08a-7a36f180cc75": {
+    "asset": 1490776574000,
+    "meta": 1502949309308,
+    "relativePath": "prefab\\toggleGroup.prefab"
+  },
+  "232d2782-c4bd-4bb4-9e01-909f03d6d3b9": {
+    "asset": 1490776574000,
+    "meta": 1502949309310,
+    "relativePath": "prefab\\videoplayer.prefab"
+  },
+  "8c5001fd-07ee-4a4b-a8a0-63e15195e94d": {
+    "asset": 1490776574000,
+    "meta": 1502949309313,
+    "relativePath": "prefab\\webview.prefab"
+  },
+  "d9b3fc36-598c-4936-903f-68d1e8843847": {
+    "asset": 1499614782578,
+    "meta": 1502241597865,
+    "relativePath": "Script\\Hotupdate\\AssetsDownload.js"
+  },
+  "ce2a5226-a8f0-437f-808f-1013905287ad": {
+    "asset": 1499614782579,
+    "meta": 1502241597865,
+    "relativePath": "Script\\Hotupdate\\AssetsManager.js"
+  },
+  "b1846eda-57f2-46fa-84f6-b70a52ecca00": {
+    "asset": 1499614782580,
+    "meta": 1502241597896,
+    "relativePath": "Script\\Hotupdate\\GameConfig.js"
+  },
+  "9412abb5-0105-4040-b5dd-391d9ae6f12f": {
+    "asset": 1499614782581,
+    "meta": 1502241597912,
+    "relativePath": "Script\\Hotupdate\\HotUpdateManager.js"
+  },
+  "be1b7bd6-268a-4c6a-9cbd-e8c56f1b6217": {
+    "asset": 1499614782582,
+    "meta": 1502241597912,
+    "relativePath": "Script\\Hotupdate\\HttpRequest.js"
+  },
+  "41f6205b-119d-4c33-bd6a-a808a5d3624e": {
+    "asset": 1499614782525,
+    "meta": 1502241596851,
+    "relativePath": "Script\\ComScene\\PopView\\VoicePlayView.js"
+  },
+  "a3b0c012-9073-4b77-9acb-fdb8fc1a49d9": {
+    "asset": 1499614782679,
+    "meta": 1499995491361,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubInfoView.prefab"
+  },
+  "af263777-ec1b-4c4e-8bde-8ff3b9f72d30": {
+    "asset": 1499614782676,
+    "meta": 1499995491348,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubCell.prefab"
+  },
+  "70d373ac-ca60-45ae-a6ce-9e942a05f1b7": {
+    "asset": 1499614782680,
+    "meta": 1499995491365,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubJoinView.prefab"
+  },
+  "1e1edbc3-1540-4d92-9832-921dfbd73231": {
+    "asset": 1499614782685,
+    "meta": 1499995491384,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubPersonsCell.prefab"
+  },
+  "08534510-6049-4143-80aa-7cbdb5e8901a": {
+    "asset": 1499614782686,
+    "meta": 1499995491391,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubRoomView.prefab"
+  },
+  "eddce342-e01f-499d-9522-33f0777e9dad": {
+    "asset": 1499614782692,
+    "meta": 1499995491415,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\GamblingHouseCell.prefab"
+  },
+  "6a1e536c-7b26-444b-9fb0-4c5378a88087": {
+    "asset": 1499614782694,
+    "meta": 1499995491426,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\MessageDetailView.prefab"
+  },
+  "8df531cd-457d-4548-9ede-975df7b4c35e": {
+    "asset": 1499614782697,
+    "meta": 1499995491438,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\MineView.prefab"
+  },
+  "c7383043-455d-45bf-b429-d17db45b8593": {
+    "asset": 1499614782700,
+    "meta": 1499995491447,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\PlayScore.prefab"
+  },
+  "421b766b-0158-42af-8620-522b033c6631": {
+    "asset": 1499614782704,
+    "meta": 1499995491464,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\RoomInfoView.prefab"
+  },
+  "63d4e0e8-ef42-44af-ba85-ed5a2b4c716e": {
+    "asset": 1499614782708,
+    "meta": 1499995491484,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\SuccessCell.prefab"
+  },
+  "db92ee34-a9a7-48b7-9f3f-094f976870b8": {
+    "asset": 1499614782740,
+    "meta": 1499995491600,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_PlayerCell.prefab"
+  },
+  "0435e9f7-c10a-485e-b6b9-966084cd3489": {
+    "asset": 1499614782741,
+    "meta": 1499995491604,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_PlayerInfoItem.prefab"
+  },
+  "5be8fbd3-ddc1-4a54-92ba-d80779b4bf38": {
+    "asset": 1499614782742,
+    "meta": 1499995491607,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_PlayerItem.prefab"
+  },
+  "98e13914-b897-4b78-b548-5eb8c64d4d35": {
+    "asset": 1499614782749,
+    "meta": 1499995491635,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_Tourist.prefab"
+  },
+  "2f8b59da-cfa7-4f5a-bfd7-06c8a149338d": {
+    "asset": 1499614782744,
+    "meta": 1499995491616,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_ResultPlayerCell.prefab"
+  },
+  "0c2152c3-10a5-4d93-803d-28e0e25c8a16": {
+    "asset": 1499614782750,
+    "meta": 1499995491641,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_UserInfoView.prefab"
+  },
+  "32a606b2-254f-4276-be51-89b441c807de": {
+    "asset": 1503713006089,
+    "meta": 1503713006103,
+    "relativePath": "resources\\Scene\\ComScene\\SceneView\\LoadingScene.fire"
+  },
+  "32125bda-1d4c-4604-b317-d101318a19c6": {
+    "asset": 1499614782586,
+    "meta": 1502241597990,
+    "relativePath": "Script\\Moudle\\Player.js"
+  },
+  "b86ff02a-e23c-46a4-a6df-e957a9bbe4bd": {
+    "asset": 1499614782550,
+    "meta": 1502241597225,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_NotifyKickOutPacket.js"
+  },
+  "8e8d2608-1c16-4f2e-b755-9ff0cafed659": {
+    "asset": 1499614782576,
+    "meta": 1502241597787,
+    "relativePath": "Script\\GameScene\\Bullfight\\SceneView\\Bullfight_GiftAnimation.js"
+  },
+  "6e700f1f-4842-402d-8569-aac24a3f0578": {
+    "asset": 1499614782707,
+    "meta": 1499995491480,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\SitReqCell.prefab"
+  },
+  "e085c472-fa2d-4a29-9051-4c6806ae4fc7": {
+    "asset": 1499614782555,
+    "meta": 1502241597272,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_TableDetailRespPacket.js"
+  },
+  "d0945cb3-e49a-4035-9c32-afad18e41f6e": {
+    "asset": 1499614782584,
+    "meta": 1502241597958,
+    "relativePath": "Script\\Moudle\\GamePlayer.js"
+  },
+  "b0e34d8e-6fce-448b-aa51-ac9209fc6d50": {
+    "asset": 1499614782617,
+    "meta": 1502241598239,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\CarryCoinRespPacket.js"
+  },
+  "35eaaaee-6094-4b21-9f80-9afae8ae7e66": {
+    "asset": 1499614782646,
+    "meta": 1502241598567,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\SitDownRespPacket.js"
+  },
+  "77b750c9-c571-4872-a54a-c67b3a2f4151": {
+    "asset": 1499614782525,
+    "meta": 1502241596851,
+    "relativePath": "Script\\ComScene\\PopView\\VoiceView.js"
+  },
+  "2231dddc-7bad-49a1-8393-90ec297b1428": {
+    "asset": 1499614782658,
+    "meta": 1502241598926,
+    "relativePath": "Script\\Platform\\GVoiceJsb.js"
+  },
+  "10c0b163-22c6-41cc-b023-f5ac322a766f": {
+    "asset": 1499614782546,
+    "meta": 1502241597147,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_CallBankerRespPacket.js"
+  },
+  "526a4de3-29a7-4a80-8888-5554e5540f78": {
+    "asset": 1499614782554,
+    "meta": 1502241597241,
+    "relativePath": "Script\\GameScene\\Bullfight\\Cmd\\Cmd_Resp\\Bullfight_OpenCardRespPacket.js"
+  },
+  "bbb92c31-b7a5-4a7a-9454-5437abeaa288": {
+    "asset": 1499614782577,
+    "meta": 1502241597818,
+    "relativePath": "Script\\GameScene\\Bullfight\\SceneView\\Bullfight_PlayerItem.js"
+  },
+  "ed8cafa6-7d80-441e-a0cb-7faa314cbff0": {
+    "asset": 1503045483363,
+    "meta": 1503045483449,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\SceneView\\Bullfight_GameScene.fire"
+  },
+  "b993560f-c777-421e-bd5d-d8a9dac3f62b": {
+    "asset": 1499614782561,
+    "meta": 1502241597319,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfighgt_Menu.js"
+  },
+  "b241a399-4c71-421c-b766-9f1ea1f783b5": {
+    "asset": 1499614782512,
+    "meta": 1502241596586,
+    "relativePath": "Script\\ComScene\\PopView\\NetMsg.js"
+  },
+  "2caa20da-85a0-4c9c-b98a-8cdb863966be": {
+    "asset": 1499614782572,
+    "meta": 1502241597522,
+    "relativePath": "Script\\GameScene\\Bullfight\\SceneView\\Bullfight_CardItem.js"
+  },
+  "bcca18fa-92aa-4aa9-bb75-d4d361431157": {
+    "asset": 1499614782657,
+    "meta": 1502241598894,
+    "relativePath": "Script\\Network\\Socket\\SocketManager.js"
+  },
+  "11fb02da-c35b-4ce7-ba37-6c35857e7948": {
+    "asset": 1499614782500,
+    "meta": 1502241596320,
+    "relativePath": "Script\\ComScene\\PopView\\ClubMemberView.js"
+  },
+  "fa758442-feda-4c1f-9fc0-f6a9015afdb4": {
+    "asset": 1499614782504,
+    "meta": 1502241596430,
+    "relativePath": "Script\\ComScene\\PopView\\ClubView.js"
+  },
+  "dd03edf0-c7e4-4fa8-ace1-8af2c6bd940d": {
+    "asset": 1499614782565,
+    "meta": 1502241597444,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_PlayerCell.js"
+  },
+  "3e36e151-2917-4120-b759-517322773317": {
+    "asset": 1499614782566,
+    "meta": 1502241597459,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_Playerlist.js"
+  },
+  "b5eac884-dfac-4537-945b-24431552221c": {
+    "asset": 1499614782568,
+    "meta": 1502241597475,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_TotalResult.js"
+  },
+  "5afaac33-8ef7-4b45-b911-8a2b89d6d686": {
+    "asset": 1499614782523,
+    "meta": 1502241596835,
+    "relativePath": "Script\\ComScene\\PopView\\SuccessView.js"
+  },
+  "058a6707-d6b4-4eb5-8c38-d24ae4b8fa80": {
+    "asset": 1499614782514,
+    "meta": 1502241596617,
+    "relativePath": "Script\\ComScene\\PopView\\PlayScore.js"
+  },
+  "a9271411-f074-4827-a7b0-c6d42d3f2feb": {
+    "asset": 1499614782571,
+    "meta": 1502241597522,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_UserInfo.js"
+  },
+  "fefe9f82-3b4d-4228-bb74-94ba5b2f0498": {
+    "asset": 1499614782748,
+    "meta": 1499995491632,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_TotalResultCell.prefab"
+  },
+  "6e7d1e39-effb-4944-b72d-85c94b5ccff9": {
+    "asset": 1499614782569,
+    "meta": 1502241597490,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_TotalResultCell.js"
+  },
+  "850ce567-eb43-4f2c-854b-ee2bfa8691d2": {
+    "asset": 1499614782703,
+    "meta": 1499995491457,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ReferralCodeView.prefab"
+  },
+  "ebf50164-a9ab-4d95-9b5c-44f24351826a": {
+    "asset": 1499614782832,
+    "meta": 1499995492248,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\BtnCode.png"
+  },
+  "066542a7-e981-4168-ab33-97933bb7a104": {
+    "asset": 1499614783040,
+    "meta": 1499995493765,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\SliderBar.png"
+  },
+  "6746378b-158d-4370-963d-b2d68a38fb0b": {
+    "asset": 1499614783030,
+    "meta": 1499995493751,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\BtnSlider.png"
+  },
+  "e2743504-5a3e-4b95-84ac-bdcd0a8df53e": {
+    "asset": 1499614783041,
+    "meta": 1499995493773,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\SliderBg.png"
+  },
+  "160f086a-9877-4fa8-b6ed-8d91fc90cd97": {
+    "asset": 1499614782560,
+    "meta": 1502241597319,
+    "relativePath": "Script\\GameScene\\Bullfight\\Common\\Bullfight_CardType.js"
+  },
+  "d5fba4ac-f8f9-4787-a1ab-1a17ee9dd783": {
+    "asset": 1499614782502,
+    "meta": 1502241596367,
+    "relativePath": "Script\\ComScene\\PopView\\ClubRoomView.js"
+  },
+  "4c82f85b-1066-4c19-b01f-12c2b848448c": {
+    "asset": 1499614782564,
+    "meta": 1502241597412,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_MultCell.js"
+  },
+  "3fe67524-7269-4605-bd34-ed3cc24a6825": {
+    "asset": 1499614783017,
+    "meta": 1499995493615,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\BullfightRule.jpg"
+  },
+  "ec4054e6-ddde-473f-871b-0b2cad03bced": {
+    "asset": 1499614783275,
+    "meta": 1499995491318,
+    "relativePath": "resources\\prefabs\\rollMsg.prefab"
+  },
+  "52dec6ff-68d9-42b6-85ed-e377406bfdbc": {
+    "asset": 1499614783002,
+    "meta": 1499995493494,
+    "relativePath": "resources\\Texture\\Coom\\paomadeng.png"
+  },
+  "f09436c3-3425-44ae-b864-4eba64fe497b": {
+    "asset": 1499614782515,
+    "meta": 1502241596632,
+    "relativePath": "Script\\ComScene\\PopView\\ProduceCell.js"
+  },
+  "b02b96c6-877f-4ae6-8085-acd6a2a79f1c": {
+    "asset": 1499614782634,
+    "meta": 1502241598426,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\LoginRespPacket.js"
+  },
+  "2e856d49-0cc7-4dac-ae96-ac32ba0f004b": {
+    "asset": 1499614782516,
+    "meta": 1502241596679,
+    "relativePath": "Script\\ComScene\\PopView\\RollMsg.js"
+  },
+  "da950baa-3c03-46c6-8838-3c371468fd32": {
+    "asset": 1499614782515,
+    "meta": 1502241596648,
+    "relativePath": "Script\\ComScene\\PopView\\ReferralCodeView.js"
+  },
+  "3558f3ce-b2d9-4963-9ef1-9fd2a6f0c43e": {
+    "asset": 1499614782840,
+    "meta": 1499995492281,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\diamon.png"
+  },
+  "c43de90a-01c8-45aa-a9d8-562928d94c72": {
+    "asset": 1499614783134,
+    "meta": 1499995494303,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\CardType\\nn_16.png"
+  },
+  "dc093eaf-a86e-47b6-aa7f-c3841c43ccdd": {
+    "asset": 1499614782589,
+    "meta": 1502241597990,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\BindReferralReqPacket.js"
+  },
+  "23f55a72-b5bf-4acf-a6a4-4148bb0c1093": {
+    "asset": 1499614782616,
+    "meta": 1502241598239,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Resp\\BindReferralRespPacket.js"
+  },
+  "43961f11-1fbb-4f03-beda-dca21176021a": {
+    "asset": 1499614782562,
+    "meta": 1502241597366,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_CarryView.js"
+  },
+  "f3a0b6ad-7a1f-418a-9feb-a6ba7f237515": {
+    "asset": 1499614782575,
+    "meta": 1502241597756,
+    "relativePath": "Script\\GameScene\\Bullfight\\SceneView\\Bullfight_GameScene.js"
+  },
+  "c4f9ac9d-7a9e-408f-a0fe-888fcd977c55": {
+    "asset": 1499614782527,
+    "meta": 1502241597007,
+    "relativePath": "Script\\ComScene\\SceneView\\BaseScene.js"
+  },
+  "87944888-3b37-4e8d-824e-20d1672b83a1": {
+    "asset": 1499614782648,
+    "meta": 1502241598676,
+    "relativePath": "Script\\Network\\Cmd\\MessageFactory\\Cmd_Common.js"
+  },
+  "d1d88dd9-91d1-436d-9a83-91d04121bceb": {
+    "asset": 1499614782511,
+    "meta": 1502241596586,
+    "relativePath": "Script\\ComScene\\PopView\\MineView.js"
+  },
+  "26a6c1ad-d93a-4058-ab24-1a6b07585d08": {
+    "asset": 1499614782688,
+    "meta": 1499995491400,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubUpgradView.prefab"
+  },
+  "ee0ebd85-db0d-49f8-bd6c-1d661744bcef": {
+    "asset": 1499614782496,
+    "meta": 1502241596242,
+    "relativePath": "Script\\ComScene\\PopView\\ClubInfoView.js"
+  },
+  "be1a092d-4bfc-473e-87ba-7ffbb86342d8": {
+    "asset": 1499614782504,
+    "meta": 1502241596430,
+    "relativePath": "Script\\ComScene\\PopView\\ClubUpgradView.js"
+  },
+  "504c9b65-60f4-472e-861f-4c927694077c": {
+    "asset": 1499614782534,
+    "meta": 1502241595868,
+    "relativePath": "Script\\Comm\\ProgressSlider.js"
+  },
+  "240e81e1-b2cb-40c1-afca-c333116e75e3": {
+    "asset": 1499614782562,
+    "meta": 1502241597381,
+    "relativePath": "Script\\GameScene\\Bullfight\\PopView\\Bullfight_CreateRoom.js"
+  },
+  "6ad363ea-15bb-4e2f-8da1-4a2425f898be": {
+    "asset": 1499614782736,
+    "meta": 1499995491589,
+    "relativePath": "resources\\Scene\\GameScene\\Bullfight\\Prefabs\\Bullfight_CreateRoom.prefab"
+  },
+  "6d002e54-60ea-4146-ab08-e8e5fb84854e": {
+    "asset": 1499614782523,
+    "meta": 1502241596820,
+    "relativePath": "Script\\ComScene\\PopView\\SuccessCell.js"
+  },
+  "0b5193da-f6d7-4722-8128-792b0d89631e": {
+    "asset": 1499614782671,
+    "meta": 1499995491338,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\AdvertItem.prefab"
+  },
+  "3a77c3d7-3b1f-4623-8332-7d1a1fca05f5": {
+    "asset": 1499614782817,
+    "meta": 1499995492159,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\FindView\\webContent1.jpg"
+  },
+  "a1e51f08-0ce9-4c5f-8e83-f218b0fa9c1d": {
+    "asset": 1499614782869,
+    "meta": 1499995492491,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ShopView\\ActivityFlag_1.png"
+  },
+  "13a7d95e-d5e8-4e1b-be44-31dddeee58b3": {
+    "asset": 1499614782489,
+    "meta": 1502241596008,
+    "relativePath": "Script\\ComScene\\PopView\\AdvertItem.js"
+  },
+  "b4660c0c-38ae-4b00-b40f-9145a2bb2a9c": {
+    "asset": 1499614782505,
+    "meta": 1502241596461,
+    "relativePath": "Script\\ComScene\\PopView\\CusWebView.js"
+  },
+  "e5799084-de93-468b-9995-ff271fd53134": {
+    "asset": 1499614782526,
+    "meta": 1502241596944,
+    "relativePath": "Script\\ComScene\\PopView\\WebView.js"
+  },
+  "bcd52357-0123-4fe5-97f0-3a0945df1b80": {
+    "asset": 1499614782682,
+    "meta": 1499995491372,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubLevelView.prefab"
+  },
+  "82e09c19-a698-43be-820c-33ac32c6faab": {
+    "asset": 1499614782789,
+    "meta": 1499995491939,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level10.png"
+  },
+  "ffadeb93-dcc2-4178-a5e3-7b5077301fa5": {
+    "asset": 1499614782793,
+    "meta": 1499995491968,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level6.png"
+  },
+  "a5a558a8-394a-4f7a-93ed-f6356465a40d": {
+    "asset": 1499614782794,
+    "meta": 1499995491973,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level7.png"
+  },
+  "2668ed77-3807-4295-a880-b47649c41d21": {
+    "asset": 1499614782795,
+    "meta": 1499995491977,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level8.png"
+  },
+  "9bb651ad-aec9-4959-a7d4-f4e63b98ea64": {
+    "asset": 1499614782796,
+    "meta": 1499995491984,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level9.png"
+  },
+  "5525f7cd-fb1b-45e6-b36f-a81a92ee89b9": {
+    "asset": 1499614782788,
+    "meta": 1499995491936,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level1.png"
+  },
+  "6cc5fa4c-850e-45b0-81e5-c9ce8d53884a": {
+    "asset": 1499614782791,
+    "meta": 1499995491952,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level3.png"
+  },
+  "9f754eca-81be-4995-b48e-e9b1bca9bdd2": {
+    "asset": 1499614782790,
+    "meta": 1499995491949,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level2.png"
+  },
+  "d35c4993-cb30-453d-a926-8e30d87fd5f9": {
+    "asset": 1499614782792,
+    "meta": 1499995491959,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level4.png"
+  },
+  "97d45330-759d-4487-8d80-b88468a234d8": {
+    "asset": 1499614782792,
+    "meta": 1499995491963,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ClubView\\level5.png"
+  },
+  "5d4370d7-a742-4239-881d-fc82ea39ad04": {
+    "asset": 1499614782681,
+    "meta": 1499995491368,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubLevelCell.prefab"
+  },
+  "966b2a33-337a-4d26-ae92-903bdb8376d6": {
+    "asset": 1499614782498,
+    "meta": 1502241596289,
+    "relativePath": "Script\\ComScene\\PopView\\ClubLevelCell.js"
+  },
+  "3ded5f46-fd66-40a8-949c-c91b5f5b76cb": {
+    "asset": 1499614782498,
+    "meta": 1502241596289,
+    "relativePath": "Script\\ComScene\\PopView\\ClubLevelView.js"
+  },
+  "319a9232-e920-4529-abf5-0fb76c9f892e": {
+    "asset": 1499614782684,
+    "meta": 1499995491380,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\ClubMemberView.prefab"
+  },
+  "494a696e-7430-487c-93a7-624d60f86f5c": {
+    "asset": 1501750395398,
+    "meta": 1502241598676,
+    "relativePath": "Script\\Network\\Cmd\\MessageFactory\\MessageFactory_Common.js"
+  },
+  "ad32aa50-81c6-4d15-ba73-d361ab7a61bc": {
+    "asset": 1501816083866,
+    "meta": 1502241597085,
+    "relativePath": "Script\\ComScene\\SceneView\\LoadingScene.js"
+  },
+  "df5b7375-b2e5-4e07-9f64-cbeb2ef21628": {
+    "asset": 1502163698419,
+    "meta": 1502241595774,
+    "relativePath": "Script\\Comm\\GameSystem.js"
+  },
+  "46ce2484-65b1-4855-b445-2d17424437f4": {
+    "asset": 1499656426959,
+    "meta": 1502168419046,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\LoadingScene\\Logo.png"
+  },
+  "1e13e63e-7502-47c0-88b6-b7e20b8f575d": {
+    "asset": 1502168580187,
+    "meta": 1502168622265,
+    "relativePath": "resources\\Scene\\ComScene\\PopView\\NoticeView.prefab"
+  },
+  "38b628c7-0bc7-4636-a289-d041329c4616": {
+    "asset": 1502180417187,
+    "meta": 1502180417208,
+    "relativePath": "resources\\Scene\\ComScene\\SceneView\\HallScene\\HallScene.fire"
+  },
+  "2597cc4d-7621-49a1-a546-6801ad41f6a0": {
+    "asset": 1502168544658,
+    "meta": 1502241596742,
+    "relativePath": "Script\\ComScene\\PopView\\ShareView.js"
+  },
+  "dde5dcf6-ac54-4a4c-ac38-b8c4ef446859": {
+    "asset": 1502168562004,
+    "meta": 1502241597085,
+    "relativePath": "Script\\ComScene\\SceneView\\HallScene.js"
+  },
+  "365b0f61-7555-4397-9722-6d06fc7fbb8f": {
+    "asset": 1493969159610,
+    "meta": 1502176032632,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\FindView\\webContent.jpg"
+  },
+  "a2a03e78-3e03-4f2e-a7fa-10d6d6e3932b": {
+    "asset": 1502179725498,
+    "meta": 1502241598052,
+    "relativePath": "Script\\Network\\Cmd\\Cmd_Req\\CreateRoomReqPacket.js"
+  },
+  "2ea04a74-0835-43bb-9987-be0d28e418cb": {
+    "asset": 1498443963945,
+    "meta": 1502179975470,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\BullfightBg.jpg"
+  },
+  "e210c766-19c9-42b6-8a0a-049f7e2fa962": {
+    "asset": 1493968369050,
+    "meta": 1502180391986,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\HallSceneBg.jpg"
+  },
+  "fd0a287b-ab0d-4f85-86b3-921bca941a68": {
+    "asset": 1493968408098,
+    "meta": 1502180477449,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_CreateRoom.png"
+  },
+  "ebdcbe7b-2cca-4e63-b230-4b34ca3a267e": {
+    "asset": 1493968292728,
+    "meta": 1502180562147,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_EnterRoom.png"
+  },
+  "1afdb9c1-7273-4590-a73d-6953f5beb21d": {
+    "asset": 1499147378259,
+    "meta": 1502180803792,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_find_on.png"
+  },
+  "28f5b82b-daf9-4cdc-8d0a-2e3e697cd2b1": {
+    "asset": 1499147392708,
+    "meta": 1502180803795,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_find_off.png"
+  },
+  "dbaa2dd4-3f21-4b83-bf4d-a0bb72801b4c": {
+    "asset": 1499147390316,
+    "meta": 1502180803803,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_mine_off.png"
+  },
+  "2382121c-d812-461f-8205-83fba79fa88f": {
+    "asset": 1499147391032,
+    "meta": 1502180803804,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_mine_on.png"
+  },
+  "90eb748f-a75b-46cc-b400-e3ff80ee64c4": {
+    "asset": 1499147391586,
+    "meta": 1502180803814,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Shop_on.png"
+  },
+  "d170177b-f2a5-40e6-95bc-19106c187296": {
+    "asset": 1499147392147,
+    "meta": 1502180803815,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Shop_off.png"
+  },
+  "acd0c0a7-4ce5-4e35-a327-d7242758a2dd": {
+    "asset": 1499147700995,
+    "meta": 1502180803825,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Success_off.png"
+  },
+  "c31fb0ca-8849-463a-91b3-d518ae041b82": {
+    "asset": 1499147701030,
+    "meta": 1502180803826,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Success_on.png"
+  },
+  "bafc91cd-3931-4ee2-b895-2e8bb1b1139e": {
+    "asset": 1499147111628,
+    "meta": 1502180922208,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_CreateRoomDiamondOn.png"
+  },
+  "ffdb916e-98bd-45d0-9618-3170f68fa47b": {
+    "asset": 1499147166145,
+    "meta": 1502180922212,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\PopView\\CreateRoom\\Btn_CreateRoomDiamondOff.png"
+  },
+  "c53a9dc9-95ac-49d1-8df9-087d91ffac23": {
+    "asset": 1493968822922,
+    "meta": 1502181166085,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\LoadingScene\\BtnWechatLogin.png"
+  },
+  "786e4a90-86fe-4920-8801-62428e92239e": {
+    "asset": 1493968866173,
+    "meta": 1502181166099,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\LoadingScene\\LoadingSceneBg.jpg"
+  },
+  "06030121-0f8e-4588-98f9-d4536abdc542": {
+    "asset": 1493968519178,
+    "meta": 1502181261761,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\ComView\\CommBg.jpg"
+  },
+  "228b7f13-aa05-47f6-ace1-73d3edb75a2a": {
+    "asset": 1499147749482,
+    "meta": 1502181696533,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SuccessView\\Btn_Share_off.png"
+  },
+  "3008d35a-7f0c-48aa-b641-b487ff3fb653": {
+    "asset": 1493970293666,
+    "meta": 1502181696542,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\SuccessView\\Btn_Share_on.png"
+  },
+  "0966ae48-0fc9-4c30-a14b-55083c17b57b": {
+    "asset": 1499148507606,
+    "meta": 1502181696546,
+    "relativePath": "resources\\Texture\\ComScene\\PopView\\MineView\\w.jpg"
+  },
+  "7bb1b533-9d79-4c10-b921-fdea17c5a285": {
+    "asset": 1493968275775,
+    "meta": 1502181696550,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\EditBoxbg.png"
+  },
+  "65708d87-50e5-41f5-b599-d9373a6ba43e": {
+    "asset": 1499147311354,
+    "meta": 1502181696560,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\TopBg.png"
+  },
+  "9750d7e4-1c21-4860-b65e-ead2a6e23b92": {
+    "asset": 1493968822870,
+    "meta": 1502182128170,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\LoadingScene\\BtnLocalLogin.png"
+  },
+  "f158891a-4dd3-467f-a956-4485ba02d410": {
+    "asset": 1502183004404,
+    "meta": 1502241596476,
+    "relativePath": "Script\\ComScene\\PopView\\FindView.js"
+  },
+  "e212509f-5700-4436-bea2-4ed6d7be3487": {
+    "asset": 1502241740283,
+    "meta": 1502933577514,
+    "relativePath": "resources\\Texture\\GameSscene\\Bullfight\\SceneView\\GameLogo.png"
+  },
+  "39c678d5-b609-4e1a-a1ec-b387bfb76fe4": {
+    "asset": 1502241740115,
+    "meta": 1502933738100,
+    "relativePath": "resources\\Texture\\ComScene\\SceneView\\HallScene\\BtnImg\\Btn_Main.png"
+  },
+  "75e625d1-3642-40ec-86be-266ce5412f98": {
+    "asset": 1502959089649,
+    "meta": 1502960119903,
+    "relativePath": "Script\\Platform\\GameCallOC.js"
+  },
+  "7a53ce58-a94a-4a72-8211-255d8d17fab6": {
+    "asset": 1503103375880,
+    "meta": 1503103381690,
+    "relativePath": "Script\\Platform\\WeChatApi.js"
+  }
+}

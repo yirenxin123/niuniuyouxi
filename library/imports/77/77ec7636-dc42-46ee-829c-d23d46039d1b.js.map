@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "Cmd_Bullfight",
+    "Bullfight_NotifyNotBetPacket",
+    "apply",
+    "cmd",
+    "SBF_NOTIFY_NOT_BET_COIN_CMD_ID",
+    "tableid",
+    "tstatus",
+    "seaters",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;AACA,IAAIC,gBAAgBD,QAAQ,eAAR,CAApB;;AAEA;;;;;;;;;;;;;;;;AAgBA,SAASE,4BAAT,GAAwC;AACpCH,cAAYI,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EADoC,CACN;;AAE9B,OAAKC,GAAL,GAAWH,cAAcI,8BAAzB;AACA,OAAKC,OAAL,GAAe,CAAf;AACA,OAAKC,OAAL,GAAe,CAAf;AACA,OAAKC,OAAL,GAAe,EAAf;AACA;AACA,OAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,SAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,SAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,SAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,SAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA;AACA;AACA,SAAKR,OAAL,GAAeI,IAAIJ,OAAnB;AACA,SAAKC,OAAL,GAAeG,IAAIH,OAAnB;AACA,SAAKC,OAAL,GAAeE,IAAIF,OAAnB;AACH,GAXD;AAYH;;AAEDO,OAAOC,OAAP,GAAkBd,4BAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/16.\r\n */\r\n\r\nvar MessageResp = require('MessageResp');\r\nvar Cmd_Bullfight = require('Cmd_Bullfight');\r\n\r\n/*\r\n* type SBF_NOT_BET_COIN_T struct {\r\n Uid        uint32  `json:\"uid\"`\r\n SeatId     int     `json:\"seatid\"`\r\n BetCoinMul int     `json:\"betcoinmul\"`\r\n }\r\n\r\n type SBF_NOTIFY_NOT_BET_COIN_T struct {             //没有下注的玩家\r\n JsonHead\r\n RespHead\r\n TableId   int32                `json:\"tableid\"` //桌子id\r\n TStatus   int                  `json:\"tstatus\"` //桌子状态\r\n Seaters   []SBF_NOT_BET_COIN_T `json:\"seaters\"`\r\n }\r\n\r\n * */\r\nfunction Bullfight_NotifyNotBetPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = Cmd_Bullfight.SBF_NOTIFY_NOT_BET_COIN_CMD_ID;\r\n    this.tableid = 0;\r\n    this.tstatus = 0;\r\n    this.seaters = [];\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        // if(this.code < SocketRetCode.RET_SUCCESS)\r\n        //     return;\r\n        this.tableid = msg.tableid;\r\n        this.tstatus = msg.tstatus;\r\n        this.seaters = msg.seaters;\r\n    };\r\n}\r\n\r\nmodule.exports =  Bullfight_NotifyNotBetPacket;"
+  ]
+}

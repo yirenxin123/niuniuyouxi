@@ -1,0 +1,119 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "card.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "41": {
+      "__uuid__": "3d9eba65-fde1-4cbd-bfb1-5b2a3bdead4c"
+    },
+    "Black10": {
+      "__uuid__": "0e4885ca-d58a-484b-aed0-8ec064c1f596"
+    },
+    "Black2": {
+      "__uuid__": "130c4c8a-d9a9-40a9-a71a-3f300d985c5e"
+    },
+    "Black3": {
+      "__uuid__": "d69144dd-3175-46f5-8d4c-b1786cbfdb4f"
+    },
+    "Black4": {
+      "__uuid__": "3846a4a0-b238-49e3-a249-4f4d8d9dc869"
+    },
+    "Black5": {
+      "__uuid__": "ab836239-9a7c-4cf0-bbb5-9165ab4b7b29"
+    },
+    "Black6": {
+      "__uuid__": "fe5d879d-b8fd-49e6-aace-3012b56bda33"
+    },
+    "Black7": {
+      "__uuid__": "f76aee57-0bcd-4a17-837a-8e15979c7d37"
+    },
+    "Black8": {
+      "__uuid__": "519a8724-de4a-4252-bc41-6d97b303e0f4"
+    },
+    "Black9": {
+      "__uuid__": "b6ef23c6-e12a-4e9b-b864-a262a9886367"
+    },
+    "BlackA": {
+      "__uuid__": "959ff5ec-0e7a-4188-9522-c75dab585080"
+    },
+    "BlackJ": {
+      "__uuid__": "488bcdcd-1051-4d62-bb23-7eadbfbcdfb8"
+    },
+    "BlackK": {
+      "__uuid__": "e34c5a54-117a-4e49-a3f4-b7e7552b9cb3"
+    },
+    "BlackQ": {
+      "__uuid__": "fd00d254-9704-4bfc-9a3d-dd3cb015c58a"
+    },
+    "CardBg": {
+      "__uuid__": "d564918c-f962-4c2a-902a-84e69c3a8008"
+    },
+    "CardGround": {
+      "__uuid__": "4489be14-d45f-4a78-a9a0-7efca7ab9de4"
+    },
+    "Color1": {
+      "__uuid__": "0ca57bfe-2142-48e7-84cd-3b13c97327b2"
+    },
+    "Color2": {
+      "__uuid__": "5cb2210b-e9c6-4eed-a448-1e9478d7f05c"
+    },
+    "Color3": {
+      "__uuid__": "6d42198e-039b-4b46-83d7-90d22b372548"
+    },
+    "Color4": {
+      "__uuid__": "6875c891-099d-43d1-88b3-44a71af83d18"
+    },
+    "Red10": {
+      "__uuid__": "30044ac6-2bb2-443b-bffe-43b30821fb2b"
+    },
+    "Red2": {
+      "__uuid__": "28343a7f-efd4-4dfd-9136-7829aacb1757"
+    },
+    "Red3": {
+      "__uuid__": "3187f8d1-6243-4568-ba7c-efead59ba779"
+    },
+    "Red4": {
+      "__uuid__": "b3b42e7a-3daf-443e-9baa-7c6098a902e9"
+    },
+    "Red5": {
+      "__uuid__": "715eefe6-bc91-4ad4-ae42-645955c5f089"
+    },
+    "Red6": {
+      "__uuid__": "3587c13e-639c-4f24-915c-7bc665f46938"
+    },
+    "Red7": {
+      "__uuid__": "d99a7607-84ab-4b74-bb84-ad192b3616a8"
+    },
+    "Red8": {
+      "__uuid__": "91670bc8-8cd7-43a4-aeb9-341677017e2a"
+    },
+    "Red9": {
+      "__uuid__": "7b48aa36-7025-4ddb-87a5-7e0d18a1b94b"
+    },
+    "RedA": {
+      "__uuid__": "80cc7db2-b007-4e86-bb77-3cded52d478a"
+    },
+    "RedJ": {
+      "__uuid__": "14fb198d-98c9-4444-97a3-d89a3594fe7f"
+    },
+    "RedK": {
+      "__uuid__": "bb5052f0-46b8-4cfb-8060-256a0d45cde2"
+    },
+    "RedQ": {
+      "__uuid__": "5efb0926-b245-4242-9513-1435c1665c06"
+    },
+    "SmallColor1": {
+      "__uuid__": "9dd4f7ba-30a8-4283-8780-fc4006983abd"
+    },
+    "SmallColor2": {
+      "__uuid__": "2d7fbb91-32dd-4e9e-a793-1cf706cb1f32"
+    },
+    "SmallColor3": {
+      "__uuid__": "0ed3f0f8-f5b8-4881-b925-7fd173f1ae90"
+    },
+    "SmallColor4": {
+      "__uuid__": "2d8116ee-31e0-49d1-ba30-37577a978843"
+    }
+  }
+}

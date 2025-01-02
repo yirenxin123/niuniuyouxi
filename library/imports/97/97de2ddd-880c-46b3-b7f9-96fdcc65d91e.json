@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ReadyFlag",
+    "texture": "2b28e399-daf0-4ffb-a784-0094e6d35c05",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      93,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      93,
+      50
+    ]
+  }
+}

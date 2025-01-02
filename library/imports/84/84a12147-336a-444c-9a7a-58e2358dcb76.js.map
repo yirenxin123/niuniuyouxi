@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GamePlayer",
+    "GameSystem",
+    "ClubUpgradeCostReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_REQ_CLUB_UPGRADE_COST_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA,IAAIE,aAAaF,QAAQ,YAAR,CAAjB;;AAEA,SAASG,wBAAT,GAAoC;AAChCJ,eAAWK,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EADgC,CACH;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,+BAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,WAAGC,GAAH,CAAO,+BAAP;;AAEA,aAAKC,IAAL,GAAY;AACRP,iBAAK,KAAKA,GADF;AAERQ,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA;AAHF,SAAZ;;AAMAC,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2CX,OAAOY,mBAAlD,EAAuE,IAAvE;AACH,KAVD;AAWH;;AAEDC,OAAOC,OAAP,GAAiBjB,wBAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by zhouxueshi on 2017/5/6.\r\n */\r\n\r\nvar MessageReq = require(\"MessageReq\");\r\nvar GamePlayer = require('GamePlayer');\r\nvar GameSystem = require('GameSystem');\r\n\r\nfunction ClubUpgradeCostReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_CLUB_UPGRADE_COST_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"ClubUpgradeCostReqPacket.send\");\r\n\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n        }\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports = ClubUpgradeCostReqPacket;"
+  ]
+}

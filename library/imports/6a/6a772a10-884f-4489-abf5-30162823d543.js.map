@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GamePlayer",
+    "GameSystem",
+    "ClubOwnerModifyRoleReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "CLUB_REQ_OWNER_MODIFY_ROLE_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "param",
+    "uid",
+    "role",
+    "data",
+    "seq",
+    "clubid",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA,IAAIE,aAAaF,QAAQ,YAAR,CAAjB;;AAEA,SAASG,4BAAT,GAAwC;AACpCJ,eAAWK,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EADoC,CACP;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,iCAAlB;AACA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,WAAGC,GAAH,CAAO,mCAAP;;AAEA,YAAIC,QAAQ;AACRC,iBAAOJ,IAAII,GADH;AAERC,kBAAOL,IAAIK;AAFH,SAAZ;;AAKA,aAAKC,IAAL,GAAY;AACRV,iBAAK,KAAKA,GADF;AAERW,iBAAK,KAAKA,GAFF;AAGRH,iBAAK,KAAKA,GAHF;AAIRI,oBAASR,IAAIQ,MAJL;AAKRL,mBAASA;;AALD,SAAZ;;AASAM,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2Cd,OAAOe,mBAAlD,EAAuE,IAAvE;AACH,KAlBD;AAmBH;;AAEDC,OAAOC,OAAP,GAAkBpB,4BAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/4/15.\r\n */\r\nvar MessageReq = require(\"MessageReq\");\r\nvar GamePlayer = require('GamePlayer');\r\nvar GameSystem = require('GameSystem')\r\n\r\nfunction ClubOwnerModifyRoleReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.CLUB_REQ_OWNER_MODIFY_ROLE_CMD_ID;\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"ClubOwnerModifyRoleReqPacket.send\");\r\n\r\n        var param = {\r\n            uid  : msg.uid,\r\n            role : msg.role,\r\n        };\r\n\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n            clubid : msg.clubid,\r\n            param  : param,\r\n\r\n        }\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  ClubOwnerModifyRoleReqPacket;"
+  ]
+}

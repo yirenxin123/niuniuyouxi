@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GrayBg",
+    "texture": "cee53bc9-d485-41f0-9a97-87219f08800e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      421,
+      92
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      421,
+      92
+    ]
+  }
+}

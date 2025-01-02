@@ -1,0 +1,44 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "NotifyOwnerSitPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_NOTIFY_OWNER_CONFIRM_SIT_CMD_ID",
+    "tablename",
+    "sitUid",
+    "name",
+    "headurl",
+    "gamesvcid",
+    "tableid",
+    "privateid",
+    "seatid",
+    "coin",
+    "param",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "cc",
+    "log",
+    "json",
+    "situid",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA,SAASC,oBAAT,GAAgC;AAC5BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD4B,CACE;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,kCAAlB;;AAEA,SAAKC,SAAL,GAAiB,EAAjB;AACA,SAAKC,MAAL,GAAc,CAAd;AACA,SAAKC,IAAL,GAAY,EAAZ;AACA,SAAKC,OAAL,GAAe,EAAf;AACA,SAAKC,SAAL,GAAiB,CAAjB;AACA,SAAKC,OAAL,GAAe,CAAf;AACA,SAAKC,SAAL,GAAiB,CAAjB;AACA,SAAKC,MAAL,GAAc,CAAC,CAAf;AACA,SAAKC,IAAL,GAAY,CAAZ;AACA,SAAKC,KAAL,GAAa,EAAb;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;;AAEJ,aAAKR,KAAL,GAAaE,IAAIF,KAAjB;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACAS,WAAGC,GAAH,CAAO,gCAAgCR,IAAIF,KAA3C;AACA,YAAIW,OAAYT,IAAIF,KAApB;AACA,aAAKT,SAAL,GAAiBoB,KAAKpB,SAAtB;AACA,aAAKC,MAAL,GAAiBmB,KAAKC,MAAtB;AACA,aAAKnB,IAAL,GAAiBkB,KAAKlB,IAAtB;AACA,aAAKC,OAAL,GAAiBiB,KAAKjB,OAAtB;AACA,aAAKC,SAAL,GAAiBgB,KAAKhB,SAAtB;AACA,aAAKC,OAAL,GAAiBe,KAAKf,OAAtB;AACA,aAAKC,SAAL,GAAiBc,KAAKd,SAAtB;AACA,aAAKC,MAAL,GAAiBa,KAAKb,MAAtB;AACA,aAAKC,IAAL,GAAiBY,KAAKZ,IAAtB;AACH,KAhCD;AAiCH;;AAEDc,OAAOC,OAAP,GAAkB5B,oBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/3.\r\n */\r\nvar MessageResp = require('MessageResp');\r\n\r\nfunction NotifyOwnerSitPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_NOTIFY_OWNER_CONFIRM_SIT_CMD_ID;\r\n\r\n    this.tablename = \"\";\r\n    this.sitUid = 0;\r\n    this.name = \"\";\r\n    this.headurl = \"\";\r\n    this.gamesvcid = 0;\r\n    this.tableid = 0;\r\n    this.privateid = 0;\r\n    this.seatid = -1;\r\n    this.coin = 0;\r\n    this.param = \"\";\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n\r\n        this.param = msg.param;\r\n        // TableName  string `json:\"tablename\"`\r\n        // SitUid     uint32 `json:\"situid\"`\r\n        // Name       string `json:\"name\"`\r\n        // HeadUrl    string `json:\"headurl\"`\r\n        // GameSvcId  uint32 `json:\"gamesvcid\"`\r\n        // TableId    int32  `json:\"tableid\"`\r\n        // PrivateId  int    `json:\"privateid\"`\r\n        // CreateTime int64  `json:\"createtime\"`\r\n        // SeatId     int    `json:\"seatid\"`\r\n        // Coin       int    `json:\"coin\"`\r\n        // Time       int64  `json:\"time\"`\r\n        cc.log(\"NotifyOwnerSitPacket param=\" + msg.param);\r\n        var json      = msg.param;\r\n        this.tablename = json.tablename;\r\n        this.sitUid    = json.situid;\r\n        this.name      = json.name;\r\n        this.headurl   = json.headurl;\r\n        this.gamesvcid = json.gamesvcid;\r\n        this.tableid   = json.tableid;\r\n        this.privateid = json.privateid;\r\n        this.seatid    = json.seatid;\r\n        this.coin      = json.coin;\r\n    };\r\n}\r\n\r\nmodule.exports =  NotifyOwnerSitPacket;"
+  ]
+}

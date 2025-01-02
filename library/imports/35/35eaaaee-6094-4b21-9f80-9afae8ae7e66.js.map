@@ -1,0 +1,49 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "SitDownRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_SIT_DOWN_CMD_ID",
+    "onMessage",
+    "msg",
+    "cc",
+    "log",
+    "totalround",
+    "totaltable",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "switch",
+    "status",
+    "seatid",
+    "seatuid",
+    "name",
+    "headurl",
+    "sex",
+    "coin",
+    "carrytime",
+    "iscarry",
+    "tstatus",
+    "win",
+    "total",
+    "gold",
+    "diamond",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA;;;;;;;;;;;;;;;;;AAiBA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA,SAASC,iBAAT,GAA6B;AACzBF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EADyB,CACK;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,uBAAlB;AACA;AACA;AACA;AACA;AACD;AACC;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;AAC5BC,WAAGC,GAAH,CAAO,8CAAP,EAAuDF,IAAIG,UAA3D,EAAuE,cAAvE,EAAuFH,IAAII,UAA3F;AACA,aAAKC,GAAL,GAAWL,IAAIK,GAAf;AACA,aAAKC,GAAL,GAAWN,IAAIM,GAAf;AACA,aAAKC,IAAL,GAAYP,IAAIO,IAAhB;AACA,aAAKC,IAAL,GAAYR,IAAIQ,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;;AAEJ,aAAKC,MAAL,GAAcX,IAAIW,MAAlB;AACA,aAAKC,MAAL,GAAcZ,IAAIY,MAAlB;AACA,aAAKC,MAAL,GAAcb,IAAIa,MAAlB;AACA,aAAKC,OAAL,GAAed,IAAIc,OAAnB;AACA,aAAKC,IAAL,GAAYf,IAAIe,IAAhB;AACA,aAAKC,OAAL,GAAehB,IAAIgB,OAAnB;AACA,aAAKC,GAAL,GAAWjB,IAAIiB,GAAf;AACA,aAAKC,IAAL,GAAYlB,IAAIkB,IAAhB;AACA,aAAKC,SAAL,GAAiBnB,IAAImB,SAArB;AACA,aAAKC,OAAL,GAAepB,IAAIoB,OAAnB;AACA,aAAKC,OAAL,GAAerB,IAAIqB,OAAnB;AACA,aAAKlB,UAAL,GAAkBH,IAAIG,UAAtB;AACA,aAAKC,UAAL,GAAkBJ,IAAII,UAAtB;AACA,aAAKkB,GAAL,GAAkBtB,IAAIsB,GAAtB;AACA,aAAKC,KAAL,GAAkBvB,IAAIuB,KAAtB;AACA,aAAKC,IAAL,GAAiBxB,IAAIwB,IAArB;AACA,aAAKC,OAAL,GAAiBzB,IAAIyB,OAArB;AACH,KA1BD;AA2BH;;AAEDC,OAAOC,OAAP,GAAkBjC,iBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/1.\r\n */\r\n\r\n/*\r\n type US_RESP_SIT_DOWN_T struct {\r\n JsonHead\r\n RespHead\r\n Switch    int    `json:\"switch\"` //1. 坐下，2：站起\r\n Status    int    `json:\"status\"` //玩家状态\r\n SeatId    int    `json:\"seatid\"`\r\n SeatUid   uint32 `json:\"seatuid\"`\r\n Name      string `json:\"name\"`\r\n HeadUrl   string `json:\"headurl\"`\r\n Sex       int    `json:\"sex\"`\r\n CarryTime int    `json:\"carrytime\"` //选择携带金币时间\r\n MinCarry  int    `json:\"mincarry\"`  //是否需要携带\r\n IsCarry   int8   `json:\"iscarry\"`   //是否需要携带金币，1：第一次坐下，需要携带，0：之前参与过，还有金币\r\n Coin      int    `json:\"coin\"`      //如果iscarry==0, coin是玩家金币\r\n }\r\n* */\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\nfunction SitDownRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_SIT_DOWN_CMD_ID;\r\n    //this.status    = 0;\r\n    //this.seatid    = 0;\r\n    //this.seatuid   = 0;\r\n    //this.name      = \"\";\r\n   // this.headurl   = \"\";\r\n    //this.sex       = 0;\r\n    // this.gold      = 0;\r\n    // this.diamond   = 0;\r\n    //this.coin      = 0;\r\n    //this.carrytime = 0;\r\n    //this.mincarry  = 0;\r\n    //this.iscarry   = 0;\r\n    //this.switch    = 0;\r\n    // this.totalround = 0;\r\n    // this.totaltable = 0;\r\n    //this.tstatus    = 0;\r\n    // this.win        = 0;\r\n    // this.total      = 0;\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n        cc.log(\"SitDownRespPacket.onMessage, msg.totalround=\", msg.totalround, \" totaltable=\", msg.totaltable);\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n\r\n        this.switch = msg.switch;\r\n        this.status = msg.status;\r\n        this.seatid = msg.seatid;\r\n        this.seatuid = msg.seatuid;\r\n        this.name = msg.name;\r\n        this.headurl = msg.headurl;\r\n        this.sex = msg.sex;\r\n        this.coin = msg.coin;\r\n        this.carrytime = msg.carrytime;\r\n        this.iscarry = msg.iscarry;\r\n        this.tstatus = msg.tstatus;\r\n        this.totalround = msg.totalround;\r\n        this.totaltable = msg.totaltable;\r\n        this.win        = msg.win;\r\n        this.total      = msg.total;\r\n        this.gold      = msg.gold;\r\n        this.diamond   = msg.diamond;\r\n    };\r\n}\r\n\r\nmodule.exports =  SitDownRespPacket;"
+  ]
+}

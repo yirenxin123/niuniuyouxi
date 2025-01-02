@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "BannerListRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_BANNER_LIST_CMD_ID",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "bannerlist",
+    "list",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA;;;;;;;;;;;;;;;;AAgBA,SAASC,oBAAT,GAAgC;AAC5BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD4B,CACE;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,0BAAlB;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ,aAAKC,UAAL,GAAkBP,IAAIQ,IAAtB;AACA;AAEH,KAXD;AAYH;;AAEDC,OAAOC,OAAP,GAAkBhB,oBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/30.\r\n */\r\n\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\n/*\r\n * \r\n * \r\ntype US_RESP_BANNER_LIST_T struct {\r\n   JsonHead\r\n   RespHead\r\n   List []BANNER_INFO_T `json:\"list\"`\r\n}\r\ntype BANNER_INFO_T struct {\r\n   Title   string `json:\"title\"`\r\n   Pic     string `json:\"pic\"`\r\n   JumpUrl string `json:\"jumpurl\"`\r\n}\r\n\r\n */\r\n\r\nfunction BannerListRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_BANNER_LIST_CMD_ID;\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        this.bannerlist = msg.list;\r\n        //var json = JSON.parse(BASE64.decoder(msg.param));\r\n\r\n    };\r\n}\r\n\r\nmodule.exports =  BannerListRespPacket;"
+  ]
+}

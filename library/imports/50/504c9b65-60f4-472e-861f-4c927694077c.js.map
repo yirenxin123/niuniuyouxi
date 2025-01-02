@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "Slider",
+    "Bar",
+    "ProgressBar",
+    "Label",
+    "MaxLabel",
+    "MinLabel",
+    "iMax",
+    "iMin",
+    "onLoad",
+    "getNumFromCurNum",
+    "num",
+    "targetNum",
+    "num1",
+    "progress",
+    "setMinAndMax",
+    "min",
+    "max",
+    "string",
+    "parseInt",
+    "CurCarryNum",
+    "callBackSlider",
+    "slider",
+    "customEventData"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,gBAASL,GAAGK,MADJ;AAERC,aAAMN,GAAGO,WAFD;AAGRC,eAAQR,GAAGQ,KAHH;AAIRC,kBAAWT,GAAGQ,KAJN;AAKRE,kBAAWV,GAAGQ,KALN;AAMRG,cAAO,CANC;AAORC,cAAO;AAPC,KAHP;;AAaL;AACAC,YAAQ,kBAAY,CACnB,CAfI;;AAiBLC,sBAAmB,0BAASC,GAAT,EACnB;AACI,YAAIC,YAAYD,GAAhB;AACA,YAAIE,OAAOF,MAAI,GAAf;AACA,YAAIE,QAAQ,EAAZ,EACA;AACID,wBAAYD,OAAO,MAAME,IAAb,CAAZ;AACH,SAHD,MAKA;AACID,wBAAYD,MAAME,IAAlB;AACH;;AAED,YAAGD,YAAY,KAAKL,IAApB,EACA;AACIK,wBAAY,KAAKL,IAAjB;AACH,SAHD,MAIK,IAAGK,YAAY,KAAKJ,IAApB,EACL;AACII,wBAAY,KAAKJ,IAAjB;AACH;;AAED,YAAIM,WAAW,CAACF,YAAY,KAAKJ,IAAlB,KAAyB,KAAKD,IAAL,GAAY,KAAKC,IAA1C,CAAf;AACA,aAAKN,GAAL,CAASY,QAAT,GAAoBA,QAApB;AACA,aAAKb,MAAL,CAAYa,QAAZ,GAAuBA,QAAvB;;AAEA,eAAOF,SAAP;AAEH,KA7CI;;AA+CLG,kBAAe,sBAAUC,GAAV,EAAcC,GAAd,EAAmB;AAC9B,aAAKV,IAAL,GAAYU,GAAZ;AACA,aAAKT,IAAL,GAAYQ,GAAZ;AACA,aAAKX,QAAL,CAAca,MAAd,GAAuB,KAAKX,IAA5B;AACA,aAAKD,QAAL,CAAcY,MAAd,GAAuB,KAAKV,IAA5B;AACA,aAAKN,GAAL,CAASY,QAAT,GAAoB,KAAKb,MAAL,CAAYa,QAAhC;AACA,YAAIH,MAAMQ,SAAS,KAAKX,IAAL,GAAY,CAAC,KAAKD,IAAL,GAAY,KAAKC,IAAlB,IAAwB,KAAKP,MAAL,CAAYa,QAAzD,CAAV;AACA,aAAKM,WAAL,GAAmB,KAAKV,gBAAL,CAAsBC,GAAtB,CAAnB;AACA,aAAKP,KAAL,CAAWc,MAAX,GAAqB,KAAKE,WAA1B;AACH,KAxDI;;AA0DLC,oBAAiB,wBAAUC,MAAV,EAAkBC,eAAlB,EAAmC;AAChD,aAAKrB,GAAL,CAASY,QAAT,GAAoB,KAAKb,MAAL,CAAYa,QAAhC;AACA,YAAIH,MAAMQ,SAAS,KAAKX,IAAL,GAAY,CAAC,KAAKD,IAAL,GAAY,KAAKC,IAAlB,IAAwB,KAAKP,MAAL,CAAYa,QAAzD,CAAV;AACA,aAAKM,WAAL,GAAmB,KAAKV,gBAAL,CAAsBC,GAAtB,CAAnB;AACA,aAAKP,KAAL,CAAWc,MAAX,GAAqB,KAAKE,WAA1B;AACA,aAAKhB,KAAL,CAAWc,MAAX,GAAoB,KAAKE,WAAzB;AACH;AAhEI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        Slider : cc.Slider,\r\n        Bar : cc.ProgressBar,\r\n        Label : cc.Label,\r\n        MaxLabel : cc.Label,\r\n        MinLabel : cc.Label,\r\n        iMax : 0,\r\n        iMin : 0,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n    },\r\n\r\n    getNumFromCurNum : function(num)\r\n    {\r\n        var targetNum = num;\r\n        var num1 = num%100;\r\n        if (num1 >= 50)\r\n        {\r\n            targetNum = num + (100 - num1);\r\n        }\r\n        else\r\n        {\r\n            targetNum = num - num1;\r\n        }\r\n\r\n        if(targetNum > this.iMax )\r\n        {\r\n            targetNum = this.iMax ;\r\n        }\r\n        else if(targetNum < this.iMin )\r\n        {\r\n            targetNum = this.iMin ;\r\n        }\r\n\r\n        var progress = (targetNum - this.iMin)/(this.iMax - this.iMin);\r\n        this.Bar.progress = progress;\r\n        this.Slider.progress = progress;\r\n\r\n        return targetNum;\r\n\r\n    },\r\n    \r\n    setMinAndMax : function (min,max) {\r\n        this.iMax = max;\r\n        this.iMin = min;\r\n        this.MaxLabel.string = this.iMax;\r\n        this.MinLabel.string = this.iMin;\r\n        this.Bar.progress = this.Slider.progress;\r\n        var num = parseInt(this.iMin + (this.iMax - this.iMin)*this.Slider.progress);\r\n        this.CurCarryNum = this.getNumFromCurNum(num);\r\n        this.Label.string = (this.CurCarryNum);\r\n    },\r\n    \r\n    callBackSlider : function (slider, customEventData) {\r\n        this.Bar.progress = this.Slider.progress;\r\n        var num = parseInt(this.iMin + (this.iMax - this.iMin)*this.Slider.progress);\r\n        this.CurCarryNum = this.getNumFromCurNum(num);\r\n        this.Label.string = (this.CurCarryNum);\r\n        this.Label.string = this.CurCarryNum;\r\n    }\r\n});\r\n"
+  ]
+}

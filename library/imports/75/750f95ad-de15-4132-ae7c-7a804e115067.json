@@ -1,0 +1,80 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "3.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "表情_0010_face8_anims_i6p-i6p_25": {
+      "__uuid__": "4efec1ba-4908-44e4-94f9-e4ea32a1f381"
+    },
+    "表情_0011_face8_anims_i6p-i6p_24": {
+      "__uuid__": "0a503d90-bedd-4e88-b721-4992bcdf7085"
+    },
+    "表情_0012_face8_anims_i6p-i6p_23": {
+      "__uuid__": "8c6b67cf-723f-4497-8ae0-e3f862699f1e"
+    },
+    "表情_0013_face8_anims_i6p-i6p_22": {
+      "__uuid__": "254daa54-5b71-4a90-b03d-a5cb10459d34"
+    },
+    "表情_0014_face8_anims_i6p-i6p_20": {
+      "__uuid__": "0c9831f4-bd1a-415a-948f-caaa4221ce3d"
+    },
+    "表情_0015_face8_anims_i6p-i6p_19": {
+      "__uuid__": "d717bb52-8013-4259-bfdb-7d59fa40a9c9"
+    },
+    "表情_0016_face8_anims_i6p-i6p_18": {
+      "__uuid__": "b8217ec9-937d-491b-8a9a-d4804db492c0"
+    },
+    "表情_0017_face8_anims_i6p-i6p_17": {
+      "__uuid__": "d5d71152-0e15-4f8d-b8b6-0c185d427fba"
+    },
+    "表情_0018_face8_anims_i6p-i6p_16": {
+      "__uuid__": "5fbffa51-7036-40ae-a44e-0ede0448f476"
+    },
+    "表情_0019_face8_anims_i6p-i6p_15": {
+      "__uuid__": "634fa9c8-9d20-4e8a-8845-3d287d85d43e"
+    },
+    "表情_0020_face8_anims_i6p-i6p_14": {
+      "__uuid__": "41098211-3ebd-4495-8185-acc51f39527a"
+    },
+    "表情_0021_face8_anims_i6p-i6p_13": {
+      "__uuid__": "2bc256e8-c4e8-48f3-b717-cba3d91809be"
+    },
+    "表情_0022_face8_anims_i6p-i6p_12": {
+      "__uuid__": "4f201ee0-5c53-4885-8aad-78b2deebf78a"
+    },
+    "表情_0023_face8_anims_i6p-i6p_11": {
+      "__uuid__": "fca79598-f721-4392-95dc-017bae4d2fe9"
+    },
+    "表情_0024_face8_anims_i6p-i6p_10": {
+      "__uuid__": "6a0d64ef-6f93-4578-84b9-ed43b8132f7d"
+    },
+    "表情_0025_face8_anims_i6p-i6p_09": {
+      "__uuid__": "9393f490-8b37-4cb3-bb54-00b76b9de3e3"
+    },
+    "表情_0026_face8_anims_i6p-i6p_08": {
+      "__uuid__": "1fb35fdb-7c60-4e6f-85ea-05a7c4a8de63"
+    },
+    "表情_0027_face8_anims_i6p-i6p_07": {
+      "__uuid__": "f14b597b-6821-491d-8218-5bc014e248bf"
+    },
+    "表情_0028_face8_anims_i6p-i6p_06": {
+      "__uuid__": "cd279e92-e6da-4d6c-825a-b0623288b560"
+    },
+    "表情_0029_face8_anims_i6p-i6p_05": {
+      "__uuid__": "b4f0b65b-e662-47a9-a082-770f53a803cc"
+    },
+    "表情_0030_face8_anims_i6p-i6p_04": {
+      "__uuid__": "c67e9fb0-5aba-4b53-bee4-eb2b3135f18a"
+    },
+    "表情_0031_face8_anims_i6p-i6p_03": {
+      "__uuid__": "23a3e0cc-9713-4a6f-b097-a90159692a9d"
+    },
+    "表情_0032_face8_anims_i6p-i6p_02": {
+      "__uuid__": "76d0fe4a-26c9-4565-b05c-bd73a57ff3fc"
+    },
+    "表情_0033_face8_anims_i6p-i6p_01": {
+      "__uuid__": "47b7a28f-3240-46af-ae96-8191ef5a18f0"
+    }
+  }
+}

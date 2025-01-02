@@ -1,0 +1,24 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "debug_extranet",
+    "gateSocketIp",
+    "gateSocketPort",
+    "useSSL",
+    "textUpdate",
+    "window",
+    "game",
+    "config",
+    "module",
+    "exports",
+    "require"
+  ],
+  "mappings": ";;AAAA;;;;;AAKA;AACA,IAAIA,iBAAiB;AACjBC,kBAAkB,aADD,EACmC;AACpDC,oBAAkB,IAFD,EAEmC;;AAEpDC,YAAkB,KAJD,EAImC;AACpDC,gBAAkB,IALD,EAArB;;AAQAC,OAAOC,IAAP,GAAcD,OAAOC,IAAP,IAAe,EAA7B;AACAA,KAAKC,MAAL,GAAcC,OAAOC,OAAP,GAAiBT,cAA/B;;AAEAU,QAAQ,aAAR",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * 全局环境设置\r\n * Author      : donggang\r\n * Create Time : 2016.7.26\r\n */\r\n/** 外网测试服 */\r\nvar debug_extranet = {\r\n    gateSocketIp    : \"192.168.1.1\",                    // 网关地址\r\n    gateSocketPort  : 3101,                             // 网关端口\r\n\r\n    useSSL          : false,                            // 是否使用https\r\n    textUpdate      : true,                             // 是否开启测试热更新\r\n}; \r\n\r\nwindow.game = window.game || {};\r\ngame.config = module.exports = debug_extranet; \r\n\r\nrequire(\"HttpRequest\");\r\n"
+  ]
+}

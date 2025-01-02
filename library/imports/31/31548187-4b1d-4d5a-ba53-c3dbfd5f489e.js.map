@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "Message",
+    "require",
+    "MessageResp",
+    "apply",
+    "code",
+    "desc",
+    "onMessage",
+    "msg",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,UAAUC,QAAQ,SAAR,CAAd;;AAEA,SAASC,WAAT,GACA;AACIF,YAAQG,KAAR,CAAc,IAAd,EAAmB,EAAnB,EADJ,CAC6B;;AAEzB,SAAKC,IAAL,GAAY,CAAZ;AACA,SAAKC,IAAL,GAAY,EAAZ;;AAEA,SAAKC,SAAL,GAAiB,UAASC,GAAT,EAAc,CAE9B,CAFD;AAGH;;AAGDC,OAAOC,OAAP,GAAiBP,WAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/22.\r\n */\r\nvar Message = require('Message');\r\n\r\nfunction MessageResp()\r\n{\r\n    Message.apply(this,[]);  //集成父类数据\r\n\r\n    this.code = 0;\r\n    this.desc = \"\";\r\n\r\n    this.onMessage = function(msg) {\r\n\r\n    };\r\n}\r\n\r\n\r\nmodule.exports = MessageResp;"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "Cmd_Bullfight",
+    "Bullfight_CallBankerRespPacket",
+    "apply",
+    "cmd",
+    "SBF_RESP_CALL_BANKER_CMD_ID",
+    "tableid",
+    "tstatus",
+    "calluid",
+    "seatid",
+    "calltype",
+    "islast",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA;;;;;;;;;;;;;AAaA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;AACA,IAAIC,gBAAgBD,QAAQ,eAAR,CAApB;AACA,SAASE,8BAAT,GAA0C;AACtCH,gBAAYI,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EADsC,CACR;;AAE9B,SAAKC,GAAL,GAAWH,cAAcI,2BAAzB;AACA,SAAKC,OAAL,GAAe,CAAf;AACA,SAAKC,OAAL,GAAe,CAAf;AACA,SAAKC,OAAL,GAAe,CAAf;AACA,SAAKC,MAAL,GAAc,CAAd;AACA,SAAKC,QAAL,GAAgB,CAAhB;AACA,SAAKC,MAAL,GAAc,CAAd;AACA;AACA;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAYD,IAAIC,GAAhB;AACA,aAAKC,GAAL,GAAYF,IAAIE,GAAhB;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ,aAAKb,OAAL,GAAgBO,IAAIP,OAApB;AACA,aAAKC,OAAL,GAAgBM,IAAIN,OAApB;AACA,aAAKC,OAAL,GAAgBK,IAAIL,OAApB;AACA,aAAKC,MAAL,GAAgBI,IAAIJ,MAApB;AACA,aAAKC,QAAL,GAAgBG,IAAIH,QAApB;AACA,aAAKC,MAAL,GAAgBE,IAAIF,MAApB;AACH,KAdD;AAeH;;AAEDS,OAAOC,OAAP,GAAkBnB,8BAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/2.\r\n */\r\n\r\n/*\r\n* type SBF_RESP_CALL_BANKER_T struct {\r\n JsonHead\r\n RespHead\r\n TableId  int `json:\"tableid\"`   //桌子id\r\n TStatus  int `json:\"tstatus\"`   //桌子状态\r\n CallUid  uint32 `json:\"calluid\"`   //哪一个玩家\r\n SeatId   int `json:\"seatid\"`    //哪一个座位\r\n CallType int `json:\"calltype\"`  //抢庄类型\r\n IsLast   int `json:\"islast\"`    //是否是最后一个, 1:是, 0:不是\r\n }\r\n* **/\r\n\r\nvar MessageResp = require('MessageResp');\r\nvar Cmd_Bullfight = require('Cmd_Bullfight');\r\nfunction Bullfight_CallBankerRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = Cmd_Bullfight.SBF_RESP_CALL_BANKER_CMD_ID;\r\n    this.tableid = 0;\r\n    this.tstatus = 0;\r\n    this.calluid = 0;\r\n    this.seatid = 0;\r\n    this.calltype = 0;\r\n    this.islast = 0;\r\n    //{\"cmd\":6619142,\"seq\":0,\"uid\":10010,\"code\":0,\"desc\":\"\",\"tableid\":0,\r\n    // \"tstatus\":0,\"calluid\":10011,\"seatid\":1,\"calltype\":3,\"islast\":1}\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq  = msg.seq;\r\n        this.uid  = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        this.tableid  = msg.tableid;\r\n        this.tstatus  = msg.tstatus;\r\n        this.calluid  = msg.calluid;\r\n        this.seatid   = msg.seatid;\r\n        this.calltype = msg.calltype;\r\n        this.islast   = msg.islast;\r\n    };\r\n}\r\n\r\nmodule.exports =  Bullfight_CallBankerRespPacket;"
+  ]
+}

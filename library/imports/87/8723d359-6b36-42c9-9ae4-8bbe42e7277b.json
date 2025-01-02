@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Success_off",
+    "texture": "acd0c0a7-4ce5-4e35-a327-d7242758a2dd",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      71,
+      76
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      71,
+      76
+    ]
+  }
+}

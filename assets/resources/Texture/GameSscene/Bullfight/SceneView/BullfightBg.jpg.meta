@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "2ea04a74-0835-43bb-9987-be0d28e418cb",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "BullfightBg": {
+      "ver": "1.0.3",
+      "uuid": "3e5eb9fb-2a01-4e50-adc2-c4ecbdd7630d",
+      "rawTextureUuid": "2ea04a74-0835-43bb-9987-be0d28e418cb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1080,
+      "height": 1920,
+      "rawWidth": 1080,
+      "rawHeight": 1920,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

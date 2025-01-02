@@ -1,0 +1,107 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "1.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "表情_0000s_0000_face9_anims_i6p-i6p_10": {
+      "__uuid__": "e6052751-9be8-4e1e-8cfa-aa3d01d81b88"
+    },
+    "表情_0000s_0000s_0000_face11_anims_i6p-i6p_12": {
+      "__uuid__": "7f641925-bea0-451c-a0f4-9b4257bc1def"
+    },
+    "表情_0000s_0000s_0001_face11_anims_i6p-i6p_10": {
+      "__uuid__": "5befb5c0-94dc-41cd-813a-020039c6108b"
+    },
+    "表情_0000s_0000s_0002_face11_anims_i6p-i6p_09": {
+      "__uuid__": "4aeb60c4-f74e-41cb-9fea-23aac33ea6cc"
+    },
+    "表情_0000s_0000s_0003_face11_anims_i6p-i6p_08": {
+      "__uuid__": "4928f6a6-2061-4efb-9546-c03c710f7947"
+    },
+    "表情_0000s_0000s_0004_face11_anims_i6p-i6p_07": {
+      "__uuid__": "6e5076dd-d6cd-4977-8cff-9b9aa238f03f"
+    },
+    "表情_0000s_0000s_0005_face11_anims_i6p-i6p_06": {
+      "__uuid__": "fd6407e5-e29c-47ae-8895-510757ba6196"
+    },
+    "表情_0000s_0000s_0006_face11_anims_i6p-i6p_05": {
+      "__uuid__": "5da0923d-360c-49c6-b05b-4d531e63a637"
+    },
+    "表情_0000s_0000s_0007_face11_anims_i6p-i6p_04": {
+      "__uuid__": "830a21e2-0286-4125-be11-27877076f413"
+    },
+    "表情_0000s_0000s_0008_face11_anims_i6p-i6p_03": {
+      "__uuid__": "3265ad6e-11a4-4839-92ad-23ad6492e492"
+    },
+    "表情_0000s_0000s_0009_face11_anims_i6p-i6p_02": {
+      "__uuid__": "cf5c37b8-f3bd-4c20-91ba-d7f4d0079551"
+    },
+    "表情_0000s_0000s_0010_face11_anims_i6p-i6p_01": {
+      "__uuid__": "26a1840b-6409-454a-94f1-53922bcbdc56"
+    },
+    "表情_0000s_0001_face9_anims_i6p-i6p_09": {
+      "__uuid__": "3f346faf-dce3-4453-bf53-4f4f5d6ec894"
+    },
+    "表情_0000s_0001s_0000_face10_anims_i6p-i6p_12": {
+      "__uuid__": "aac1505b-f8be-4e7f-b251-b7d1ab12e27f"
+    },
+    "表情_0000s_0001s_0001_face10_anims_i6p-i6p_11": {
+      "__uuid__": "b0435a1e-746d-4937-9894-e9e83b352789"
+    },
+    "表情_0000s_0001s_0002_face10_anims_i6p-i6p_10": {
+      "__uuid__": "cd221a92-d98a-4abd-9087-d4c98541d6b2"
+    },
+    "表情_0000s_0001s_0003_face10_anims_i6p-i6p_09": {
+      "__uuid__": "160842bd-4296-4be2-afcd-ad8b870cb6f3"
+    },
+    "表情_0000s_0001s_0004_face10_anims_i6p-i6p_08": {
+      "__uuid__": "74de77a0-1d9b-436b-bd89-108a39131709"
+    },
+    "表情_0000s_0001s_0005_face10_anims_i6p-i6p_07": {
+      "__uuid__": "9c09ade7-35dc-41d1-9633-93d933f6fbaa"
+    },
+    "表情_0000s_0001s_0006_face10_anims_i6p-i6p_06": {
+      "__uuid__": "32258d6b-b27f-4645-bbde-22a29425b4bb"
+    },
+    "表情_0000s_0001s_0007_face10_anims_i6p-i6p_05": {
+      "__uuid__": "4e21049e-8c12-4421-b9ea-f3659b9ac787"
+    },
+    "表情_0000s_0001s_0008_face10_anims_i6p-i6p_04": {
+      "__uuid__": "ebd96b43-3b5b-4524-8e76-aea7e6fe423c"
+    },
+    "表情_0000s_0001s_0009_face10_anims_i6p-i6p_03": {
+      "__uuid__": "0881da06-cd40-4a66-8881-2a127e4e7bc0"
+    },
+    "表情_0000s_0001s_0010_face10_anims_i6p-i6p_02": {
+      "__uuid__": "001b4e83-e9b6-43d3-b45c-4d79effd9c23"
+    },
+    "表情_0000s_0001s_0011_face10_anims_i6p-i6p_01": {
+      "__uuid__": "c29c5a8d-7499-409b-8208-f5e4d1ed0f10"
+    },
+    "表情_0000s_0002_face9_anims_i6p-i6p_08": {
+      "__uuid__": "c94341cd-177d-422b-bec8-c5a233dd2819"
+    },
+    "表情_0000s_0003_face9_anims_i6p-i6p_07": {
+      "__uuid__": "fd065c18-bf4c-41b5-a474-6e5be951f613"
+    },
+    "表情_0000s_0004_face9_anims_i6p-i6p_06": {
+      "__uuid__": "e586e6bc-7fde-4b96-be57-389183068e2e"
+    },
+    "表情_0000s_0005_face9_anims_i6p-i6p_05": {
+      "__uuid__": "b7a51374-9c6b-426e-bd81-9a58e14f34b1"
+    },
+    "表情_0000s_0006_face9_anims_i6p-i6p_04": {
+      "__uuid__": "09c58dec-021d-4260-a4c0-6e437da3da5d"
+    },
+    "表情_0000s_0007_face9_anims_i6p-i6p_03": {
+      "__uuid__": "8b7df4bd-784d-4df4-805d-88708c1e3b1b"
+    },
+    "表情_0000s_0008_face9_anims_i6p-i6p_02": {
+      "__uuid__": "09bf7a61-5984-4f7a-a6d3-c2747c6fdc79"
+    },
+    "表情_0000s_0009_face9_anims_i6p-i6p_01": {
+      "__uuid__": "a08142f1-f2d1-4e55-addf-635ebc1f56a9"
+    }
+  }
+}

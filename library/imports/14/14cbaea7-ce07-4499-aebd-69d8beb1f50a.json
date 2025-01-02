@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "SpeakerImg",
+    "texture": "53aa3514-016e-491a-b874-5d3c21f2cbd3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      67,
+      59
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      67,
+      59
+    ]
+  }
+}

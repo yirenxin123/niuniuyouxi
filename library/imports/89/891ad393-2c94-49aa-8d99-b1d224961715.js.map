@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "DismissGameReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_REQ_DISMISS_GAME_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;;AAEA,SAASC,oBAAT,GAAgC;AAC5BF,eAAWG,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EAD4B,CACC;;AAE7B,SAAKC,GAAL,GAAWC,OAAOC,0BAAlB;;AAEA;AACA,SAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,WAAGC,GAAH,CAAO,2BAAP;AACA,aAAKC,IAAL,GAAY;AACRP,iBAAK,KAAKA,GADF;AAERQ,iBAAK,KAAKA,GAFF;AAGRC,iBAAK,KAAKA;AAHF,SAAZ;;AAMAC,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2CX,OAAOY,mBAAlD,EAAuE,IAAvE;AACH,KATD;AAUH;;AAEDC,OAAOC,OAAP,GAAkBjB,oBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/1.\r\n */\r\nvar MessageReq = require(\"MessageReq\");\r\n\r\nfunction DismissGameReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_DISMISS_GAME_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"DismissGameReqPacket.send\");\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n        }\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  DismissGameReqPacket;"
+  ]
+}

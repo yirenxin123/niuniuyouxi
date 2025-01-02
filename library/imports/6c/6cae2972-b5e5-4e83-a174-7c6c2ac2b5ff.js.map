@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "GlobalEvent",
+    "eventType",
+    "callBack",
+    "node",
+    "EventManager",
+    "listenerMap",
+    "Map",
+    "eventID",
+    "addEventListener",
+    "event",
+    "forEach",
+    "cc",
+    "log",
+    "set",
+    "removeListener",
+    "eventid",
+    "containsKey",
+    "delete",
+    "emitEvent",
+    "data",
+    "forEachKey",
+    "id",
+    "GlobalEventManager",
+    "instance",
+    "getInstance",
+    "undefined",
+    "window"
+  ],
+  "mappings": ";;AAAA;;;;AAKA;;;;;;;;AASA,SAASA,WAAT,CAAsBC,SAAtB,EAAgCC,QAAhC,EAAyCC,IAAzC,EAA+C;AAC3C,SAAKF,SAAL,GAAiBA,SAAjB;AACA,SAAKC,QAAL,GAAgBA,QAAhB;AACA,SAAKC,IAAL,GAAYA,IAAZ;AACH;;AAGD,SAASC,YAAT,GAAwB;;AAEpB,SAAKC,WAAL,GAAmB,IAAIC,GAAJ,EAAnB;AACA,SAAKC,OAAL,GAAe,CAAf;;AAEA;;;;;;;AAOA,SAAKC,gBAAL,GAAwB,UAAUP,SAAV,EAAqBC,QAArB,EAA+BC,IAA/B,EAAqC;AACzD,YAAIM,QAAQ,IAAIT,WAAJ,CAAgBC,SAAhB,EAA0BC,QAA1B,EAAmCC,IAAnC,CAAZ;;AAEA,aAAKE,WAAL,CAAiBK,OAAjB,CAAyB,UAAUD,KAAV,EAAiB;AACtC,gBAAGA,MAAMR,SAAN,IAAmBA,SAAnB,IAAgCE,QAAQM,MAAMN,IAAjD,EAAsD;AAClDQ,mBAAGC,GAAH,CAAO,0CAAP,EAAmDX,SAAnD;AACA;AACH;AACJ,SALD;;AAOA,aAAKM,OAAL;AACA,aAAKF,WAAL,CAAiBQ,GAAjB,CAAqB,KAAKN,OAA1B,EAAmCE,KAAnC;;AAEAE,WAAGC,GAAH,CAAO,qCAAP,EAA8CX,SAA9C,EAAyD,WAAzD,EAAsE,KAAKM,OAA3E;AACA,eAAO,KAAKA,OAAZ;AACH,KAfD;;AAiBA;;;;AAIA,SAAKO,cAAL,GAAsB,UAAUC,OAAV,EAAmB;AACrCJ,WAAGC,GAAH,CAAO,4CAAP,EAAqDG,OAArD;AACA,YAAG,KAAKV,WAAL,CAAiBW,WAAjB,CAA6BD,OAA7B,CAAH,EAAyC;AACrC,iBAAKV,WAAL,CAAiBY,MAAjB,CAAwBF,OAAxB;AACH;AACJ,KALD;;AAOA;;;;;AAKA,SAAKG,SAAL,GAAiB,UAAUjB,SAAV,EAAqBkB,IAArB,EAA2B;AACxC,aAAKd,WAAL,CAAiBe,UAAjB,CAA4B,UAAUC,EAAV,EAAcZ,KAAd,EAAqB;AAC7C,gBAAGA,MAAMR,SAAN,IAAmBA,SAAtB,EAAgC;AAC5BQ,sBAAMP,QAAN,CAAeiB,IAAf;AACA;AACH;AACJ,SALD;AAMH,KAPD;AAQH;;AAED,IAAIG,qBAAsB,YAAU;AAChC,QAAIC,QAAJ;;AAEA,aAASC,WAAT,GAAsB;AAClB,YAAID,aAAaE,SAAjB,EAA4B;AACxBF,uBAAW,IAAInB,YAAJ,EAAX;AACH;AACD,eAAOmB,QAAP;AACH;;AAED,WAAO;AACHC,qBAAcA;AADX,KAAP;AAGH,CAbwB,EAAzB;;AAeAE,OAAOJ,kBAAP,GAA4BA,kBAA5B",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/19.\r\n */\r\n\r\n\r\n/**\r\n * 自定义消息的封装\r\n * @param eventType\r\n * @param callBack\r\n * @param node\r\n * @constructor\r\n */\r\n\r\n\r\nfunction GlobalEvent (eventType,callBack,node) {\r\n    this.eventType = eventType ;\r\n    this.callBack = callBack ;\r\n    this.node = node ;\r\n}\r\n\r\n\r\nfunction EventManager() {\r\n\r\n    this.listenerMap = new Map();\r\n    this.eventID = 0 ;\r\n\r\n    /**\r\n     * 添加监听\r\n     * @param eventType\r\n     * @param callBack\r\n     * @param node\r\n     * @returns {number}\r\n     */\r\n    this.addEventListener = function (eventType, callBack, node) {\r\n        var event = new GlobalEvent(eventType,callBack,node);\r\n\r\n        this.listenerMap.forEach(function (event) {\r\n            if(event.eventType == eventType && node == event.node){\r\n                cc.log(\"GlobalEventManage same addEventListener=\", eventType);\r\n                return;\r\n            }\r\n        });\r\n\r\n        this.eventID++ ;\r\n        this.listenerMap.set(this.eventID, event);\r\n\r\n        cc.log(\"GlobalEventManage addEventListener=\", eventType, \" eventid=\", this.eventID);\r\n        return this.eventID;\r\n    };\r\n\r\n    /**\r\n     * 删除监听\r\n     * @param eventid\r\n     */\r\n    this.removeListener = function (eventid) {\r\n        cc.log(\"GlobalEventManager.removeListener eventid=\", eventid);\r\n        if(this.listenerMap.containsKey(eventid)){\r\n            this.listenerMap.delete(eventid);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * 转发事件\r\n     * @param eventType\r\n     * @param data\r\n     */\r\n    this.emitEvent = function (eventType, data) {\r\n        this.listenerMap.forEachKey(function (id, event) {\r\n            if(event.eventType == eventType){\r\n                event.callBack(data);\r\n                return;\r\n            }\r\n        });\r\n    }\r\n}\r\n\r\nvar GlobalEventManager = (function(){\r\n    var instance ;\r\n\r\n    function getInstance(){\r\n        if( instance === undefined ){\r\n            instance = new EventManager();\r\n        }\r\n        return instance;\r\n    };\r\n\r\n    return {\r\n        getInstance : getInstance,\r\n    }\r\n})();\r\n\r\nwindow.GlobalEventManager = GlobalEventManager;\r\n"
+  ]
+}

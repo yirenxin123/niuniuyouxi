@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ExpressionBg",
+    "texture": "848cf1be-4d3c-4894-aae3-c8ea3bd0deec",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1080,
+      317
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1080,
+      317
+    ]
+  }
+}

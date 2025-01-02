@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "LeftCommBg",
+    "texture": "00046782-cd58-4e4a-bd35-a4eddeb152e6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      755,
+      1920
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      755,
+      1920
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ClubIconOff",
+    "texture": "a284182a-f804-4524-91f8-98ddaab618c8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      551,
+      555
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      551,
+      555
+    ]
+  }
+}

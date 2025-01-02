@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageFactory_Common",
+    "require",
+    "MessageFactory_Bullfight",
+    "GameSystem",
+    "MessageFactory",
+    "createMessageReq",
+    "cmd",
+    "cc",
+    "log",
+    "toString",
+    "message",
+    "getInstance",
+    "CurGameType",
+    "GameType",
+    "GAME_TYPE_BULLFIGHT",
+    "error",
+    "constructor",
+    "name",
+    "createMessageResp",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAKA,IAAIA,wBAAwBC,QAAQ,uBAAR,CAA5B;AACA,IAAIC,2BAA2BD,QAAQ,0BAAR,CAA/B;AACA,IAAIE,aAAaF,QAAQ,YAAR,CAAjB;;AAEA,IAAIG,iBACA,EADJ;;AAKA;AACAA,eAAeC,gBAAf,GAAkC,UAASC,GAAT,EAAa;AAC3CC,OAAGC,GAAH,CAAO,2CAA2CF,IAAIG,QAAJ,CAAa,EAAb,CAAlD;AACA,QAAIC,UAAU,IAAd;AACA,QAAGP,WAAWQ,WAAX,GAAyBC,WAAzB,IAAwCT,WAAWQ,WAAX,GAAyBE,QAAzB,CAAkCC,mBAA7E,EACA;AACIJ,kBAAUR,yBAAyBG,gBAAzB,CAA0CC,GAA1C,CAAV;AACH,KAHD,MAKA,CAEC;AADG;;;AAGJ;AACA,QAAGI,WAAW,IAAd,EAAmB;AACfA,kBAAUV,sBAAsBK,gBAAtB,CAAuCC,GAAvC,CAAV;AACH;;AAED,QAAGI,WAAW,IAAd,EAAmB;AACfH,WAAGQ,KAAH,CAAS,gDAAT;AACH;AACDR,OAAGC,GAAH,CAAO,qCAAqCE,QAAQM,WAAR,CAAoBC,IAAhE;AACA,WAAOP,OAAP;AAEH,CAvBD;;AAyBAN,eAAec,iBAAf,GAAmC,UAASZ,GAAT,EAAa;AAC5CC,OAAGC,GAAH,CAAO,4CAA4CF,IAAIG,QAAJ,CAAa,EAAb,CAAnD;AACA,QAAIC,UAAU,IAAd;AACA,QAAGP,WAAWQ,WAAX,GAAyBC,WAAzB,IAAwCT,WAAWQ,WAAX,GAAyBE,QAAzB,CAAkCC,mBAA1E,IAAgG,CAAnG,EACA;AACIJ,kBAAUR,yBAAyBgB,iBAAzB,CAA2CZ,GAA3C,CAAV;AACH,KAHD,MAKA,CAEC;AADG;;;AAGJ;AACA,QAAGI,WAAW,IAAd,EAAmB;AACfA,kBAAUV,sBAAsBkB,iBAAtB,CAAwCZ,GAAxC,CAAV;AACH;;AAED,QAAGI,WAAW,IAAd,EAAmB;AACfH,WAAGQ,KAAH,CAAS,iDAAT;AACH;AACDR,OAAGC,GAAH,CAAO,sCAAsCE,QAAQM,WAAR,CAAoBC,IAAjE;AACA,WAAOP,OAAP;AAEH,CAvBD;;AAyBAS,OAAOC,OAAP,GAAiBhB,cAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/19.\r\n */\r\n\r\n\r\nvar MessageFactory_Common = require('MessageFactory_Common') ;\r\nvar MessageFactory_Bullfight = require('MessageFactory_Bullfight');\r\nvar GameSystem = require('GameSystem');\r\n\r\nvar MessageFactory =\r\n    {\r\n\r\n    };\r\n\r\n//生成一个基础消息\r\nMessageFactory.createMessageReq = function(cmd){\r\n    cc.log(\"MessageFactory.createMessageReq,cmd = \" + cmd.toString(16));\r\n    var message = null ;\r\n    if(GameSystem.getInstance().CurGameType == GameSystem.getInstance().GameType.GAME_TYPE_BULLFIGHT)\r\n    {\r\n        message = MessageFactory_Bullfight.createMessageReq(cmd);\r\n    }\r\n    else\r\n    {\r\n        // cc.error(\"MessageFactory.createMessage,ERROR,curGameType = \" + curGameType);\r\n    }\r\n\r\n    //走公共协议\r\n    if(message == null){\r\n        message = MessageFactory_Common.createMessageReq(cmd);\r\n    }\r\n\r\n    if(message == null){\r\n        cc.error(\"MessageFactory.createMessageReq,message = null\");\r\n    }\r\n    cc.log(\"MessageFactory.createMessageReq,\" + message.constructor.name);\r\n    return message;\r\n\r\n};\r\n\r\nMessageFactory.createMessageResp = function(cmd){\r\n    cc.log(\"MessageFactory.createMessageResp,cmd = \" + cmd.toString(16));\r\n    var message = null ;\r\n    if(GameSystem.getInstance().CurGameType == GameSystem.getInstance().GameType.GAME_TYPE_BULLFIGHT ||1)\r\n    {\r\n        message = MessageFactory_Bullfight.createMessageResp(cmd);\r\n    }\r\n    else\r\n    {\r\n        // cc.error(\"MessageFactory.createMessage,ERROR,curGameType = \" + curGameType);\r\n    }\r\n\r\n    //走公共协议\r\n    if(message == null){\r\n        message = MessageFactory_Common.createMessageResp(cmd);\r\n    }\r\n\r\n    if(message == null){\r\n        cc.error(\"MessageFactory.createMessageResp,message = null\");\r\n    }\r\n    cc.log(\"MessageFactory.createMessageResp,\" + message.constructor.name);\r\n    return message;\r\n\r\n};\r\n\r\nmodule.exports = MessageFactory;"
+  ]
+}

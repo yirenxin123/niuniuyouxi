@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Tomato",
+    "texture": "1e3579f3-d52d-4654-bc84-67e278951f58",
+    "atlas": "",
+    "rect": [
+      31,
+      27,
+      78,
+      85
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      140,
+      140
+    ]
+  }
+}

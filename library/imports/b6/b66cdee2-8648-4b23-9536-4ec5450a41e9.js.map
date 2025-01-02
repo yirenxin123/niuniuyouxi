@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageReq",
+    "require",
+    "GamePlayer",
+    "GameSystem",
+    "LeaveGameReqPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_REQ_LEAVE_GAME_CMD_ID",
+    "send",
+    "msg",
+    "cc",
+    "log",
+    "data",
+    "seq",
+    "uid",
+    "gamesvcid",
+    "getInstance",
+    "tableid",
+    "GlobalEventManager",
+    "emitEvent",
+    "SOCKETT_SENDMESSAGE",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA,IAAIE,aAAaF,QAAQ,YAAR,CAAjB;;AAEA,SAASG,kBAAT,GAA8B;AAC1BJ,aAAWK,KAAX,CAAiB,IAAjB,EAAuB,EAAvB,EAD0B,CACG;;AAE7B,OAAKC,GAAL,GAAWC,OAAOC,wBAAlB;;AAEA;AACA,OAAKC,IAAL,GAAY,UAAUC,GAAV,EAAe;AACvBC,OAAGC,GAAH,CAAO,yBAAP;AACA,SAAKC,IAAL,GAAY;AACRP,WAAK,KAAKA,GADF;AAERQ,WAAK,KAAKA,GAFF;AAGRC,WAAK,KAAKA,GAHF;AAIRC,iBAAYb,WAAWc,WAAX,GAAyBD,SAJ7B;AAKRE,eAAUf,WAAWc,WAAX,GAAyBC;AAL3B,KAAZ;;AAQAC,uBAAmBF,WAAnB,GAAiCG,SAAjC,CAA2Cb,OAAOc,mBAAlD,EAAuE,IAAvE;AACH,GAXD;AAYH;;AAEDC,OAAOC,OAAP,GAAkBnB,kBAAlB;;AAEA",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/26.\r\n */\r\nvar MessageReq = require(\"MessageReq\");\r\nvar GamePlayer = require('GamePlayer');\r\nvar GameSystem = require('GameSystem')\r\n\r\nfunction LeaveGameReqPacket() {\r\n    MessageReq.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_REQ_LEAVE_GAME_CMD_ID;\r\n\r\n    //准备发送的数据\r\n    this.send = function (msg) {\r\n        cc.log(\"LeaveGameReqPacket.send\");\r\n        this.data = {\r\n            cmd: this.cmd,\r\n            seq: this.seq,\r\n            uid: this.uid,\r\n            gamesvcid : GameSystem.getInstance().gamesvcid,\r\n            tableid : GameSystem.getInstance().tableid,\r\n        }\r\n\r\n        GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  LeaveGameReqPacket;\r\n\r\n/*\r\n //离开游戏\r\n type US_REQ_LEVEL_GAME_T struct {\r\n GameHead\r\n }\r\n\r\n type US_RESP_LEVEL_GAME_T struct {\r\n JsonHead\r\n RespHead\r\n Param string `json:\"param\"`\r\n }\r\n\r\n //请求坐下\r\n const (\r\n E_DOWN_TYPE = 1 //坐下\r\n E_RISE_TYPE = 2 //站起\r\n )\r\n\r\n type US_REQ_SIT_DOWN_T struct {\r\n GameHead\r\n SeatId int `json:\"seatid\"`\r\n Status int `json:\"status\"` //1. 坐下，2：站起\r\n }\r\n\r\n type US_RESP_SIT_DOWN_T struct {\r\n JsonHead\r\n RespHead\r\n Param string `json:\"param\"`\r\n }\r\n\r\n //请求携带金币\r\n type US_REQ_CARRY_COIN_T struct {\r\n GameHead\r\n Coin int64 `json:\"coin\"`\r\n }\r\n\r\n //如果uid == carryuid, 是自己\r\n type US_RESP_CARRY_COIN_T struct {\r\n JsonHead\r\n RespHead         //同意坐着，拒绝站起\r\n CarryUid  uint32 `json:\"carryuid\"`\r\n CarryCoin int64  `json:\"carrycoin\"`\r\n }\r\n 周学士 C++  20:35:01\r\n\r\n //桌主确定玩家是否入坐\r\n const (\r\n E_ALLOW_TO_SIT  = 1\r\n E_REJECT_TO_SIT = 2\r\n )\r\n\r\n type US_REQ_OWNER_CONFIRM_T struct {\r\n GameHead\r\n PlayerUid uint32 `json:\"playeruid\"`\r\n Result    int    `json:\"result\"`\r\n }\r\n\r\n type US_RESP_OWNER_CONFIRM_T struct {\r\n JsonHead\r\n RespHead\r\n }\r\n*\r\n* */"
+  ]
+}

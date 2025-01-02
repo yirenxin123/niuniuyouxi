@@ -1,0 +1,27 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "GamePlayer",
+    "require",
+    "Message",
+    "cmd",
+    "seq",
+    "uid",
+    "getInstance",
+    "data",
+    "onMessage",
+    "send",
+    "proccess",
+    "ui",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;;AAEA,SAASC,OAAT,GACA;AACI,SAAKC,GAAL,GAAW,CAAX;AACA,SAAKC,GAAL,GAAW,CAAX;AACA,SAAKC,GAAL,GAAWL,WAAWM,WAAX,GAAyBD,GAApC;;AAEA,SAAKE,IAAL,GAAY,EAAZ;;AAEA,SAAKC,SAAL,GAAiB,UAASD,IAAT,EACjB,CACC,CAFD;AAGA,SAAKE,IAAL,GAAY,YACZ,CACC,CAFD;AAGA,SAAKC,QAAL,GAAgB,UAASC,EAAT,EAChB,CACC,CAFD;AAGH;;AAEDC,OAAOC,OAAP,GAAiBX,OAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/19.\r\n */\r\nvar GamePlayer = require('GamePlayer');\r\n\r\nfunction Message()\r\n{\r\n    this.cmd = 0;\r\n    this.seq = 0;\r\n    this.uid = GamePlayer.getInstance().uid;\r\n\r\n    this.data = \"\" ;\r\n\r\n    this.onMessage = function(data)\r\n    {\r\n    };\r\n    this.send = function()\r\n    {\r\n    };\r\n    this.proccess = function(ui)\r\n    {\r\n    };\r\n}\r\n\r\nmodule.exports = Message;"
+  ]
+}

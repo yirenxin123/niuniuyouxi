@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "Head",
+    "Sprite",
+    "Name",
+    "Label",
+    "onLoad",
+    "updateInfo",
+    "url",
+    "name",
+    "UpdateWXHeadIcon",
+    "string",
+    "fontsize"
+  ],
+  "mappings": ";;AACAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACR;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACAC,cAAOL,GAAGM,MAXF;AAYRC,cAAOP,GAAGQ;AAZF,KAHP;;AAkBL;AACAC,YAAQ,kBAAY,CAEnB,CArBI;;AAuBL;AACA;;AAEA;;AAEAC,gBAAa,oBAAUC,GAAV,EAAcC,IAAd,EAAoB;AAC7B,YAAGD,OAAO,EAAV,EACIE,iBAAiBF,GAAjB,EAAsB,KAAKN,IAA3B;AACJ,aAAKE,IAAL,CAAUO,MAAV,GAAmBF,IAAnB;AACA,aAAKL,IAAL,CAAUQ,QAAV,GAAqB,EAArB;AACH;AAjCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        // foo: {\r\n        //    default: null,      // The default value will be used only when the component attaching\r\n        //                           to a node for the first time\r\n        //    url: cc.Texture2D,  // optional, default is typeof default\r\n        //    serializable: true, // optional, default is true\r\n        //    visible: true,      // optional, default is true\r\n        //    displayName: 'Foo', // optional\r\n        //    readonly: false,    // optional, default is false\r\n        // },\r\n        // ...\r\n        Head : cc.Sprite,\r\n        Name : cc.Label,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n    \r\n    updateInfo : function (url,name) {\r\n        if(url != \"\")\r\n            UpdateWXHeadIcon(url, this.Head);\r\n        this.Name.string = name;\r\n        this.Name.fontsize = 40;\r\n    },\r\n});\r\n"
+  ]
+}

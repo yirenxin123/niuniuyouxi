@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "BasePop",
+    "require",
+    "MusicMgr",
+    "Audio_Common",
+    "GameSystem",
+    "cc",
+    "Class",
+    "extends",
+    "properties",
+    "onLoad",
+    "self",
+    "node",
+    "on",
+    "Node",
+    "EventType",
+    "TOUCH_END",
+    "event",
+    "log",
+    "playEffect",
+    "AUDIO_BTN_CLICK",
+    "dismiss",
+    "bind",
+    "runIn",
+    "callBackBtn",
+    "bg",
+    "getContentSize",
+    "width",
+    "runAction",
+    "moveBy",
+    "p"
+  ],
+  "mappings": ";;AAAA,IAAIA,UAAUC,QAAQ,SAAR,CAAd;AACA,IAAIC,WAAWD,QAAQ,UAAR,CAAf;AACA,IAAIE,eAAeF,QAAQ,cAAR,CAAnB;AACA,IAAIG,aAAeH,QAAQ,YAAR,CAAnB;;AAEAI,GAAGC,KAAH,CAAS;AACLC,aAASP,OADJ;;AAGLQ,gBAAY;AACR;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AAVQ,KAHP;;AAgBLC,YAAQ,kBAAY;AAChB,YAAIC,OAAO,IAAX;AACA,aAAKC,IAAL,CAAUC,EAAV,CAAaP,GAAGQ,IAAH,CAAQC,SAAR,CAAkBC,SAA/B,EAA0C,UAASC,KAAT,EAAe;AACrDX,eAAGY,GAAH,CAAO,YAAP;AACAf,qBAASgB,UAAT,CAAoBf,aAAagB,eAAjC;AACAT,iBAAKU,OAAL;AACH,SAJyC,CAIxCC,IAJwC,CAInC,IAJmC,CAA1C;AAKA,aAAKC,KAAL;AACH,KAxBI;;AA0BLC,iBAAc,uBAAY;AACtB,aAAKH,OAAL;AACH,KA5BI;;AA8BL;AACA;;AAEA;;AAEAE,WAAQ,iBAAY;AAChBjB,WAAGY,GAAH,CAAO,KAAKO,EAAL,CAAQC,cAAR,GAAyBC,KAAhC;AACA,aAAKF,EAAL,CAAQG,SAAR,CAAkBtB,GAAGuB,MAAH,CAAU,GAAV,EAAcvB,GAAGwB,CAAH,CAAK,KAAKL,EAAL,CAAQC,cAAR,GAAyBC,KAA9B,EAAoC,CAApC,CAAd,CAAlB;AACH;AAtCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var BasePop = require('BasePop');\r\nvar MusicMgr = require('MusicMgr');\r\nvar Audio_Common = require('Audio_Common');\r\nvar GameSystem   = require('GameSystem');\r\n\r\ncc.Class({\r\n    extends: BasePop,\r\n\r\n    properties: {\r\n        // foo: {\r\n        //    default: null,      // The default value will be used only when the component attaching\r\n        //                           to a node for the first time\r\n        //    url: cc.Texture2D,  // optional, default is typeof default\r\n        //    serializable: true, // optional, default is true\r\n        //    visible: true,      // optional, default is true\r\n        //    displayName: 'Foo', // optional\r\n        //    readonly: false,    // optional, default is false\r\n        // },\r\n        // ...\r\n    },\r\n\r\n    onLoad: function () {\r\n        var self = this;\r\n        this.node.on(cc.Node.EventType.TOUCH_END, function(event){\r\n            cc.log(\"stop event\");\r\n            MusicMgr.playEffect(Audio_Common.AUDIO_BTN_CLICK);\r\n            self.dismiss();\r\n        }.bind(this));\r\n        this.runIn();\r\n    },\r\n    \r\n    callBackBtn : function () {\r\n        this.dismiss();\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n\r\n    runIn : function () {\r\n        cc.log(this.bg.getContentSize().width);\r\n        this.bg.runAction(cc.moveBy(0.4,cc.p(this.bg.getContentSize().width,0)));\r\n    },\r\n});\r\n"
+  ]
+}

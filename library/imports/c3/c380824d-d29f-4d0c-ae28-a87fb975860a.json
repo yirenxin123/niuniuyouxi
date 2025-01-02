@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Chat_off",
+    "texture": "26b7c1c2-d666-4ec1-82d8-32be3b144911",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      103,
+      103
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      103,
+      103
+    ]
+  }
+}

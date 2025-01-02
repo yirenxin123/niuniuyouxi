@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "FontHistoryLabel",
+    "texture": "392fca14-bca6-4b94-9ba5-499d08f859f4",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      209,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      209,
+      54
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "CarryCoinRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_CARRY_COIN_CMD_ID",
+    "carryuid",
+    "coin",
+    "carrycoin",
+    "gold",
+    "diamond",
+    "ustatus",
+    "tstatus",
+    "onMessage",
+    "msg",
+    "cc",
+    "log",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA,SAASC,mBAAT,GAA+B;AAC3BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD2B,CACG;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,yBAAlB;AACA,SAAKC,QAAL,GAAiB,CAAjB;AACA,SAAKC,IAAL,GAAiB,CAAjB;AACA,SAAKC,SAAL,GAAiB,CAAjB;AACA,SAAKC,IAAL,GAAiB,CAAjB;AACA,SAAKC,OAAL,GAAiB,CAAjB;AACA,SAAKC,OAAL,GAAiB,CAAjB;AACA,SAAKC,OAAL,GAAiB,CAAjB;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;AAC5BC,WAAGC,GAAH,CAAO,gCAAP;AACA;AACA,aAAKC,GAAL,GAAiBH,IAAIG,GAArB;AACA,aAAKC,GAAL,GAAiBJ,IAAII,GAArB;AACA,aAAKC,IAAL,GAAiBL,IAAIK,IAArB;AACA,aAAKC,IAAL,GAAiBN,IAAIM,IAArB;AACA,aAAKd,QAAL,GAAiBQ,IAAIR,QAArB;AACA,aAAKE,SAAL,GAAiBM,IAAIN,SAArB;AACA,aAAKG,OAAL,GAAiBG,IAAIH,OAArB;AACA,aAAKC,OAAL,GAAiBE,IAAIF,OAArB;AACA,aAAKL,IAAL,GAAiBO,IAAIP,IAArB;AACA,aAAKE,IAAL,GAAiBK,IAAIL,IAArB;AACA,aAAKC,OAAL,GAAiBI,IAAIJ,OAArB;AACH,KAdD;AAeH;;AAEDW,OAAOC,OAAP,GAAkBrB,mBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/3.\r\n */\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\nfunction CarryCoinRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_CARRY_COIN_CMD_ID;\r\n    this.carryuid  = 0;\r\n    this.coin      = 0;\r\n    this.carrycoin = 0;\r\n    this.gold      = 0;\r\n    this.diamond   = 0;\r\n    this.ustatus   = 0;\r\n    this.tstatus   = 0;\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n        cc.log(\"CarryCoinRespPacket.onMesssage\");\r\n        //{\"cmd\":6553608,\"seq\":0,\"uid\":10006,\"code\":0,\"desc\":\"执行成功\",\"carryuid\":10006,\"carrycoin\":100}\r\n        this.seq       = msg.seq;\r\n        this.uid       = msg.uid;\r\n        this.code      = msg.code;\r\n        this.desc      = msg.desc;\r\n        this.carryuid  = msg.carryuid;\r\n        this.carrycoin = msg.carrycoin;\r\n        this.ustatus   = msg.ustatus;\r\n        this.tstatus   = msg.tstatus;\r\n        this.coin      = msg.coin;\r\n        this.gold      = msg.gold;\r\n        this.diamond   = msg.diamond;\r\n    };\r\n}\r\n\r\nmodule.exports =  CarryCoinRespPacket;"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_White",
+    "texture": "1b537f30-5ca8-4fd0-bc74-597ac4821f61",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      77,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      77,
+      68
+    ]
+  }
+}

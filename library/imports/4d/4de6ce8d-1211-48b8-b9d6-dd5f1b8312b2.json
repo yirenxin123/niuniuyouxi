@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "RoomNameEditBoxBg",
+    "texture": "d7ab8c65-7cc4-4de9-bfc2-b5ba0de42305",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      972,
+      98
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      972,
+      98
+    ]
+  }
+}

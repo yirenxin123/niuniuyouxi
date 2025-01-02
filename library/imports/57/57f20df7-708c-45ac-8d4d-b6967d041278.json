@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "PlayerInfoBg",
+    "texture": "4f3461f9-ebd0-44b2-82aa-207b6831efcc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      510,
+      94
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      510,
+      94
+    ]
+  }
+}

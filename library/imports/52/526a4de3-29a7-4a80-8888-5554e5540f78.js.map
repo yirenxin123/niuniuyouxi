@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "Cmd_Bullfight",
+    "Bullfight_OpenCardRespPacket",
+    "apply",
+    "cmd",
+    "SBF_RESP_OPEN_CARD_CMD_ID",
+    "openuid",
+    "bulltype",
+    "seatid",
+    "cards",
+    "index1",
+    "index2",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "tstatus",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA;;;;;;;;;;AAUA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;AACA,IAAIC,gBAAgBD,QAAQ,eAAR,CAApB;AACA,SAASE,4BAAT,GAAwC;AACpCH,gBAAYI,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EADoC,CACN;;AAE9B,SAAKC,GAAL,GAAWH,cAAcI,yBAAzB;AACA;AACA;AACA,SAAKC,OAAL,GAAgB,CAAhB;AACA,SAAKC,QAAL,GAAgB,CAAhB;AACA,SAAKC,MAAL,GAAgB,CAAC,CAAjB;AACA,SAAKC,KAAL,GAAgB,EAAhB;AACA,SAAKC,MAAL,GAAgB,CAAC,CAAjB;AACA,SAAKC,MAAL,GAAgB,CAAC,CAAjB;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ,aAAKb,OAAL,GAAgBO,IAAIP,OAApB;AACA,aAAKC,QAAL,GAAgBM,IAAIN,QAApB;AACA,aAAKE,KAAL,GAAgBI,IAAIJ,KAApB;AACA,aAAKD,MAAL,GAAgBK,IAAIL,MAApB;AACA,aAAKY,OAAL,GAAgBP,IAAIO,OAApB;AACA,aAAKV,MAAL,GAAgBG,IAAIH,MAApB;AACA,aAAKC,MAAL,GAAgBE,IAAIF,MAApB;;AAEA;AACH,KAjBD;AAkBH;;AAEDU,OAAOC,OAAP,GAAkBpB,4BAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/2.\r\n */\r\n\r\n/*\r\n*\r\n* type SBF_RESP_OPEN_CARD_T struct {\r\n JsonHead\r\n RespHead\r\n OpenUid  int      `json:\"openuid\"`\r\n BullType int      `json:\"bulltype\"`\r\n Cards    []uint16 `json:\"cards\"`\r\n }\r\n* */\r\nvar MessageResp = require('MessageResp');\r\nvar Cmd_Bullfight = require('Cmd_Bullfight');\r\nfunction Bullfight_OpenCardRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = Cmd_Bullfight.SBF_RESP_OPEN_CARD_CMD_ID;\r\n    //{\"cmd\":6619150,\"seq\":10,\"uid\":10010,\"code\":0,\"desc\":\"\",\r\n    // \"openuid\":10010,\"bulltype\":0,\"cards\":[12,36,19,50,33]}\r\n    this.openuid  = 0;\r\n    this.bulltype = 0;\r\n    this.seatid   = -1;\r\n    this.cards    = [];\r\n    this.index1   = -1;\r\n    this.index2   = -1;\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        this.openuid  = msg.openuid;\r\n        this.bulltype = msg.bulltype;\r\n        this.cards    = msg.cards;\r\n        this.seatid   = msg.seatid;\r\n        this.tstatus  = msg.tstatus;\r\n        this.index1   = msg.index1;\r\n        this.index2   = msg.index2;\r\n\r\n        //GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  Bullfight_OpenCardRespPacket;"
+  ]
+}

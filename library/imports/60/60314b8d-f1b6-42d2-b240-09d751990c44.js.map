@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "GameSystem",
+    "FindRoomRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_FIND_TABLE_CMD_ID",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "privateid",
+    "gamesvcid",
+    "tableid",
+    "getInstance",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;;AAEA,SAASE,kBAAT,GAA8B;AAC1BH,gBAAYI,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD0B,CACI;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,yBAAlB;;AAEA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ;AACA,aAAKC,SAAL,GAAiBP,IAAIO,SAArB;AACA,aAAKC,SAAL,GAAiBR,IAAIQ,SAArB;AACA,aAAKC,OAAL,GAAeT,IAAIS,OAAnB;AACAhB,mBAAWiB,WAAX,GAAyBH,SAAzB,GAAqC,KAAKA,SAA1C;AACAd,mBAAWiB,WAAX,GAAyBF,SAAzB,GAAqC,KAAKA,SAA1C;AACAf,mBAAWiB,WAAX,GAAyBD,OAAzB,GAAmC,KAAKA,OAAxC;AACH,KAfD;AAgBH;;AAEDE,OAAOC,OAAP,GAAkBlB,kBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/26.\r\n */\r\nvar MessageResp = require(\"MessageResp\");\r\nvar GameSystem = require('GameSystem');\r\n\r\nfunction FindRoomRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_FIND_TABLE_CMD_ID;\r\n\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        //{\"cmd\":196618,\"seq\":2,\"uid\":10038,\"code\":0,\"desc\":\"执行成功\",\"privateid\":247522,\"gamesvcid\":5,\"tableid\":1}\r\n        this.privateid = msg.privateid;\r\n        this.gamesvcid = msg.gamesvcid;\r\n        this.tableid = msg.tableid;\r\n        GameSystem.getInstance().privateid = this.privateid;\r\n        GameSystem.getInstance().gamesvcid = this.gamesvcid;\r\n        GameSystem.getInstance().tableid = this.tableid;\r\n    };\r\n}\r\n\r\nmodule.exports =  FindRoomRespPacket;"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "mailFlag",
+    "texture": "acdf35b4-f3a8-45fa-8ee2-e05311ae7b77",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      84,
+      56
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      84,
+      56
+    ]
+  }
+}

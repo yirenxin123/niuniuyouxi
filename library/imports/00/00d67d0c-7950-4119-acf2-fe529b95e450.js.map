@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "GameSystem",
+    "require",
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "pressedScale",
+    "transDuration",
+    "playColseEffect",
+    "onLoad",
+    "m_tmLastClicked",
+    "m_DelayInteractable",
+    "countTime",
+    "self",
+    "initScale",
+    "node",
+    "scale",
+    "button",
+    "getComponent",
+    "Button",
+    "scaleDownAction",
+    "scaleTo",
+    "scaleUpAction",
+    "onTouchDown",
+    "event",
+    "interactable",
+    "stopAllActions",
+    "runAction",
+    "isDelayHandleEvent",
+    "log",
+    "onTouchUp",
+    "on",
+    "update",
+    "dt",
+    "iDelaySeconds",
+    "undefined",
+    "tmNow",
+    "getInstance",
+    "getCurrentSystemTime"
+  ],
+  "mappings": ";;AAAA;AACA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;;AAEAC,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,sBAAc,GADN;AAERC,uBAAe,IAFP;;AAIRC,yBAAkB;AAJV,KAHP;;AAUL;AACAC,YAAQ,kBAAY;AAChB,aAAKC,eAAL,GAAuB,CAAvB;AACA,aAAKC,mBAAL,GAA2B,KAA3B,CAFgB,CAEkB;AAClC,aAAKC,SAAL,GAAiB,CAAjB;;AAEA,aAAKN,YAAL,GAAoB,GAApB;AACA,aAAKC,aAAL,GAAqB,IAArB;AACA,YAAIM,OAAO,IAAX;;AAEAA,aAAKC,SAAL,GAAiB,KAAKC,IAAL,CAAUC,KAA3B;AACAH,aAAKI,MAAL,GAAcJ,KAAKK,YAAL,CAAkBjB,GAAGkB,MAArB,CAAd;AACAN,aAAKO,eAAL,GAAuBnB,GAAGoB,OAAH,CAAWR,KAAKN,aAAhB,EAA+BM,KAAKP,YAApC,CAAvB;AACAO,aAAKS,aAAL,GAAqBrB,GAAGoB,OAAH,CAAWR,KAAKN,aAAhB,EAA+BM,KAAKC,SAApC,CAArB;AACA,iBAASS,WAAT,CAAsBC,KAAtB,EAA6B;AACzB,gBAAG,CAACX,KAAKI,MAAL,CAAYQ,YAAb,IAA6BZ,KAAKF,mBAArC,EAA0D;AACtD;AACH;AACD,iBAAKe,cAAL;AACA,iBAAKC,SAAL,CAAed,KAAKO,eAApB;;AAEA,gBAAGP,KAAKL,eAAR,EACA;AACI;AACH,aAHD,MAKA;AACI;AACH;;AAED,gBAAGK,KAAKe,kBAAL,EAAH,EACA;AACI3B,mBAAG4B,GAAH,CAAO,2CAAP;AACAhB,qBAAKI,MAAL,CAAYQ,YAAZ,GAA2B,KAA3B;AACAZ,qBAAKF,mBAAL,GAA2B,IAA3B;AACH;AACJ;AACD,iBAASmB,SAAT,CAAoBN,KAApB,EAA2B;AACvB,gBAAG,CAACX,KAAKI,MAAL,CAAYQ,YAAhB,EAA8B;AAC1B;AACH;AACD,iBAAKC,cAAL;AACA,iBAAKC,SAAL,CAAed,KAAKS,aAApB;AACH;AACD,aAAKP,IAAL,CAAUgB,EAAV,CAAa,YAAb,EAA2BR,WAA3B,EAAwC,KAAKR,IAA7C;AACA,aAAKA,IAAL,CAAUgB,EAAV,CAAa,UAAb,EAAyBD,SAAzB,EAAoC,KAAKf,IAAzC;AACA,aAAKA,IAAL,CAAUgB,EAAV,CAAa,aAAb,EAA4BD,SAA5B,EAAuC,KAAKf,IAA5C;AAEH,KA1DI;;AA4DLiB,YAAQ,gBAAUC,EAAV,EAAc;AAClB,YAAG,KAAKtB,mBAAR,EACA;AACI,iBAAKC,SAAL,IAAkBqB,EAAlB;AACA;AACA,gBAAG,KAAKrB,SAAL,GAAiB,GAApB,EACA;AACI,qBAAKA,SAAL,GAAiB,CAAjB;AACA,qBAAKK,MAAL,CAAYQ,YAAZ,GAA2B,IAA3B;AACA,qBAAKd,mBAAL,GAA2B,KAA3B;AACH;AACJ;AACJ,KAxEI;;AA0EL;AACAiB,wBAAoB,4BAASM,aAAT,EAAwB;AACxC;AACA,YAAGA,iBAAiBC,SAApB,EACA;AACID,4BAAgB,GAAhB;AACH;AACD,YAAIE,QAAQrC,WAAWsC,WAAX,GAAyBC,oBAAzB,EAAZ;AACA,YAAIF,QAAQ,KAAK1B,eAAb,IAAgCwB,aAApC,EACA;AACI,mBAAO,IAAP;AACH;AACD,aAAKxB,eAAL,GAAuB0B,KAAvB;AACA,eAAO,KAAP;AACH;AAxFI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "//var AudioManager = require('AudioManager');\r\nvar GameSystem = require('GameSystem');\r\n\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        pressedScale: 0.9,\r\n        transDuration: 0.05,\r\n\r\n        playColseEffect:  false,\r\n    },\r\n    \r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.m_tmLastClicked = 0;\r\n        this.m_DelayInteractable = false; //延时不可点击\r\n        this.countTime = 0;\r\n\r\n        this.pressedScale = 0.9;\r\n        this.transDuration = 0.03 ;\r\n        var self = this;\r\n\r\n        self.initScale = this.node.scale;\r\n        self.button = self.getComponent(cc.Button);\r\n        self.scaleDownAction = cc.scaleTo(self.transDuration, self.pressedScale);\r\n        self.scaleUpAction = cc.scaleTo(self.transDuration, self.initScale);\r\n        function onTouchDown (event) {\r\n            if(!self.button.interactable || self.m_DelayInteractable) {\r\n                return;\r\n            }\r\n            this.stopAllActions();\r\n            this.runAction(self.scaleDownAction);\r\n\r\n            if(self.playColseEffect)\r\n            {\r\n                //AudioManager.playEffect(\"resources/common/music/click_close.mp3\") ;\r\n            }\r\n            else\r\n            {\r\n                //AudioManager.playEffect(\"resources/common/music/click.mp3\") ;\r\n            }\r\n\r\n            if(self.isDelayHandleEvent())\r\n            {\r\n                cc.log(\"----------------isDelayHandleEvent-------\");\r\n                self.button.interactable = false;\r\n                self.m_DelayInteractable = true;\r\n            }\r\n        }\r\n        function onTouchUp (event) {\r\n            if(!self.button.interactable) {\r\n                return;\r\n            }\r\n            this.stopAllActions();\r\n            this.runAction(self.scaleUpAction);\r\n        }\r\n        this.node.on('touchstart', onTouchDown, this.node);\r\n        this.node.on('touchend', onTouchUp, this.node);\r\n        this.node.on('touchcancel', onTouchUp, this.node);\r\n\r\n    },\r\n\r\n    update: function (dt) {\r\n        if(this.m_DelayInteractable)\r\n        {\r\n            this.countTime += dt;\r\n            // cc.log(\"-----------m_DelayInteractable------------\" + this.countTime);\r\n            if(this.countTime > 0.5)\r\n            {\r\n                this.countTime = 0;\r\n                this.button.interactable = true;\r\n                this.m_DelayInteractable = false;\r\n            }\r\n        }\r\n    },\r\n\r\n    //延时处理\r\n    isDelayHandleEvent: function(iDelaySeconds) {\r\n        //1秒钟只能点击一次\r\n        if(iDelaySeconds == undefined)\r\n        {\r\n            iDelaySeconds = 600;\r\n        }\r\n        var tmNow = GameSystem.getInstance().getCurrentSystemTime();\r\n        if (tmNow - this.m_tmLastClicked <= iDelaySeconds)\r\n        {\r\n            return true;\r\n        }\r\n        this.m_tmLastClicked = tmNow;\r\n        return false;\r\n    },\r\n});\r\n"
+  ]
+}

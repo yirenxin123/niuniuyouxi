@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ToggleFlag",
+    "texture": "dacd5048-05d0-451f-9533-39463e09c8b8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      74,
+      57
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      74,
+      57
+    ]
+  }
+}

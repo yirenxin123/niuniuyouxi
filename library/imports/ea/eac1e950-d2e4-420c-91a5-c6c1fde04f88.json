@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Watcher",
+    "texture": "a58d3506-4759-4983-b9f0-7d694ad29956",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      91,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      93,
+      50
+    ]
+  }
+}

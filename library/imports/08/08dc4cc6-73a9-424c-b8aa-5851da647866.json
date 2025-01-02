@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "popViewBg",
+    "texture": "5cc63dd1-17e3-43a2-82b4-3e43e7f0541d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      103,
+      75
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      103,
+      75
+    ],
+    "capInsets": [
+      15,
+      16,
+      14,
+      16
+    ]
+  }
+}

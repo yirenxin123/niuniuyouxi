@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "MulBg",
+    "texture": "9a361da6-1f5b-4db9-b1df-11ba1418ffc5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      123,
+      69
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      123,
+      69
+    ]
+  }
+}

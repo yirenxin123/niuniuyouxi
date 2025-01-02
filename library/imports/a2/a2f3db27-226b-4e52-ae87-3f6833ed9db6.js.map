@@ -1,0 +1,45 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "GamePlayer",
+    "require",
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "ClubAddress",
+    "Label",
+    "ClubIcon",
+    "Sprite",
+    "ClubName",
+    "ClubPresons",
+    "ClubAddress2",
+    "ClubIntro",
+    "onLoad",
+    "info",
+    "setClubCellInfo",
+    "getInstance",
+    "uid",
+    "owneruid",
+    "SelfClubId",
+    "clubid",
+    "log",
+    "string",
+    "address",
+    "name",
+    "members",
+    "maxmember",
+    "callBackBtn",
+    "event",
+    "CustomEventData"
+  ],
+  "mappings": ";;AAAA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;;AAEAC,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,qBAAcL,GAAGM,KADT;AAERC,kBAAWP,GAAGQ,MAFN;AAGRC,kBAAWT,GAAGM,KAHN;AAIRI,qBAAcV,GAAGM,KAJT;AAKRK,sBAAeX,GAAGM,KALV;AAMRM,mBAAYZ,GAAGM;AANP,KAHP;;AAYL;AACAO,YAAQ,kBAAY;AAChB,aAAKC,IAAL,GAAY,IAAZ;AACH,KAfI;;AAiBLC,qBAAkB,yBAAUD,IAAV,EAAgB;AAC9B;AACA;AACA;AACA,YAAIhB,WAAWkB,WAAX,GAAyBC,GAAzB,IAAgCH,KAAKI,QAAzC,EAAmD;AAC/CpB,uBAAWkB,WAAX,GAAyBG,UAAzB,GAAsCL,KAAKM,MAA3C;AACH;;AAEDpB,WAAGqB,GAAH,CAAO,kCAAP,EAA2CP,KAAKM,MAAhD,EAAwD,YAAxD,EAAsEN,KAAKI,QAA3E;;AAEA,aAAKJ,IAAL,GAA2BA,IAA3B;AACA,aAAKT,WAAL,CAAiBiB,MAAjB,GAA2BR,KAAKS,OAAhC;AACA,aAAKZ,YAAL,CAAkBW,MAAlB,GAA2BR,KAAKS,OAAhC;AACA,aAAKd,QAAL,CAAca,MAAd,GAA2BR,KAAKU,IAAhC;AACA,aAAKd,WAAL,CAAiBY,MAAjB,GAA2BR,KAAKW,OAAL,GAAe,GAAf,GAAqBX,KAAKY,SAArD;AACH,KAhCI;;AAkCLC,iBAAc,qBAAUC,KAAV,EAAkBC,eAAlB,EAAmC;AAC7C7B,WAAGqB,GAAH,CAAO,sBAAP;AACH;AApCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var GamePlayer = require('GamePlayer');\r\n\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        ClubAddress : cc.Label,\r\n        ClubIcon : cc.Sprite,\r\n        ClubName : cc.Label,\r\n        ClubPresons : cc.Label,\r\n        ClubAddress2 : cc.Label,\r\n        ClubIntro : cc.Label,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.info = null;\r\n    },\r\n\r\n    setClubCellInfo : function (info) {\r\n        //{\"clubid\":10000019,\"role\":1,\"owneruid\":10688,\"level\":1,\"name\":\"as\",\r\n        // \"headurl\":\"\",\"address\":\"广西 百色市\",\"intro\":\"\",\"endtime\":1494324197,\"status\":1,\r\n        // \"members\":1,\"maxmember\":10}\r\n        if (GamePlayer.getInstance().uid == info.owneruid) {\r\n            GamePlayer.getInstance().SelfClubId = info.clubid;\r\n        }\r\n\r\n        cc.log(\"ClubCell.setClubCellInfo clubid=\", info.clubid, \" owneruid=\", info.owneruid);\r\n\r\n        this.info                = info;\r\n        this.ClubAddress.string  = info.address;\r\n        this.ClubAddress2.string = info.address;\r\n        this.ClubName.string     = info.name;\r\n        this.ClubPresons.string  = info.members + \"/\" + info.maxmember;\r\n    },\r\n    \r\n    callBackBtn : function (event , CustomEventData) {\r\n        cc.log(\"ClubCell.callBackBtn\");\r\n    },\r\n});\r\n"
+  ]
+}

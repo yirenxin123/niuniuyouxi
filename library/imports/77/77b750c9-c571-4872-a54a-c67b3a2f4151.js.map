@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "GameCallOC",
+    "require",
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "Time",
+    "Label",
+    "VoiceValue",
+    "Sprite",
+    "onLoad",
+    "time",
+    "startVoiceTime",
+    "getInstance",
+    "StartRecord",
+    "schedule",
+    "updateVoiceTime",
+    "string",
+    "updateVoiceValue",
+    "dismiss",
+    "setVoiceValue",
+    "value",
+    "index",
+    "node",
+    "active",
+    "log",
+    "StopRecording",
+    "unschedule",
+    "removeFromParent"
+  ],
+  "mappings": ";;AAAA,IAAIA,aAAaC,QAAQ,YAAR,CAAjB;;AAEAC,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACR;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACAC,cAAOL,GAAGM,KAXF;AAYRC,oBAAa,CAACP,GAAGQ,MAAJ;AAZL,KAHP;;AAmBL;AACAC,YAAQ,kBAAY;AAChB,aAAKC,IAAL,GAAY,EAAZ;AACA,aAAKC,cAAL;AACAb,mBAAWc,WAAX,GAAyBC,WAAzB,CAAqC,KAArC;AACH,KAxBI;;AA0BLF,oBAAiB,0BAAY;AACzB,aAAKG,QAAL,CAAc,KAAKC,eAAnB,EAAoC,CAApC;AACH,KA5BI;;AA8BLA,qBAAkB,2BAAY;AAC1B,aAAKL,IAAL;AACA,aAAKL,IAAL,CAAUW,MAAV,GAAmB,KAAKN,IAAL,GAAY,GAA/B;AACA,aAAKO,gBAAL;AACA,YAAI,KAAKP,IAAL,IAAa,CAAjB,EAAoB;AAChB,iBAAKQ,OAAL;AACH;AACJ,KArCI;;AAuCLC,mBAAgB,uBAAUC,KAAV,EAAiB;AAC7B,aAAK,IAAIC,QAAQ,CAAjB,EAAoBA,QAAQ,CAA5B,EAA8BA,OAA9B,EACA;AACI,iBAAKd,UAAL,CAAgBc,KAAhB,EAAuBC,IAAvB,CAA4BC,MAA5B,GAAsCF,QAAQD,KAA9C;AACH;AACJ,KA5CI;;AA8CLH,sBAAmB,4BAAY;AAC3B,aAAK,IAAII,QAAQ,CAAjB,EAAmBA,QAAQ,CAA3B,EAA6BA,OAA7B,EACA;AACI,iBAAKd,UAAL,CAAgBc,KAAhB,EAAuBC,IAAvB,CAA4BC,MAA5B,GAAsCF,SAAS,KAAKX,IAAL,GAAU,CAAzD;AACH;AACJ,KAnDI;;AAqDLQ,aAAU,mBAAY;AACnBlB,WAAGwB,GAAH,CAAO,SAAP;AACC1B,mBAAWc,WAAX,GAAyBa,aAAzB;AACA,aAAKC,UAAL,CAAgB,KAAKX,eAArB;AACA,aAAKO,IAAL,CAAUK,gBAAV,CAA2B,IAA3B;AACH;AA1DI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var GameCallOC = require('GameCallOC');\r\n\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        // foo: {\r\n        //    default: null,      // The default value will be used only when the component attaching\r\n        //                           to a node for the first time\r\n        //    url: cc.Texture2D,  // optional, default is typeof default\r\n        //    serializable: true, // optional, default is true\r\n        //    visible: true,      // optional, default is true\r\n        //    displayName: 'Foo', // optional\r\n        //    readonly: false,    // optional, default is false\r\n        // },\r\n        // ...\r\n        Time : cc.Label,\r\n        VoiceValue : [cc.Sprite],\r\n        //VoiceValueFrame : [cc.SpriteFrame],\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.time = 30;\r\n        this.startVoiceTime();\r\n        GameCallOC.getInstance().StartRecord(30000);\r\n    },\r\n    \r\n    startVoiceTime : function () {\r\n        this.schedule(this.updateVoiceTime, 1);\r\n    },\r\n    \r\n    updateVoiceTime : function () {\r\n        this.time--;\r\n        this.Time.string = this.time + '\"';\r\n        this.updateVoiceValue();\r\n        if (this.time == 0) {\r\n            this.dismiss();\r\n        }\r\n    },\r\n    \r\n    setVoiceValue : function (value) {\r\n        for (var index = 0; index < 3;index++)\r\n        {\r\n            this.VoiceValue[index].node.active = (index < value);\r\n        }\r\n    },\r\n\r\n    updateVoiceValue : function () {\r\n        for (var index = 0;index < 3;index++)\r\n        {\r\n            this.VoiceValue[index].node.active = (index <= this.time%3);\r\n        }\r\n    },\r\n    \r\n    dismiss : function () {\r\n\t      cc.log(\"dismiss\");\r\n        GameCallOC.getInstance().StopRecording();\r\n        this.unschedule(this.updateVoiceTime);\r\n        this.node.removeFromParent(true);\r\n    }\r\n});\r\n"
+  ]
+}

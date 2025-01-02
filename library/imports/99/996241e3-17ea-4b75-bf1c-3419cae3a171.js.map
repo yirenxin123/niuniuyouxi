@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "Cmd_Bullfight",
+    "Bullfight_NotifySureBankerPacket",
+    "apply",
+    "cmd",
+    "SBF_NOTIFY_CONFIRM_BANKER_CMD_ID",
+    "tableid",
+    "tstatus",
+    "bankeruid",
+    "bankerseatid",
+    "ustatus",
+    "maxbetmul",
+    "bettime",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;AAGA;;;;;;;;;;;;;AAcA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;AACA,IAAIC,gBAAgBD,QAAQ,eAAR,CAApB;AACA,SAASE,gCAAT,GAA4C;AACxCH,gBAAYI,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EADwC,CACV;AAC9B;AACA;;AAEA,SAAKC,GAAL,GAAWH,cAAcI,gCAAzB;AACA,SAAKC,OAAL,GAAe,CAAf;AACA,SAAKC,OAAL,GAAe,CAAf;AACA,SAAKC,SAAL,GAAiB,CAAjB;AACA,SAAKC,YAAL,GAAoB,CAAC,CAArB;AACA,SAAKC,OAAL,GAAe,CAAf;AACA,SAAKC,SAAL,GAAiB,CAAjB;AACA,SAAKC,OAAL,GAAe,CAAf;AACA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;;AAEJ,aAAKd,OAAL,GAAeQ,IAAIR,OAAnB;AACA,aAAKC,OAAL,GAAeO,IAAIP,OAAnB;AACA,aAAKC,SAAL,GAAiBM,IAAIN,SAArB;AACA,aAAKC,YAAL,GAAoBK,IAAIL,YAAxB;AACA,aAAKC,OAAL,GAAeI,IAAIJ,OAAnB;AACA,aAAKC,SAAL,GAAiBG,IAAIH,SAArB;AACA,aAAKC,OAAL,GAAeE,IAAIF,OAAnB;;AAEA;AACH,KAlBD;AAmBH;;AAEDS,OAAOC,OAAP,GAAkBpB,gCAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/5.\r\n */\r\n/*\r\n type SBF_NOTIFY_CONFIRM_BANKER_T struct {\r\n JsonHead\r\n RespHead\r\n TableId  int32 `json:\"tableid\"`   //桌子id\r\n TStatus  int `json:\"tstatus\"`   //桌子状态\r\n BankerSeatId int `json:\"bankerseatid\"` //庄家座位id\r\n UStatus      int `json:\"ustatus\"`      //玩家自己的状态\r\n MaxBetMul    int `json:\"maxbetmul\"`    //玩家最大下注倍数\r\n BetTime      int `json:\"bettime\"`      //下注时间\r\n }\r\n* */\r\n\r\n\r\nvar MessageResp = require('MessageResp');\r\nvar Cmd_Bullfight = require('Cmd_Bullfight');\r\nfunction Bullfight_NotifySureBankerPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n    //{\"cmd\":6619144,\"seq\":0,\"uid\":10010,\"code\":0,\"desc\":\"\",\"tableid\":2,\"tstatus\":3,\r\n    // \"bankerseatid\":1,\"bankeruid\":10011,\"ustatus\":5,\"maxbetmul\":25,\"bettime\":10}\r\n\r\n    this.cmd = Cmd_Bullfight.SBF_NOTIFY_CONFIRM_BANKER_CMD_ID;\r\n    this.tableid = 0;\r\n    this.tstatus = 0;\r\n    this.bankeruid = 0;\r\n    this.bankerseatid = -1;\r\n    this.ustatus = 0;\r\n    this.maxbetmul = 0;\r\n    this.bettime = 0;\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n\r\n        this.tableid = msg.tableid;\r\n        this.tstatus = msg.tstatus;\r\n        this.bankeruid = msg.bankeruid;\r\n        this.bankerseatid = msg.bankerseatid;\r\n        this.ustatus = msg.ustatus;\r\n        this.maxbetmul = msg.maxbetmul;\r\n        this.bettime = msg.bettime;\r\n\r\n        //GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  Bullfight_NotifySureBankerPacket;"
+  ]
+}

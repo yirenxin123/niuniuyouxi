@@ -1,0 +1,51 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "BasePop",
+    "require",
+    "MessageFactory",
+    "ToastView",
+    "MusicMgr",
+    "Audio_Common",
+    "GameSystem",
+    "cc",
+    "Class",
+    "extends",
+    "properties",
+    "onLoad",
+    "_super",
+    "onMessage",
+    "event",
+    "log",
+    "msg",
+    "data",
+    "cmd",
+    "window",
+    "US_RESP_GAME_SWITCH_CMD_ID",
+    "onDismissGame",
+    "code",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "isstart",
+    "show",
+    "callbackBtn",
+    "CustomEventData",
+    "BtnName",
+    "target",
+    "getName",
+    "playEffect",
+    "AUDIO_BTN_CLICK",
+    "dismiss",
+    "createMessageReq",
+    "US_REQ_GAME_SWITCH_CMD_ID",
+    "send"
+  ],
+  "mappings": ";;AAAA,IAAIA,UAAUC,QAAQ,SAAR,CAAd;AACA,IAAIC,iBAAiBD,QAAQ,gBAAR,CAArB;AACA,IAAIE,YAAYF,QAAQ,WAAR,CAAhB;AACA,IAAIG,WAAWH,QAAQ,UAAR,CAAf;AACA,IAAII,eAAeJ,QAAQ,cAAR,CAAnB;AACA,IAAIK,aAAeL,QAAQ,YAAR,CAAnB;;AAEAM,GAAGC,KAAH,CAAS;AACLC,aAAST,OADJ;;AAGLU,gBAAY,EAHP;;AAOL;AACAC,YAAQ,kBAAY;AAChB,aAAKC,MAAL;AACH,KAVI;;AAYL;AACA;;AAEA;;AAEA;;AAEAC,eAAY,mBAAUC,KAAV,EAAiB;AACzBP,WAAGQ,GAAH,CAAO,+BAAP;AACA,aAAKH,MAAL,CAAYE,KAAZ;AACA,YAAIE,MAAMF,MAAMG,IAAhB;AACA,YAAIC,MAAMF,IAAIE,GAAd;AACA,gBAAQA,GAAR;AACI,iBAAKC,OAAOC,0BAAZ;AACI,qBAAKC,aAAL,CAAmBL,GAAnB;AACA;AAHR;AAKH,KA7BI;;AA+BLK,mBAAgB,uBAAUL,GAAV,EAAe;AAC3B,YAAGA,IAAIM,IAAJ,IAAYC,cAAcC,WAA7B,EACA;AACI,gBAAGR,IAAIS,OAAJ,IAAe,CAAlB,EACA,CACC,CAFD,MAIA;AACItB,0BAAUuB,IAAV,CAAe,iBAAf;AACH;AACJ;AACJ,KA1CI;;AA4CLC,iBAAc,qBAASb,KAAT,EAAiBc,eAAjB,EACd;AACI,YAAIC,UAAUf,MAAMgB,MAAN,CAAaC,OAAb,EAAd;AACA3B,iBAAS4B,UAAT,CAAoB3B,aAAa4B,eAAjC;AACA1B,WAAGQ,GAAH,CAAO,+CAA+Cc,OAAtD;AACA,YAAGA,WAAW,UAAd,EACA;AACI,iBAAKK,OAAL;AACH,SAHD,MAIK,IAAGL,WAAW,YAAd,EACL;AACI,gBAAIZ,OAAO;AACPQ,yBAAS;AADF,aAAX;AAGAvB,2BAAeiC,gBAAf,CAAgCC,yBAAhC,EAA2DC,IAA3D,CAAgEpB,IAAhE;AACA,iBAAKiB,OAAL;AACH;AACJ;AA7DI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var BasePop = require('BasePop');\r\nvar MessageFactory = require('MessageFactory');\r\nvar ToastView = require('ToastView');\r\nvar MusicMgr = require('MusicMgr');\r\nvar Audio_Common = require('Audio_Common');\r\nvar GameSystem   = require('GameSystem');\r\n\r\ncc.Class({\r\n    extends: BasePop,\r\n\r\n    properties: {\r\n\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this._super();\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n\r\n    /*********************Network***************************/\r\n\r\n    onMessage : function (event) {\r\n        cc.log(\"Bullfight_GameScene.onMessage\");\r\n        this._super(event);\r\n        var msg = event.data;\r\n        var cmd = msg.cmd;\r\n        switch (cmd) {\r\n            case window.US_RESP_GAME_SWITCH_CMD_ID:\r\n                this.onDismissGame(msg);\r\n                break;\r\n        }\r\n    },\r\n    \r\n    onDismissGame : function (msg) {\r\n        if(msg.code == SocketRetCode.RET_SUCCESS)\r\n        {\r\n            if(msg.isstart == 1)\r\n            {\r\n            }\r\n            else\r\n            {\r\n                ToastView.show(\"房间解散成功，本局结束后将解散\");\r\n            }\r\n        }\r\n    },\r\n    \r\n    callbackBtn : function(event , CustomEventData)\r\n    {\r\n        var BtnName = event.target.getName();\r\n        MusicMgr.playEffect(Audio_Common.AUDIO_BTN_CLICK);\r\n        cc.log(\"Bullfight_OwnerView.callbackBtn,BtnName = \" + BtnName);\r\n        if(BtnName == \"BtnClose\")\r\n        {\r\n            this.dismiss();\r\n        }\r\n        else if(BtnName == \"BtnDismiss\")\r\n        {\r\n            var data = {\r\n                isstart: 0,\r\n            };\r\n            MessageFactory.createMessageReq(US_REQ_GAME_SWITCH_CMD_ID).send(data);\r\n            this.dismiss();\r\n        }\r\n    },\r\n});\r\n"
+  ]
+}

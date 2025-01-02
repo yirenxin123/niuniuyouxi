@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "HistoryTitleBg",
+    "texture": "02ff00d0-99bd-4397-aad4-c8f8a9b449ed",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      968,
+      69
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      968,
+      69
+    ]
+  }
+}

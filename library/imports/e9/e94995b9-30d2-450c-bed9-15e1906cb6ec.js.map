@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "HttpPacket",
+    "encryptData",
+    "data",
+    "sig",
+    "buildGetGameSwitch",
+    "tag",
+    "param",
+    "method",
+    "productid",
+    "window",
+    "PRODUCT_ID",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,aAAa;;AAEbC,iBAAa,qBAASC,IAAT,EAAc;AACvBA,aAAKC,GAAL,GAAW,2CAAX;AACH,KAJY;;AAMb;AACAC,wBAAqB,4BAASF,IAAT,EAAcG,GAAd,EACrB;AACI,YAAIC,QAAQ,EAAZ;AACAA,cAAMC,MAAN,GAAeF,GAAf;AACAC,cAAME,SAAN,GAAkBC,OAAOC,UAAzB;AACAR,aAAKI,KAAL,GAAaA,KAAb;AACA,aAAKL,WAAL,CAAiBC,IAAjB;AACH;AAdY,CAAjB;;AAiBAS,OAAOC,OAAP,GAAiBZ,UAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/19.\r\n */\r\n\r\nvar HttpPacket = {\r\n\r\n    encryptData :function(data){\r\n        data.sig = \"5da567e4566c9362f83f2730f75asdasddsae13a9\" ;\r\n    },\r\n\r\n    // 支付方式\r\n    buildGetGameSwitch : function(data,tag)\r\n    {\r\n        var param = {};\r\n        param.method = tag;\r\n        param.productid = window.PRODUCT_ID;\r\n        data.param = param;\r\n        this.encryptData(data);\r\n    },\r\n} ;\r\n\r\nmodule.exports = HttpPacket;"
+  ]
+}

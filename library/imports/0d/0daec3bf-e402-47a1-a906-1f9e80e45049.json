@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BtnBar",
+    "texture": "caab3e74-c769-45f5-9b7a-2991d5a80b19",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      149,
+      156
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      149,
+      156
+    ]
+  }
+}

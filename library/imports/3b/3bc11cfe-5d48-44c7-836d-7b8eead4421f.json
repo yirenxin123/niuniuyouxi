@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "FindFlag",
+    "texture": "6c0daaf8-5626-4df7-ab42-d849d7814e71",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      57,
+      57
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      57,
+      57
+    ]
+  }
+}

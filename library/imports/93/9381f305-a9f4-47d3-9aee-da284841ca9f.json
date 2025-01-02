@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BtnGreenBG",
+    "texture": "8b30d98f-1db4-4eeb-ae92-d16c4a9c3f0f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1080,
+      159
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1080,
+      159
+    ]
+  }
+}

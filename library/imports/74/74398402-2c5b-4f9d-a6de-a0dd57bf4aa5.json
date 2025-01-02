@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Shop_on",
+    "texture": "90eb748f-a75b-46cc-b400-e3ff80ee64c4",
+    "atlas": "",
+    "rect": [
+      7,
+      11,
+      86,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      100,
+      100
+    ]
+  }
+}

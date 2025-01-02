@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "Time",
+    "Label",
+    "VoiceValue",
+    "Sprite",
+    "VoiceValueFrame",
+    "SpriteFrame",
+    "onLoad",
+    "time",
+    "setTime",
+    "schedule",
+    "updateTime",
+    "unschedule",
+    "dismiss",
+    "string",
+    "updateVoiceValue",
+    "spriteFrame",
+    "message",
+    "popView",
+    "btn",
+    "GlobalEventManager",
+    "getInstance",
+    "emitEvent",
+    "window",
+    "SocketMessage",
+    "tag",
+    "MessageType",
+    "SCENE_MSG",
+    "data",
+    "node",
+    "removeFromParent"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACR;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACAC,cAAOL,GAAGM,KAXF;AAYRC,oBAAaP,GAAGQ,MAZR;AAaRC,yBAAkB,CAACT,GAAGU,WAAJ;AAbV,KAHP;;AAmBL;AACAC,YAAQ,kBAAY;AAChB,aAAKC,IAAL,GAAY,CAAZ;AACA,aAAKC,OAAL,CAAa,CAAb;AACH,KAvBI;;AAyBL;AACA;;AAEA;;AAEAA,aAAU,iBAAUD,IAAV,EAAgB;AACtB,aAAKA,IAAL,GAAYA,IAAZ;AACA,aAAKE,QAAL,CAAc,KAAKC,UAAnB,EAA8B,CAA9B;AACH,KAjCI;;AAmCLA,gBAAa,sBAAY;AACrB,aAAKH,IAAL;AACA,YAAG,KAAKA,IAAL,GAAY,CAAf,EACA;AACI,iBAAKI,UAAL,CAAgB,KAAKD,UAArB;AACA,iBAAKE,OAAL;AACH;AACD,aAAKZ,IAAL,CAAUa,MAAV,GAAmB,KAAKN,IAAL,GAAY,GAA/B;AACA,aAAKO,gBAAL;;AAGA,YAAI,KAAKP,IAAL,GAAY,EAAhB,EACA;AACI,iBAAKK,OAAL;AACH;AACJ,KAlDI;;AAoDLE,sBAAmB,4BAAY;AAC3B,aAAKZ,UAAL,CAAgBa,WAAhB,GAA8B,KAAKX,eAAL,CAAqB,KAAKG,IAAL,GAAU,CAA/B,CAA9B;AACH,KAtDI;;AAwDLK,aAAU,mBAAY;AAClB,YAAII,UAAU;AACVC,qBAAU,eADA;AAEVC,iBAAM;AAFI,SAAd;AAIAC,2BAAmBC,WAAnB,GAAiCC,SAAjC,CAA2CC,OAAOC,aAAlD,EACI,EAACC,KAAIF,OAAOG,WAAP,CAAmBC,SAAxB,EAAkCC,MAAKX,OAAvC,EADJ;AAEA,aAAKL,UAAL,CAAgB,KAAKD,UAArB;AACA,aAAKkB,IAAL,CAAUC,gBAAV,CAA2B,IAA3B;AACH;AAjEI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        // foo: {\r\n        //    default: null,      // The default value will be used only when the component attaching\r\n        //                           to a node for the first time\r\n        //    url: cc.Texture2D,  // optional, default is typeof default\r\n        //    serializable: true, // optional, default is true\r\n        //    visible: true,      // optional, default is true\r\n        //    displayName: 'Foo', // optional\r\n        //    readonly: false,    // optional, default is false\r\n        // },\r\n        // ...\r\n        Time : cc.Label,\r\n        VoiceValue : cc.Sprite,\r\n        VoiceValueFrame : [cc.SpriteFrame],\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this.time = 0;\r\n        this.setTime(0);\r\n    },\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n    \r\n    setTime : function (time) {\r\n        this.time = time;\r\n        this.schedule(this.updateTime,1);\r\n    },\r\n\r\n    updateTime : function () {\r\n        this.time++;\r\n        if(this.time < 0)\r\n        {\r\n            this.unschedule(this.updateTime);\r\n            this.dismiss();\r\n        }\r\n        this.Time.string = this.time + '\"';\r\n        this.updateVoiceValue();\r\n\r\n\r\n        if (this.time > 30)\r\n        {\r\n            this.dismiss();\r\n        }\r\n    },\r\n    \r\n    updateVoiceValue : function () {\r\n        this.VoiceValue.spriteFrame = this.VoiceValueFrame[this.time%3];\r\n    },\r\n    \r\n    dismiss : function () {\r\n        var message = {\r\n            popView : \"VoicePlayView\",\r\n            btn : \"dismiss\"\r\n        };\r\n        GlobalEventManager.getInstance().emitEvent(window.SocketMessage,\r\n            {tag:window.MessageType.SCENE_MSG,data:message}) ;\r\n        this.unschedule(this.updateTime);\r\n        this.node.removeFromParent(true);\r\n    },\r\n});\r\n"
+  ]
+}

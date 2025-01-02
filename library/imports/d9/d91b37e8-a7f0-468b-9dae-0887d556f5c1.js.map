@@ -1,0 +1,44 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "BasePop",
+    "require",
+    "GameSystem",
+    "MusicMgr",
+    "Audio_Common",
+    "UtilTool",
+    "cc",
+    "Class",
+    "extends",
+    "properties",
+    "Title",
+    "Label",
+    "Doc",
+    "Writer",
+    "Time",
+    "onLoad",
+    "_super",
+    "callbackBtnClose",
+    "log",
+    "playEffect",
+    "AUDIO_BTN_CLICK",
+    "dismiss",
+    "setContent",
+    "string",
+    "getInstance",
+    "notice",
+    "title",
+    "doc",
+    "writer",
+    "getFormatData",
+    "time"
+  ],
+  "mappings": ";;AAAA,IAAIA,UAAUC,QAAQ,SAAR,CAAd;AACA,IAAIC,aAAaD,QAAQ,YAAR,CAAjB;AACA,IAAIE,WAAWF,QAAQ,UAAR,CAAf;AACA,IAAIG,eAAeH,QAAQ,cAAR,CAAnB;AACA,IAAII,WAAaJ,QAAQ,UAAR,CAAjB;;AAGAK,GAAGC,KAAH,CAAS;AACLC,aAASR,OADJ;;AAGLS,gBAAY;AACRC,eAAOJ,GAAGK,KADF;AAERC,aAAKN,GAAGK,KAFA;AAGRE,gBAAQP,GAAGK,KAHH;AAIRG,cAAMR,GAAGK;AAJD,KAHP;;AAUL;AACAI,YAAQ,kBAAY;AAChB,aAAKC,MAAL;AACH,KAbI;;AAgBLC,sBAAmB,4BAAU;AACzBX,WAAGY,GAAH,CAAO,+BAAP;AACAf,iBAASgB,UAAT,CAAoBf,aAAagB,eAAjC;AACA,aAAKC,OAAL;AACH,KApBI;;AAsBLC,gBAAa,sBAAY;AACrB;AACA;AACA;AACA,aAAKZ,KAAL,CAAWa,MAAX,GAAoBrB,WAAWsB,WAAX,GAAyBC,MAAzB,CAAgCC,KAAhC,GAAwC,GAA5D;AACA,aAAKd,GAAL,CAASW,MAAT,GAAkBrB,WAAWsB,WAAX,GAAyBC,MAAzB,CAAgCE,GAAlD;AACA,aAAKd,MAAL,CAAYU,MAAZ,GAAqBrB,WAAWsB,WAAX,GAAyBC,MAAzB,CAAgCG,MAArD;AACA,aAAKd,IAAL,CAAUS,MAAV,GAAmBlB,SAASwB,aAAT,CAAuB3B,WAAWsB,WAAX,GAAyBC,MAAzB,CAAgCK,IAAvD,CAAnB;AACH;;AA9BI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var BasePop = require(\"BasePop\");\r\nvar GameSystem = require('GameSystem');\r\nvar MusicMgr = require(\"MusicMgr\");\r\nvar Audio_Common = require(\"Audio_Common\");\r\nvar UtilTool   = require('UtilTool');\r\n\r\n\r\ncc.Class({\r\n    extends: BasePop,\r\n\r\n    properties: {\r\n        Title: cc.Label,\r\n        Doc: cc.Label,\r\n        Writer: cc.Label,\r\n        Time: cc.Label,\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n        this._super();\r\n    },\r\n\r\n    \r\n    callbackBtnClose : function(){\r\n        cc.log('NoticeView : callbackBtnClose');\r\n        MusicMgr.playEffect(Audio_Common.AUDIO_BTN_CLICK);\r\n        this.dismiss();\r\n    },\r\n\r\n    setContent : function () {\r\n        // GameSystem.getInstance().notice.title,\r\n        // GameSystem.getInstance().notice.writer\r\n        // GameSystem.getInstance().notice.time\r\n        this.Title.string = GameSystem.getInstance().notice.title + \":\";\r\n        this.Doc.string = GameSystem.getInstance().notice.doc;\r\n        this.Writer.string = GameSystem.getInstance().notice.writer;\r\n        this.Time.string = UtilTool.getFormatData(GameSystem.getInstance().notice.time);\r\n    },\r\n    \r\n    \r\n});\r\n"
+  ]
+}

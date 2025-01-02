@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "InfoLabel",
+    "Label",
+    "onLoad",
+    "updatePlayerScoreCell",
+    "text1",
+    "text2",
+    "text3",
+    "size",
+    "string",
+    "winCoin",
+    "Number",
+    "node",
+    "color",
+    "Color",
+    "RED",
+    "GREEN",
+    "i",
+    "fontSize"
+  ],
+  "mappings": ";;AAAA;;;AAGAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,mBAAY,CAACL,GAAGM,KAAJ;AADJ,KAHP;;AAOL;AACAC,YAAQ,kBAAY,CAEnB,CAVI;;AAYLC,2BAAuB,+BAAUC,KAAV,EAAgBC,KAAhB,EAAsBC,KAAtB,EAA6BC,IAA7B,EAAmC;AACtD,aAAKP,SAAL,CAAe,CAAf,EAAkBQ,MAAlB,GAA2BJ,KAA3B;AACA,aAAKJ,SAAL,CAAe,CAAf,EAAkBQ,MAAlB,GAA2BH,KAA3B;;AAGA,YAAII,UAAUC,OAAOJ,KAAP,CAAd;AACA,YAAIG,UAAU,CAAd,EACA;AACI,iBAAKT,SAAL,CAAe,CAAf,EAAkBQ,MAAlB,GAA2B,MAAMC,OAAjC;AACA,iBAAKT,SAAL,CAAe,CAAf,EAAkBW,IAAlB,CAAuBC,KAAvB,GAA+BjB,GAAGkB,KAAH,CAASC,GAAxC;AAEH,SALD,MAMK,IAAIL,WAAW,CAAf,EAAkB;AACnB,iBAAKT,SAAL,CAAe,CAAf,EAAkBQ,MAAlB,GAA+BC,OAA/B;AACA,iBAAKT,SAAL,CAAe,CAAf,EAAkBW,IAAlB,CAAuBC,KAAvB,GAA+B,IAAIjB,GAAGkB,KAAP,CAAa,GAAb,EAAkB,GAAlB,EAAuB,EAAvB,EAA2B,GAA3B,CAA/B;AACH,SAHI,MAKL;AACI,iBAAKb,SAAL,CAAe,CAAf,EAAkBQ,MAAlB,GAA+BC,OAA/B;AACA,iBAAKT,SAAL,CAAe,CAAf,EAAkBW,IAAlB,CAAuBC,KAAvB,GAA+BjB,GAAGkB,KAAH,CAASE,KAAxC;AACH;;AAED,aAAKf,SAAL,CAAe,CAAf,EAAkBQ,MAAlB,GAA+BE,OAAOL,KAAP,IAAiBK,OAAOJ,KAAP,CAAhD;;AAEA,aAAK,IAAIU,IAAI,CAAb,EAAgBA,KAAK,CAArB,EAAwBA,GAAxB,EAA8B;AAC1B,iBAAKhB,SAAL,CAAegB,CAAf,EAAkBC,QAAlB,GAA6BV,IAA7B;AACH;AACJ;AAvCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by lixiaofei on 17/6/4.\r\n */\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        InfoLabel : [cc.Label],\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n\r\n    },\r\n\r\n    updatePlayerScoreCell: function (text1,text2,text3, size) {\r\n        this.InfoLabel[0].string = text1;\r\n        this.InfoLabel[1].string = text2;\r\n\r\n\r\n        var winCoin = Number(text3);\r\n        if (winCoin > 0)\r\n        {\r\n            this.InfoLabel[2].string = \"+\" + winCoin;\r\n            this.InfoLabel[2].node.color = cc.Color.RED;\r\n\r\n        }\r\n        else if (winCoin == 0) {\r\n            this.InfoLabel[2].string     = winCoin;\r\n            this.InfoLabel[2].node.color = new cc.Color(204, 160, 41, 255);\r\n        }\r\n        else\r\n        {\r\n            this.InfoLabel[2].string     = winCoin;\r\n            this.InfoLabel[2].node.color = cc.Color.GREEN;\r\n        }\r\n\r\n        this.InfoLabel[3].string     = Number(text2) +  Number(text3);\r\n\r\n        for (var i = 0; i <= 3; i ++) {\r\n            this.InfoLabel[i].fontSize = size;\r\n        }\r\n    },\r\n});"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BatteryBg",
+    "texture": "1cdb94ca-88be-4d62-b1e8-4d3346720983",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      73,
+      39
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      73,
+      39
+    ]
+  }
+}

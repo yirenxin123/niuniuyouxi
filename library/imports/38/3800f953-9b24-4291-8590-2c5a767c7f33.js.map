@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "module",
+    "exports",
+    "AUDIO_BTN_CLICK",
+    "AUDIO_BTN_BET",
+    "AUDIO_TIME",
+    "AUDIO_SIT"
+  ],
+  "mappings": ";;AAAA;;;AAGAA,OAAOC,OAAP,GAAiB;AACbC,qBAAgC,+CADnB;AAEbC,mBAAgC,+CAFnB;AAGbC,gBAAgC,+CAHnB;AAIbC,eAAgC;AAJnB,CAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/19.\r\n */\r\nmodule.exports = {\r\n    AUDIO_BTN_CLICK :               \"resources/Texture/ComScene/Sound/btnclick.mp3\",\r\n    AUDIO_BTN_BET :                 \"resources/Texture/ComScene/Sound/coinsfly.mp3\",\r\n    AUDIO_TIME :                    \"resources/Texture/ComScene/Sound/daojishi.mp3\",\r\n    AUDIO_SIT :                     \"resources/Texture/ComScene/Sound/sit.mp3\",\r\n};"
+  ]
+}

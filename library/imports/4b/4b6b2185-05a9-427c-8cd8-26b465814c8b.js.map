@@ -1,0 +1,52 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MusicMgr",
+    "require",
+    "Audio_Common",
+    "GameSystem",
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "CardValue",
+    "Label",
+    "onLoad",
+    "log",
+    "initData",
+    "m_iCardValue",
+    "Array",
+    "callBackBtnCard",
+    "event",
+    "CustonEventData",
+    "node",
+    "active",
+    "card",
+    "target",
+    "getComponent",
+    "length",
+    "cardSelected",
+    "playEffect",
+    "AUDIO_BTN_CLICK",
+    "setBtnCard",
+    "cardValue",
+    "value",
+    "push",
+    "removeByValue",
+    "updataCustomCardType",
+    "logAllCardValue",
+    "index",
+    "splice",
+    "clearCustomCardType",
+    "string"
+  ],
+  "mappings": "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",
+  "file": "unknown",
+  "sourcesContent": [
+    "var MusicMgr = require('MusicMgr');\r\nvar Audio_Common = require('Audio_Common');\r\nvar GameSystem   = require('GameSystem');\r\n\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        CardValue : [cc.Label],\r\n    },\r\n\r\n    onLoad: function () {\r\n        cc.log(\"Bullfight_CustomCardType.OnLoad\");\r\n    },\r\n\r\n    initData: function () {\r\n        cc.log(\"Bullfight_CustomCardType.initData.\");\r\n        this.m_iCardValue = new Array;\r\n    },\r\n\r\n    callBackBtnCard : function (event, CustonEventData) {\r\n        if (this.node.active == false) {\r\n            cc.log(\"Bullfight_CustomCardType.callBackBtnCard this.node.active=\", this.node.active);\r\n            return;\r\n        }\r\n\r\n        var card = event.target.getComponent(\"Poker\");\r\n        if ((this.m_iCardValue.length >= 3) && card.cardSelected == 0){\r\n            cc.log(\"Bullfight_CustomCardType.callBackBtnCard length=\", this.m_iCardValue.length,\r\n                \" cardSelected=\", card.cardSelected);\r\n            return;\r\n        }\r\n        MusicMgr.playEffect(Audio_Common.AUDIO_BTN_CLICK);\r\n\r\n        card.setBtnCard();\r\n\r\n        cc.log(\"Bullfight_CustomCardType.callBackBtnCard,value = \" + card.cardValue);\r\n\r\n        var value = card.cardValue > 10 ? 10 : card.cardValue;\r\n        if (card.cardSelected == 1)\r\n        {\r\n            this.m_iCardValue.push(value);\r\n        }\r\n        else\r\n        {\r\n            this.removeByValue(value)\r\n        }\r\n        this.updataCustomCardType();\r\n        this.logAllCardValue();\r\n    },\r\n\r\n    removeByValue : function (value) {\r\n        for(var index = 0;index < this.m_iCardValue.length;index++)\r\n        {\r\n            if(this.m_iCardValue[index] == value)\r\n            {\r\n                this.m_iCardValue.splice(index, 1);\r\n                break;\r\n            }\r\n        }\r\n    },\r\n    \r\n    clearCustomCardType : function () {\r\n        this.CardValue[0].string = \"\";\r\n        this.CardValue[1].string = \"\";\r\n        this.CardValue[2].string = \"\";\r\n        this.CardValue[3].string = \"\";\r\n    },\r\n    \r\n    updataCustomCardType : function () {\r\n        this.CardValue[0].string = \"\";\r\n        this.CardValue[1].string = \"\";\r\n        this.CardValue[2].string = \"\";\r\n        this.CardValue[3].string = \"\";\r\n\r\n        let value = 0;\r\n        for(var index = 0;index < this.m_iCardValue.length && index < 3;index++)\r\n        {\r\n            value += this.m_iCardValue[index];\r\n            if (index == 3)\r\n            {\r\n                this.CardValue[index].string = value;\r\n            }\r\n            else\r\n            {\r\n                this.CardValue[index].string = this.m_iCardValue[index];\r\n            }\r\n\r\n        }\r\n        this.CardValue[3].string = value;\r\n    },\r\n\r\n    logAllCardValue : function () {\r\n        for(var index = 0;index < this.m_iCardValue.length ;index++)\r\n        {\r\n            cc.log(\"logAllCardValue.value = \" + this.m_iCardValue[index]);\r\n        }\r\n    }\r\n});\r\n"
+  ]
+}

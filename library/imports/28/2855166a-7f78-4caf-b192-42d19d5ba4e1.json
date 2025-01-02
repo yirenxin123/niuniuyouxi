@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "RoomRuleTitle",
+    "texture": "c0ad622e-299f-48c6-bb19-1e7dc8c4c408",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      736,
+      98
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      736,
+      98
+    ]
+  }
+}

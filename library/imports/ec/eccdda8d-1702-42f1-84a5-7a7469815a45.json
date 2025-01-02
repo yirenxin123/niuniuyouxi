@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider",
+    "texture": "064555dd-ab08-47ff-852d-f508273c9792",
+    "atlas": "",
+    "rect": [
+      1,
+      2,
+      570,
+      37
+    ],
+    "offset": [
+      -0.5,
+      -0.5
+    ],
+    "originalSize": [
+      573,
+      40
+    ]
+  }
+}

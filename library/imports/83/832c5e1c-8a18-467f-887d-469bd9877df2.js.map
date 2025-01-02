@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "Cmd_Bullfight",
+    "Bullfight_BetCoinRespPacket",
+    "apply",
+    "cmd",
+    "SBF_RESP_BET_COIN_CMD_ID",
+    "betuid",
+    "betcoinmul",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "SocketRetCode",
+    "RET_SUCCESS",
+    "tstatus",
+    "ustatus",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA;;;;;;;;AAQA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;AACA,IAAIC,gBAAgBD,QAAQ,eAAR,CAApB;AACA,SAASE,2BAAT,GAAuC;AACnCH,gBAAYI,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EADmC,CACL;;AAE9B,SAAKC,GAAL,GAAWH,cAAcI,wBAAzB;AACA,SAAKC,MAAL,GAAc,CAAd;AACA,SAAKC,UAAL,GAAkB,CAAlB;AACA;AACA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACA,YAAG,KAAKD,IAAL,GAAYE,cAAcC,WAA7B,EACI;AACJ,aAAKT,MAAL,GAAcG,IAAIH,MAAlB;AACA,aAAKC,UAAL,GAAkBE,IAAIF,UAAtB;AACA,aAAKS,OAAL,GAAeP,IAAIO,OAAnB;AACA,aAAKC,OAAL,GAAeR,IAAIQ,OAAnB;AACA;AACH,KAbD;AAcH;;AAEDC,OAAOC,OAAP,GAAkBjB,2BAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/3/2.\r\n */\r\n\r\n/*\r\n* type SBF_RESP_BET_COIN_T struct {\r\n JsonHead\r\n RespHead\r\n BetUid     uint32 `json:\"betuid\"`\r\n BetCoinMul int `json:\"betcoinmul\"`\r\n }\r\n* */\r\nvar MessageResp = require('MessageResp');\r\nvar Cmd_Bullfight = require('Cmd_Bullfight');\r\nfunction Bullfight_BetCoinRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = Cmd_Bullfight.SBF_RESP_BET_COIN_CMD_ID;\r\n    this.betuid = 0;\r\n    this.betcoinmul = 0;\r\n    //{\"cmd\":6619146,\"seq\":0,\"uid\":10010,\"code\":0,\"desc\":\"执行成功\",\"betuid\":10011,\"betcoinmul\":10}\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n        if(this.code < SocketRetCode.RET_SUCCESS)\r\n            return;\r\n        this.betuid = msg.betuid;\r\n        this.betcoinmul = msg.betcoinmul;\r\n        this.tstatus = msg.tstatus;\r\n        this.ustatus = msg.ustatus;\r\n        //GlobalEventManager.getInstance().emitEvent(window.SOCKETT_SENDMESSAGE, this);\r\n    };\r\n}\r\n\r\nmodule.exports =  Bullfight_BetCoinRespPacket;"
+  ]
+}

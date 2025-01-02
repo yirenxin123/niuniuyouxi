@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "表情_0077_face3_anims_i6p-i6p_07",
+    "texture": "ae56bf5a-f263-4e3f-b76f-3145b2e2e81f",
+    "atlas": "c40f9883-b5c9-4567-be17-4e57aef154b7",
+    "rect": [
+      160,
+      154,
+      156,
+      150
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      170,
+      170
+    ]
+  }
+}

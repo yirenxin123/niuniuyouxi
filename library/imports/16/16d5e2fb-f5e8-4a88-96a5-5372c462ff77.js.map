@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "MessageResp",
+    "require",
+    "LeaveGameRespPacket",
+    "apply",
+    "cmd",
+    "window",
+    "US_RESP_LEAVE_GAME_CMD_ID",
+    "param",
+    "tableid",
+    "leaveuid",
+    "onMessage",
+    "msg",
+    "seq",
+    "uid",
+    "code",
+    "desc",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;;;AAIA,IAAIA,cAAcC,QAAQ,aAAR,CAAlB;;AAEA,SAASC,mBAAT,GAA+B;AAC3BF,gBAAYG,KAAZ,CAAkB,IAAlB,EAAwB,EAAxB,EAD2B,CACG;;AAE9B,SAAKC,GAAL,GAAWC,OAAOC,yBAAlB;;AAEA,SAAKC,KAAL,GAAa,EAAb;AACA,SAAKC,OAAL,GAAe,CAAf;AACA,SAAKC,QAAL,GAAgB,CAAhB;AACA;AACA,SAAKC,SAAL,GAAiB,UAAUC,GAAV,EAAe;AAC5B;AACA,aAAKC,GAAL,GAAWD,IAAIC,GAAf;AACA,aAAKC,GAAL,GAAWF,IAAIE,GAAf;AACA,aAAKC,IAAL,GAAYH,IAAIG,IAAhB;AACA,aAAKC,IAAL,GAAYJ,IAAII,IAAhB;AACH,KAND;AAOH;;AAEDC,OAAOC,OAAP,GAAkBf,mBAAlB",
+  "file": "unknown",
+  "sourcesContent": [
+    "/**\r\n * Created by shrimp on 17/2/26.\r\n */\r\n\r\nvar MessageResp = require(\"MessageResp\");\r\n\r\nfunction LeaveGameRespPacket() {\r\n    MessageResp.apply(this, []);  //集成父类数据\r\n\r\n    this.cmd = window.US_RESP_LEAVE_GAME_CMD_ID;\r\n\r\n    this.param = \"\";\r\n    this.tableid = 0;\r\n    this.leaveuid = 0;\r\n    //接收的数据\r\n    this.onMessage = function (msg) {\r\n        //{\"cmd\":6553604,\"seq\":4,\"uid\":10042,\"code\":0,\"desc\":\"执行成功\"}\r\n        this.seq = msg.seq;\r\n        this.uid = msg.uid;\r\n        this.code = msg.code;\r\n        this.desc = msg.desc;\r\n    };\r\n}\r\n\r\nmodule.exports =  LeaveGameRespPacket;"
+  ]
+}

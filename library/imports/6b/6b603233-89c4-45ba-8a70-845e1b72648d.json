@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bigrose",
+    "texture": "7abebe2d-eab1-4816-a23a-1c49acba1a7e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      96,
+      100
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      96,
+      100
+    ]
+  }
+}
